@@ -5,6 +5,11 @@ import ServicesMenu from "./ServicesMenu";
 import { NavLink } from "react-router-dom";
 import "../../App.css";
 
+import MainLogo from "../../images/logo/Nh.png";
+import MainLogowhite from "../../images/logo/Nhw.png";
+import MainLogowhite1 from "../../images/logo/Nhw1.png";
+import MainLogowhite2 from "../../images/logo/Nhw2.png";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -49,7 +54,11 @@ const Header = () => {
               <NavLink to="/">
                 <img
                   className="h-8"
-                  src="https://www.nhitechsolutions.com/assets/img/finalumar.png"
+                  src={`${
+                    navbar
+                      ? MainLogowhite1
+                      : MainLogowhite2
+                  }`}
                   alt="Workflow"
                 />
               </NavLink>

@@ -1,0 +1,55 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { mobileAndWebProducts } from "../../../utils/data.js";
+
+const WebAndMobileApps = () => {
+  return (
+    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+      {/* top section  */}
+      <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-5">
+        {/* Text intro  */}
+        <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+          Design for mobile and web products
+        </h2>
+
+        <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl">
+          Creating the same distinct style and brand identity for all platforms
+          using best-proven
+        </p>
+      </div>
+
+      {/*   */}
+      <div className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col w-full gap-10">
+        {mobileAndWebProducts.map((webApp, index) => {
+          return (
+            <div
+              className="flex flex-col justify-center bg-rose-500 rounded-3xl shadow-lg"
+              key={index}
+            >
+              <div className="">
+                <img
+                  src={webApp.img}
+                  alt={webApp.title}
+                  className="w-full h-full"
+                />
+              </div>
+
+              <div className="flex flex-col gap-5 text-slate-100 px-3 py-5">
+                <span className="text-xl font-semibold">{webApp.title}</span>
+                <span className="xl:text-xl lg:text-xl text-base text-justify font-serif">
+                  {webApp.desc}
+                </span>
+                {/* button  */}
+                <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                  <Link to="/contact">Explore more</Link>
+                </button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default WebAndMobileApps;

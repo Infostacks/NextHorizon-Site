@@ -76,17 +76,6 @@
   margin-bottom: 5px;
 }
 
-.active {
-  border-bottom: #ccc solid 2px;
-  transition: ease-in 6s;
-  font-weight: bolder;
-  background: linear-gradient(currentColor 0 0) 100% 100% / var(51%, 0%) 3px
-      no-repeat,
-    linear-gradient(-90deg, transparent 50%, currentColor 0) bottom /
-      calc(2 * var(51%, 0%)) 3px no-repeat;
-  transition: 0.5s;
-}
-
 .uploadBtn::-webkit-file-upload-button {
   position: absolute;
   padding: 5px 10px;

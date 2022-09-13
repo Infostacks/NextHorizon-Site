@@ -5,9 +5,9 @@ import { BsFillAwardFill } from "react-icons/bs";
 const OurRewards = () => {
   return (
     <section className="w-screen overflow-x-hidden bg-slate-100">
-      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
+      <div className="max-w-screen-lg px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
         {/* top section  */}
-        <div className="flex items-center xl:flex-row lg:flex-row md:flex-row flex-col gap-5 mx-10">
+        <div className="flex items-center justify-between xl:flex-row lg:flex-row md:flex-row flex-col gap-5 mx-10">
           {/* Text intro  */}
           <div className="flex flex-col justify-start items-start xl:w-1/2 lg:w-1/2 md:w-1/2 w-full xl:h-full lg:h-full md:h-full h-fit">
             <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
@@ -20,6 +20,7 @@ const OurRewards = () => {
               clients' digital transformation.
             </p>
           </div>
+
           {/* rating card  */}
           <div className="flex flex-col justify-center items-center p-10 bg-[#edf2f4ff] rounded-[40px]">
             <h3 className="text-2xl font-semibold">51 Reviews on Clutch</h3>

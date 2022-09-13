@@ -17,7 +17,7 @@ const CaseStudies = () => {
         </div>
 
         {/* case Studies  */}
-        <div className="flex flex-col items-center w-full gap-10 mt-16">
+        <div className="flex flex-col items-center gap-20 mt-16">
           {caseStudies.map((caseStudy, index) => {
             return (
               <div
@@ -26,7 +26,7 @@ const CaseStudies = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col "
-                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
+                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl`}
               >
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">

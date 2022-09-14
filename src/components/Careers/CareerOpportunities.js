@@ -5,37 +5,11 @@ import { careerOpportunities } from "../../utils/data.js";
 import { Link } from "react-router-dom";
 
 const CareerOpportunities = () => {
-  const form = useRef();
   const [showApplyNow, setShowApplyNow] = useState(false);
-  const [done, setDone] = useState(false);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_11mw5hi",
-        "template_zpjacye",
-        form.current,
-        "byjv8FrMKkAT9DYSa"
-      )
-      .then(
-        (result) => {
-          console.log("result text: ", result.text);
-          setDone(true);
-          form.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
 
   const handleApplyNow = () => {
     setShowApplyNow(!showApplyNow);
   };
-
-  console.log(showApplyNow);
 
   return (
     <section className="bg-slate-200 w-screen flex flex-col gap-10 items-center justify-center pb-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
@@ -60,12 +34,14 @@ const CareerOpportunities = () => {
                 <div>{job.jobLocation}</div>
               </div>
               {/* button  */}
-              <button
-                onClick={handleApplyNow}
-                className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
-              >
-                <Link to={`/careers/${job.jobId}`} state={{ data: job }}>Apply Now</Link>
-              </button>
+              <Link to={`/careers/${job.jobId}`} state={{ data: job }}>
+                <button
+                  onClick={handleApplyNow}
+                  className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
+                >
+                  Apply Now
+                </button>
+              </Link>
             </div>
           );
         })}

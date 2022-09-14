@@ -1,17 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
-import { careerOpportunities } from "../../utils/data.js";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const ApplyNow = () => {
   const form = useRef();
   const [done, setDone] = useState(false);
 
-  const { id } = useParams();
   const location = useLocation();
-  // const { push } = useNavigate();
-  const [jobTitle, SetJobTitle] = useState({});
+  const navigate = useNavigate();
 
   const data = location.state?.data;
   console.log(data);
@@ -30,6 +27,7 @@ const ApplyNow = () => {
         (result) => {
           console.log("result text: ", result.text);
           setDone(true);
+          navigate('/careers');
           form.reset();
         },
         (error) => {
@@ -44,14 +42,14 @@ const ApplyNow = () => {
     bg-[url('https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]"
     >
       <div className="flex justify-center items-center w-screen h-screen bg-opacity-95 bg-slate-700">
-        <div className="py-32 w-screen flex flex-col items-center gap-16 justify-center">
+        <div className="max-w-screen-lg py-32 w-screen flex flex-col items-center gap-16 justify-center">
           <h1 className="xl:text-5xl lg:text-5xl md:text-4xl text-3xl text-gray-200">
             Apply for the job of <span className="font-semibold underline underline-offset-8 font-mono">{data ? data.jobTitle : ""}</span>
           </h1>
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col gap-5 justify-between xl:w-3/6 lg:w-3/6 w-5/6"
+            className="flex flex-col gap-5 justify-between w-5/6"
           >
             {/* name & email  */}
             <div className="flex xl:flex-row lg:flex-row flex-col gap-5 w-full">
@@ -89,6 +87,25 @@ const ApplyNow = () => {
               />
             </div>
 
+            {/* country & job title */}
+            <div className="flex xl:flex-row lg:flex-row flex-col gap-5 w-full">
+              <input
+                type="text"
+                name="country"
+                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                placeholder="Country"
+                onChange={(e) => e.target.value}
+              />
+              <input
+                type="text"
+                name="jobTitle"
+                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                defaultValue={data.jobTitle}
+                onChange={(e) => e.target.value}
+                readOnly
+              />
+            </div>
+
             {/* contact & dob */}
             <div className="flex xl:flex-row lg:flex-row flex-col gap-5 w-full">
               <input
@@ -99,10 +116,10 @@ const ApplyNow = () => {
                 onChange={(e) => e.target.value}
               />
               <input
-                type="date"
-                name="dob"
+                type="text"
+                name="currentDesignation"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
-                // placeholder="DD-MM-YYYY"
+                placeholder="Current Designation"
                 onChange={(e) => e.target.value}
               />
             </div>
@@ -246,16 +263,16 @@ const ApplyNow = () => {
               />
             </div>
 
-            {/* self intro  */}
-            {/* <div className="flex flex-col gap-5 w-full">
+            {/* skills intro  */}
+            <div className="flex flex-col gap-5 w-full">
               <textarea
                 type="text"
-                name="contact"
+                name="skill_section"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
-                placeholder="Submit your resume by providing your resume URL:"
+                placeholder="Describe your skills"
                 onChange={(e) => e.target.value}
               />
-            </div> */}
+            </div>
 
             <div className="flex flex-col gap-5 justify-center w-full">
               <button
@@ -270,8 +287,9 @@ const ApplyNow = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 3 }}
                 exit={{ opacity: 0 }}
+                className="text-xl text-gray-200 font-semibold"
               >
-                {done && "Applied"}
+                {done && "Applied successfully"}
               </motion.span>
             </div>
           </form>

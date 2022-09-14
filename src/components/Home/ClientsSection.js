@@ -3,7 +3,7 @@ import { companiesList } from "../../utils/data";
 
 const ClientsSection = () => {
   return (
-    <div className="overflow-x-hidden flex flex-col bg-slate-200 items-center justify-evenly px-20 py-20 drop-shadow-md gap-5 w-full">
+    <div className="overflow-x-hidden flex flex-col bg-slate-200 items-center justify-evenly px-20 py-20 gap-5 w-full">
       <h1 className="font-bold xl:text-7xl lg:text-7xl md:text-4xl text-3xl max-w-screen-lg text-center">
         Great software needs great relationships
       </h1>

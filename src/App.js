@@ -16,6 +16,8 @@ import DevOpsServices from "./components/Services/DevOpsServices";
 import StaffAugmentation from "./components/Services/StaffAugmentation";
 import StartupServices from "./components/Services/StartupServices";
 import Portfolio from "./components/Portfolio";
+import Careers from "./components/Careers";
+import ApplyNow from "./components/Careers/ApplyNow";
 
 import NotFoundPage from "./NotFoundPage.js";
 
@@ -134,7 +136,9 @@ function App() {
         </Route>
 
         <Route path="gallery" element={<GalleryComponent />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="careers" element={<Careers />} />
+        <Route path="careers/:id" element={<ApplyNow />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       {/* 
       <Services /> */}

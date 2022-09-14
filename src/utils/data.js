@@ -60,6 +60,13 @@ import { FaUsers } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
 import { BsCircleFill } from "react-icons/bs";
 
+import {IoCalendarOutline} from "react-icons/io5";
+import {RiComputerLine} from "react-icons/ri";
+import {IoAirplaneOutline} from "react-icons/io5";
+import {IoCafeOutline} from "react-icons/io5";
+import {HiOutlineCash} from "react-icons/hi";
+import {AiOutlineTeam} from "react-icons/ai";
+
 // images import
 import MobileDev from "../images/services/mobapp.png";
 import WebDev from "../images/services/webapp.png";
@@ -4461,8 +4468,67 @@ const faqsAppModernization = [
   },
 ];
 
+
+const perksAndBenifits = [
+  {
+    icon: <IoCalendarOutline/>,
+    title: "Flexible schedule",
+    desc: "Aliquam mollis quam sed mattis sodales. Morbi accumsan posuere iaculis. Donec a scelerisque magna.",
+  },{
+    icon: <RiComputerLine/>,
+    title: "New Apple Computer",
+    desc: "Suspendisse sagittis vel lacinia. Integer sit amet ante elit. Praesent pulvinar congue risus, in tristique.",
+  },{
+    icon: <IoAirplaneOutline/>,
+    title: "Paid Holidays",
+    desc: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu.",
+  },{
+    icon: <IoCafeOutline/>,
+    title: "Open Cafeteria",
+    desc: "Aliquam mollis quam sed mattis sodales. Morbi accumsan posuere iaculis. Donec a scelerisque magna.",
+  },{
+    icon: <HiOutlineCash/>,
+    title: "Competitive Salary",
+    desc: "Suspendisse sagittis vel lacinia. Integer sit amet ante elit. Praesent pulvinar congue risus, in tristique.",
+  },{
+    icon: <AiOutlineTeam/>,
+    title: "Team Building Camps",
+    desc: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu.",
+  }
+]
+
+const careerOpportunities = [
+  {
+    jobId: "001",
+    jobTitle: "Business Development Coordinator",
+    jobLocation: "Vancouver, British Columbia",
+  },
+  {
+    jobId: "002",
+    jobTitle: "Full Stack Web Developer",
+    jobLocation: "Vancouver, British Columbia",
+  },
+  {
+    jobId: "003",
+    jobTitle: "Social Media Marketing Manager",
+    jobLocation: "San Francisco, California",
+  },
+  {
+    jobId: "004",
+    jobTitle: "Product Designer",
+    jobLocation: "San Francisco, California",
+  },
+  {
+    jobId: "005",
+    jobTitle: "Mobile UX Designer",
+    jobLocation: "San Francisco, California",
+  },
+]
+
 export {
   sublinks,
+  perksAndBenifits,
+  careerOpportunities,
   projectsData,
   companiesList,
   technicalProcess,

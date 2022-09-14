@@ -53,11 +53,7 @@ const Header = () => {
               <NavLink to="/">
                 <img
                   className="h-8"
-                  src={`${
-                    navbar
-                      ? MainLogowhite1
-                      : MainLogowhite2
-                  }`}
+                  src={`${navbar ? MainLogowhite1 : MainLogowhite2}`}
                   alt="Workflow"
                 />
               </NavLink>
@@ -66,17 +62,16 @@ const Header = () => {
             <div className="flex flex-row justify-center items-center">
               <div className="hidden lg:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <span
-                    className={`text-sm font-medium`}
-                  >
-                    <NavLink to="/" className="tracking-widest navlinkUnderline">
+                  <span className={`text-sm font-medium`}>
+                    <NavLink
+                      to="/"
+                      className="tracking-widest navlinkUnderline"
+                    >
                       Home
                     </NavLink>
                   </span>
 
-                  <span
-                    className={`text-sm font-medium`}
-                  >
+                  <span className={`text-sm font-medium`}>
                     <NavLink
                       to="/services"
                       onMouseEnter={handleMouseEnterServices}
@@ -94,17 +89,16 @@ const Header = () => {
                     </div>
                   </span>
 
-                  <span
-                    className={`text-sm font-medium`}
-                  >
-                    <NavLink to="/portfolio" className="tracking-widest navlinkUnderline">
+                  <span className={`text-sm font-medium`}>
+                    <NavLink
+                      to="/portfolio"
+                      className="tracking-widest navlinkUnderline"
+                    >
                       Portfolio
                     </NavLink>
                   </span>
 
-                  <span
-                    className={`text-sm font-medium`}
-                  >
+                  <span className={`text-sm font-medium`}>
                     <NavLink
                       to="/blogs/latest"
                       onMouseEnter={handleMouseEnterBlogs}
@@ -122,25 +116,41 @@ const Header = () => {
                     </div>
                   </span>
 
-                  <span
-                    className={`text-sm font-medium`}
-                  >
-                    <NavLink to="/gallery" className="tracking-widest navlinkUnderline">
+                  <span className={`text-sm font-medium`}>
+                    <NavLink
+                      to="/gallery"
+                      className="tracking-widest navlinkUnderline"
+                    >
                       Gallery
                     </NavLink>
                   </span>
-                  <span
-                    className={`text-sm font-medium`}
-                  >
-                    <NavLink to="/contact" className="tracking-widest navlinkUnderline">
+
+                  <span className={`text-sm font-medium`}>
+                    <NavLink
+                      to="/careers"
+                      className="tracking-widest navlinkUnderline"
+                    >
+                      Careers
+                    </NavLink>
+                  </span>
+
+                  <span className={`text-sm font-medium`}>
+                    <NavLink
+                      to="/contact"
+                      className="tracking-widest navlinkUnderline"
+                    >
                       Contact Us
                     </NavLink>
                   </span>
+
                   <span
                     className={`text-sm font-medium`}
                     //   onClick={handleLogout}
                   >
-                    <NavLink to="/login" className="tracking-widest navlinkUnderline">
+                    <NavLink
+                      to="/login"
+                      className="tracking-widest navlinkUnderline"
+                    >
                       Login
                     </NavLink>
                   </span>
@@ -234,6 +244,11 @@ const Header = () => {
               <span className="block px-3 py-2 rounded-md text-base font-medium">
                 <NavLink to="/gallery">Gallery</NavLink>
               </span>
+
+              <span className="block px-3 py-2 rounded-md text-base font-medium">
+                <NavLink to="/careers">Careers</NavLink>
+              </span>
+
               <span className="px-3 py-2 rounded-md text-sm font-medium">
                 <NavLink to="/contact">Contact Us</NavLink>
               </span>

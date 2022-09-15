@@ -3,10 +3,10 @@ import React from "react";
 
 const AboutProject = () => {
   return (
-    <div className="flex xl:flex-row lg:flex-row flex-col justify-around xl:gap-10 lg:gap-10 gap-5 py-5 xl:px-20 lg:px-20 md:px-10 px-5 rounded-[3rem] bg-gradient-to-bl from-teal-400 via-teal-100 to-teal-400 xl:w-4/6 lg:w-4/6 w-5/6">
+    <div className="flex xl:flex-row lg:flex-row flex-col justify-around gap-5 py-5 xl:px-16 lg:px-16 md:px-10 px-5 rounded-[3rem] bg-gradient-to-bl from-rose-50 via-rose-100 to-rose-300 xl:w-4/6 lg:w-4/6 w-5/6">
       {/* right side  */}
-      <div className="flex flex-col gap-10 xl:w-1/2 lg:w-1/2 w-full">
-        <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl">Tell us about your Project</h1>
+      <div className="flex flex-col justify-evenly gap-10 xl:w-1/2 lg:w-1/2 w-full">
+        <h1 className="xl:text-5xl lg:text-4xl text-2xl font-extrabold">Tell Us About Your Project</h1>
         <p>
           We’ll contact you within a couple of hours to schedule a meeting to
           discuss your goals.
@@ -85,7 +85,7 @@ const AboutProject = () => {
             <span>
               By sending this form I confirm that I have read and accept the
             </span>{" "}
-            <a href="#" className="underline">Privacy Policy</a>
+            <a href="#" className="underline text-slate-600 hover:text-slate-800">Privacy Policy</a>
           </span>
           {/* show more button */}
           <button className="hover:bg-[#08080cff] text-[#252627] py-2 px-3 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#08080cff] border-[#D90429] w-[11rem]">

@@ -60,12 +60,12 @@ import { FaUsers } from "react-icons/fa";
 import { FaUserCog } from "react-icons/fa";
 import { BsCircleFill } from "react-icons/bs";
 
-import {IoCalendarOutline} from "react-icons/io5";
-import {RiComputerLine} from "react-icons/ri";
-import {IoAirplaneOutline} from "react-icons/io5";
-import {IoCafeOutline} from "react-icons/io5";
-import {HiOutlineCash} from "react-icons/hi";
-import {AiOutlineTeam} from "react-icons/ai";
+import { IoCalendarOutline } from "react-icons/io5";
+import { RiComputerLine } from "react-icons/ri";
+import { IoAirplaneOutline } from "react-icons/io5";
+import { IoCafeOutline } from "react-icons/io5";
+import { HiOutlineCash } from "react-icons/hi";
+import { AiOutlineTeam } from "react-icons/ai";
 
 // images import
 import MobileDev from "../images/services/mobapp.png";
@@ -82,68 +82,6 @@ import Google from "../images/FlutterProjects/google.png";
 import Grab from "../images/FlutterProjects/grab.png";
 import Groupon from "../images/FlutterProjects/groupon.png";
 import Square from "../images/FlutterProjects/square.png";
-
-const sublinks = [
-  {
-    page: "HOME",
-    links: [
-      { label: "plugins", icon: <FaBook />, url: "/products" },
-      { label: "libraries", icon: <FaBook />, url: "/products" },
-    ],
-  },
-  {
-    page: "ABOUT",
-    links: [
-      { label: "plugins", icon: <FaBook />, url: "/products" },
-      { label: "libraries", icon: <FaBook />, url: "/products" },
-      { label: "help", icon: <FaBook />, url: "/products" },
-      { label: "billing", icon: <FaBook />, url: "/products" },
-    ],
-  },
-  {
-    page: "SERVICES",
-    links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaCreditCard />, url: "/products" },
-    ],
-  },
-  {
-    page: "PORTFOLIO",
-    links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
-    ],
-  },
-  {
-    page: "TEAM",
-    links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
-    ],
-  },
-  {
-    page: "GALLERY",
-    links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
-    ],
-  },
-  {
-    page: "CONTACT",
-    links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
-    ],
-  },
-  {
-    page: "CLIENT LOGIN",
-    links: [
-      { label: "about", icon: <FaBriefcase />, url: "/products" },
-      { label: "customers", icon: <FaBriefcase />, url: "/products" },
-    ],
-  },
-];
 
 const ourRewards = [
   {
@@ -238,57 +176,77 @@ const industries = [
   {
     icon: <TbBuildingSkyscraper />,
     title: "Fintech",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We are responsible to provide the set of evolving ideas, technologies, business practices, strategies, and services that enable consumers to interact with financial service providers in new ways.`,
   },
   {
     icon: <SiDatacamp />,
     title: "Data Science",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We focus on working with complex, unstructured, user-generated data sets, a
+    comprehensive, multidisciplinary curriculum drawn from the social sciences, 
+    computer science, statistics, management, and coherent integration of the 
+    full life cycle of data from identifying the right questions to retrieving, 
+    cleaning, and modeling the data and communicating results.`,
   },
   {
     icon: <GiArtificialIntelligence />,
     title: "Artificial Intelligence",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We provide a platform for every developer and data scientist with the ability 
+    to build, train, and deploy machine learning models quickly.`,
   },
   {
     icon: <AiOutlineCloudServer />,
     title: "Cloud Computing",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `It’s proved to be an effect in order to store data in bulk quantity & make the 
+    desired data readily available at the time of requirement.`,
   },
   {
     icon: <MdOutlineInventory2 />,
     title: "Logistics and Inventory",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We Optimize the supplier network along with controlling costs and forecasting
+    demand more in order to gain a fuller view of supply chains and help to 
+    manage inventory, supplier relationships, and risk more effectively.`,
   },
   {
     icon: <TbBusinessplan />,
     title: "Customized Business Solutions",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We always provide an opportunity to grow, flourish & complete assigned 
+    tasks more precisely within budget, and ultimately opening a window for 
+    financial growth.`,
   },
   {
     icon: <MdOutlineManageSearch />,
     title: "Booking Search Engine",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `As booking search engines continue developing, they are expected to focus 
+    more on delivering precisely what the customer wants on any device they 
+    choose.`,
   },
   {
     icon: <SiPlanet />,
     title: "Enterprise resource Planning",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We facilitate coherent communication between different departments and 
+    organizational functions.`,
   },
   {
     icon: <MdOutlineLocalGroceryStore />,
     title: "eCommerce",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We cover all technology-related needs of an e-commerce business by assessing 
+    digital experience and planning a website redesign strategy, reviewing the code, and 
+    analyzing its impact on the website operation, revising and updating security patches.`,
   },
   {
     icon: <SiVlcmediaplayer />,
     title: "Media",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `We provide media and entertainment software development services that help business
+    to achieve better audience engagement and higher efficiency in operations and find new
+    revenue streams.`,
   },
   {
     icon: <SiWikimediacommons />,
     title: "Entertainment",
-    desc: "Maecenas accumsan, elit id hendrerit convallis, lectus lacus fermentum nisi.",
+    desc: `Our company’s expertise in entertainment app development allows 
+    us to create solutions with fast and smooth audio and video 
+    streaming. We provide software services for sports and game 
+    streaming, TV broadcast, and other entertainment industries.`,
   },
 ];
 
@@ -4468,34 +4426,38 @@ const faqsAppModernization = [
   },
 ];
 
-
 const perksAndBenifits = [
   {
-    icon: <IoCalendarOutline/>,
+    icon: <IoCalendarOutline />,
     title: "Flexible schedule",
     desc: "Aliquam mollis quam sed mattis sodales. Morbi accumsan posuere iaculis. Donec a scelerisque magna.",
-  },{
-    icon: <RiComputerLine/>,
+  },
+  {
+    icon: <RiComputerLine />,
     title: "New Apple Computer",
     desc: "Suspendisse sagittis vel lacinia. Integer sit amet ante elit. Praesent pulvinar congue risus, in tristique.",
-  },{
-    icon: <IoAirplaneOutline/>,
+  },
+  {
+    icon: <IoAirplaneOutline />,
     title: "Paid Holidays",
     desc: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu.",
-  },{
-    icon: <IoCafeOutline/>,
+  },
+  {
+    icon: <IoCafeOutline />,
     title: "Open Cafeteria",
     desc: "Aliquam mollis quam sed mattis sodales. Morbi accumsan posuere iaculis. Donec a scelerisque magna.",
-  },{
-    icon: <HiOutlineCash/>,
+  },
+  {
+    icon: <HiOutlineCash />,
     title: "Competitive Salary",
     desc: "Suspendisse sagittis vel lacinia. Integer sit amet ante elit. Praesent pulvinar congue risus, in tristique.",
-  },{
-    icon: <AiOutlineTeam/>,
+  },
+  {
+    icon: <AiOutlineTeam />,
     title: "Team Building Camps",
     desc: "Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu.",
-  }
-]
+  },
+];
 
 const careerOpportunities = [
   {
@@ -4523,10 +4485,9 @@ const careerOpportunities = [
     jobTitle: "Mobile UX Designer",
     jobLocation: "San Francisco, California",
   },
-]
+];
 
 export {
-  sublinks,
   perksAndBenifits,
   careerOpportunities,
   projectsData,

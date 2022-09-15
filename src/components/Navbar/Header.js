@@ -52,7 +52,7 @@ const Header = () => {
             <div className="flex-shrink-0">
               <NavLink to="/">
                 <img
-                  className="h-8"
+                  className="h-14"
                   src={`${navbar ? MainLogowhite1 : MainLogowhite2}`}
                   alt="Workflow"
                 />
@@ -141,7 +141,7 @@ const Header = () => {
                       to="/contact"
                       className="tracking-widest navlinkUnderline"
                     >
-                      Get a quote
+                      Get A Quote
                     </NavLink>
                   </span>
 
@@ -254,7 +254,7 @@ const Header = () => {
               </span>
 
               <span className="px-3 py-2 rounded-md text-sm font-medium">
-                <NavLink to="/contact">Get a quote</NavLink>
+                <NavLink to="/contact">Get A Quote</NavLink>
               </span>
               <span
                 className={`px-5 py-2`}

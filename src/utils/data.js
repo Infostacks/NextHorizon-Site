@@ -250,19 +250,6 @@ const industries = [
   },
 ];
 
-const technologyStack = [
-  {
-    techCategory: "Language",
-    techData: [
-      {
-        tool: "Java",
-        icon: "",
-        desc: ``,
-      },
-    ],
-  },
-]
-
 const faqs = [
   {
     question: "What is your pricing structure?",
@@ -4503,7 +4490,6 @@ const careerOpportunities = [
 export {
   perksAndBenifits,
   careerOpportunities,
-  technologyStack,
   projectsData,
   companiesList,
   technicalProcess,

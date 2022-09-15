@@ -65,7 +65,9 @@ const Header = () => {
                   <span className={`text-sm font-medium`}>
                     <NavLink
                       to="/"
-                      className={`tracking-widest ${"active" ? "" : "navlinkUnderline"} `}
+                      className={`tracking-widest ${
+                        "active" ? "" : "navlinkUnderline"
+                      } `}
                     >
                       Home
                     </NavLink>
@@ -139,7 +141,7 @@ const Header = () => {
                       to="/contact"
                       className="tracking-widest navlinkUnderline"
                     >
-                      Contact Us
+                      Get a quote
                     </NavLink>
                   </span>
 
@@ -220,7 +222,9 @@ const Header = () => {
               ref={ref}
               className="text-white mx-2 pt-2 pb-3 border-t-[1px] space-y flex flex-col sm:px-3"
             >
-              <span className={`block px-3 py-2 rounded-md text-base font-medium`}>
+              <span
+                className={`block px-3 py-2 rounded-md text-base font-medium`}
+              >
                 <NavLink
                   to="/"
                   className={`focus:font-bold focus:text-base focus:bg-gray-500`}
@@ -250,7 +254,7 @@ const Header = () => {
               </span>
 
               <span className="px-3 py-2 rounded-md text-sm font-medium">
-                <NavLink to="/contact">Contact Us</NavLink>
+                <NavLink to="/contact">Get a quote</NavLink>
               </span>
               <span
                 className={`px-5 py-2`}

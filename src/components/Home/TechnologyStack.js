@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import webTechImg from "../../images/webTechpsd.png";
 import mobTechImg from "../../images/mobTechpsd.png";
 
+import WebAppsTech from "./WebAppsTech";
+import MobileAppsTech from "./MobileAppsTech";
+
 const TechnologyStack = () => {
+  const [viewDetail, setViewDetail] = useState(false);
+
   return (
     <div className="w-full overflow-x-hidden bg-slate-100 flex flex-col justify-center items-center">
       <section className="flex flex-col items-center justify-center xl:py-20 lg:py-14 py-10">
@@ -23,7 +28,7 @@ const TechnologyStack = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-around items-center w-screen px-5 xl:gap-0 lg:gap-0 md:gap-0 gap-10">
+          <div className="flex flex-col justify-around items-center w-screen px-5 gap-10">
             <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-around items-center w-screen max-w-screen-lg gap-10 px-5">
               {/* web technologies  */}
               <div className="flex flex-col items-center gap-7 xl:w-1/2 lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2">
@@ -81,9 +86,22 @@ const TechnologyStack = () => {
               </div>
             </div>
 
-            <button className="bg-[#08080cff] border-[1px] border-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
-              View Details
-            </button>
+            <div className="flex flex-col gap-10">
+              {viewDetail ? (
+                <div className="flex flex-col gap-10">
+                  <WebAppsTech />
+                  <MobileAppsTech />
+                </div>
+              ) : (
+                ""
+              )}
+              <button
+                onClick={() => setViewDetail(!viewDetail)}
+                className="bg-[#08080cff] border-[1px] border-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
+              >
+                {viewDetail? "Hide" : "View"} Details
+              </button>
+            </div>
           </div>
         </div>
       </section>

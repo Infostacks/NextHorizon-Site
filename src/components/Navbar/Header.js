@@ -65,7 +65,7 @@ const Header = () => {
                   <span className={`text-sm font-medium`}>
                     <NavLink
                       to="/"
-                      className={`tracking-widest ${"active" ? "" : "navlinkUnderline"} `}
+                      className={`tracking-widest hover:navlinkUnderline active:notnavlinkUnderline`}
                     >
                       Home
                     </NavLink>

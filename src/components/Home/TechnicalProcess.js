@@ -29,7 +29,7 @@ const TechnicalProcess = () => {
 
         {/* Show Data  */}
         <div className="flex xl:flex-row items-center flex-col xl:w-1/2 lg:w-1/2 md:w-5/6 w-full ">
-          <div className="flex flex-col xl:w-1/2 lg:w-1/2 w-full flex-wrap gap-5">
+          <div className="flex flex-col xl:w-1/2 w-full flex-wrap gap-5">
             <h3 className="xl:text-3xl lg:text-3xl text-xl font-semibold">{technicalProcess[count].category}</h3>
             <p className="flex flex-wrap text-justify">
               {technicalProcess[count].desc1}
@@ -51,7 +51,7 @@ const TechnicalProcess = () => {
             </p>
           </div>
 
-          <div className="flex flex-col xl:w-1/2 lg:w-1/2 w-full">
+          <div className="flex flex-col xl:w-1/2 w-full">
             <img
               src={technicalProcess[count].img}
               alt={technicalProcess[count].title}

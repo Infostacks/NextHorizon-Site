@@ -4,7 +4,7 @@ import { caseStudies } from "../utils/data.js";
 
 const CaseStudies = () => {
   return (
-    <section className="bg-slate-100 overflow-x-hidden w-full flex flex-col items-center justify-center pb-10">
+    <section className="bg-slate-100 overflow-x-hidden w-full flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">

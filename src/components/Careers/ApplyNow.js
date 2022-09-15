@@ -28,7 +28,7 @@ const ApplyNow = () => {
           console.log("result text: ", result.text);
           setDone(true);
           navigate('/careers');
-          form.reset();
+          // form.reset();
         },
         (error) => {
           console.log(error.text);
@@ -58,14 +58,12 @@ const ApplyNow = () => {
                 name="user_name"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Name"
-                onChange={(e) => e.target.value}
               />
               <input
                 type="email"
                 name="user_email"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Email"
-                onChange={(e) => e.target.value}
               />
             </div>
 
@@ -76,14 +74,12 @@ const ApplyNow = () => {
                 name="address"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Address"
-                onChange={(e) => e.target.value}
               />
               <input
                 type="text"
                 name="city"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="City"
-                onChange={(e) => e.target.value}
               />
             </div>
 
@@ -94,33 +90,29 @@ const ApplyNow = () => {
                 name="country"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Country"
-                onChange={(e) => e.target.value}
               />
               <input
                 type="text"
                 name="jobTitle"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 defaultValue={data.jobTitle}
-                onChange={(e) => e.target.value}
                 readOnly
               />
             </div>
 
-            {/* contact & dob */}
+            {/* contact & currentDesignation */}
             <div className="flex xl:flex-row lg:flex-row flex-col gap-5 w-full">
               <input
                 type="text"
                 name="contact"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Contact Number"
-                onChange={(e) => e.target.value}
               />
               <input
                 type="text"
                 name="currentDesignation"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Current Designation"
-                onChange={(e) => e.target.value}
               />
             </div>
 
@@ -135,13 +127,13 @@ const ApplyNow = () => {
                     className="hidden group peer"
                     type="radio"
                     name="shippingOption"
-                    value="standard_alt"
-                    id="standard_alt"
+                    value="Employed"
+                    id="employed_alt"
                   />
 
                   <label
                     className="block p-4 text-sm font-medium border text-gray-200 hover:text-black border-gray-200 rounded-lg cursor-pointer transition-colors shadow-sm peer-checked:border-blue-500 hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-blue-500"
-                    htmlFor="standard_alt"
+                    htmlFor="employed_alt"
                   >
                     <span className="text-lg"> Employed </span>
                   </label>
@@ -165,7 +157,7 @@ const ApplyNow = () => {
                     className="hidden group peer"
                     type="radio"
                     name="shippingOption"
-                    value="self_employed_alt"
+                    value="Self-Employed"
                     id="self_employed_alt"
                   />
 
@@ -195,7 +187,7 @@ const ApplyNow = () => {
                     className="hidden group peer"
                     type="radio"
                     name="shippingOption"
-                    value="unemployed_alt"
+                    value="Unemployed"
                     id="unemployed_alt"
                   />
 
@@ -225,7 +217,7 @@ const ApplyNow = () => {
                     className="hidden group peer"
                     type="radio"
                     name="shippingOption"
-                    value="student_alt"
+                    value="Student"
                     id="student_alt"
                   />
 
@@ -253,15 +245,14 @@ const ApplyNow = () => {
             </div>
 
             {/* resume url  */}
-            <div className="flex flex-col gap-5 w-full">
+            {/* <div className="flex flex-col gap-5 w-full">
               <input
                 type="text"
                 name="resume"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Submit your resume by providing your resume URL:"
-                onChange={(e) => e.target.value}
               />
-            </div>
+            </div> */}
 
             {/* skills intro  */}
             <div className="flex flex-col gap-5 w-full">
@@ -270,7 +261,6 @@ const ApplyNow = () => {
                 name="skill_section"
                 className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
                 placeholder="Describe your skills"
-                onChange={(e) => e.target.value}
               />
             </div>
 

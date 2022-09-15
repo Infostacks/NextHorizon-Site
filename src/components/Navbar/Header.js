@@ -65,7 +65,7 @@ const Header = () => {
                   <span className={`text-sm font-medium`}>
                     <NavLink
                       to="/"
-                      className="tracking-widest navlinkUnderline"
+                      className={`tracking-widest ${"active" ? "" : "navlinkUnderline"}`}
                     >
                       Home
                     </NavLink>
@@ -220,10 +220,10 @@ const Header = () => {
               ref={ref}
               className="text-white mx-2 pt-2 pb-3 border-t-[1px] space-y flex flex-col sm:px-3"
             >
-              <span className="block px-3 py-2 rounded-md text-base font-medium">
+              <span className={`block px-3 py-2 rounded-md text-base font-medium`}>
                 <NavLink
                   to="/"
-                  className="focus:font-bold focus:text-base focus:bg-gray-500"
+                  className={`focus:font-bold focus:text-base focus:bg-gray-500`}
                 >
                   Home
                 </NavLink>

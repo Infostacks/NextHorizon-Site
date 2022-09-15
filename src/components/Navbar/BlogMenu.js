@@ -10,7 +10,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 const BlogMenu = () => {
   return (
-    <div className="absolute top-[2.5rem] xl:right-[15rem] lg:right-[8rem] right-[3rem] max-w-screen-sm gap-5 z-50 bg-slate-100 rounded-3xl drop-shadow-md flex flex-col">
+    <div className="absolute top-[2.8rem] xl:right-[15rem] lg:right-[8rem] right-[3rem] max-w-screen-sm gap-5 z-50 bg-slate-100 rounded-3xl drop-shadow-md flex flex-col opacity-70 hover:opacity-100 transition-opacity duration-700">
       <div className="flex flex-row">
         {/* mobile  */}
         <div className="flex flex-col gap-10 bg-slate-100 p-10 rounded-l-3xl">

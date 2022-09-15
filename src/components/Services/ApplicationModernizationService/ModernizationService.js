@@ -25,7 +25,7 @@ const ModernizationService = () => {
               <div className="flex w-full gap-10 bg-slate-200 p-10 rounded-3xl shadow-md">
                 <div className="flex flex-row gap-3" key={index}>
                   <div className="flex flex-row gap-3 text-xl" key={index}>
-                    <span className="text-rose-600">✔</span>
+                    <span className="text-[#D90429]">✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
                     <span className="text-2xl font-semibold">

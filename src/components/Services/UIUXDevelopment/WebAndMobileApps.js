@@ -23,7 +23,7 @@ const WebAndMobileApps = () => {
         {mobileAndWebProducts.map((webApp, index) => {
           return (
             <div
-              className="flex flex-col justify-center bg-rose-500 rounded-3xl shadow-lg"
+              className="flex flex-col justify-center bg-[#D90429] bg-opacity-80 rounded-3xl shadow-lg"
               key={index}
             >
               <div className="">

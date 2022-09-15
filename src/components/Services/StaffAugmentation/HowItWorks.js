@@ -23,14 +23,14 @@ const HowItWorks = () => {
               return (
                 <button key={index}>
                   <div
-                    className={`flex flex-row items-center text-rose-600 gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md w-full ${`job-btn ${
+                    className={`flex flex-row items-center text-[#D90429] gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md w-full ${`job-btn ${
                       count === index && "active-btn"
                     }`}`}
                     onClick={() => setCount(index)}
                   >
                     <span
                       className={`px-4 py-2 ${`job-btn ${
-                        count === index && "text-rose-600"
+                        count === index && "text-[#D90429]"
                       }`} bg-white rounded-full`}
                     >
                       {process.id}
@@ -44,7 +44,7 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 bg-rose-600 text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10">
+      <div className="flex flex-col gap-10 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10">
         {/* Show Data  */}
         <div className="flex flex-col text-xl font-serif gap-5 xl:w-1/2 lg:w-1/2 w-full">
           <span className="xl:text-4xl lg:text-4xl text-xl font-bold">

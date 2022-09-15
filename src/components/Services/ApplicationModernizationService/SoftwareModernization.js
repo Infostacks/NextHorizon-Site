@@ -24,7 +24,7 @@ const SoftwareModernization = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 bg-rose-600 text-white xl:w-1/2 lg:w-1/2 w-full px-20 h-full justify-center xl:py-0 lg:py-0 py-10">
+      <div className="flex flex-col gap-10 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full px-20 h-full justify-center xl:py-0 lg:py-0 py-10">
         {/* Show Data  */}
         <div className="flex flex-col gap-10 max-w-xl">
           <span className="text-3xl font-semibold">

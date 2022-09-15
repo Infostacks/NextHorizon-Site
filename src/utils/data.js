@@ -1417,7 +1417,7 @@ const faqsMobile = [
   {
     question: "What are cross-platform mobile app development services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>Cross-platform development means building mobile apps for multiple platforms and devices with a single code base.<br><br>We use Google’s <a href={`https://www.cleveroad.com/blog/why-use-flutter`} className='text-rose-500'>Flutter</a> for cross-platform app development. Flutter helps us build apps for both iOS and Android faster (without affecting apps’ performance) and cut development costs.</span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>Cross-platform development means building mobile apps for multiple platforms and devices with a single code base.<br><br>We use Google’s <a href={`https://www.cleveroad.com/blog/why-use-flutter`} className='text-[#D90429]'>Flutter</a> for cross-platform app development. Flutter helps us build apps for both iOS and Android faster (without affecting apps’ performance) and cut development costs.</span>",
   },
   {
     question: "What solutions are provided by mobile app development services?",

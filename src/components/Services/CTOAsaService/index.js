@@ -54,7 +54,7 @@ const index = () => {
       <BenefitsOfCTOAsAService />
 
       <div className="flex items-center justify-center w-screen bg-slate-100">
-        <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-rose-600 z-[50rem]">
+        <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-[#D90429] z-[50rem]">
           <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
             <h1 className="xl:text-[4rem] lg:text-[4rem] md:text-[3rem] text-[2rem] font-semibold">
               You can hire a CTO for your project
@@ -72,7 +72,7 @@ const index = () => {
       {/* testimonials */}
       <ClientTestimonials />
 
-      <div className="flex items-center justify-center w-screen bg-rose-600">
+      <div className="flex items-center justify-center w-screen bg-[#D90429]">
         <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-slate-50 z-[50rem]">
           <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
             <span className="text-2xl text-slate-50 text-justify xl:w-1/2 lg:w-1/2 w-full">

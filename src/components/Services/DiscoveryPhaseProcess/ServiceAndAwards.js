@@ -20,7 +20,7 @@ const ServiceAndAwards = () => {
         {discoveryPhaseProcess.map((item, index) => {
           return (
             <div className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base" key={index}>
-              <span className="text-rose-600">✔</span>
+              <span className="text-[#D90429]">✔</span>
               <span>{item}</span>
             </div>
           );

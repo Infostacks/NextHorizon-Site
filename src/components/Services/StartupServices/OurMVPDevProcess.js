@@ -25,14 +25,14 @@ const OurMVPDevProcess = () => {
                 return (
                   <button key={index}>
                     <div
-                      className={`flex flex-row items-center text-rose-600 gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
+                      className={`flex flex-row items-center text-[#D90429] gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
                         count === index && "active-btn"
                       }`}`}
                       onClick={() => setCount(index)}
                     >
                       <span
                         className={`px-4 py-2 ${`job-btn ${
-                          count === index && "text-rose-600"
+                          count === index && "text-[#D90429]"
                         }`} bg-white rounded-full`}
                       >
                         {process.id}
@@ -51,7 +51,7 @@ const OurMVPDevProcess = () => {
         {/* Show Data  */}
         <div className="flex flex-col text-xl font-serif gap-5 xl:w-2/3 lg:w-2/3 w-full">
           <span className="flex flex-row gap-3 text-4xl font-bold">
-            <span className="bg-white text-rose-600 rounded-full px-5 py-2 h-fit">
+            <span className="bg-white text-[#D90429] rounded-full px-5 py-2 h-fit">
               {mvpDevlopmentProcess[count].id}
             </span>
             <span>{mvpDevlopmentProcess[count].title}</span>

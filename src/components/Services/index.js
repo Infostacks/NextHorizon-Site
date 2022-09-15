@@ -54,7 +54,7 @@ const index = () => {
       <ServicesSection />
 
       {/* have any question */}
-      <div className="flex items-center justify-center w-screen bg-rose-600">
+      <div className="flex items-center justify-center w-screen bg-[#D90429]">
         <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-white z-[50rem]">
           <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
             <span className="text-xl text-slate-50">

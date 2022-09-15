@@ -20,7 +20,7 @@ const AchieveGoalsWithCTO = () => {
               <div className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md">
                 <div className="flex xl:flex-row lg:flex-row flex-col gap-3" key={index}>
                   <div className="flex flex-row text-xl" key={index}>
-                    <span className="text-rose-600">✔</span>
+                    <span className="text-[#D90429]">✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
                     <span className="xl:text-3xl lg:text-3xl text-xl font-semibold">

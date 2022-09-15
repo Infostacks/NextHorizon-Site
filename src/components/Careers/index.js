@@ -15,7 +15,7 @@ const index = () => {
       <ClientSection />
       <CareerOpportunities />
 
-      <div className="flex items-center justify-center w-screen bg-rose-600">
+      <div className="flex items-center justify-center w-screen bg-[#D90429]">
         <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-slate-50 z-[50rem]">
           <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
               <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-slate-50 font-semibold">

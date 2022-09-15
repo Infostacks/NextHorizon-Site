@@ -24,16 +24,16 @@ const MobileDevInsignts = () => {
               <div className="flex flex-col p-5 justify-around gap-5">
                 {/* breadcrumbs */}
                 <div className="flex flex-row gap-2 text-sm">
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-rose-800">
+                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
                     <Link to={insight.linkToPost}>Blog</Link>
                   </span>
                   <span>➙</span>
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-rose-800">
+                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
                     <Link to="">{insight.category}</Link>
                   </span>
                 </div>
 
-                <span className="text-3xl hover:text-rose-700 hover:cursor-pointer">
+                <span className="text-3xl hover:text-[#D90429] hover:cursor-pointer">
                   <Link to="">{insight.title}</Link>
                 </span>
                 <span>{insight.date}</span>

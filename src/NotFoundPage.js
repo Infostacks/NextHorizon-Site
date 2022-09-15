@@ -13,7 +13,7 @@ const NotFoundPage = () => {
     },[navigate])
 
   return (
-    <div className="flex flex-col gap-20 justify-center items-center w-screen h-[40rem] text-rose-500">
+    <div className="flex flex-col gap-20 justify-center items-center w-screen h-[40rem] text-[#D90429]">
 
       <div className="text-5xl font-bold">Something went wrong</div>
 

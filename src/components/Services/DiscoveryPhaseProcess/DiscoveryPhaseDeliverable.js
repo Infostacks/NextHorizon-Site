@@ -48,7 +48,7 @@ const DiscoveryPhaseDeliverable = () => {
                   className="flex xl:flex-row lg:flex-row flex-col gap-3"
                   key={index}
                 >
-                  <span className="text-2xl font-semibold bg-rose-600 rounded-full py-1 px-3 h-fit w-fit text-slate-100">
+                  <span className="text-2xl font-semibold bg-[#D90429] rounded-full py-1 px-3 h-fit w-fit text-slate-100">
                     {item.id}
                   </span>
                   <div className="flex flex-col gap-3">

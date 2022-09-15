@@ -24,7 +24,7 @@ const DiscoveryPhaseValue = () => {
         {discoveryPhaseValue.map((webApp, index) => {
           return (
             <div
-              className="flex flex-col justify-center bg-rose-500 h-[30rem] w-[25rem] gap-5 rounded-3xl shadow-lg"
+              className="flex flex-col justify-center bg-[#D90429] h-[30rem] w-[25rem] gap-5 rounded-3xl shadow-lg"
               key={index}
             >
               <div className="flex flex-col justify-around gap-5 text-slate-100 xl:px-10 lg:px-10 px-5 py-5">

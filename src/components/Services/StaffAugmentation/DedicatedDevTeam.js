@@ -17,7 +17,7 @@ const DedicatedDevTeam = () => {
         {dedicatedDevTeam.map((item, index) => {
           return (
             <div className="flex flex-row gap-3" key={index}>
-              <span className="text-3xl text-rose-600">{item.icon}</span>
+              <span className="text-3xl text-[#D90429]">{item.icon}</span>
               <span className="">{item.text}</span>
             </div>
           );

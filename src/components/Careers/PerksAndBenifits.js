@@ -17,7 +17,7 @@ const PerksAndBenifits = () => {
         {perksAndBenifits.map((benifit, index) => {
           return(
             <div className="flex flex-col justify-center p-5 drop-shadow-md rounded-3xl bg-white gap-5" key={index}>
-              <div className="text-5xl text-rose-600">{benifit.icon}</div>
+              <div className="text-5xl text-[#D90429]">{benifit.icon}</div>
               <div className="text-xl font-semibold">{benifit.title}</div>
               <div>{benifit.desc}</div>
             </div>

@@ -55,7 +55,7 @@ const index = () => {
 
       <AppModernizationBenefits />
 
-      <div className="flex flex-col items-center justify-center w-screen bg-rose-600">
+      <div className="flex flex-col items-center justify-center w-screen bg-[#D90429]">
         <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] text-white z-[50rem]">
           <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 items-center justify-center xl:px-0 lg:px-0 px-10">
             <div className="flex flex-col gap-4">

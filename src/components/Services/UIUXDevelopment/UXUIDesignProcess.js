@@ -48,7 +48,7 @@ const UXUIDesignProcess = () => {
 
                 {/* info data  */}
                 <div className="flex flex-col gap-1 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
-                  <span className="text-rose-600 text-5xl font-bold font-sans">
+                  <span className="text-[#D90429] text-5xl font-bold font-sans">
                     {process.id}
                   </span>
 

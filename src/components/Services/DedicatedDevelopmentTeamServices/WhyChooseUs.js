@@ -47,10 +47,10 @@ const WhyChooseUs = () => {
                       </span>
                     </div>
                     <div className="flex flex-row gap-5 text-3xl">
-                      <a href={item.email} className="hover:text-rose-600">
+                      <a href={item.email} className="hover:text-[#D90429]">
                         <MdOutlineEmail />
                       </a>
-                      <a href={item.linkedIn} className="hover:text-rose-600">
+                      <a href={item.linkedIn} className="hover:text-[#D90429]">
                         <FaLinkedinIn />
                       </a>
                     </div>
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
                         className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base"
                         key={index}
                       >
-                        <span className="text-rose-600">✔</span>
+                        <span className="text-[#D90429]">✔</span>
                         <span>{quality}</span>
                       </div>
                     );

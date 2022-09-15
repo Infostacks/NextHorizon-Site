@@ -31,7 +31,7 @@ const index = ({selectedCategory}) => {
       </div> */}
 
       {/*   */}
-      {/* <div className="rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 bg-rose-100 text-rose-500">
+      {/* <div className="rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 bg-rose-100 text-[#D90429]">
         <Categories
           categories={categories}
           filterItems={filterItems}

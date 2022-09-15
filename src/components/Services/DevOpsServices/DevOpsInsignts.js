@@ -24,16 +24,16 @@ const DevOpsInsignts = () => {
               <div className="flex flex-col p-5 justify-around gap-5">
                 {/* breadcrumbs */}
                 <div className="flex flex-row gap-2 text-sm">
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-rose-800">
+                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
                     Blog
                   </span>
                   <span>➙</span>
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-rose-800">
+                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
                     <Link to="">{insight.category}</Link>
                   </span>
                 </div>
 
-                <span className="text-xl font-semibold font-serif antialiased hover:text-rose-700 hover:cursor-pointer">
+                <span className="text-xl font-semibold font-serif antialiased hover:text-[#D90429] hover:cursor-pointer">
                   <Link to={`/blogs/${insight.id}`}>{insight.title}</Link>
                 </span>
                 <div className="flex flex-row justify-between text-sm">

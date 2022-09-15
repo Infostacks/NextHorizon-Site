@@ -13,10 +13,10 @@ const Categories = ({ categories, filterItems, currentCategory }) => {
             className={`font-semibold tracking-wide drop-shadow-md text-md capitalize py-2 px-5 
               ${
                 currentCategory === category
-                  ? "bg-rose-700 text-white rounded-lg drop-shadow-md"
-                  : "active:text-white active:bg-rose-900"
+                  ? "bg-[#D90429] text-white rounded-lg drop-shadow-md"
+                  : "active:text-white active:bg-[#D90429]"
               }
-              hover:bg-rose-700 hover:text-white hover:rounded-lg`}
+              hover:bg-[#D90429] hover:text-white hover:rounded-lg`}
             key={index}
             onClick={() => filterItems(category)}
             // onClick={() => navigate(category)}

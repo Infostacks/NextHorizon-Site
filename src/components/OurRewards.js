@@ -9,12 +9,12 @@ const OurRewards = () => {
         {/* top section  */}
         <div className="flex items-center justify-between xl:flex-row lg:flex-row md:flex-row flex-col gap-5 mx-10">
           {/* Text intro  */}
-          <div className="flex flex-col justify-start items-start xl:w-1/2 lg:w-1/2 md:w-1/2 w-full xl:h-full lg:h-full md:h-full h-fit">
+          <div className="flex flex-col justify-start items-start">
             <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
               Our awards
             </h2>
 
-            <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl">
+            <p className="mt-4 xl:text-3xl lg:text-3xl text-xl">
               Leading rating & review platforms rank Cleveroad among top
               software development companies due to our tech assistance in
               clients' digital transformation.

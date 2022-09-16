@@ -1,11 +1,11 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import { blogs } from "../../utils/data";
 
-import Menu from "./Menu";
 import Categories from "./Categories";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const allCategories = ["latest", ...new Set(blogs.map((item) => item.category))];
 

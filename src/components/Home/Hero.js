@@ -4,13 +4,14 @@ import React from "react";
 import homeBG from "../../images/template3.jpg";
 // import heroFinal from "../../images/heroFinal.png";
 import { useGlobalContext } from "../../context";
+import "./home.css";
 
 const Hero = () => {
   // const [animationData, setAnimationData] = useState(null);
 
   const { closeSubmenu } = useGlobalContext();
   return (
-    <div className="w-screen overflow-x-hidden bg-slate-100">
+    <div className="w-screen overflow-hidden bg-slate-100">
       <img
         src={homeBG}
         alt="homeBG"
@@ -22,11 +23,11 @@ const Hero = () => {
       >
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col-reverse xl:gap-0 lg:gap-0 gap-10 justify-center items-center h-screen w-11/12">
           {/* right  */}
-          <article className="flex flex-col justify-center xl:w-1/2 lg:w-1/2 md:w-1/2 w-full gap-5">
-            <h1 className="xl:text-[7rem] lg:text-7xl md:text-6xl text-3xl font-bold z-10">
+          <article className="flex flex-col justify-center xl:w-2/3 lg:w-1/2 md:w-1/2 w-full gap-5">
+            <h1 className="heroTextHeading z-10">
               Doing More for Your Technical Success
             </h1>
-            <p className="z-10 xl:text-3xl lg:text-2xl text-xl">
+            <p className="z-10 heroTextSubHeading">
               We‘re providing services to web and mobile application developers
               who are courageous to promote software solutions and lead towards
               the utmost growth of business demands to satisfy customer demands.

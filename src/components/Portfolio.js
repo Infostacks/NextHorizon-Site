@@ -1,16 +1,9 @@
 import React from "react";
 import { portfolio } from "../utils/data.js";
-import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
-    <motion.section
-      className="bg-slate-100 flex flex-col items-center justify-center py-10 overflow-x-hidden w-screen"
-      initial={{ widows: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ width: "100%" }}
-      transition={{ duration: 1.4 }}
-    >
+    <section className="bg-slate-100 flex flex-col items-center justify-center py-10 overflow-x-hidden w-full">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
@@ -23,7 +16,7 @@ const Portfolio = () => {
         </div>
 
         {/* case Studies  */}
-        <div className="flex flex-col items-center gap-20 mt-16">
+        <div className="max-w-screen-lg flex flex-col items-center gap-20 mt-16">
           {portfolio.map((caseStudy, index) => {
             return (
               <div
@@ -101,7 +94,7 @@ const Portfolio = () => {
       <button className="hover:bg-[#08080cff] text-[#252627] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit">
         Show more
       </button>
-    </motion.section>
+    </section>
   );
 };
 

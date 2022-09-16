@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-// import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { careerOpportunities } from "../../utils/data.js";
 import { Link } from "react-router-dom";
 

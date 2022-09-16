@@ -6,8 +6,10 @@ import { NavLink } from "react-router-dom";
 import "../../App.css";
 import "./Navbar.css";
 
-import MainLogowhite1 from "../../images/logo/Nhw1.png";
-import MainLogowhite2 from "../../images/logo/Nhw2.png";
+// import MainLogowhite1 from "../../images/logo/Nhw1.png";
+// import MainLogowhite1 from "../../images/logo/Nhw1.png";
+import MainLogowhite1 from "../../images/logo/Nhw3.png";
+import MainLogowhite2 from "../../images/logo/Nhw4.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,9 +67,7 @@ const Header = () => {
                   <span className={`text-sm font-medium`}>
                     <NavLink
                       to="/"
-                      className={`tracking-widest ${
-                        "active" ? "" : "navlinkUnderline"
-                      } `}
+                      className={`tracking-widest navlinkUnderline`}
                     >
                       Home
                     </NavLink>

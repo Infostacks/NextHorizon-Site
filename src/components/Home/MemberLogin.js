@@ -4,7 +4,7 @@ const MemberLogin = () => {
   return (
     <section
       id="login"
-      className="bg-gray-300 py-32 mt- w-full overflow-x-hidden"
+      className="bg-white py-32 mt- w-full overflow-x-hidden"
     >
       <div className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto text-center flex xl:flex-row lg:flex-row flex-col gap-10 mb-10">

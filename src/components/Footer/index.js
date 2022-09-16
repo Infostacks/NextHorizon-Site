@@ -5,9 +5,11 @@ import { GrFacebookOption, GrTwitter } from "react-icons/gr";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { ourServices, Expertise, Insights, offices } from "../utils/data";
+import { ourServices, Expertise, Insights, offices } from "../../utils/data";
 import ScrollToTop from "react-scroll-to-top";
 import { Link } from "react-router-dom";
+import './Footer.css';
+import MainLogowhite3 from "../../images/logo/Nhw4.png";
 
 const Footer = () => {
   const { inView } = useInView({
@@ -40,12 +42,12 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-col justify-center xl:px-[20rem] lg:px-14 md:px-8 px-5 py-20 gap-5 w-full bg-[#1B2B36] bg-opacity-95">
+      <div className="footerXMargin flex flex-col justify-center gap-5 w-full bg-[#1B2B36] bg-opacity-95">
         {/* adress details  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between w-full items-center">
           <img
-            className="h-8"
-            src="https://www.nhitechsolutions.com/assets/img/finalumar.png"
+            className="h-12"
+            src={MainLogowhite3}
             alt="Workflow"
           />
           <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5">

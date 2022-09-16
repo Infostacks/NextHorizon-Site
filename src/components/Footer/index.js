@@ -5,9 +5,11 @@ import { GrFacebookOption, GrTwitter } from "react-icons/gr";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { ourServices, Expertise, Insights, offices } from "../utils/data";
+import { ourServices, Expertise, Insights, offices } from "../../utils/data";
 import ScrollToTop from "react-scroll-to-top";
 import { Link } from "react-router-dom";
+import "./Footer.css";
+import MainLogowhite3 from "../../images/logo/Nhw4.png";
 
 const Footer = () => {
   const { inView } = useInView({
@@ -33,21 +35,13 @@ const Footer = () => {
   return (
     <div className="footerPattern w-full overflow-x-hidden">
       <div className="z-50">
-        <ScrollToTop
-          smooth
-          viewBox="0 0 24 24"
-          svgPath="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21"
-        />
+        <ScrollToTop smooth color="#D90429" />
       </div>
 
-      <div className="flex flex-col justify-center xl:px-[20rem] lg:px-14 md:px-8 px-5 py-20 gap-5 w-full bg-[#1B2B36] bg-opacity-95">
+      <div className="footerXMargin flex flex-col justify-center gap-5 w-full bg-[#1B2B36] bg-opacity-95">
         {/* adress details  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between w-full items-center">
-          <img
-            className="h-8"
-            src="https://www.nhitechsolutions.com/assets/img/finalumar.png"
-            alt="Workflow"
-          />
+          <img className="h-12" src={MainLogowhite3} alt="Workflow" />
           <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5">
             <div className="flex flex-row gap-3 items-center">
               <div className="hover:cursor-pointer text-4xl xl:text-slate-300 lg:text-slate-100 md:text-slate-150 text-[#D90429] hover:text-[#D90429]">

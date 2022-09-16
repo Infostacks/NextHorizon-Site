@@ -44,7 +44,7 @@ const AndroidDevInsignts = () => {
               <img
                 src={blogData.img}
                 alt={blogData.title}
-                className="imgColorChange object-cover w-full h-[20rem] bg-slate-100 bg-opacity-60 rounded-3xl"
+                className="imgColorChange object-cover h-[14rem] bg-slate-100 bg-opacity-60 rounded-3xl"
               />
             </div>
           );

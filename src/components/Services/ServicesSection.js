@@ -7,7 +7,7 @@ const ServicesSection = () => {
   return (
     <div className="bg-white overflow-x-hidden w-screen">
         <section className="flex flex-col items-center justify-center pb-10 w-full">
-          <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
+          <div className="max-w-screen-lg w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
             {/* top section  */}
             <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full">
               {/* Text intro  */}

@@ -5,7 +5,7 @@ const ModernizationService = () => {
   return (
     <div className="w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
       {/* top section  */}
-      <div className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col gap-5 xl:mx-0 lg:mx-0 mx-10">
+      <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col gap-5 xl:mx-0 lg:mx-0 mx-10">
         {/* Text intro  */}
         <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           App modernization services we provide
@@ -18,7 +18,7 @@ const ModernizationService = () => {
       </div>
 
       {/* categories data */}
-      <div className="flex flex-col justify-center items-center gap-20 max-w-screen-xl w-full">
+      <div className="flex flex-col justify-center items-center gap-20 max-w-screen-lg w-full">
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 w-full flex-wrap">
           {modernizationServicesWeProvide.map((category, index) => {
             return (

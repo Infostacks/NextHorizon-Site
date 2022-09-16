@@ -12,7 +12,7 @@ function createMarkup(faq) {
 
 const FAQsModernization = () => {
   return (
-    <div className="flex flex-col justify-center w-screen items-center xl:px-0 lg:px-0 px-10">
+    <div className="flex flex-col justify-center w-screen items-center pt-10 bg-slate-100 xl:px-0 lg:px-0 px-10">
       <section className="flex flex-col items-center justify-center w-full">
         <div className="max-w-screen-lg w-full flex items-center justify-center flex-col gap-5 py-16">
           {/* top section  */}

@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import OurRewards from "../../components/OurRewards";
 import ClientsSection from "./ClientsSection";
-import TechnicalProcess from "./TechnicalProcess";
+// import TechnicalProcess from "./TechnicalProcess";
 import ClientTestimonial from "../Services/ClientTestimonial";
 // import Team from "./Team";
 import ContactUs from "../../ContactUs";

@@ -3,9 +3,9 @@ import { reliableDevOpsSevices } from "../../../utils/data.js";
 
 const ReliableDevOpsSevices = () => {
   return (
-    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center pt-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center flex-col">
+      <div className="max-w-screen-lg flex items-center flex-col">
         {/* Text intro  */}
         <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold">
           Reliable DevOps services
@@ -19,7 +19,7 @@ const ReliableDevOpsSevices = () => {
       </div>
 
       {/*   */}
-      <div className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col justify-center flex-wrap w-full gap-20">
+      <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col justify-center flex-wrap w-full gap-20">
         {reliableDevOpsSevices.map((service, index) => {
           return (
             <div className="flex flex-col justify-center xl:w-1/3 lg:w-1/3 w-full gap-5" key={index}>

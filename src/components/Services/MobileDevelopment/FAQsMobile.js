@@ -15,7 +15,7 @@ const FAQsMobile = () => {
   return (
     <div className="flex flex-col justify-center w-screen items-center bg-slate-100 xl:px-0 lg:px-0 px-10">
       <section className="flex flex-col items-center justify-center w-full">
-        <div className="max-w-screen-lg w-full flex items-center justify-center flex-col py-16 xl:gap-20 lg:gap-14 gap-10">
+        <div className="max-w-screen-lg w-full flex items-center justify-center flex-col pt-16 xl:gap-20 lg:gap-14 gap-10">
           {/* top section  */}
           <div className="flex flex-col items-center">
             {/* Text intro  */}

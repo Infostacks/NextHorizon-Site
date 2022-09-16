@@ -48,20 +48,20 @@ const Header = () => {
         navbar ? "bg-[#D90429] bg-opacity-90 drop-shadow-md" : "bg-slate-900"
       } z-[1200px] text-slate-50`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex justify-between items-center w-full">
+      <div className="max-w-7xl flex justify-center mx-auto">
+        <div className="flex items-center justify-between h-16 w-full px-10 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center w-full max-w-6xl">
             <div className="flex-shrink-0">
               <NavLink to="/">
                 <img
-                  className="h-14"
+                  className="xl:h-14 lg:h-14 h-10"
                   src={`${navbar ? MainLogowhite1 : MainLogowhite2}`}
                   alt="Workflow"
                 />
               </NavLink>
             </div>
 
-            <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-row justify-center items-end">
               <div className="hidden lg:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <span className={`text-sm font-medium`}>

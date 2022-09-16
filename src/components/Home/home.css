@@ -1,0 +1,40 @@
+.heroTextHeading {
+  font-size: 7rem;
+  font-weight: bolder;
+  line-height: 01;
+}
+
+.heroTextSubHeading {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1300px) {
+  .heroTextHeading {
+    font-size: 4rem;
+  }
+  .heroTextSubHeading {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heroTextHeading {
+    font-size: 3rem;
+  }
+  .heroTextSubHeading {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .heroTextHeading {
+      font-size: 1.8rem;
+    }
+    .heroTextSubHeading {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+  }

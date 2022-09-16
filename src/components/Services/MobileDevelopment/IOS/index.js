@@ -112,8 +112,8 @@ const index = () => {
       <OurRewards />
 
       {/* Text div */}
-      <div className="max-w-screen-xl font-bold p-10">
-        <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl">
+      <div className="w-full pt-16 flex justify-center font-bold bg-slate-100">
+        <h1 className="max-w-screen-lg xl:text-6xl lg:text-6xl md:text-3xl text-3xl">
           Learn about Cleveroad’s expertise. Our projects' details.{" "}
           <Link to="/portfolio" className="text-red-500">
             Show more

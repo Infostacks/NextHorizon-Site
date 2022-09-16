@@ -5,7 +5,7 @@ const SDLC = () => {
   return (
     <div className="flex flex-col justify-center w-screen items-center">
       <section className="flex flex-col items-center justify-center w-full">
-        <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col xl:p-16 lg:p-16 p-8">
+        <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col xl:p-20 lg:p-20 p-8">
           {/* top section  */}
           <div className="flex flex-col items-center">
             {/* Text intro  */}
@@ -58,7 +58,7 @@ const SDLC = () => {
                         <span className="text-2xl font-bold text-gray-900">
                           {process.title}
                         </span>
-                        <span className="xl:text-lg lg:text-lg text-base text-gray-700 text-justify">
+                        <span className="xl:text-base lg:text-lg text-base text-gray-700 text-justify">
                           {process.desc}
                         </span>
                       </div>

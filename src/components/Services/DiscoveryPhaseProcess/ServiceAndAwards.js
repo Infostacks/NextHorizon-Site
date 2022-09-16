@@ -3,7 +3,7 @@ import { discoveryPhaseProcess } from "../../../utils/data.js";
 
 const ServiceAndAwards = () => {
   return (
-    <div className="flex xl:flex-row lg:flex-row flex-col justify-between gap-5 max-w-screen-lg my-5 xl:px-0 lg:px-0 px-10">
+    <div className="flex xl:flex-row lg:flex-row flex-col justify-between gap-5 max-w-screen-lg my-10 xl:px-0 lg:px-0 px-10">
       <div className="flex flex-col xl:text-xl lg:text-xl text-base text-justify gap-5 xl:w-1/2 lg:w-1/2 w-full">
         <span>
           The Discovery phase is a process that takes place before kicking off

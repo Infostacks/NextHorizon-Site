@@ -4,8 +4,8 @@ import { caseStudies } from "../utils/data.js";
 
 const CaseStudies = () => {
   return (
-    <section className="bg-slate-100 overflow-x-hidden w-full flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10">
-      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
+    <section className="bg-slate-100 overflow-x-hidden w-screen flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10">
+      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
           {/* Text intro  */}
@@ -17,7 +17,7 @@ const CaseStudies = () => {
         </div>
 
         {/* case Studies  */}
-        <div className="flex flex-col items-center gap-20 mt-16">
+        <div className="max-w-screen-lg flex flex-col items-center gap-20 mt-16 xl:px-0 lg:px-0 px-10">
           {caseStudies.map((caseStudy, index) => {
             return (
               <div
@@ -29,7 +29,7 @@ const CaseStudies = () => {
                 } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl`}
               >
                 {/* image data  */}
-                <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
+                <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-full xl:h-full lg:h-full md:h-full h-1/2 px-5">
                   <img
                     src={caseStudy.img}
                     alt={caseStudy.title}
@@ -38,7 +38,7 @@ const CaseStudies = () => {
                 </div>
 
                 {/* info data  */}
-                <div className="flex flex-col gap-5 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
+                <div className="flex flex-col gap-5 xl:w-[45%] lg:w-1/2 md:w-1/2 w-full xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
                   <div className="flex flex-row justify-between w-full">
                     <div>
                       <img

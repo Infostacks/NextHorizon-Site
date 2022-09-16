@@ -6,9 +6,9 @@ const DiscoveryPhaseIncludes = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="xl:h-[50rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center">
+    <div className="xl:h-[55rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center">
       {/* top section  */}
-      <div className="bg-black text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10">
+      <div className="bg-black text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full py-10">
         {/* Text intro  */}
         <div className="flex gap-5  flex-col xl:w-4/6 lg:w-4/6 w-5/6">
           <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold flex flex-wrap tracking-tight">
@@ -20,12 +20,12 @@ const DiscoveryPhaseIncludes = () => {
             technical basis and UX design following your needs, and provide an
             accurate project time and cost estimation in the end.
           </div>
-          <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-4 grid-cols-1 xl:gap-10 lg:gap-10 gap-0">
+          <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-4 grid-cols-1 gap-0">
             {discoveryPhaseIncludes.map((phase, index) => {
               return (
                 <button key={index}>
                   <div
-                    className={`flex flex-row items-center text-[#D90429] gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
+                    className={`flex flex-row items-center text-[#D90429] gap-4 font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
                       count === index && "active-btn"
                     }`}`}
                     onClick={() => setCount(index)}
@@ -46,9 +46,9 @@ const DiscoveryPhaseIncludes = () => {
         </div>
       </div>
 
-      <div className="flex flex-col xl:gap-10 lg:gap-10 gap-2 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10">
+      <div className="flex flex-col xl:gap-10 lg:gap-10 gap-2 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center py-10">
         {/* Show Data  */}
-        <div className="flex flex-col text-xl font-serif xl:gap-5 lg:gap-5 gap-2 xl:w-1/2 lg:w-1/2 w-full">
+        <div className="flex flex-col text-xl font-serif xl:gap-5 lg:gap-5 gap-2 xl:w-2/3 lg:w-2/3 w-full">
           <span className="text-4xl font-bold">
             {discoveryPhaseIncludes[count].category}
           </span>

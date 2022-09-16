@@ -4,9 +4,9 @@ import { modernizationChallenges } from "../../../utils/data.js";
 
 const ModernizationChallenges = () => {
   return (
-    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
+    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center pt-20 overflow-x-hidden">
       {/* top section  */}
-      <div className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col gap-5 xl:mx-0 lg:mx-0 mx-10">
+      <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col gap-5 xl:mx-0 lg:mx-0 mx-10">
         {/* Text intro  */}
         <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           App modernization challenges

@@ -7,7 +7,7 @@ const IndustryExperts = () => {
   return (
     <div className="bg-slate-100 h-full w-screen flex flex-col justify-center items-center gap-10 py-20">
       <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold px-5">Our industry expertise</span>
-      <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center gap-5 max-w-screen-xl w-full">
+      <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center gap-5 max-w-screen-lg w-full">
         <div className="flex flex-col xl:w-3/12 lg:w-3/12 md:w-3/12 w-8/12 xl:gap-5 lg:gap-5 gap-0 flex-wrap justify-center">
           {industryExperts.map((category, index) => {
             return (

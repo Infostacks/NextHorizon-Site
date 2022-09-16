@@ -16,7 +16,7 @@ const TechnologyStack = () => {
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row flex-col items-center">
             {/* Text intro  */}
-            <div className="flex flex-col justify-center items-center w-full gap-10">
+            <div className="flex flex-col justify-center items-center w-full gap-10 xl:px-0 lg:px-0 px-10">
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Technology Stack
               </h2>
@@ -86,7 +86,7 @@ const TechnologyStack = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col w-screen justify-center items-center gap-10">
               {viewDetail ? (
                 <div className="flex flex-col gap-10">
                   <WebAppsTech />

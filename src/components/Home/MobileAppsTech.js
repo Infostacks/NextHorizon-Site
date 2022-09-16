@@ -6,11 +6,11 @@ const MobileAppsTech = () => {
   const [count, setCount] = useState(0);
   const [toolData, setToolData] = useState(0);
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 xl:px-0 lg:px-0 px-5">
       <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
         Web Technologies
       </h2>
-      <div className="flex flex-col justify-center items-center gap-5 max-w-screen-xl w-full drop-shadow-md">
+      <div className="flex flex-col justify-center items-center gap-5 max-w-screen-lg w-full drop-shadow-md">
         <div className="flex flex-row w-full flex-wrap">
           {mobileTechstack.map((category, index) => {
             return (
@@ -32,7 +32,7 @@ const MobileAppsTech = () => {
         </div>
 
         {/* Show Tool Data  */}
-        <div className="flex flex-col justify-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-xl w-full bg-slate-200 xl:p-20 lg:p-14 p-5 rounded-[3rem] drop-shadow-md">
+        <div className="flex flex-col justify-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-lg w-full bg-slate-200 xl:p-20 lg:p-14 p-5 rounded-[3rem] drop-shadow-md">
           <div className="flex xl:flex-row lg:flex-row flex-col w-full flex-wrap">
             {mobileTechstack[count].techData.map((data, index) => {
               return (

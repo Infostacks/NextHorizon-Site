@@ -4,11 +4,11 @@ import { flutterProjectsCompanies } from "../../../../utils/data.js";
 const FlutterProjectsCompanies = () => {
   return (
     <div className="bg-slate-300 w-screen flex justify-center xl:px-0 lg:px-0 px-10">
-      <section className="max-w-screen-xl text-[#D90429] flex xl:flex-row lg:flex-row flex-col gap-10 items-center py-20 overflow-x-hidden">
+      <section className="max-w-screen-lg text-[#D90429] flex xl:flex-row lg:flex-row flex-col gap-10 items-center py-20 overflow-x-hidden">
         {/* top section  */}
         <div className="flex items-center flex-col">
           {/* Text intro  */}
-          <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+          <span className="xl:text-6xl lg:text-6xl md:text-4xl text-3xl font-bold tracking-tight">
             Popular projects built with Flutter
           </span>
 

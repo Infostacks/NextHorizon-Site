@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ServiceAndAwards from "./ServiceAndAwards";
 import FAQsQA from "./FAQsQA";
 import WhatWeTest from "./WhatWeTest";
-import UXUIDesignInsignts from "./QAInsignts";
+import QATestingInsignts from "./QAInsignts";
 import TypesOfTesting from "./TypesOfTesting";
 import TestingProcess from "./TestingProcess";
 import AutomationTesting from "./AutomationTesting";
@@ -84,7 +84,7 @@ const index = () => {
       {/* Faqs QA */}
       <FAQsQA />
 
-      <UXUIDesignInsignts />
+      <QATestingInsignts />
     </div>
   );
 };

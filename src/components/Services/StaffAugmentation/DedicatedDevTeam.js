@@ -3,11 +3,11 @@ import { dedicatedDevTeam } from "../../../utils/data.js";
 
 const DedicatedDevTeam = () => {
   return (
-    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center justify-center pb-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center justify-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-md text-center flex items-center xl:px-10 flex-col gap-5">
         {/* Text intro  */}
-        <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+        <h1 className="xl:text-6xl lg:text-6xl md:text-4xl text-3xl font-bold tracking-tight">
           Dedicated development team is a good choice to
         </h1>
       </div>

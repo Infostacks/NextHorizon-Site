@@ -7,7 +7,7 @@ const DiscoveryinSDLC = () => {
   return (
     <section className="bg-white w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center xl:flex-row lg:flex-row flex-col gap-20 px-10">
+      <div className="max-w-screen-lg flex items-center xl:flex-row lg:flex-row flex-col gap-20 px-10">
         {/* Text intro  */}
         <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Place of Discovery in SDLC
@@ -24,7 +24,7 @@ const DiscoveryinSDLC = () => {
 
       {/*   */}
       <div
-        className={`max-w-screen-xl flex flex-col justify-center items-center w-full gap-10 mx-10`}
+        className={`max-w-screen-lg flex flex-col justify-center items-center w-full gap-10 mx-10`}
       >
         <img src={BgXl} alt=""  className="hidden xl:block lg:block" />
         <img src={BgMd} alt="" className="md:block xl:hidden lg:hidden sm:hidden hidden"  />

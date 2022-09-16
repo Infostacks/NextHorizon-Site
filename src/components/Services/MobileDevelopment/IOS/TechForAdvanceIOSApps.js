@@ -5,9 +5,9 @@ const TechForAdvanceIOSApps = () => {
   return (
     <section className="bg-[#08080cff] text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center flex-col">
+      <div className="max-w-screen-lg flex gap-5 items-center flex-col">
         {/* Text intro  */}
-        <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+        <span className="xl:text-6xl lg:text-6xl md:text-4xl text-3xl font-bold tracking-tight">
           Technologies for advanced iOS apps
         </span>
 
@@ -18,7 +18,7 @@ const TechForAdvanceIOSApps = () => {
       </div>
 
       {/*   */}
-      <div className="max-w-screen-xl flex flex-row justify-center flex-wrap w-full xl:gap-20 lg:gap-14 gap-10 mx-10">
+      <div className="max-w-screen-lg flex flex-row justify-center flex-wrap w-full xl:gap-20 lg:gap-14 gap-10 mx-10">
         {techForAdvanceIOSApps.map((service, index) => {
           return (
             <div

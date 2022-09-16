@@ -6,8 +6,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
-      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
+    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center w-screen xl:px-0 lg:px-0 px-10">
+      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col pt-16">
         {/* top section  */}
         <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col xl:gap-10 lg:gap-10 gap-2 items-center">
           {/* Text intro  */}

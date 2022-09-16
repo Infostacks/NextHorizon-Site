@@ -5,7 +5,7 @@ const CTOHelpBusiness = () => {
   return (
     <section className="bg-[#08080cff] text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col gap-10 items-center">
+      <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col gap-10 items-center">
         {/* Text intro  */}
         <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           How can CTOs help your business?

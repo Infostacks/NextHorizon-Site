@@ -24,7 +24,7 @@ const FAQsDedicatedDevTeams = () => {
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Questions you might have
               </h2>
-              <p>Discover dedicated development team basics.</p>
+              <p className="text-xl">Discover dedicated development team basics.</p>
             </div>
           </div>
 

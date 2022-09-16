@@ -126,9 +126,9 @@ const index = () => {
       {/* TechStackAndroidApps */}
       <TechStackAndroid />
 
-      <Certifications />
-
       <ClientTestimonial />
+
+      <Certifications />
 
       {/* FAQsAndroid */}
       <FAQsAndroid />

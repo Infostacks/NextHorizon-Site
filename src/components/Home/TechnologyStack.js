@@ -11,8 +11,8 @@ const TechnologyStack = () => {
 
   return (
     <div className="w-full overflow-x-hidden bg-slate-100 flex flex-col justify-center items-center">
-      <section className="flex flex-col items-center justify-center xl:py-20 lg:py-14 py-10">
-        <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24 gap-10">
+      <section className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10">
+        <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 gap-10">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row flex-col items-center">
             {/* Text intro  */}

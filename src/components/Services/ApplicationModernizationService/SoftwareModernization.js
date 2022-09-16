@@ -6,7 +6,7 @@ const SoftwareModernization = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="xl:h-[50rem] lg:h-[50rem] w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center my-10">
+    <div className="xl:h-[50rem] lg:h-[50rem] w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center bg-slate-100 pt-20">
       {/* top section  */}
       <div className="bg-black text-white xl:w-1/2 lg:w-1/2 w-full flex xl:items-end lg:items-end items-center justify-center flex-col h-full">
         {/* Text intro  */}

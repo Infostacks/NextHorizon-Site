@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { industries } from "../../utils/data.js";
 
 const Industries = () => {
-  const [showMore, setShowMore] = useState(false);
-
-  const truncate = (str, n) => {
-    return str?.length > n ? str.substr(0, n - 1) + {} : str;
-  };
-
   return (
     <div className="overflow-x-hidden bg-slate-100 w-full">
       <section className="flex flex-col items-center justify-center pt-20">

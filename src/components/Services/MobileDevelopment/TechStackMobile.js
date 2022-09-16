@@ -7,17 +7,17 @@ const TechStackMobile = () => {
   const [toolData, setToolData] = useState(0);
 
   return (
-    <div className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <div className="bg-slate-100 w-screen flex flex-col gap-10 items-center pt-20 pb-3 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
+      <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
-        <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+        <h2 className="max-w-2xl xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold text-center tracking-tight">
           Tech stack for custom mobile apps
         </h2>
       </div>
 
       {/* categories data */}
-      <div className="flex flex-col justify-center items-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-xl w-full drop-shadow-md">
+      <div className="flex flex-col justify-center items-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-lg w-full drop-shadow-md">
         <div className="flex flex-row w-full flex-wrap">
           {mobileTechstack.map((category, index) => {
             return (

@@ -3,7 +3,7 @@ import { achieveBusinessGoals } from "../../../utils/data.js";
 
 const AchieveGoalsWithCTO = () => {
   return (
-    <div className="w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <div className="w-screen flex flex-col gap-10 items-center pt-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
@@ -13,7 +13,7 @@ const AchieveGoalsWithCTO = () => {
       </div>
 
       {/* categories data */}
-      <div className="flex flex-col justify-center items-center max-w-screen-xl w-full">
+      <div className="flex flex-col justify-center items-center max-w-screen-lg w-full">
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 xl:gap-10 lg:gap-10 gap-4 w-full flex-wrap">
           {achieveBusinessGoals.map((category, index) => {
             return (

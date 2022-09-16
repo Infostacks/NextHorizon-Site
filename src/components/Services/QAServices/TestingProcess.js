@@ -49,7 +49,7 @@ const TestingProcess = () => {
 
       <div className="flex flex-col gap-10 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10">
         {/* Show Data  */}
-        <div className="flex flex-col text-xl font-serif gap-5 xl:w-1/2 lg:w-1/2 w-full">
+        <div className="flex flex-col text-xl font-serif gap-5 xl:w-2/3 lg:w-2/3 w-full">
           <span className="text-4xl font-bold">
             {testingProcess[count].title}
           </span>

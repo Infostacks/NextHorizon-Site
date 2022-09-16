@@ -4,7 +4,7 @@ import { benefitsCtoAsAService } from "../../../utils/data.js";
 
 const BenefitsOfCTOAsAService = () => {
   return (
-    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center pt-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col gap-10 items-center">
         {/* Text intro  */}

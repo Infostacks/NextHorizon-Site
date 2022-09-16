@@ -13,8 +13,8 @@ function createMarkup(faq) {
 
 const FlutterExperience = () => {
   return (
-    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
-      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:px-6 lg:px-2 sm:py-24">
+    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center w-screen xl:px-0 lg:px-0 px-10">
+      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col pt-10 pb-3 z-0">
         {/* top section  */}
         <div className="max-w-screen-lg flex items-center xl:flex-row lg:flex-row flex-col">
           {/* Text intro  */}

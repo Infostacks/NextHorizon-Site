@@ -3,7 +3,7 @@ import { certifications } from "../../utils/data.js";
 
 const Certifications = () => {
   return (
-    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center justify-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center justify-center pt-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-xl flex items-center xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-5">
         {/* Text intro  */}
@@ -18,14 +18,14 @@ const Certifications = () => {
       </div>
 
       {/* awards  */}
-      <div className="max-w-screen-lg flex flex-row flex-wrap justify-center w-full gap-5">
+      <div className="max-w-screen-lg grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full gap-10">
         {certifications.map((reward, index) => {
           return (
             <div key={index} className="flex flex-col items-center gap-4">
               <img
                 src={reward.img}
                 alt={reward.title}
-                className="imgColorChange object-cover w-52 h-52 bg-zinc-100 p-8 rounded-[3rem] shadow-xl"
+                className="imgColorChange object-cover w-60 h-60 bg-zinc-100 p-6 rounded-[3rem] shadow-xl"
               />
 
               <span className="text-lg font-bold text-gray-700">

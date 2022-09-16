@@ -5,7 +5,7 @@ const PartnersAndClients = () => {
   return (
     <div className="overflow-x-hidden flex flex-col justify-start items-center bg-slate-200 w-screen xl:px-0 lg:px-0 px-10">
       <section className="flex flex-col items-center justify-start w-full">
-        <div className="max-w-screen-xl w-full flex gap-5 items-center justify-start flex-col py-16">
+        <div className="max-w-screen-lg w-full flex gap-5 items-center justify-start flex-col py-16">
           {/* top section  */}
           <div className="flex flex-col items-center">
             {/* Text intro  */}
@@ -21,7 +21,7 @@ const PartnersAndClients = () => {
           </div>
 
           {/* partners & clients  */}
-          <div className="flex flex-row justify-around items-center max-w-screen-xl  w-screen">
+          <div className="flex flex-row justify-around items-center max-w-screen-lg  w-screen">
             <div className="flex flex-col gap-5 justify-center items-center">
               {/* slide 1 */}
               <div className="flex flex-row items-center justify-center gap-5 flex-wrap">

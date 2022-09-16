@@ -49,8 +49,8 @@ const Header = () => {
       } z-[1200px] text-slate-50`}
     >
       <div className="max-w-7xl flex justify-center mx-auto">
-        <div className="flex items-center justify-between h-16 px-10 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center w-screen max-w-6xl">
+        <div className="flex items-center justify-between h-16 w-full px-10 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center w-full max-w-6xl">
             <div className="flex-shrink-0">
               <NavLink to="/">
                 <img

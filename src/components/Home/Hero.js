@@ -10,7 +10,7 @@ const Hero = () => {
 
   const { closeSubmenu } = useGlobalContext();
   return (
-    <div className="w-full overflow-x-hidden bg-slate-100">
+    <div className="w-screen overflow-x-hidden bg-slate-100">
       <img
         src={homeBG}
         alt="homeBG"
@@ -31,7 +31,7 @@ const Hero = () => {
               who are courageous to promote software solutions and lead towards
               the utmost growth of business demands to satisfy customer demands.
             </p>
-            <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#08080cff] hover:border-[1px] hover:border-[#08080cff] w-fit">
+            <button className="hover:bg-[#08080cff] hover:text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner bg-white text-[#08080cff] w-fit opacity-50 hover:opacity-100 transition-opacity duration-1000">
               Connect with us
             </button>
           </article>

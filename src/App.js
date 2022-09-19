@@ -46,7 +46,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="flex flex-col items-center w-screen scroll-smoot scroll-mx-0">
+    <div className="flex flex-col items-center w-screen scroll-smoot scroll-mx-0 select-none">
       <div className="w-screen fixed top-0 drop-shadow-lg z-50">
         <Header />
       </div>

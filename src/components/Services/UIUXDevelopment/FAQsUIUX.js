@@ -1,8 +1,6 @@
 import React from "react";
 import { faqsUIUX } from "../../../utils/data.js";
 
-import "./listStyle.css";
-
 const Answer = (faq) => {
   console.log(faq.faq);
   return <div dangerouslySetInnerHTML={createMarkup(faq.faq)}></div>;

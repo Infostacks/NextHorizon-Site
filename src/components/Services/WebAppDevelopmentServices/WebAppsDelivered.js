@@ -7,17 +7,14 @@ const WebAppsDelivered = () => {
     <section className="bg-slate-100 flex flex-col items-center justify-center pb-10 overflow-x-hidden w-screen">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
         {/* top section  */}
-        <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
-          {/* Text intro  */}
-          <div className="flex flex-col justify-center items-center w-full">
-            <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
-              Our Portfolio
-            </h2>
-          </div>
+        <div className="max-w-screen-lg text-center">
+          <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+            Web applications we've delivered for our clients
+          </h2>
         </div>
 
         {/* case Studies  */}
-        <div className="flex flex-col items-center w-full gap-20 mt-16">
+        <div className="flex flex-col items-center max-w-screen-lg w-full gap-20 mt-16">
           {webAppsDelivered.map((webapp, index) => {
             return (
               <div

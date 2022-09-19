@@ -28,7 +28,7 @@ const ClientTestimonial = () => {
         >
           {clientsTestimonials.map((member, index) => {
             return (
-              <div key={index} className={`w-full h-full flex flex-col justify-center items-center`}>
+              <div key={index} className={`w-full h-full flex flex-col justify-center items-center hover:cursor-grab`}>
                 {/* info data  */}
                 <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between gap-5 mb-3">
                   <div className="flex flex-row flex-wrap xl:px-2 lg:px-2 md:px-5 px-20 justify-center">

@@ -1,26 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { industries } from "../../utils/data.js";
 
 const Industries = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const leftAnimation = useAnimation();
+  const rightAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      leftAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+
+      rightAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+    }
+
+    if (!inView) {
+      leftAnimation.start({ x: "-5vw", opacity: 0 });
+      rightAnimation.start({ x: "5vw", opacity: 0 });
+    }
+  }, [inView, leftAnimation, rightAnimation]);
   return (
     <div className="overflow-x-hidden bg-slate-100 w-full">
-      <section className="flex flex-col items-center justify-center pt-20 pb-2">
+      <section ref={ref} className="flex flex-col items-center justify-center pt-20 pb-2">
         <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 mx-10">
             {/* Text intro  */}
             <div className="flex flex-col justify-center items-center gap-5 w-full">
-              <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
+              <motion.h2  animate={leftAnimation} className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
                 A robust payments platform, built with intelligence
-              </h2>
-              <p className="text-xl text-justify">
+              </motion.h2>
+              <motion.p  animate={rightAnimation} className="text-xl text-justify">
                 We’re successful in receiving top worth position to meet
                 benchmark through maintaining a lead in rating, score the first
                 rank in software & IT oriented solutions due to our strong tech
                 assistance to retain benchmark by promoting brand awareness,
                 improving business positioning, and ensure trust and credibility
                 to build long-term relationships with customers.
-              </p>
+              </motion.p>
             </div>
           </div>
 

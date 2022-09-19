@@ -1,17 +1,59 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiEnvelope } from "react-icons/bi";
 import { BiPhoneCall } from "react-icons/bi";
 // import logomN from "./images/logo/logomN.png";
 
 const ContactUs = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const leftAnimation = useAnimation();
+  const rightAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      leftAnimation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 3,
+          type: "spring",
+          bounce: 0.6,
+        },
+      });
+
+      rightAnimation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 3,
+          type: "spring",
+          bounce: 0.6,
+        },
+      });
+    }
+
+    if (!inView) {
+      leftAnimation.start({ y: "-5vw", opacity: 0 });
+      rightAnimation.start({ y: "5vw", opacity: 0 });
+    }
+  }, [inView, leftAnimation, rightAnimation]);
+
   return (
-    <section className="flex items-center justify-center w-full pt-20">
-      {/* Lottie animation code here */}
+    <section
+      ref={ref}
+      className="flex items-center justify-center w-full pt-20"
+    >
       <div className="flex flex-col gap-10 w-full max-w-screen-lg">
         <div className="w-full flex xl:gap-20 lg:gap-14 gap-10 xl:flex-row lg:flex-row flex-col justify-evenly">
           {/* left side  */}
-          <div className="mb-10 flex max-w-sm flex-col gap-3 justify-center items-center w-full bg-[#D90429] rounded-3xl drop-shadow-md shadow-lg z-30">
+          <motion.div
+            animate={rightAnimation}
+            className="mb-10 flex max-w-sm flex-col gap-3 justify-center items-center w-full bg-[#D90429] rounded-3xl drop-shadow-md shadow-lg z-30"
+          >
             <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
               Contact Us
             </h2>
@@ -55,10 +97,13 @@ const ContactUs = () => {
                 <div className="text-base text-slate-50">+1 951 877 4085</div>
               </div>
             </blockquote>
-          </div>
+          </motion.div>
 
           {/* right side  */}
-          <div className="mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 rounded-3xl drop-shadow-md shadow-lg z-30">
+          <motion.div
+            animate={leftAnimation}
+            className="mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 rounded-3xl drop-shadow-md shadow-lg z-30"
+          >
             <blockquote className="flex flex-col gap-5 items-center pb-5 mt-6 w-full text-center">
               <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
                 Get In Touch
@@ -108,7 +153,7 @@ const ContactUs = () => {
                 Send Message
               </button>
             </blockquote>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

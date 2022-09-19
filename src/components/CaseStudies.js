@@ -1,18 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { caseStudies } from "../utils/data.js";
 
 const CaseStudies = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 3,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
-    <section className="bg-slate-100 overflow-x-hidden w-screen flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10">
+    <section
+      ref={ref}
+      className="bg-slate-100 overflow-x-hidden w-screen flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10"
+    >
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
           {/* Text intro  */}
           <div className="flex flex-col justify-center items-center w-full">
-            <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+            <motion.h2
+              animate={fadeInAnimation}
+              className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+            >
               Case Studies
-            </h2>
+            </motion.h2>
           </div>
         </div>
 
@@ -30,7 +59,8 @@ const CaseStudies = () => {
               >
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-full xl:h-full lg:h-full md:h-full h-1/2 px-5">
-                  <img
+                  <motion.img
+                    animate={fadeInAnimation}
                     src={caseStudy.img}
                     alt={caseStudy.title}
                     className="imgColorChange object-cover w-full bg-slate-100 bg-opacity-60 rounded-[1rem] shadow-xl"

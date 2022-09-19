@@ -19,7 +19,7 @@ const OurOffices = () => {
       </div>
 
       {/* awards  */}
-      <div className="max-w-screen-lg flex xl:flex-row lg:flex-row md:flex-row flex-col flex-wrap w-full px-10 gap-10">
+      <div className="max-w-screen-lg grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 w-full px-10 gap-10">
         {offices.map((office, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">

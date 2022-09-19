@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 
 const MemberLogin = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 3,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
     <section
+      ref={ref}
       id="login"
       className="bg-white py-32 mt- w-full overflow-x-hidden"
     >
-      <div className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <motion.div
+        animate={fadeInAnimation}
+        className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8"
+      >
         <div className="max-w-lg mx-auto text-center flex xl:flex-row lg:flex-row flex-col gap-10 mb-10">
           <p className="mt-4 text-gray-600 xl:text-3xl lg:text-3xl text-xl">
             Are you already a member?
@@ -41,7 +68,7 @@ const MemberLogin = () => {
             </div>
           </blockquote>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

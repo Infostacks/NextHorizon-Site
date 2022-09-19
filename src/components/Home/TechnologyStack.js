@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import webTechImg from "../../images/webTechpsd.png";
 import mobTechImg from "../../images/mobTechpsd.png";
 
@@ -7,24 +8,74 @@ import WebAppsTech from "./WebAppsTech";
 import MobileAppsTech from "./MobileAppsTech";
 
 const TechnologyStack = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
   const [viewDetail, setViewDetail] = useState(false);
+  const leftAnimation = useAnimation();
+  const rightAnimation = useAnimation();
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      leftAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+
+      rightAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 3,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      leftAnimation.start({ x: "-5vw", opacity: 0 });
+      rightAnimation.start({ x: "5vw", opacity: 0 });
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, leftAnimation, rightAnimation, fadeInAnimation]);
 
   return (
     <div className="w-full overflow-x-hidden bg-slate-100 flex flex-col justify-center items-center">
-      <section className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10">
+      <section
+        ref={ref}
+        className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10"
+      >
         <div className="max-w-screen-lg w-full flex items-center justify-center flex-col px-4 gap-10">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row flex-col items-center">
             {/* Text intro  */}
             <div className="flex flex-col justify-center items-center w-full gap-10 xl:px-0 lg:px-0 px-10">
-              <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+              <motion.h2
+                animate={rightAnimation}
+                className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+              >
                 Technology Stack
-              </h2>
-              <p className="text-xl max-w-3xl text-center">
+              </motion.h2>
+              <motion.p
+                animate={leftAnimation}
+                className="text-xl max-w-3xl text-center"
+              >
                 The development team working on a project uses only modern and
                 scalable technologies to implement mobile and web applications
                 the way you mean it
-              </p>
+              </motion.p>
             </div>
           </div>
 
@@ -99,7 +150,7 @@ const TechnologyStack = () => {
                 onClick={() => setViewDetail(!viewDetail)}
                 className="bg-[#08080cff] border-[1px] border-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
               >
-                {viewDetail? "Hide" : "View"} Details
+                {viewDetail ? "Hide" : "View"} Details
               </button>
             </div>
           </div>

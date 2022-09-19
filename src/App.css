@@ -74,7 +74,8 @@ li{
 }
 
 .uploadBtn::-webkit-file-upload-button {
-  position: absolute;
+  /* position: absolute; */
+  margin-bottom: 10px;
   padding: 5px 10px;
   background-color: #D90429;
   border: none;

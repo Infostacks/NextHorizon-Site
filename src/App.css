@@ -3,6 +3,11 @@
   max-width: 1300px;
 }
 
+/* for FAQs component list items */
+li{
+  margin-left: 20px;        
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -51,16 +56,6 @@
   width: 200px;
   perspective: 2000px;
 }
-
-/* .sub-menu {
-  position: absolute;
-  top: 30px;
-  padding: 15px;
-  background-color: #ccc;
-  border-radius: 6px;
-
-  transform-origin: 50% -30px;
-} */
 
 .sub-menu-background {
   position: absolute;

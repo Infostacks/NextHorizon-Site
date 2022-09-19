@@ -13,7 +13,7 @@ import { SiHiveBlockchain } from "react-icons/si";
 
 const ServicesMenu = () => {
   return (
-    <div className="absolute top-[2.8rem] xl:right-[15rem] lg:right-[6rem] right-[2rem] gap-5 z-50 bg-slate-100 rounded-3xl drop-shadow-md flex flex-col opacity-70 hover:opacity-100 transition-opacity duration-700">
+    <div className="absolute top-[2.8rem] xl:right-[10rem] lg:right-[6rem] right-[2rem] gap-5 z-50 bg-slate-100 rounded-3xl drop-shadow-md flex flex-col opacity-70 hover:opacity-100 transition-opacity duration-700">
       {/* top links  */}
       <div className="flex flex-row px-10 gap-10 pt-10">
         {/* mobile  */}

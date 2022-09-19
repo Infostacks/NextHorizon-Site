@@ -1,6 +1,5 @@
 import React from "react";
 import { uiuxDesignProcess } from "../../../utils/data.js";
-import "./listStyle.css";
 
 const Answer = (faq) => {
   console.log(faq.faq);

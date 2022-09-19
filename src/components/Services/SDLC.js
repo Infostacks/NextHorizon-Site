@@ -9,16 +9,14 @@ const SDLC = () => {
           {/* top section  */}
           <div className="flex flex-col items-center">
             {/* Text intro  */}
-            <div className="flex flex-col justify-center items-center w-full">
-              <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
-                Our software development flow
-              </h2>
-              <p className="xl:text-xl lg:text-xl text-base">
-                We follow an established software development life cycle (SDLC)
-                to build a cost-effective product that meets your requirements
-                and market demands
-              </p>
-            </div>
+            <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
+              Our software development flow
+            </h2>
+            <p className="xl:text-xl lg:text-xl text-base">
+              We follow an established software development life cycle (SDLC) to
+              build a cost-effective product that meets your requirements and
+              market demands
+            </p>
           </div>
 
           <div className="max-w-screen-lg space-y-4 w-full flex flex-col items-center">

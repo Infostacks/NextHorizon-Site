@@ -83,8 +83,6 @@ const index = () => {
 
       <UXUIDesignProcess />
 
-      {/* Visual and interaction design tools pending */}
-
       {/* Faqs Mobile */}
       <FAQsUIUX />
 

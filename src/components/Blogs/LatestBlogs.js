@@ -24,7 +24,6 @@ const LatestBlogs = ({ selectedCategory }) => {
 
   return (
     <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
-      <div>Latest Blogs</div>
       <div className="">
         <Menu items={menuItems} />
       </div>

@@ -5,7 +5,7 @@ const Categories = ({ categories, filterItems, currentCategory }) => {
   // const navigate = useNavigate();
   console.log(currentCategory);
   return (
-    <div className="flex flex-wrap xl:flex-row lg:flex-row md:flex-row flex-col xl:gap-8 lg:gap-8 md:gap-8 gap-0 p-0 ">
+    <div className="flex flex-wrap xl:flex-row lg:flex-row md:flex-row flex-col gap-2 p-0 ">
       {categories.map((category, index) => {
         return (
           <button

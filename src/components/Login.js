@@ -19,7 +19,9 @@ const Login = () => {
     confirmPassword: "",
   });
 
-  const [logInFormData, setLogInFormData] = useState(_.omit(formData, ["confirmPassword"]));
+  const [logInFormData, setLogInFormData] = useState(
+    _.omit(formData, ["confirmPassword"])
+  );
   const [resetPassFormData, setResetPassFormData] = useState(
     _.omit(formData, ["password", "confirmPassword"])
   );
@@ -58,9 +60,9 @@ const Login = () => {
   const changeAuthCard = () => {
     // show Change Card button text
     if (authType === 1 || authType === 3) {
-      return setAuthType(2);    // if (login/resetPass then change to signup)
+      return setAuthType(2); // if (login/resetPass then change to signup)
     } else {
-      return setAuthType(1); 
+      return setAuthType(1);
     }
   };
 
@@ -136,16 +138,16 @@ const Login = () => {
     if (authType === 1) {
       schemaValidation = signUpSchema;
       cardData = formData;
-    }else if(authType ===2){
+    } else if (authType === 2) {
       schemaValidation = signInSchema;
       cardData = logInFormData;
-      console.log("in validaiton: ", schemaValidation)
-    }else{
+      console.log("in validaiton: ", schemaValidation);
+    } else {
       schemaValidation = resetPassSchema;
       cardData = resetPassFormData;
     }
 
-    console.log("in validaiton: ", authType)
+    console.log("in validaiton: ", authType);
 
     let { error } = Joi.validate(cardData, schemaValidation, options); // error = Joi error object
     if (!error) return null; // if no error, return null
@@ -157,13 +159,13 @@ const Login = () => {
       errors[item.path[0]] = item.message;
     }
     return errors;
-  };;
+  };
 
   const handleSubmit = async () => {
     // Function to handle submit
     setErrors(null);
     let data = validate(); // Validation function call
-    console.log("data: ", data)
+    console.log("data: ", data);
     if (data) {
       // If validation fails
       setErrors(data);
@@ -174,22 +176,21 @@ const Login = () => {
     } else {
       // If validation passes
       try {
-        if (authType===1) {
+        if (authType === 1) {
           if (formData.password !== formData.confirmPassword) {
             setConfirmPassError(true);
           } else {
-            
             console.log("sign up method called");
             // await signUp(formData.email, formData.password);
             alert("Successfully Signed Up. authType Now!");
             setAuthType(2);
             resetForm();
           }
-        } else if(authType === 2) {
-          console.log("sign in method called")
-        //   await signIn(logInFormData.email, logInFormData.password);
-        }else{
-        //   await resetPassword(resetPassFormData.email);
+        } else if (authType === 2) {
+          console.log("sign in method called");
+          //   await signIn(logInFormData.email, logInFormData.password);
+        } else {
+          //   await resetPassword(resetPassFormData.email);
         }
       } catch (err) {
         // If sign in fails
@@ -213,7 +214,6 @@ const Login = () => {
     }
   };
 
-
   const resetForm = () => {
     setConfirmPassError(false);
     setFormData({
@@ -224,18 +224,15 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full h-full overflow-x-hidden">
+    <div className="flex flex-col items-center w-full overflow-x-hidden">
       <section
-        className="flex justify-center flex-col items-center m-0 w-screen h-screen bg-no-repeat bg-cover 
+        className="flex justify-center flex-col items-center w-full h-full bg-no-repeat bg-cover 
         bg-[url('https://images.unsplash.com/photo-1438382458652-54431bf59e01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80')]"
       >
-        <div className="flex justify-center items-center w-screen h-screen bg-opacity-90 bg-slate-700 shadow-lg z-20">
-          <div className="h-3/4 xl:w-3/4 lg:w-3/4 w-5/6 bg-white flex xl:flex-row lg:flex-row md:flex-col flex-col max-w-5xl">
+        <div className="flex justify-center items-center w-full h-full bg-opacity-90 bg-slate-700 shadow-lg pb-10 pt-20">
+          <div className="h-full xl:w-3/4 lg:w-3/4 w-5/6 flex xl:flex-row lg:flex-row md:flex-col flex-col items-center justify-center max-w-5xl">
             {/* Left Side Logo  */}
-            <div
-              className="xl:w-1/3 lg:w-1/3 xl:h-full lg:h-full h-1/3 w-full flex flex-col gap-5 items-center justify-center text-white"
-              style={{ backgroundColor: "#414770" }}
-            >
+            <div className="xl:w-1/3 lg:w-1/3 h-full w-full flex flex-col gap-5 items-center justify-center text-white">
               <motion.span
                 variants={{
                   hidden: {
@@ -271,7 +268,7 @@ const Login = () => {
             </div>
 
             {/* LogIn Card  */}
-            <div className="xl:w-2/3 lg:w-2/3 w-full xl:h-full lg:h-full h-full bg-slate-200 flex justify-center items-center">
+            <div className="xl:w-2/3 lg:w-2/3 w-full h-full flex justify-center items-center py-5">
               <AnimatePresence initial={false}>
                 <motion.div
                   variants={{
@@ -316,9 +313,9 @@ const Login = () => {
                       {/* temp code  */}
                       <div
                         id="SignUp"
-                        className="flex justify-center items-center flex-col xl:bg-white lg:bg-white xl:shadow-lg lg:shadow-lg"
+                        className="flex justify-center items-center flex-col xl:bg-white lg:bg-white xl:shadow-lg lg:shadow-lg xl:rounded-[3rem]"
                       >
-                        <div className="flex items-start p-8 flex-col">
+                        <div className="flex items-start p-5 flex-col">
                           <div className="mt-10 mb-5 flex gap-3 flex-col">
                             <h2 className="text-xs text-slate-400">
                               Welcom to Next Horizon
@@ -351,17 +348,16 @@ const Login = () => {
                             <div className="flex flex-row gap-2 items-center">
                               <button
                                 type="submit"
-                                className={`rounded-sm text-white pl-2 pr-2 pt-1 pb-1 text-sm `}
                                 onClick={handleSubmit}
-                                style={{ backgroundColor: "#5B85AA" }}
+                                className="hover:bg-[#08080cff] text-[#252627] py-1 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit"
                               >
                                 {showSubmitBtnText()}
                               </button>
+                              {/* show more button */}
                               <div>or</div>
 
                               <button
-                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm`}
-                                style={{ color: "#5B85AA" }}
+                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-[#D90429]`}
                                 onClick={() => {
                                   changeAuthCard();
                                   resetForm();
@@ -373,8 +369,7 @@ const Login = () => {
 
                             {authType !== 3 && (
                               <button
-                                className="rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline"
-                                style={{ color: "#5B85AA" }}
+                                className="rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-[#D90429]"
                                 onClick={() => setAuthType(3)}
                               >
                                 Forgot password?

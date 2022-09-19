@@ -84,7 +84,7 @@ const index = () => {
       <WebDevProcess />
 
       {/* Text div */}
-      <div className="max-w-screen-xl font-bold p-10">
+      <div className="max-w-screen-lg font-bold p-10">
         <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl">
           Learn about Next Horizon’s expertise. Our projects' details.{" "}
           <Link to="/portfolio" className="text-red-500">

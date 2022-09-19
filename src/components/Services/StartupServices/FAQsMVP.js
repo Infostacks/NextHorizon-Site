@@ -41,7 +41,7 @@ const FAQsMVP = () => {
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">
-                    <h5 className="text-lg font-medium text-gray-900">
+                    <h5 className="text-lg font-semibold text-gray-900">
                       {faq.question}
                     </h5>
 

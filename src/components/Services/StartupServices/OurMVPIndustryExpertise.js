@@ -10,7 +10,7 @@ const OurMVPIndustryExpertise = () => {
       {/* top section  */}
       <div className="bg-black text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10">
         {/* Text intro  */}
-        <div className="flex gap-5 flex-col xl:w-4/6 lg:w-4/6 w-5/6">
+        <div className="flex gap-5 flex-col xl:w-1/2 lg:w-1/2 w-full">
           <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold flex flex-wrap tracking-tight">
             Our industry expertise
           </h2>
@@ -32,7 +32,7 @@ const OurMVPIndustryExpertise = () => {
                       onClick={() => setCount(index)}
                     >
                       <span
-                        className={`px-4 py-2 ${`job-btn ${
+                        className={`px-3 py-2 ${`job-btn ${
                           count === index && "text-[#D90429]"
                         }`} bg-white rounded-full`}
                       >

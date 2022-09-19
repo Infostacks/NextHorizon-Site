@@ -12,7 +12,7 @@ const StrengthOfDedicatedTeam = () => {
           Strengths of a dedicated development team model
         </span>
 
-        <span className="max-w-lg mt-4 text-lg tracking-wide xl:font-semibold lg:font-semibold">
+        <span className="max-w-lg text-lg tracking-wide xl:font-semibold lg:font-semibold">
           A dedicated development team services bring you the perk of tight
           cooperation with the team to stay on the same page. But these are not
           all the benefits you get from this model.

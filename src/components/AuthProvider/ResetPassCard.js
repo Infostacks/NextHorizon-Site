@@ -8,7 +8,7 @@ const ResetPassCard = ({valueEmail, onChange}) => {
           type="email"
           value={valueEmail}
           onChange={onChange}
-          className={`xl:w-72 lg:w-72 w-56 h-7 pl-2 bg-white border-2 rounded-sm text-lg z-12 focus:outline-none`}
+          className={`xl:w-72 lg:w-72 w-56 pl-2 py-1 border-[1px] rounded-2xl text-md focus:outline-none`}
         />
   )
 }

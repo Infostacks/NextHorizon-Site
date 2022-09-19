@@ -13,7 +13,7 @@ function createMarkup(faq) {
 const UXUIDesignProcess = () => {
   return (
     <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
-      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
+      <div className="max-w-screen-lg w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
           {/* Text intro  */}

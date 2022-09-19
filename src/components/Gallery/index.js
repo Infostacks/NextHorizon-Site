@@ -27,15 +27,15 @@ const index = () => {
     ) : null;
 
   return (
-    <div className="wflex flex-col items-center w-full max-w-screen-xl overflow-x-hidden py-20">
+    <div className="wflex flex-col items-center w-full max-w-screen-lg overflow-x-hidden py-20">
       <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold p-5 flex justify-center shadow-md drop-shadow-md">
         Gallery
       </h1>
       <Gallery photos={photos} onClick={openLightbox} />
-      <div className="flex flex-col justify-center items-center max-w-lg">
+      <div className="flex flex-col justify-center items-center">
         <ModalGateway>
           {viewerIsOpen ? (
-            <Modal onClose={closeLightbox} className="flex justify-center items-center">
+            <Modal onClose={closeLightbox} className="flex justify-center max-w-screen-lg items-center">
               <Carousel
                 components={{
                   Header: CustomHeader,

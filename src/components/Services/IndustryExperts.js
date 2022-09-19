@@ -33,7 +33,7 @@ const IndustryExperts = () => {
           <img
             src={industryExperts[count].img}
             alt=""
-            className="rounded-[3rem] shadow-lg border-[1px] border-rose-400 shadow-rose-200"
+            className="rounded-[3rem] shadow-lg border-[1px] border-slate-400 shadow-slate-400"
           />
           <h3 className="xl:text-3xl lg:text-3xl text-xl font-semibold">
             {industryExperts[count].heading}

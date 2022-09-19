@@ -12,7 +12,7 @@ const TechnologyStack = () => {
   return (
     <div className="w-full overflow-x-hidden bg-slate-100 flex flex-col justify-center items-center">
       <section className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10">
-        <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 gap-10">
+        <div className="max-w-screen-lg w-full flex items-center justify-center flex-col px-4 gap-10">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row flex-col items-center">
             {/* Text intro  */}
@@ -20,7 +20,7 @@ const TechnologyStack = () => {
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Technology Stack
               </h2>
-              <p>
+              <p className="text-xl max-w-3xl text-center">
                 The development team working on a project uses only modern and
                 scalable technologies to implement mobile and web applications
                 the way you mean it

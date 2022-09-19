@@ -13,7 +13,7 @@ const LoginCard = ({valueEmail, onChange, valuePass}) => {
           type="email"
           value={valueEmail}
           onChange={onChange}
-          className={`xl:w-72 lg:w-72 w-56 h-7 pl-2 border-2 rounded-sm text-md z-12 focus:outline-none`}
+          className={`xl:w-72 lg:w-72 w-56 pl-2 py-1 border-[1px] rounded-2xl text-md focus:outline-none`}
         />
         <label htmlFor="password" className="text-xs text-slate-500">
           Password:
@@ -24,7 +24,7 @@ const LoginCard = ({valueEmail, onChange, valuePass}) => {
           type="password"
           value={valuePass}
           onChange={onChange}
-          className={`xl:w-72 lg:w-72 w-56 h-7 pl-2 border-2 rounded-sm text-md z-12 focus:outline-none`}
+          className={`xl:w-72 lg:w-72 w-56 pl-2 py-1 border-[1px] rounded-2xl text-md focus:outline-none`}
         />
       </div>
     </div>

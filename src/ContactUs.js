@@ -17,7 +17,7 @@ const ContactUs = () => {
             </h2>
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
               <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-100 transition-opacity duration-700">
-                <div className="text-3xl text-[#D90429]">
+                <div className="text-3xl text-slate-100">
                   <HiOutlineLocationMarker />
                 </div>
                 <div className="text-2xl font-semibold text-slate-100">
@@ -31,7 +31,7 @@ const ContactUs = () => {
 
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
               <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-100 transition-opacity duration-700">
-                <div className="text-3xl text-[#D90429]">
+                <div className="text-3xl text-slate-100">
                   <BiEnvelope />
                 </div>
                 <div className="text-2xl font-semibold text-slate-100">
@@ -45,7 +45,7 @@ const ContactUs = () => {
 
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
               <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-100 transition-opacity duration-700">
-                <div className="text-3xl text-[#D90429]">
+                <div className="text-3xl text-slate-100">
                   <BiPhoneCall />
                 </div>
                 <div className="text-2xl font-semibold text-slate-100">
@@ -68,35 +68,35 @@ const ContactUs = () => {
                   type="text"
                   name="name"
                   placeholder="Name"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 />
                 <input
                   type="email"
                   name="email"
                   placeholder="Email"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 />
                 <input
                   type="text"
                   name="company"
                   placeholder="Company"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 />
                 <input
                   type="text"
                   name="phone"
                   placeholder="Phone"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 />
                 <input
                   type="text"
                   name="help"
                   placeholder="How can we help?"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 />
                 <textarea
                   name="message"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                   placeholder="Message"
                 />
               </div>

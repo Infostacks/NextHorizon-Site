@@ -4,8 +4,8 @@ import { industries } from "../../utils/data.js";
 const Industries = () => {
   return (
     <div className="overflow-x-hidden bg-slate-100 w-full">
-      <section className="flex flex-col items-center justify-center pt-20">
-        <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
+      <section className="flex flex-col items-center justify-center pt-20 pb-2">
+        <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 mx-10">
             {/* Text intro  */}
@@ -13,7 +13,7 @@ const Industries = () => {
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
                 A robust payments platform, built with intelligence
               </h2>
-              <p className="xl:text-3xl lg:text-3xl text-xl text-justify">
+              <p className="text-xl text-justify">
                 We’re successful in receiving top worth position to meet
                 benchmark through maintaining a lead in rating, score the first
                 rank in software & IT oriented solutions due to our strong tech

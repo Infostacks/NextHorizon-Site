@@ -4,7 +4,7 @@ import React from "react";
 const AboutProject = () => {
   return (
     <div className="flex xl:flex-row lg:flex-row flex-col justify-around gap-5 py-5 xl:px-16 lg:px-16 md:px-10 px-5 rounded-[3rem] bg-gradient-to-bl from-rose-50 via-rose-100 to-rose-300 xl:w-4/6 lg:w-4/6 w-5/6">
-      {/* right side  */}
+      {/* left side  */}
       <div className="flex flex-col justify-evenly gap-10 xl:w-1/2 lg:w-1/2 w-full">
         <h1 className="xl:text-5xl lg:text-4xl text-2xl font-extrabold">Tell Us About Your Project</h1>
         <p>
@@ -30,7 +30,7 @@ const AboutProject = () => {
         </div>
       </div>
 
-      {/* left side  */}
+      {/* right side  */}
       <form className="flex flex-col justify-start xl:w-1/2 lg:w-1/2 w-full gap-12">
         <div className="flex xl:flex-row lg:flex-row flex-col gap-10">
           <input
@@ -81,7 +81,7 @@ const AboutProject = () => {
         </div>
 
         <div className="flex xl:flex-row lg:flex-row flex-col items-center justify-start gap-2">
-          <span className="text-slate-500">
+          <span className="text-slate-500 xl:w-10/12 lg:w-10/12">
             <span>
               By sending this form I confirm that I have read and accept the
             </span>{" "}

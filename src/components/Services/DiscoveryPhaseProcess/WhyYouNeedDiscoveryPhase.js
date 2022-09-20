@@ -1,15 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { whyYouNeedDiscoveryPhase } from "../../../utils/data.js";
 
 const WhyYouNeedDiscoveryPhase = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
-    <div className="w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <div
+      ref={ref}
+      className="w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10"
+    >
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
-        <h1 className="max-w-lg xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+        <motion.h1
+          animate={fadeInAnimation}
+          className="max-w-lg xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+        >
           Why you need a discovery phase
-        </h1>
+        </motion.h1>
       </div>
 
       {/* categories data */}
@@ -17,7 +46,10 @@ const WhyYouNeedDiscoveryPhase = () => {
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 w-full flex-wrap">
           {whyYouNeedDiscoveryPhase.map((category, index) => {
             return (
-              <div className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md">
+              <motion.div
+                animate={fadeInAnimation}
+                className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md"
+              >
                 <div
                   className="flex xl:flex-row lg:flex-row flex-col gap-3"
                   key={index}
@@ -34,7 +66,7 @@ const WhyYouNeedDiscoveryPhase = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

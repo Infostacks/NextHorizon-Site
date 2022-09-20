@@ -5,7 +5,7 @@ const ConnectOurTeam = () => {
   return (
     <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center xl:px-10 px-5 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-10">
+      <div className="max-w-screen-lg flex items-center xl:px-10 px-5 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-10">
         {/* Text intro  */}
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
           Connect with our Team

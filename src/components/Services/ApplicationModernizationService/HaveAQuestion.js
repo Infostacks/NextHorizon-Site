@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const HaveAnyQuestion = () => {
+const HaveAQuestion = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
-    <div className="flex flex-col items-center justify-center w-screen bg-[#D90429]">
+    <motion.div
+      ref={ref}
+      animate={fadeInAnimation}
+      className="flex flex-col items-center justify-center w-screen bg-[#D90429]"
+    >
       <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] text-white z-[50rem]">
-        <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 items-center justify-center xl:px-0 lg:px-0 px-10">
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 items-center justify-center xl:px-0 lg:px-0 px-10">
           <div className="flex flex-col gap-4">
             <h1 className="xl:text-[4rem] lg:text-[4rem] md:text-[3rem] text-[2rem] text-slate-50 font-semibold">
               Have any questions?
@@ -22,8 +49,8 @@ const HaveAnyQuestion = () => {
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default HaveAnyQuestion;
+export default HaveAQuestion;

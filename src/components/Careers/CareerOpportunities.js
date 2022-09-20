@@ -1,29 +1,59 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { careerOpportunities } from "../../utils/data.js";
 import { Link } from "react-router-dom";
 
 const CareerOpportunities = () => {
-  const [showApplyNow, setShowApplyNow] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
 
-  const handleApplyNow = () => {
-    setShowApplyNow(!showApplyNow);
-  };
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
 
   return (
     <section className="bg-slate-200 w-screen flex flex-col gap-10 items-center justify-center pb-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-5">
         {/* Text intro  */}
-        <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+        <motion.h2
+          ref={ref}
+          animate={fadeInAnimation}
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+        >
           Career Opportunities
-        </h2>
+        </motion.h2>
       </div>
 
       {/* awards  */}
       <div className="max-w-screen-lg flex flex-col gap-10 w-full">
         {careerOpportunities.map((job, index) => {
           return (
-            <div
+            <motion.div
+              initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  bounce: 0.5,
+                },
+              }}
               className="flex xl:flex-row lg:flex-row flex-col justify-between p-5 border-b-2 border-slate-300 gap-5 w-full"
               key={index}
             >
@@ -33,14 +63,11 @@ const CareerOpportunities = () => {
               </div>
               {/* button  */}
               <Link to={`/careers/${job.jobId}`} state={{ data: job }}>
-                <button
-                  onClick={handleApplyNow}
-                  className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
-                >
+                <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
                   Apply Now
                 </button>
               </Link>
-            </div>
+            </motion.div>
           );
         })}
       </div>

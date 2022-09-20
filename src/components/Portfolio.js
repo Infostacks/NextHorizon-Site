@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation, whileInView } from "framer-motion";
 import { portfolio } from "../utils/data.js";
 
 const Portfolio = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const leftAnimation = useAnimation();
+  const rightAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      leftAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+
+      rightAnimation.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+    }
+
+    if (!inView) {
+      leftAnimation.start({ x: "-5vw", opacity: 0 });
+      rightAnimation.start({ x: "5vw", opacity: 0 });
+    }
+  }, [inView, leftAnimation, rightAnimation]);
+
   return (
     <section className="bg-slate-100 flex flex-col items-center justify-center py-10 overflow-x-hidden w-full">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
@@ -16,16 +51,29 @@ const Portfolio = () => {
         </div>
 
         {/* case Studies  */}
-        <div className="max-w-screen-lg flex flex-col items-center gap-20 mt-16">
+        <div
+          ref={ref}
+          className="snap-y max-w-screen-lg flex flex-col items-center gap-32 mt-16"
+        >
           {portfolio.map((caseStudy, index) => {
             return (
-              <div
+              <motion.div
+                // animate={leftAnimation}
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    bounce: 0.5,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col"
-                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl`}
+                } snap-start justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl`}
               >
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
@@ -84,7 +132,7 @@ const Portfolio = () => {
                     Explore more
                   </button>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

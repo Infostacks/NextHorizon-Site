@@ -14,6 +14,8 @@ import CTOHelpBusiness from "./CTOHelpBusiness";
 import AchieveGoalsWithCTO from "./AchieveGoalsWithCTO";
 import CoreTechExpertise from "./CoreTechExpertise";
 import CTODevInsights from "./CTODevInsights";
+import HireCTO from "./HireCTO";
+import ExpertCTO from "./ExpertCTO";
 
 const index = () => {
   const { ref, inView } = useInView({
@@ -101,44 +103,14 @@ const index = () => {
 
       <BenefitsOfCTOAsAService />
 
-      <div className="flex items-center justify-center w-screen bg-slate-100">
-        <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-[#D90429] z-[50rem]">
-          <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
-            <h1 className="xl:text-[4rem] lg:text-[4rem] md:text-[3rem] text-[2rem] font-semibold">
-              You can hire a CTO for your project
-            </h1>
-            {/* button  */}
-            <button className="xl:w-1/3 lg:w-1/3 w-fit bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429]">
-              <Link to="/contact">Get a consultation</Link>
-            </button>
-          </div>
-        </div>
-      </div>
+      <HireCTO/>
 
       <CTOHelpBusiness />
 
       {/* testimonials */}
       <ClientTestimonials />
 
-      <div className="flex items-center justify-center w-screen bg-[#D90429]">
-        <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-slate-50 z-[50rem]">
-          <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
-            <span className="text-2xl text-slate-50 text-justify xl:w-1/2 lg:w-1/2 w-full">
-              Most experienced CTOs will start working on your project as soon
-              as possible. Contact our managers to describe your requirements.
-            </span>
-            <div className="flex flex-col gap-4 xl:w-1/2 lg:w-1/2 w-full">
-              <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-slate-50 font-semibold">
-                Looking for an expert CTO?
-              </h1>
-              {/* button  */}
-              <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
-                <Link to="/contact">Get free consultation</Link>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ExpertCTO/>
 
       <AchieveGoalsWithCTO />
 

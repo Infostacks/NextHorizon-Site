@@ -1,9 +1,37 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const GotAnyQuestion = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
-    <div className="flex flex-col items-center justify-center w-screen bg-slate-900">
+    <motion.div
+      ref={ref}
+      animate={fadeInAnimation}
+      className="flex flex-col items-center justify-center w-screen bg-slate-900"
+    >
       <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] text-white z-[50rem]">
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 items-center justify-center xl:px-0 lg:px-0 px-10">
           <span className="text-2xl text-slate-100 text-justify">
@@ -22,7 +50,7 @@ const GotAnyQuestion = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,24 +1,77 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 // import { Link } from "react-router-dom";
 import { whyChooseUs } from "../../../utils/data.js";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const WhyChooseUs = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const upAnimation = useAnimation();
+  const downAnimation = useAnimation();
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      upAnimation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+
+      downAnimation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 0.5,
+        },
+      });
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 2,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      upAnimation.start({ y: "-5vw", opacity: 0 });
+      downAnimation.start({ y: "5vw", opacity: 0 });
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, upAnimation, downAnimation, fadeInAnimation]);
+
   return (
-    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
+    <section
+      ref={ref}
+      className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10"
+    >
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col xl:gap-10 lg:gap-10 gap-2 items-center">
           {/* Text intro  */}
-          <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+          <motion.span
+            animate={fadeInAnimation}
+            className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+          >
             Why choose us
-          </span>
+          </motion.span>
 
-          <span className="max-w-lg mt-4 xl:text-xl lg:text-xl text-base xl:tracking-wide lg:tracking-wide xl:font-semibold lg:font-semibold">
+          <motion.span
+            animate={fadeInAnimation}
+            className="max-w-lg mt-4 xl:text-xl lg:text-xl text-base xl:tracking-wide lg:tracking-wide xl:font-semibold lg:font-semibold"
+          >
             We follow a proven multi-step assembling process to provide the best
             dedicated development team that meets your requirements.
-          </span>
+          </motion.span>
         </div>
 
         {/* WhyChooseUs */}
@@ -31,11 +84,13 @@ const WhyChooseUs = () => {
               >
                 {/* image data  */}
                 <div className="flex flex-col gap-5">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="object-cover w-full bg-slate-100 bg-opacity-60 rounded-[1rem] shadow-xl"
-                  />
+                  <motion.span animate={upAnimation}>
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="object-cover w-full bg-slate-100 bg-opacity-60 rounded-[1rem] shadow-xl"
+                    />
+                  </motion.span>
 
                   <div className="flex flex-row justify-between">
                     <div className="flex flex-col ">
@@ -66,13 +121,14 @@ const WhyChooseUs = () => {
                 <div className="flex flex-col gap-5 justify-center">
                   {item.qualities.map((quality, index) => {
                     return (
-                      <div
+                      <motion.div
+                        animate={downAnimation}
                         className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base"
                         key={index}
                       >
                         <span className="text-[#D90429]">✔</span>
                         <span>{quality}</span>
-                      </div>
+                      </motion.div>
                     );
                   })}
                 </div>

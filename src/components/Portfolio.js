@@ -29,7 +29,8 @@ const Portfolio = () => {
                   opacity: 1,
                   transition: {
                     duration: 2,
-                    bounce: 0.5,
+                    type: 'spring',
+                    bounce: .6,
                   },
                 }}
                 key={index}

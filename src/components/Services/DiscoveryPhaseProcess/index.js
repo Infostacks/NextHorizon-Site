@@ -63,7 +63,7 @@ const index = () => {
   }, [inView, leftAnimation, rightAnimation, fadeInAnimation]);
 
   return (
-    <div className="flex flex-col items-center w-full bg-slate-100 overflow-x-hidden overflow-y-scroll mt-40">
+    <div className="flex flex-col items-center w-full bg-slate-100 overflow-x-hidden overflow-y-scroll pt-40">
       {/* start project panel  */}
       <div
         ref={ref}
@@ -118,12 +118,12 @@ const index = () => {
 
       <ProductDiscoveryProcess />
 
-      <ReadyDiscoveryTeam/>
+      <ReadyDiscoveryTeam />
 
       {/* DiscoveryPhaseDeliverable */}
       <DiscoveryPhaseDeliverable />
 
-      <HaveAnyQuestion/>
+      <HaveAnyQuestion />
 
       <WhyYouNeedDiscoveryPhase />
 
@@ -132,7 +132,7 @@ const index = () => {
       {/* certifications */}
       <Certifications />
 
-      <ReadyToProject/>
+      <ReadyToProject />
 
       {/* testimonials */}
       <ClientTestimonials />

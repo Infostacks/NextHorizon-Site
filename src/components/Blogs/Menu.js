@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Menu = ({ items }) => {
   return (
@@ -30,12 +30,12 @@ const Menu = ({ items }) => {
                 </span>
                 <span>➙</span>
                 <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
-                  <Link to="">{blogData.category}</Link>
+                  <NavLink to="">{blogData.category}</NavLink>
                 </span>
               </div>
 
               <span className="text-xl font-semibold font-serif antialiased hover:text-[#D90429] hover:cursor-pointer">
-                <Link to={`/blogs/${blogData.id}`}>{blogData.title}</Link>
+                <NavLink to={`/blogs/${blogData.id}`}>{blogData.title}</NavLink>
               </span>
               <div className="flex flex-row justify-between text-sm">
                 <span>{blogData.postDate}</span>

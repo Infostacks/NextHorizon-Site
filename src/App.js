@@ -28,7 +28,7 @@ import TechBlogs from "./components/Blogs/Tech";
 import DesignBlogs from "./components/Blogs/DesignBlogs";
 import CaseStudiesBlogs from "./components/Blogs/CaseStudiesBlogs";
 import NextHorizonBlogs from "./components/Blogs/NextHorizonBlogs";
-// import BlogPost from "./components/Blogs/BlogPost";
+import BlogPost from "./components/Blogs/BlogPost";
 
 import GalleryComponent from "./components/Gallery";
 import IOS from "./components/Services/MobileDevelopment/IOS";
@@ -41,7 +41,7 @@ import MVPDevelopment from "./components/Services/MVPDevelopment";
 import CTOAsAService from "./components/Services/CTOAsaService";
 import Login from "./components/Login";
 
-import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick.css"; // for testimonials
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
@@ -133,6 +133,7 @@ function App() {
             path="Next%20Horizon"
             element={<NextHorizonBlogs selectedCategory="Next Horizon" />}
           />
+          <Route path=":postId" element={<BlogPost />} />
         </Route>
 
         <Route path="gallery" element={<GalleryComponent />} />

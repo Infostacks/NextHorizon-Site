@@ -15,6 +15,7 @@ const index = ({selectedCategory}) => {
   const [currentCat, setCurrentCat] = useState("latest");
 
   const filterItems = (selectedCategory) => {
+    console.log('selectedCategory', selectedCategory)
     setCurrentCat(selectedCategory);
     if (selectedCategory === "latest") {
       setMenuItems(blogs);

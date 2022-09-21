@@ -1393,7 +1393,6 @@ const blogs = [
     author: "Oleksandr Sh.",
     postDate: "Aug 18, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "13414",
@@ -1403,7 +1402,6 @@ const blogs = [
     author: "Diana Chabanovska",
     postDate: "Aug 11, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "12341",
@@ -1413,7 +1411,6 @@ const blogs = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "23565",
@@ -1423,37 +1420,33 @@ const blogs = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
-    id: "23565",
+    id: "23566",
     category: "Client Guides",
     title: "How to Find a Technical Co-Founder For a Startup",
     img: "https://www.cleveroad.com/images/article-previews/8a74923ba907d8878f670ffd62a9e210654b8c78e5f1e9a1a55eeba71998049d.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 15, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
-    id: "23565",
+    id: "23567",
     category: "Client Guides",
     title: "How to hire a CTO for a startup",
     img: "https://www.cleveroad.com/images/article-previews/c50f0bc6f5ad1351b39b1733ba537e8f0855df7531a5c7f87e47d5d9b9879bc0.jpg",
     author: "Diana Chabanovska",
     postDate: "May 11, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
-    id: "23565",
+    id: "23568",
     category: "Client Guides",
     title: "Why Companies Need a Solution Architect for Their Projects",
     img: "https://www.cleveroad.com/images/article-previews/e1bbfef278ba84f501a9449e8e273319b777b65d591627184e061ea7b6b3500d.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 09, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "97768",
@@ -1463,7 +1456,6 @@ const blogs = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "45675",
@@ -1472,38 +1464,46 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/5249b89d23582287a1b288400f110c88c4d2e63dff5c3cdca01027ce4d09728b.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
-    desc: "",
-    linkToPost: "",
+    desc: ``,
   },
   {
-    id: "23565",
+    id: "23454",
     category: "Next Horizon",
     title: "Tips to Build Mobile E-commerce App",
     img: "https://www.cleveroad.com/images/article-previews/2eb3cf03d767b198cbe1901885b377587d641bb6d8b542a8b38545571b10e2d1.jpg",
     author: "Diana Bestaieva",
     postDate: "Aug 03, 2022",
-    desc: "",
-    linkToPost: "",
+    desc: `<span style="text-align: justify;font-size: 1.2rem;">
+    Ecommerce mobile app store means trading commercial products and goods
+    through an online forum that serves as a touchpoint. The online
+    marketplace is trending these days as the pandemic has limited the
+    movement of people. Most people prefer online shopping from their
+    phones, and for that, e-commerce apps are necessary. Businesses these
+    days are also getting online depending upon the preferences of
+    customers. The online shopping system is increasing because of the
+    growing technology and globalization to have a better experience.
+    Demand for creating e- commerce app stores is growing as the market
+    shifts from brick shops to online stores. So make sure that you have
+    opted for the new trends and technology to stand out among competitors
+  </span>`,
   },
   {
-    id: "23565",
+    id: "23534",
     category: "Client Guides",
     title: "Big Data eCommerce system for retail business",
     img: "https://www.cleveroad.com/images/article-previews/AAAAAAA-1.jpg",
     author: "Daria R.",
     postDate: "Aug 03, 2022",
-    desc: "",
-    linkToPost: "",
+    desc: ``,
   },
   {
-    id: "23565",
+    id: "23525",
     category: "Next Horizon",
     title: "How to build a eCommerce mobile app",
     img: "https://www.cleveroad.com/images/article-previews/from-ecommerce-to-mobile-commerce-shopping-at-a-high-tech-level-4.png",
     author: "Marina Ch.",
     postDate: "Aug 03, 2022",
-    desc: "",
-    linkToPost: "",
+    desc: ``,
   },
 ];
 
@@ -2069,7 +2069,6 @@ const designInsights = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "97768",
@@ -2079,7 +2078,6 @@ const designInsights = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "45675",
@@ -2089,7 +2087,6 @@ const designInsights = [
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 
@@ -2323,7 +2320,6 @@ const devOpsInsights = [
     author: "Diana Bestaieva",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "45676",
@@ -2333,7 +2329,6 @@ const devOpsInsights = [
     author: "Daria R.",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "65687",
@@ -2343,7 +2338,6 @@ const devOpsInsights = [
     author: "Marina Ch.",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 
@@ -2679,7 +2673,6 @@ const iOSDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "45675",
@@ -2689,7 +2682,6 @@ const iOSDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "23565",
@@ -2699,7 +2691,6 @@ const iOSDevInsignts = [
     author: "Diana Bestaieva",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "23565",
@@ -2709,7 +2700,6 @@ const iOSDevInsignts = [
     author: "Daria R.",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 
@@ -2963,7 +2953,6 @@ const androidDevInsignts = [
     author: "Oleksandr Sh.",
     postDate: "Aug 18, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "13414",
@@ -2973,7 +2962,6 @@ const androidDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 11, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "12341",
@@ -2983,7 +2971,6 @@ const androidDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 
@@ -3076,7 +3063,6 @@ const flutterDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "97768",
@@ -3086,7 +3072,6 @@ const flutterDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "45675",
@@ -3096,7 +3081,6 @@ const flutterDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 
@@ -3496,7 +3480,6 @@ const webDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "97768",
@@ -3506,7 +3489,6 @@ const webDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "45675",
@@ -3516,7 +3498,6 @@ const webDevInsignts = [
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 
@@ -4326,7 +4307,6 @@ const ctoDevInsights = [
     author: "Diana Chabanovska",
     postDate: "Aug 15, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "23565",
@@ -4336,7 +4316,6 @@ const ctoDevInsights = [
     author: "Diana Chabanovska",
     postDate: "May 11, 2022",
     desc: "",
-    linkToPost: "",
   },
   {
     id: "23565",
@@ -4346,7 +4325,6 @@ const ctoDevInsights = [
     author: "Diana Chabanovska",
     postDate: "Aug 09, 2022",
     desc: "",
-    linkToPost: "",
   },
 ];
 

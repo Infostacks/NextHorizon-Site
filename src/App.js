@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import Services from "./components/Services";
-import Contact from "./components/Contact";
+import Contact from "./components/GetAQuote";
 import MobileDevelopment from "./components/Services/MobileDevelopment";
 import WebAppDevelopmentServices from "./components/Services/WebAppDevelopmentServices";
 import WebDevelopment from "./components/Services/WebDevelopment";

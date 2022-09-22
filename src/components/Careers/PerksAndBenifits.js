@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { perksAndBenifits } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const PerksAndBenifits = () => {
   const { ref, inView } = useInView({
@@ -33,7 +34,7 @@ const PerksAndBenifits = () => {
         <motion.h2
           ref={ref}
           animate={fadeInAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+          className={`text-${styles.blackPrimary} xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight`}
         >
           Perks and Benefits
         </motion.h2>
@@ -56,7 +57,7 @@ const PerksAndBenifits = () => {
               className="flex flex-col justify-center p-5 drop-shadow-md rounded-3xl bg-white gap-5"
               key={index}
             >
-              <div className="text-5xl text-[#D90429]">{benifit.icon}</div>
+              <div className={`text-5xl text-${styles.redPrimary}`}>{benifit.icon}</div>
               <div className="text-xl font-semibold">{benifit.title}</div>
               <div>{benifit.desc}</div>
             </motion.div>

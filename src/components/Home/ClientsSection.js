@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { companiesList } from "../../utils/data";
+import styles from "../../utils/GlobalStyles";
 
 const ClientsSection = () => {
   const { ref, inView } = useInView({
@@ -32,7 +33,7 @@ const ClientsSection = () => {
     >
       <motion.h1
         animate={fadeInAnimation}
-        className="font-bold xl:text-7xl lg:text-7xl md:text-4xl text-3xl max-w-screen-lg text-center"
+        className={`font-bold xl:text-7xl lg:text-7xl md:text-4xl text-3xl max-w-screen-lg text-center text-${styles.blackPrimary}`}
       >
         Illustrious software always required a one-step solution
       </motion.h1>

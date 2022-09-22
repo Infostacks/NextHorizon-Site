@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import style from "../../utils/GlobalStyles.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const MemberLogin = () => {
   const { ref, inView } = useInView({
@@ -46,23 +48,23 @@ const MemberLogin = () => {
         <div className="flex xl:flex-row lg:flex-row md:flex-col gap-10">
           <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center rounded-lg shadow-xl">
             <div className="flex flex-col p-0 gap-3 items-center">
-              <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col w-full gap-3">
+              <div className="flex xl:flex-row lg:flex-row flex-col w-full gap-3">
                 <input
                   type="text"
                   name="name"
                   placeholder="Username"
-                  className="text-gray-600 font-light p-2 rounded-md border-[1px] border-gray-400 focus:outline-none bg-gray-100 font-xs w-full"
+                  className={styles.inputField_M_Login}
                 />
                 <input
                   type="password"
                   name="password"
                   placeholder="Password"
-                  className="ext-gray-600 font-light p-2 rounded-md border-[1px] border-gray-400 focus:outline-none bg-gray-100 font-xs w-full"
+                  className={styles.inputField_M_Login}
                 />
               </div>
 
               {/* Login button */}
-              <button className="hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit opacity-50 hover:opacity-100 transition-opacity duration-700">
+              <button className={styles.buttonRedOutline}>
                 Login
               </button>
             </div>

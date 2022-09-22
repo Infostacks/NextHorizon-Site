@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import CareersHero from "../../images/careersHero.png";
+import styles from "../../utils/GlobalStyles";
 
 const HeroSection = () => {
   const { ref, inView } = useInView({
@@ -34,7 +35,7 @@ const HeroSection = () => {
       <div className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold xl:w-1/2 lg:w-1/2 w-full flex justify-center items-center ">
         <motion.span
           animate={fadeInAnimation}
-          className="xl:w-3/6 lg:w-3/6 w-full xl:px-0 lg:px-0 px-10"
+          className={`xl:w-3/6 lg:w-3/6 w-full xl:px-0 lg:px-0 px-10 text-${styles.blackPrimary}`}
         >
           Find your dream jobs with us easily
         </motion.span>

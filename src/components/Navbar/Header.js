@@ -10,6 +10,7 @@ import "./Navbar.css";
 // import MainLogowhite1 from "../../images/logo/Nhw1.png";
 import MainLogowhite1 from "../../images/logo/Nhw3.png";
 import MainLogowhite2 from "../../images/logo/Nhw4.png";
+import styles from "../../utils/GlobalStyles";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,11 +46,11 @@ const Header = () => {
   return (
     <nav
       className={`${
-        navbar ? "bg-[#D90429] bg-opacity-90 drop-shadow-md" : "bg-slate-900"
+        navbar ? `bg-${styles.redPrimary} bg-opacity-90 drop-shadow-md` : `bg-${styles.blackPrimary}`
       } z-[1200px] text-slate-50`}
     >
-      <div className="max-w-7xl flex justify-center mx-auto">
-        <div className="flex items-center justify-between h-16 w-full px-10 sm:px-6 lg:px-8">
+      <div className="max-w-7xl flex justify-center w-full mx-auto">
+        <div className="flex items-center justify-between w-full h-16 px-10 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center w-full max-w-6xl">
             <div className="flex-shrink-0">
               <NavLink to="/">

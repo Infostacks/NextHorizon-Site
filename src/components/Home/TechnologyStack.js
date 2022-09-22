@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import webTechImg from "../../images/webTechpsd.png";
 import mobTechImg from "../../images/mobTechpsd.png";
+import styles from "../../utils/GlobalStyles";
 
 import WebAppsTech from "./WebAppsTech";
 import MobileAppsTech from "./MobileAppsTech";
@@ -148,7 +149,7 @@ const TechnologyStack = () => {
               )}
               <button
                 onClick={() => setViewDetail(!viewDetail)}
-                className="bg-[#08080cff] border-[1px] border-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
+                className={styles.buttonBlackFull}
               >
                 {viewDetail ? "Hide" : "View"} Details
               </button>

@@ -3,6 +3,7 @@ import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const index = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -35,7 +36,7 @@ const index = () => {
 
   return (
     <div className="wflex flex-col items-center w-full max-w-screen-lg overflow-x-hidden py-20">
-      <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold p-5 flex justify-center shadow-md drop-shadow-md">
+      <h1 className={`xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold p-5 flex justify-center text-${styles.redPrimary} shadow-md drop-shadow-md`}>
         Gallery
       </h1>
       <Gallery photos={photos} onClick={openLightbox} />

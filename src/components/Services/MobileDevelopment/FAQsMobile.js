@@ -3,7 +3,7 @@ import { faqsMobile } from "../../../utils/data.js";
 import "./listStyle.css";
 
 const Answer = (faq) => {
-  console.log(faq.faq);
+  // console.log(faq.faq);
   return <div dangerouslySetInnerHTML={createMarkup(faq.faq)}></div>;
 };
 
@@ -57,10 +57,7 @@ const FAQsMobile = () => {
                     </span>
                   </summary>
 
-                  {/* <p className="mt-4 leading-relaxed text-gray-700 w-full"> */}
-                  {/* {() => faq.answer} */}
                   <Answer faq={faq.answer} />
-                  {/* </p> */}
                 </details>
               );
             })}

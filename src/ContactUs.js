@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiEnvelope } from "react-icons/bi";
 import { BiPhoneCall } from "react-icons/bi";
-// import logomN from "./images/logo/logomN.png";
+import styles from "./utils/GlobalStyles";
 
 const ContactUs = () => {
   const { ref, inView } = useInView({
@@ -113,42 +113,42 @@ const ContactUs = () => {
                   type="text"
                   name="name"
                   placeholder="Name"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
+                  className={styles.inputField_Contact}
                 />
                 <input
                   type="email"
                   name="email"
                   placeholder="Email"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
+                  className={styles.inputField_Contact}
                 />
                 <input
                   type="text"
                   name="company"
                   placeholder="Company"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
+                  className={styles.inputField_Contact}
                 />
                 <input
                   type="text"
                   name="phone"
                   placeholder="Phone"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
+                  className={styles.inputField_Contact}
                 />
                 <input
                   type="text"
                   name="help"
                   placeholder="How can we help?"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
+                  className={styles.inputField_Contact}
                 />
                 <textarea
                   name="message"
-                  className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
+                  className={styles.inputField_Contact}
                   placeholder="Message"
                 />
               </div>
               <button
                 type="submit"
                 value="Send"
-                className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
+                className={styles.buttonBlackFull}
               >
                 Send Message
               </button>

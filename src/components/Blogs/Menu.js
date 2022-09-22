@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import styles from "../../utils/GlobalStyles";
 
 const Menu = ({ items }) => {
   return (
@@ -25,16 +26,17 @@ const Menu = ({ items }) => {
             <div className="flex flex-col p-5 justify-between gap-5">
               {/* breadcrumbs */}
               <div className="flex flex-row gap-2 text-sm">
-                <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                   Blog
                 </span>
                 <span>➙</span>
-                <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                  {/* underline due to navlink  */}
                   <NavLink to="">{blogData.category}</NavLink>
                 </span>
               </div>
 
-              <span className="text-xl font-semibold font-serif antialiased hover:text-[#D90429] hover:cursor-pointer">
+              <span className={`text-xl font-semibold font-serif antialiased hover:text-${styles.redPrimary} hover:cursor-pointer`}>
                 <NavLink to={`/blogs/${blogData.id}`}>{blogData.title}</NavLink>
               </span>
               <div className="flex flex-row justify-between text-sm">

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
+import styles from "../../utils/GlobalStyles";
 
 const GotAnyChallange = () => {
     const { ref, inView } = useInView({
@@ -30,7 +31,7 @@ const GotAnyChallange = () => {
     <motion.div
       ref={ref}
       animate={fadeInAnimation}
-      className="flex items-center justify-center w-screen bg-[#D90429]"
+      className={`flex items-center justify-center w-screen bg-${styles.redPrimary}`}
     >
       <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-white z-[50rem]">
         <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
@@ -45,7 +46,7 @@ const GotAnyChallange = () => {
             {/* button  */}
             <motion.button
               animate={fadeInAnimation}
-              className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[#D90429] w-fit"
+              className={styles.buttonBlackFull}
             >
               <Link to="/contact">Contact us</Link>
             </motion.button>

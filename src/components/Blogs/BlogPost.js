@@ -46,18 +46,9 @@ const BlogPost = () => {
         alt={data[0]?.title}
         className="object-cover w-full bg-slate-100 bg-opacity-60 rounded-3xl"
       />
-      <div>
-        <Answer faq={data[0]?.desc} />
-        {/* <span style="text-align: justify;font-size: 1.2rem;">
-          Converting an existing e-commerce website to an e-commerce mobile app
-          is not a difficult task to do. You need to follow a few steps for that
-          purpose which are as follows: Figure out the website platform Keep the
-          look and feel consistent Enlist key native features like push messages
-          and catalog and categories. Develop Application Programming Interface.
-          Collaborate APIs with the app Test the platform on all parameters
-          Launch the mobile app
-        </span> */}
-      </div>
+
+      <Answer faq={data[0]?.desc} />
+      
     </div>
   );
 };

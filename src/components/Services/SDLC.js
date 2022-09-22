@@ -1,5 +1,6 @@
 import React from "react";
 import { softwareDevelopmentFlow } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const SDLC = () => {
   return (
@@ -25,7 +26,7 @@ const SDLC = () => {
               return (
                 <details
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 drop-shadow-md group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 drop-shadow-md group w-full`}
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">
@@ -72,7 +73,7 @@ const SDLC = () => {
                           })}
                         </span>
                         {/* button  */}
-                        <button className="bg-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit">
+                        <button className={styles.buttonBlackFull}>
                           Book a consultation!
                         </button>
                       </div>

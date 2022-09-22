@@ -6,6 +6,7 @@ import _ from "lodash";
 import LogInCard from "./AuthProvider/LoginCard";
 import SignUpCard from "./AuthProvider/SignUpCard";
 import ResetPassCard from "./AuthProvider/ResetPassCard";
+import styles from "../utils/GlobalStyles";
 
 const Login = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -226,8 +227,7 @@ const Login = () => {
   return (
     <div className="flex flex-col items-center w-full overflow-x-hidden">
       <section
-        className="flex justify-center flex-col items-center w-full h-full bg-no-repeat bg-cover 
-        bg-[url('https://images.unsplash.com/photo-1438382458652-54431bf59e01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80')]"
+        className={`flex justify-center flex-col items-center w-full h-full bg-no-repeat bg-cover ${styles.homeGBURL}`}
       >
         <div className="flex justify-center items-center w-full h-full bg-opacity-90 bg-slate-700 shadow-lg pb-10 pt-20">
           <div className="h-full xl:w-3/4 lg:w-3/4 w-5/6 flex xl:flex-row lg:flex-row md:flex-col flex-col items-center justify-center max-w-5xl">
@@ -349,7 +349,7 @@ const Login = () => {
                               <button
                                 type="submit"
                                 onClick={handleSubmit}
-                                className="hover:bg-[#08080cff] text-[#252627] py-1 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit"
+                                className={styles.buttonRedOutline}
                               >
                                 {showSubmitBtnText()}
                               </button>
@@ -357,7 +357,7 @@ const Login = () => {
                               <div>or</div>
 
                               <button
-                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-[#D90429]`}
+                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
                                 onClick={() => {
                                   changeAuthCard();
                                   resetForm();
@@ -369,7 +369,7 @@ const Login = () => {
 
                             {authType !== 3 && (
                               <button
-                                className="rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-[#D90429]"
+                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
                                 onClick={() => setAuthType(3)}
                               >
                                 Forgot password?

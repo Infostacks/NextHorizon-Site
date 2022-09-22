@@ -6,6 +6,7 @@ import { blogs } from "../../utils/data";
 
 import Categories from "./Categories";
 import { Outlet } from "react-router-dom";
+import styles from "../../utils/GlobalStyles";
 
 const allCategories = ["latest", ...new Set(blogs.map((item) => item.category))];
 
@@ -36,7 +37,7 @@ const index = ({selectedCategory}) => {
       </div>
 
       {/*   */}
-      <div className="rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 bg-rose-100 shadow-md text-[#D90429]">
+      <div className={`rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 shadow-md ${styles.blogsCategory_BG}`}>
         <Categories
           categories={categories}
           filterItems={filterItems}

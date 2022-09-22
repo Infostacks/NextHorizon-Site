@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import styles from "../../utils/GlobalStyles";
 
 const AboutProject = () => {
   const { ref, inView } = useInView({
@@ -71,13 +72,13 @@ const AboutProject = () => {
             type="text"
             name="name"
             placeholder="Your full name *"
-            className="ext-gray-600 font-light p-2 border-b-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+            className={styles.inputField_GetQuote}
           />
           <input
             type="text"
             name="company"
             placeholder="Company"
-            className="ext-gray-600 font-light p-2 border-b-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+            className={styles.inputField_GetQuote}
           />
         </motion.div>
         <motion.div
@@ -88,13 +89,13 @@ const AboutProject = () => {
             type="email"
             name="email"
             placeholder="Your email address *"
-            className="ext-gray-600 font-light p-2 border-b-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+            className={styles.inputField_GetQuote}
           />
           <input
             type="text"
             name="contact"
             placeholder="Your phone number"
-            className="ext-gray-600 font-light p-2 border-b-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+            className={styles.inputField_GetQuote}
           />
         </motion.div>
 
@@ -106,7 +107,7 @@ const AboutProject = () => {
             type="text"
             name="aboutProject"
             placeholder="About a project *"
-            className="ext-gray-600 font-light p-2 border-b-[1px] border-gray-400 focus:outline-none bg-transparent font-xs w-full"
+            className={styles.inputField_GetQuote}
           />
         </motion.div>
 
@@ -138,14 +139,14 @@ const AboutProject = () => {
               By sending this form I confirm that I have read and accept the
             </span>{" "}
             <a
-              href="#"
+              href="https://www.privacypolicygenerator.info/live.php?token=vpPyh3TFyArfzhHO971qIWnAQgfTx36q"
               className="underline text-slate-600 hover:text-slate-800"
             >
               Privacy Policy
             </a>
           </span>
           {/* show more button */}
-          <button className="hover:bg-[#08080cff] text-[#252627] py-2 px-3 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#08080cff] border-[#D90429] w-[11rem]">
+          <button className={`hover:bg-${styles.blackPrimary} text-${styles.blackPrimary} py-2 px-3 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-${styles.blackPrimary} border-${styles.redPrimary} w-[11rem]`}>
             Send Message
           </button>
         </motion.div>

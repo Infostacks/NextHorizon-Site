@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import Slider from "react-slick";
 import { clientsTestimonials } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles";
 
 const ClientTestimonial = () => {
   const { ref, inView } = useInView({
@@ -98,10 +99,10 @@ const ClientTestimonial = () => {
 
                   {/* buttons  */}
                   <div className="flex xl:flex-row lg:flex-row flex-col gap-5 mt-5">
-                    <button className="bg-[#08080cff] border-[1px] border-[#08080cff]  text-[#edf2f4ff] py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit">
+                    <button className={styles.buttonBlackFull}>
                       Review on Clutch.co{" "}
                     </button>
-                    <button className="bg-[#08080cff] border-[1px] border-[#08080cff]  text-[#edf2f4ff] py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit">
+                    <button className={styles.buttonBlackFull}>
                       View case study
                     </button>
                   </div>

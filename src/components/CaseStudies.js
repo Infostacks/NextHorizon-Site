@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { caseStudies } from "../utils/data.js";
+import styles from "../utils/GlobalStyles";
 
 const CaseStudies = () => {
   const { ref, inView } = useInView({
@@ -111,7 +112,7 @@ const CaseStudies = () => {
                   </div>
 
                   {/* button  */}
-                  <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                  <button className={styles.buttonBlackFull}>
                     Explore more
                   </button>
                 </div>
@@ -122,7 +123,7 @@ const CaseStudies = () => {
       </div>
 
       {/* show more button */}
-      <button className="hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit">
+      <button className={styles.buttonRedOutline}>
         <Link to="/portfolio">Show more</Link>{" "}
       </button>
     </section>

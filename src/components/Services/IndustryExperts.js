@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { industryExperts } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const IndustryExperts = () => {
   const { ref, inView } = useInView({
@@ -84,7 +85,7 @@ const IndustryExperts = () => {
             {industryExperts[count].desc}
           </p>
           {/* button  */}
-          <button className="text-[#d90429ff] font-semibold py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-rose-200 hover:text-[#d90429ff] w-fit h-fit">
+          <button className={`text-${styles.redPrimary} font-semibold py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-${styles.redPrimary} hover:bg-opacity-10 hover:text-${styles.redPrimary} w-fit h-fit`}>
             Discover industry details
           </button>
         </motion.div>

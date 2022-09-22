@@ -3,6 +3,7 @@ import homeBG from "../../images/template3.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import "./home.css";
+import styles from "../../utils/GlobalStyles";
 
 const Hero = () => {
   const { ref, inView } = useInView({
@@ -62,7 +63,7 @@ const Hero = () => {
               who are courageous to promote software solutions and lead towards
               the utmost growth of business demands to satisfy customer demands.
             </motion.p>
-            <button className="hover:bg-[#08080cff] hover:text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner bg-white text-[#08080cff] w-fit opacity-50 hover:opacity-100 transition-opacity duration-1000">
+            <button className={styles.buttonBlackOutline}>
               Connect with us
             </button>
           </article>

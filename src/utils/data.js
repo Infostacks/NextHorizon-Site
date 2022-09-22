@@ -1353,34 +1353,34 @@ const faqsMobile = [
     question:
       "How to manage product development & mobile application services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>If you choose Time and Material or Fixed price contact model, we provide an experienced Project Manager to watch over the process, report to you, and collect your feedback. <br><br> If you pick a Dedicated Team contract model, the team's management goes entirely on your side.</span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>If you choose Time and Material or Fixed price contact model, we provide an experienced Project Manager to watch over the process, report to you, and collect your feedback. <br><br> If you pick a Dedicated Team contract model, the team's management goes entirely on your side.</span>",
   },
   {
     question: "What are custom mobile app development services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>Custom app development stands for creating mobile apps with specific functionality as well as UI/UX design or enhancing the functionality of an existing app.</span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>Custom app development stands for creating mobile apps with specific functionality as well as UI/UX design or enhancing the functionality of an existing app.</span>",
   },
   {
     question:
       "What services are covered under mobile app development services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>We provide full-cycle mobile app development services.<br><br>It means we conduct a business analysis, prepare UI/UX design, and develop your mobile app from idea to release on App Store or Google Play. Also, we provide further maintenance and scale-up on demand.</span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>We provide full-cycle mobile app development services.<br><br>It means we conduct a business analysis, prepare UI/UX design, and develop your mobile app from idea to release on App Store or Google Play. Also, we provide further maintenance and scale-up on demand.</span>",
   },
   {
     question:
       "What are the technologies used for mobile application development services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 flex flex-col justify-center w-full}`>Programming languages we use for mobile app development:<ul className='list-disc'><li>Java</li><li>Kotlin</li><li>Swift</li><li>Objective-C</li></ul>Databases:<ul><li>Firebase</li><li>SQLite</li><li>Realm</li><li>CoreData</li></ul>Frameworks:<ul><li>Roboelectric</li><li>RXJava</li><li>ReactiveCocoa</li><li>Socket.io</li><li>Alamofire</li><li>Moya, etc.</li></ul></span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 flex flex-col justify-center w-full`}>Programming languages we use for mobile app development:<ul className='list-disc'><li>Java</li><li>Kotlin</li><li>Swift</li><li>Objective-C</li></ul>Databases:<ul><li>Firebase</li><li>SQLite</li><li>Realm</li><li>CoreData</li></ul>Frameworks:<ul><li>Roboelectric</li><li>RXJava</li><li>ReactiveCocoa</li><li>Socket.io</li><li>Alamofire</li><li>Moya, etc.</li></ul></span>",
   },
   {
     question: "What are cross-platform mobile app development services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>Cross-platform development means building mobile apps for multiple platforms and devices with a single code base.<br><br>We use Google’s <a href={`https://www.cleveroad.com/blog/why-use-flutter`} className='text-[#D90429]'>Flutter</a> for cross-platform app development. Flutter helps us build apps for both iOS and Android faster (without affecting apps’ performance) and cut development costs.</span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>Cross-platform development means building mobile apps for multiple platforms and devices with a single code base.<br><br>We use Google’s <a href={`https://www.cleveroad.com/blog/why-use-flutter`} className='text-[#D90429]'>Flutter</a> for cross-platform app development. Flutter helps us build apps for both iOS and Android faster (without affecting apps’ performance) and cut development costs.</span>",
   },
   {
     question: "What solutions are provided by mobile app development services?",
     answer:
-      "<span className={`mt-4 leading-relaxed text-gray-700 w-full}`>Our mobile app development services include:<ul><li><b>Business analysis.</b> We gather and analyze all the project requirements and document them.</li><li><b>UI/UX design.</b> Create wireframes, design the app screen by screen, and make a prototype.</li><li><b>Development.</b> Build custom Android and/or iOS apps using platform-specific programming languages like Swift, Objective-C, Java, Kotlin.</li><li><b>Release.</b> Publish apps on the App Store and/or Google Play.</li><li><b>Maintenance.</b> Support or enhance existing products (if requested).</li></ul></span>",
+      "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>Our mobile app development services include:<ul><li><b>Business analysis.</b> We gather and analyze all the project requirements and document them.</li><li><b>UI/UX design.</b> Create wireframes, design the app screen by screen, and make a prototype.</li><li><b>Development.</b> Build custom Android and/or iOS apps using platform-specific programming languages like Swift, Objective-C, Java, Kotlin.</li><li><b>Release.</b> Publish apps on the App Store and/or Google Play.</li><li><b>Maintenance.</b> Support or enhance existing products (if requested).</li></ul></span>",
   },
 ];
 
@@ -1401,7 +1401,109 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/939b97e476b95be9285b0da449f7af8f9c8cd4fb76883414a119372d3573ac29.png",
     author: "Diana Chabanovska",
     postDate: "Aug 11, 2022",
-    desc: "",
+    desc: `
+    <div style="display: flex; flex-direction: column; gap: 1rem">
+        <span style="font-size: 2rem; font-weight: bold">
+          How to Develop App Like Instagram
+        </span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          These days taking selfies and photos and 
+          <a href="https://www.hopperhq.com/blog/how-to-post-to-instagram-from-pc-mac/" style="color: blue; text-decoration: underline">
+            posting them on social media platforms
+          </a>
+           has become a natural phenomenon. In this modern scenario, photography
+          has been a breakthrough and people are viewing it as a compulsion
+          rather than as a hobby. Having remarkable features and acting as a
+          great platform for exclusively sharing photos has made this Instagram
+          gain immense popularity among all the social networking sites. It is
+          no wonder that Instagram has seized the photo-sharing market and the
+          adoration of online users. With the eventual increase in the users
+          marking their online presence, it has paved a way for many businesses
+          to 
+          <a href="https://www.tvisha.com/solutions/social-media-app-development-company" style="color: blue; text-decoration: underline">
+            Develop Apps like Instagram
+          </a>
+          . Moreover, these type of platforms has become the major growth
+          drivers for many businesses. Everyone can simply share their photos
+          with an eye-catching caption. Being unique from other social networks
+          Instagram has established its place in the app market.
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">
+          AccountAuthorization: 
+        </span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          Here the user is required to create a profile and they can create a
+          new account either by freshly entering all the details or by signing
+          up using their email id or any social media account. 
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">Edit Profile:</span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          Now focus on designing an option for editing the profile so that if
+          the users want to change anything in their profile this feature helps.
+          Your users can change their profile photo, their details, and bio. So,
+          that they can start posting pictures and videos after all
+          those modifications. For this, you need to set a channel for the
+          interaction between the customer and the server of the app.
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">
+          Uploading the Photo and Video:
+        </span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          This feature is the most important and the foundation of this
+          application. Here your user will upload an image or video from their
+          gallery, drive, or their SD card. Moreover, they can also 
+          <a href="https://invideo.io/make/instagram-video-editor/" style="color: blue; text-decoration: underline">
+            share these images or videos
+          </a>
+           on other social media platforms. When coming to backend development
+          you should use different approaches for both Android and iOS
+          platforms.
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">
+          Creating the Messaging Feature:
+        </span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          Considering the current scenarios, it is always mandatory to include
+          this real-time messenger feature for your users to add more worth to
+          your application. This, in turn, helps you to succeed in your
+          business. You should also separately design a notification that
+          enables the user to be alert of those incoming messages from other
+          users. When talking about the backend, you should ensure that you
+          always prevent the extra loading time of the servers.
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">
+          Integrating the Geo-location Feature:
+        </span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          It is one of the necessary features for not only this type of
+          application but for almost all apps. It facilitates the user to simply
+          find their current location when they are posting an image or video in
+          their profile.
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">Search Option:</span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          This feature enables the user to find other users, their friends,
+          groups, etc by typing their user names.
+        </span>
+
+        <span style="font-size: 2rem; font-weight: bold">
+          Connecting multiple social media platforms:
+        </span>
+        <span style="text-align: justify; font-size: 1.2rem">
+          As users these days are connecting through various 
+          <a href="https://www.tvisha.com/blog/social-media-app-development-is-sust-a-few-steps-away" style="color: blue; text-decoration: underline">
+            social media platforms
+          </a>
+          , you must allow them to share information, photos, and videos on
+          several social media sites at a time. 
+        </span>
+      </div>`,
   },
   {
     id: "12341",
@@ -1410,7 +1512,33 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/8909170efe223adeabbe06bb247bac159fa3157d0328ee6064c71c85b1f351c9.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
-    desc: "",
+    desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
+    <span style="text-align: justify; font-size: 1.2rem">
+      The aging population in the United States is predicted to increase the
+      income of the healthcare sector. The majority of 
+      <a
+        href="https://www.appventurez.com/blog/healthcare-mobile-app-development-guide"
+        style="color: blue; text-decoration: underline"
+      >
+        healthcare mobile app guide
+      </a>
+       organizations are prepared to pay for the costs associated with
+      COVID-19 testing and treatment now that the pandemic has started. It
+      will affect the health insurance firms’ profit margins.
+    </span>
+    <span style="font-size: 2rem; font-weight: bold">
+      Benefits of investing in health insurance mobile apps
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      <ul>
+        <li>Access to Health Insurance Officials Right Away.</li>
+        <li>Helping Patients Pick the Best Plan.</li>
+        <li>Boost Operational Effectiveness & Expand Your Business.</li>
+        <li>Easy Payments.</li>
+        <li>Better Brand Promotion and Reputation.</li>
+      </ul>
+    </span>
+  </div>`,
   },
   {
     id: "23565",
@@ -1428,7 +1556,19 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/8a74923ba907d8878f670ffd62a9e210654b8c78e5f1e9a1a55eeba71998049d.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 15, 2022",
-    desc: "",
+    desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
+    <span style='text-align: justify; font-size: 1.2rem'>
+      One of the best ways to find a technical co-founder for your startup
+      is through 
+      <b>
+        networking events and networking sites
+      </b>
+      . One of the most prominent networking sites for startups to find a
+      technical co-founder is LinkedIn. LinkedIn is a trusted professional
+      social media site where you can easily find a technical co-founder for
+      your young firm.
+    </span>
+  </div>`,
   },
   {
     id: "23567",
@@ -1437,7 +1577,21 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/c50f0bc6f5ad1351b39b1733ba537e8f0855df7531a5c7f87e47d5d9b9879bc0.jpg",
     author: "Diana Chabanovska",
     postDate: "May 11, 2022",
-    desc: "",
+    desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
+    <span style="text-align: justify; font-size: 1.2rem">
+      We must first 
+      <a
+        href="https://www.stridenyc.com/blog/the-art-of-the-same-day-job-offer/"
+        style="color: blue; text-decoration: underline"
+      >
+        decide what we are able and willing to offer
+      </a>
+      . We may not be able to offer the kind of package they can get from a
+      more established company, but we can offer them equity. Giving someone
+      equity in our company could help to them feel personally invested and
+      deliver better results.
+    </span>
+  </div>`,
   },
   {
     id: "23568",
@@ -1455,7 +1609,20 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/fd6aa821252d39f64770c4f2ae31212d5d3832a5b0ab2c05e5f1bc8d5158852d.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
-    desc: "",
+    desc: `<div style='display: flex; flex-direction: column; gap: 1rem'>
+    <span style='text-align: justify; font-size: 1.2rem'>
+      If a company wanted to create an app for business 2022 they need to
+      choose the right niche and features.
+      <ul>
+        <li>
+          Conduct user research to understand what platforms are relevant to
+          your audience.
+        </li>
+        <li>Create a detailed feature list of the App.</li>
+        <li>Create a profile that adds quality to your product.</li>
+      </ul>
+    </span>
+  </div>`,
   },
   {
     id: "45675",
@@ -1464,7 +1631,85 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/5249b89d23582287a1b288400f110c88c4d2e63dff5c3cdca01027ce4d09728b.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
-    desc: ``,
+    desc: `<div style='display: flex; flex-direction: column; gap: 1rem'>
+    <span style="text-align: justify; font-size: 1.2rem">
+      A warehouse management system has the potential to save your company
+      money and help improve warehouse efficiency. 
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+       Makes social distancing possible:
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      Warehouse management software can account for worker distance
+      requirements when assigning various tasks. The software can also
+      design inventory placements and routes so warehouse employees have
+      little to no physical interaction.
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+      Offers real-time inventory data:
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      It has the information the business needs about how much product is in
+      each location.
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+      Reduces operating costs
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      A Warehouse Management System can also cut down on waste by
+      implementing a first-in, first-out rule so the oldest perishables go
+      out first.
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+      Improves demand forecasts
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      A warehouse management system can give a company more insight into
+      future demand and provides better inventory visibility, a company's
+      demand forecasts can become more accurate. When a warehouse has an
+      accurate demand forecast, warehouse operators can maintain 
+      <a href="https://www.techtarget.com/searcherp/feature/Top-5-inventory-management-techniques" style="color: blue; text-decoration: underline">
+        optimal levels of inventory
+      </a>
+      .
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+      Creates efficiencies for specific goals
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      A Warehouse Management System uses labor forecasting to assign the
+      right workers to the right equipment at the right times so they can
+      efficiently perform necessary tasks. It has the information the
+      business needs about how much product is in each location.
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+      Improves traceability
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      Businesses can use warehouse management systems to 
+      <a href="https://www.techtarget.com/searcherp/feature/How-food-traceability-software-boosts-supply-chain-visibility" style="color: blue; text-decoration: underline">
+        trace their inventories
+      </a>
+       using lot numbers and serial numbers. We need the warehouse
+      management system to get us down to the exact order.
+    </span>
+
+    <span style="font-size: 2rem; font-weight: bold">
+      Enables digital transformation
+    </span>
+    <span style="text-align: justify; font-size: 1.2rem">
+      Companies can use a warehouse management system to modernize
+      operations in a way that wouldn't be possible otherwise. A company can
+      choose to implement its WMS in phases so the company can get the
+      latest technology and operate as efficiently as possible.
+    </span>
+  </div>`,
   },
   {
     id: "23454",
@@ -1473,19 +1718,119 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/2eb3cf03d767b198cbe1901885b377587d641bb6d8b542a8b38545571b10e2d1.jpg",
     author: "Diana Bestaieva",
     postDate: "Aug 03, 2022",
-    desc: `<span style="text-align: justify;font-size: 1.2rem;">
-    Ecommerce mobile app store means trading commercial products and goods
-    through an online forum that serves as a touchpoint. The online
-    marketplace is trending these days as the pandemic has limited the
-    movement of people. Most people prefer online shopping from their
-    phones, and for that, e-commerce apps are necessary. Businesses these
-    days are also getting online depending upon the preferences of
-    customers. The online shopping system is increasing because of the
-    growing technology and globalization to have a better experience.
-    Demand for creating e- commerce app stores is growing as the market
-    shifts from brick shops to online stores. So make sure that you have
-    opted for the new trends and technology to stand out among competitors
-  </span>`,
+    desc: `<div style='display: flex; flex-direction: column; gap: 1rem'>
+    <span style='text-align: justify; font-size: 1.2rem'>
+      Ecommerce mobile app store means trading commercial products and goods
+      through an online forum that serves as a touchpoint. The online
+      marketplace is trending these days as the pandemic has limited the
+      movement of people. Most people prefer online shopping from their
+      phones, and for that, e-commerce apps are necessary. Businesses these
+      days are also getting online depending upon the preferences of
+      customers. The online shopping system is increasing because of the
+      growing technology and globalization to have a better experience.
+      Demand for creating e- commerce app stores is growing as the market
+      shifts from brick shops to online stores. So make sure that you have
+      opted for the new trends and technology to stand out among competitors
+    </span>
+
+    <span style='font-size: 2rem; font-weight: bold'>
+      How do I convert my website to an e-Commerce app?
+    </span>
+
+    <span style='text-align: justify; font-size: 1.2rem'>
+      Converting an existing e-commerce website to an e-commerce mobile app
+      is not a difficult task to do. You need to follow a few steps for that
+      purpose which are as follows:
+      <ul>
+        <li>Figure out the website platform</li>
+        <li>Keep the look and feel consistent</li>
+        <li>
+          Enlist key native features like push messages and catalog and
+          categories.
+        </li>
+        <li>Develop Application Programming Interface.</li>
+        <li>Collaborate APIs with the app</li>
+        <li>Test the platform on all parameters</li>
+        <li>Launch the mobile app</li>
+      </ul>
+    </span>
+
+    <span style='font-size: 2rem; font-weight: bold'>
+      Why Companies need a solution architect for their project:
+    </span>
+
+    <span style='text-align: justify; font-size: 1.2rem'>
+      If you have read our previous article about a 
+      <a
+        href='https://deepinspire.com/blog/the-role-of-a-solution-architect/'
+        style='color: blue; text-decoration: underline'
+      >
+        Solution Architect’s role
+      </a>
+      , you must understand how significant a good software architecture is
+      for a project.
+    </span>
+    
+    <span style="font-size: 1.5rem; font-weight: bold">
+    1. Linking technologies with business needs and perspectives:
+  </span>
+  <span style="text-align: justify; font-size: 1.2rem">
+    One of the most significant challenges of software product development
+    is meeting the stakeholders’ requirements. An SA covers the risks of
+    product misalignment with business needs and ensures that the solution
+    fits the defined purpose.
+  </span>
+  <span style="font-size: 1.5rem; font-weight: bold">
+    2. Filling the communication gap between technical and non-technical
+    specialists:
+  </span>
+  <span style="text-align: justify; font-size: 1.2rem">
+    A solution Architect regularly notifies stakeholders about product
+    development processes, goals, issues, costs, estimates, etc. An SA
+    translates technical project details into a clear language that
+    management and non-technical stakeholders can understand.
+  </span>
+  <span style="font-size: 1.5rem; font-weight: bold">
+    3. Helping in estimation and costing:
+  </span>
+  <span style="text-align: justify; font-size: 1.2rem">
+    For a better budget, it is advised to invest sufficiently in
+    estimation. A Solution Architect ensures that the number of costs and
+    resources are controlled while meeting the stakeholders’ requirements.
+    This helps with budget forecasting and resource planning. A Solution
+    Architect also analyzes project details and identifies areas where
+    changes could lead to cost savings.
+  </span>
+  <span style="font-size: 1.5rem; font-weight: bold">
+    4. Helping in risk management:
+  </span>
+  <span style="text-align: justify; font-size: 1.2rem">
+    there is a need to understand that software development always has a
+    significant risk. A Solution Architect identifies and mitigates risks
+    via tests in performance, security, and user experience, and
+    eliminates any factors that may impede a solution’s successful
+    delivery.
+  </span>
+  <span style="font-size: 1.5rem; font-weight: bold">
+    5. Selecting the project technology stack:
+  </span>
+  <span style="text-align: justify; font-size: 1.2rem">
+    Selection of a technology stack for product development is one of the
+    most challenging of a Solution Architect’s tasks. There are a lot of
+    different platforms, programming languages, and tools. An SA’s role
+    here is to find which technologies will be the most suitable for a
+    project.
+  </span>
+
+  <span style="font-size: 1.5rem; font-weight: bold">
+    6. Enabling quicker changes in IT Systems:
+  </span>
+  <span style="text-align: justify; font-size: 1.2rem">
+    In today’s reality, there is increased demand for systems to change
+    quickly and proactively respond to rapidly evolving business needs and
+    legal requirements.
+  </span>
+  </div>`,
   },
   {
     id: "23534",
@@ -1494,7 +1839,14 @@ const blogs = [
     img: "https://www.cleveroad.com/images/article-previews/AAAAAAA-1.jpg",
     author: "Daria R.",
     postDate: "Aug 03, 2022",
-    desc: ``,
+    desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
+    <span style="text-align: justify; font-size: 1.2rem">
+      To be successful, retailers must target and retain customers, predict
+      changes, make prompt business decisions, and establish loyalty among
+      employees. Meanwhile, big data analytics in retail can optimize these
+      processes while cutting costs.
+    </span>
+  </div>`,
   },
   {
     id: "23525",

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { connectOurTeams } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const ConnectOurTeam = () => {
   const { ref, inView } = useInView({
@@ -70,7 +71,7 @@ const ConnectOurTeam = () => {
               <span className="text-lg font-bold text-gray-700">
                 {reward.heading}
               </span>
-              <h3 className="text-lg font-bold text-[#D90429] hover:cursor-pointer">
+              <h3 className={`text-lg font-bold text-${styles.redPrimary} hover:cursor-pointer`}>
                 {reward.email}
               </h3>
               <span className="text-lg text-gray-500">{reward.desc}</span>

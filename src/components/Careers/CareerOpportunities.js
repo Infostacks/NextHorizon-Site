@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { careerOpportunities } from "../../utils/data.js";
 import { Link } from "react-router-dom";
+import styles from "../../utils/GlobalStyles.js";
 
 const CareerOpportunities = () => {
   const { ref, inView } = useInView({
@@ -34,7 +35,7 @@ const CareerOpportunities = () => {
         <motion.h2
           ref={ref}
           animate={fadeInAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+          className={`xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight text-${styles.blackPrimary}`}
         >
           Career Opportunities
         </motion.h2>
@@ -63,7 +64,7 @@ const CareerOpportunities = () => {
               </div>
               {/* button  */}
               <Link to={`/careers/${job.jobId}`} state={{ data: job }}>
-                <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                <button className={styles.buttonBlackFull}>
                   Apply Now
                 </button>
               </Link>

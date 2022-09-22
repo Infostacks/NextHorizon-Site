@@ -1,6 +1,7 @@
 import React from "react";
 import { servicesNew } from "../../utils/data";
 import { Link } from "react-router-dom";
+import styles from "../../utils/GlobalStyles";
 
 const ServicesSection = () => {
   return (
@@ -49,17 +50,17 @@ const ServicesSection = () => {
                     {/* other links data  */}
                     <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-start xl:gap-5 lg:gap-5 gap-2 w-full">
                       <Link to={service.link1}>
-                        <span className="text-base font-semibold underline underline-offset-1 hover:text-[#D90429]">
+                        <span className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
                           {service.name1}
                         </span>
                       </Link>
                       <Link to={service.link2}>
-                        <span className="text-base font-semibold underline underline-offset-1 hover:text-[#D90429]">
+                        <span className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
                           {service.name2}
                         </span>
                       </Link>
                       <Link to={service.link3}>
-                        <span className="text-base font-semibold underline underline-offset-1 hover:text-[#D90429]">
+                        <span className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
                           {service.name3}
                         </span>
                       </Link>
@@ -68,7 +69,7 @@ const ServicesSection = () => {
                     {/* button  */}
                     <Link
                       to={service.exploreMoreLink}
-                      className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit"
+                      className={styles.buttonBlackFull}
                     >
                       Explore more
                     </Link>

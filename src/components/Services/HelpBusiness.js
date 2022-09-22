@@ -1,5 +1,6 @@
 import React from "react";
 import { helpBusinesses } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const HelpBusiness = () => {
   return (
@@ -25,7 +26,7 @@ const HelpBusiness = () => {
               <div className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md">
                 <div className="flex xl:flex-row lg:flex-row flex-col gap-3" key={index}>
                   <div className="flex flex-row gap-3 text-xl" key={index}>
-                    <span className="text-[#D90429]">✔</span>
+                    <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
                     <span className="text-2xl font-semibold">

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
+import styles from "../../../utils/GlobalStyles";
 
 const HireCTO = () => {
   const { ref, inView } = useInView({
@@ -31,13 +32,13 @@ const HireCTO = () => {
       animate={fadeInAnimation}
       className="flex items-center justify-center w-screen bg-slate-100"
     >
-      <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-[#D90429] z-[50rem]">
+      <div className={`max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-${styles.redPrimary} z-[50rem]`}>
         <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
           <h1 className="xl:text-[4rem] lg:text-[4rem] md:text-[3rem] text-[2rem] font-semibold">
             You can hire a CTO for your project
           </h1>
           {/* button  */}
-          <button className="xl:w-1/3 lg:w-1/3 w-fit bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429]">
+          <button className={`xl:w-1/3 lg:w-1/3 ${styles.buttonBlackFull}`}>
             <Link to="/contact">Get a consultation</Link>
           </button>
         </div>

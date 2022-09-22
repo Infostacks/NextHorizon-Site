@@ -1,5 +1,6 @@
 import React from "react";
 import { faqsQA } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 import "./listStyle.css";
 
@@ -34,7 +35,7 @@ const FAQsQA = () => {
               return (
                 <details
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">

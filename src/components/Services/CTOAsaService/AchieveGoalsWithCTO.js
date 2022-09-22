@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { achieveBusinessGoals } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const AchieveGoalsWithCTO = () => {
   const { ref, inView } = useInView({
@@ -54,7 +55,7 @@ const AchieveGoalsWithCTO = () => {
                   key={index}
                 >
                   <div className="flex flex-row text-xl" key={index}>
-                    <span className="text-[#D90429]">✔</span>
+                    <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
                     <span className="xl:text-3xl lg:text-3xl text-xl font-semibold">

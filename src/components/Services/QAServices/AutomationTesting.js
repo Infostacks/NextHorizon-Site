@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { SiNodemon } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
+import styles from "../../../utils/GlobalStyles";
 
 const AutomationTesting = () => {
   return (
@@ -27,7 +28,7 @@ const AutomationTesting = () => {
               <SiNodemon />
             </div>
 
-            <div className="flex flex-col gap-20 z-20 xl:p-20 lg:p-20 p-10 rounded-[3rem] bg-[#D90429] bg-opacity-60">
+            <div className={`flex flex-col gap-20 z-20 xl:p-20 lg:p-20 p-10 rounded-[3rem] bg-${styles.redPrimary} bg-opacity-60`}>
               <div className="flex flex-col xl:gap-10 lg:gap-10 gap-2">
                 <h2 className="font-semibold">Backend</h2>
                 <h3 className="xl:text-xl lg:text-xl text-base font-serif text-justify tracking-normal">
@@ -36,7 +37,7 @@ const AutomationTesting = () => {
                   platforms interact with
                 </h3>
               </div>
-              <div className="xl:text-3xl lg:text-3xl text-xl font-mono font-semibold hover:bg-[#D90429] hover:drop-shadow-md px-5 py-2 w-fit rounded-full hover:text-white">
+              <div className={`xl:text-3xl lg:text-3xl text-xl font-mono font-semibold hover:bg-${styles.redPrimary} hover:drop-shadow-md px-5 py-2 w-fit rounded-full hover:text-white`}>
                 <Link to="/contact">Order Now ➙</Link>
               </div>
             </div>

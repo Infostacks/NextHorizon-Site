@@ -17,6 +17,7 @@ import IOSDevInsignts from "./IOSDevInsignts";
 import AppCost from "../../WebDevelopment/AppCost";
 import IOSAppForAnyPurpose from "./IOSAppForAnyPurpose";
 import ShowMore from "../../ShowMore";
+import styles from "../../../../utils/GlobalStyles";
 
 const index = () => {
   const { ref, inView } = useInView({
@@ -101,7 +102,7 @@ const index = () => {
           {/* button  */}
           <motion.button
             animate={fadeInAnimation}
-            className="bg-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
+            className={styles.buttonBlackFull}
           >
             <Link to="/contact">Start a project</Link>
           </motion.button>

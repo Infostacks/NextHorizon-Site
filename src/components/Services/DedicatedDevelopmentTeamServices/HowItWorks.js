@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { howItWorks } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const HowItWorks = () => {
   const { ref, inView } = useInView({
@@ -54,7 +55,7 @@ const HowItWorks = () => {
       className="xl:h-[50rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center"
     >
       {/* top section  */}
-      <div className="bg-black text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10">
+      <div className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10`}>
         {/* Text intro  */}
         <div className="flex gap-5 flex-col xl:w-1/2 lg:w-1/2 w-full">
           <motion.h2
@@ -76,14 +77,14 @@ const HowItWorks = () => {
               return (
                 <button key={index}>
                   <div
-                    className={`flex flex-row items-center text-[#D90429] gap-4 text-md font-semibold py-2 px-1 rounded-3xl drop-shadow-md w-full ${`job-btn ${
+                    className={`flex flex-row items-center text-${styles.redPrimary} gap-4 text-md font-semibold py-2 px-1 rounded-3xl drop-shadow-md w-full ${`job-btn ${
                       count === index && "active-btn"
                     }`}`}
                     onClick={() => setCount(index)}
                   >
                     <span
                       className={`px-[.6rem] py-[.15rem] ${`job-btn ${
-                        count === index && "text-[#D90429]"
+                        count === index && `text-${styles.redPrimary}`
                       }`} bg-white rounded-full`}
                     >
                       {process.id}
@@ -97,7 +98,7 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10">
+      <div className={`flex flex-col gap-10 bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10`}>
         {/* Show Data  */}
         <motion.div
           animate={rightAnimation}

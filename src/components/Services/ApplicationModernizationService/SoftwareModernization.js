@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import styles from "../../../utils/GlobalStyles";
 
 const SoftwareModernization = () => {
   const { ref, inView } = useInView({
@@ -30,7 +31,7 @@ const SoftwareModernization = () => {
       className="xl:h-[50rem] lg:h-[50rem] w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center bg-slate-100 pt-20"
     >
       {/* top section  */}
-      <div className="bg-black text-white xl:w-1/2 lg:w-1/2 px-20 w-full flex xl:items-end lg:items-end items-center justify-center flex-col h-full">
+      <div className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 px-20 w-full flex xl:items-end lg:items-end items-center justify-center flex-col h-full`}>
         {/* Text intro  */}
         <div className="max-w-xl flex gap-10 flex-col 6 xl:py-0 lg:py-0 py-10">
           <motion.h2
@@ -49,7 +50,7 @@ const SoftwareModernization = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full px-20 h-full justify-center xl:py-0 lg:py-0 py-10">
+      <div className={`flex flex-col bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full px-20 h-full justify-center xl:py-0 lg:py-0 py-10`}>
         {/* Show Data  */}
         <div className="flex flex-col gap-5 max-w-xl">
           <motion.span animate={upAnimation} className="text-3xl font-semibold">

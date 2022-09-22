@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { typesOfCTOServices } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const TypesOfCTOServiceValue = () => {
   const { ref, inView } = useInView({
@@ -56,7 +57,7 @@ const TypesOfCTOServiceValue = () => {
           return (
             <motion.div
               animate={upAnimation}
-              className="flex flex-col justify-center bg-[#D90429] h-[30rem] w-[25rem] gap-5 rounded-3xl drop-shadow-md"
+              className={`flex flex-col justify-center bg-${styles.redPrimary} bg-opacity-90 h-[30rem] w-[25rem] gap-5 rounded-3xl drop-shadow-md`}
               key={index}
             >
               <div className="flex flex-col justify-around gap-5 text-slate-100 xl:px-10 lg:px-10 px-5 py-5">
@@ -65,7 +66,7 @@ const TypesOfCTOServiceValue = () => {
                   {webApp.desc}
                 </span>
                 {/* button  */}
-                <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                <button className={styles.buttonBlackFull}>
                   <Link to="/contact">Get consultation</Link>
                 </button>
               </div>

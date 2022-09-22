@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
+import styles from "../../../utils/GlobalStyles";
 
 const ReadyDiscoveryTeam = () => {
   const { ref, inView } = useInView({
@@ -51,7 +52,7 @@ const ReadyDiscoveryTeam = () => {
     <motion.div
       ref={ref}
       animate={fadeInAnimation}
-      className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col justify-center items-center xl:gap-10 lg:gap-10 gap-5 p-5 mt-20 xl:px-20 rounded-[3rem] bg-gradient-to-bl from-indigo-500 via-cyan-500 to-indigo-500 xl:w-4/6 lg:w-4/6 w-5/6"
+      className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col justify-center items-center gap-5 p-5 mt-20 xl:px-20 rounded-[3rem] bg-gradient-to-bl from-indigo-500 via-cyan-500 to-indigo-500 w-5/6"
     >
       {/* left  */}
       <motion.div
@@ -64,7 +65,7 @@ const ReadyDiscoveryTeam = () => {
 
         <div className="flex xl:flex-row lg:flex-row flex-col items-center justify-between gap-5 w-full">
           {/* button  */}
-          <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] h-fit w-fit">
+          <button className={styles.buttonBlackFull}>
             <Link to="/contact">Contact Us</Link>
           </button>
 

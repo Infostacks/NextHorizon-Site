@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { discoveryPhaseDeliverable } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const DiscoveryPhaseDeliverable = () => {
   const { ref, inView } = useInView({
@@ -100,7 +101,7 @@ const DiscoveryPhaseDeliverable = () => {
                   className="flex xl:flex-row lg:flex-row flex-col gap-3"
                   key={index}
                 >
-                  <span className="text-2xl font-semibold bg-[#D90429] rounded-full py-[.15rem] px-3 h-fit w-fit text-slate-100">
+                  <span className={`text-2xl font-semibold bg-${styles.redPrimary} rounded-full py-[.15rem] px-3 h-fit w-fit text-slate-100`}>
                     {item.id}
                   </span>
                   <div className="flex flex-col gap-3">

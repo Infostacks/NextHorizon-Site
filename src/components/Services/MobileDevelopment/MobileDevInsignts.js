@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { blogs } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const MobileDevInsignts = () => {
   return (
@@ -24,17 +25,17 @@ const MobileDevInsignts = () => {
               <div className="flex flex-col p-5 justify-around gap-5">
                 {/* breadcrumbs */}
                 <div className="flex flex-row gap-2 text-sm">
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     <Link to='/blogs/latest'>Blog</Link>
                   </span>
                   <span>➙</span>
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     <Link to="">{insight.category}</Link>
                   </span>
                 </div>
 
-                <span className="text-3xl hover:text-[#D90429] hover:cursor-pointer">
-                  <Link to="">{insight.title}</Link>
+                <span className={`text-3xl hover:text-${styles.redPrimary} hover:cursor-pointer`}>
+                  <Link to={`/blogs/${insight.id}`}>{insight.title}</Link>
                 </span>
                 <span>{insight.date}</span>
               </div>

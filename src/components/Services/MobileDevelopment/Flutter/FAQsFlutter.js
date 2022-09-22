@@ -1,5 +1,6 @@
 import React from "react";
 import { faqsFlutter } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 import "./listStyle.css";
 
 const Answer = (faq) => {
@@ -33,7 +34,7 @@ const FAQsFlutter = () => {
               return (
                 <details
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">
@@ -57,10 +58,7 @@ const FAQsFlutter = () => {
                     </span>
                   </summary>
 
-                  {/* <p className="mt-4 leading-relaxed text-gray-700 w-full"> */}
-                  {/* {() => faq.answer} */}
                   <Answer faq={faq.answer} />
-                  {/* </p> */}
                 </details>
               );
             })}

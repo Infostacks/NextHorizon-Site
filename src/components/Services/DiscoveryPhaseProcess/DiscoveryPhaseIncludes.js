@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { discoveryPhaseIncludes } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const DiscoveryPhaseIncludes = () => {
   const { ref, inView } = useInView({
@@ -55,7 +56,7 @@ const DiscoveryPhaseIncludes = () => {
       className="xl:h-[55rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center"
     >
       {/* top section  */}
-      <div className="bg-black text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full py-10">
+      <div className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full py-10`}>
         {/* Text intro  */}
         <div className="flex gap-5  flex-col xl:w-4/6 lg:w-4/6 w-5/6">
           <motion.h2
@@ -78,14 +79,14 @@ const DiscoveryPhaseIncludes = () => {
               return (
                 <motion.button animate={rightAnimation} key={index}>
                   <div
-                    className={`flex flex-row items-center text-[#D90429] gap-2 text-sm font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
+                    className={`flex flex-row items-center text-${styles.redPrimary} gap-2 text-sm font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
                       count === index && "active-btn"
                     }`}`}
                     onClick={() => setCount(index)}
                   >
                     <span
                       className={`px-3 py-[0.6rem] ${`job-btn ${
-                        count === index && "text-[#D90429]"
+                        count === index && `text-${styles.redPrimary}`
                       }`} bg-white rounded-full`}
                     >
                       {phase.id}
@@ -99,7 +100,7 @@ const DiscoveryPhaseIncludes = () => {
         </div>
       </div>
 
-      <div className="flex flex-col xl:gap-10 lg:gap-10 gap-2 bg-[#D90429] text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center py-10">
+      <div className={`flex flex-col xl:gap-10 lg:gap-10 gap-2 bg-${styles.redPrimary} bg-opacity-90 text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center py-10`}>
         {/* Show Data  */}
         <div className="flex flex-col text-xl font-serif xl:gap-5 lg:gap-5 gap-2 xl:w-2/3 lg:w-2/3 w-full">
           <motion.span animate={leftAnimation} className="text-4xl font-bold">
@@ -133,7 +134,7 @@ const DiscoveryPhaseIncludes = () => {
         </div>
 
         {/* button  */}
-        <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+        <button className={styles.buttonBlackFull}>
           <Link to="/contact">Book a consultation</Link>
         </button>
       </div>

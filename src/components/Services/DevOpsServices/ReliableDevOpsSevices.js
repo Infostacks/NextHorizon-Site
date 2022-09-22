@@ -67,7 +67,7 @@ const ReliableDevOpsSevices = () => {
                 {service.desc.map((tool, index) => {
                   return (
                     <li
-                      className="xl:text-xl lg:text-xl text-base font-serif tracking-wider text-justify"
+                      className="xl:text-xl lg:text-xl text-base font-serif tracking-wider"
                       key={index}
                     >
                       {tool}

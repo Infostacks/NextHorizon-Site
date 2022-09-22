@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { whyChooseUs } from "../../../utils/data.js";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
+import styles from "../../../utils/GlobalStyles.js";
 
 const WhyChooseUs = () => {
   const { ref, inView } = useInView({
@@ -102,17 +103,17 @@ const WhyChooseUs = () => {
                       </span>
                     </div>
                     <div className="flex flex-row gap-5 text-3xl">
-                      <a href={item.email} className="hover:text-[#D90429]">
+                      <a href={item.email} className={`hover:text-${styles.redPrimary}`}>
                         <MdOutlineEmail />
                       </a>
-                      <a href={item.linkedIn} className="hover:text-[#D90429]">
+                      <a href={item.linkedIn} className={`hover:text-${styles.redPrimary}`}>
                         <FaLinkedinIn />
                       </a>
                     </div>
                   </div>
 
                   {/* button  */}
-                  <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                  <button className={styles.buttonBlackFull}>
                     Get free consultation
                   </button>
                 </div>
@@ -126,7 +127,7 @@ const WhyChooseUs = () => {
                         className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base"
                         key={index}
                       >
-                        <span className="text-[#D90429]">✔</span>
+                        <span className={`text-${styles.redPrimary}`}>✔</span>
                         <span>{quality}</span>
                       </motion.div>
                     );

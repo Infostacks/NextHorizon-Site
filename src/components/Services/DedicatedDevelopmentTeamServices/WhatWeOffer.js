@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { whatWeOffer } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const WhatWeOffer = () => {
   const { ref, inView } = useInView({
@@ -72,7 +73,11 @@ const WhatWeOffer = () => {
                 </span>
                 <div className="flex flex-col xl:text-lg lg:text-lg text-sm tracking-wide font-semibold">
                   {offer.expertise.map((item, index) => {
-                    return <span key={index}>✔ {item}</span>;
+                    return (
+                      <span key={index} className={`text-${styles.redPrimary}`}>
+                        ✔ <span className={`text-${styles.blackPrimary}`}>{item}</span>
+                      </span>
+                    );
                   })}
                 </div>
               </div>

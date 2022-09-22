@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { dedicatedDevTeam } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const DedicatedDevTeam = () => {
   const { ref, inView } = useInView({
@@ -50,7 +51,7 @@ const DedicatedDevTeam = () => {
               className="flex flex-row gap-3"
               key={index}
             >
-              <span className="text-3xl text-[#D90429]">{item.icon}</span>
+              <span className={`text-3xl text-${styles.redPrimary}`}>{item.icon}</span>
               <span className="">{item.text}</span>
             </motion.div>
           );

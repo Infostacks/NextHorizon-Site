@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import styles from "../../../../utils/GlobalStyles";
 
 const BuildAndroidApp = () => {
   const { ref, inView } = useInView({
@@ -29,7 +30,7 @@ const BuildAndroidApp = () => {
     <motion.div
       ref={ref}
       animate={fadeInAnimation}
-      className="flex flex-col items-center justify-center w-screen bg-slate-900 xl:p-0 lg:p-0 p-10"
+      className={`flex flex-col items-center justify-center w-screen bg-${styles.blackPrimary} xl:p-0 lg:p-0 p-10`}
     >
       <div className="max-w-screen-lg text-white z-[50rem]">
         <div className=" flex xl:flex-row lg:flex-row md:flex-row flex-col gap-10 items-center justify-center">

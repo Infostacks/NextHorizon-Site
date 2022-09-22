@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { webAppsDelivered } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const WebAppsDelivered = () => {
   return (
@@ -83,7 +84,7 @@ const WebAppsDelivered = () => {
                   </div>
 
                   {/* button  */}
-                  <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                  <button className={styles.buttonBlackFull}>
                     Explore more study
                   </button>
                 </div>
@@ -94,7 +95,7 @@ const WebAppsDelivered = () => {
       </div>
 
       {/* show more button */}
-      <button className="hover:bg-[#08080cff] text-[#252627] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit">
+      <button className={styles.buttonRedOutline}>
         <Link to="/portfolio">Show more</Link>
       </button>
     </section>

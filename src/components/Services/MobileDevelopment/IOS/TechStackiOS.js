@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { iOSTechstack } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 
 const TechStackiOS = () => {
   const [count, setCount] = useState(0);
@@ -71,7 +72,7 @@ const TechStackiOS = () => {
                 {iOSTechstack[count].techData[toolData].desc}
               </p>
               {/* button  */}
-              <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+              <button className={styles.buttonBlackFull}>
                 <Link to="/contact">Hire a developer</Link>
               </button>
             </div>

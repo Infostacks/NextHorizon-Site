@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { discoveryPhaseProcess } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const ServiceAndAwards = () => {
   const { ref, inView } = useInView({
@@ -64,7 +65,7 @@ const ServiceAndAwards = () => {
         {discoveryPhaseProcess.map((item, index) => {
           return (
             <motion.div animate={leftAnimation} className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base" key={index}>
-              <span className="text-[#D90429]">✔</span>
+              <span className={`text-${styles.redPrimary}`}>✔</span>
               <span>{item}</span>
             </motion.div>
           );

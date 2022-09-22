@@ -1,10 +1,11 @@
 import React from "react";
 import { flutterProjectsCompanies } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 
 const FlutterProjectsCompanies = () => {
   return (
     <div className="bg-slate-300 w-screen flex justify-center xl:px-0 lg:px-0 px-10">
-      <section className="max-w-screen-lg text-[#D90429] flex xl:flex-row lg:flex-row flex-col gap-10 items-center py-20 overflow-x-hidden">
+      <section className={`max-w-screen-lg text-${styles.redPrimary} flex xl:flex-row lg:flex-row flex-col gap-10 items-center py-20 overflow-x-hidden`}>
         {/* top section  */}
         <div className="flex items-center flex-col">
           {/* Text intro  */}

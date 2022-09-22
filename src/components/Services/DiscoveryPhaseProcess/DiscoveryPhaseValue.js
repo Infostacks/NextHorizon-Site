@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { discoveryPhaseValue } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const DiscoveryPhaseValue = () => {
   const { ref, inView } = useInView({
@@ -78,7 +79,7 @@ const DiscoveryPhaseValue = () => {
           return (
             <motion.div
               animate={fadeInAnimation}
-              className="flex flex-col justify-center bg-[#D90429] h-[30rem] w-[25rem] gap-5 rounded-3xl shadow-lg"
+              className={`flex flex-col justify-center bg-${styles.redPrimary} h-[30rem] w-[25rem] gap-5 rounded-3xl shadow-lg`}
               key={index}
             >
               <div className="flex flex-col justify-around gap-5 text-slate-100 xl:px-10 lg:px-10 px-5 py-5">
@@ -87,7 +88,7 @@ const DiscoveryPhaseValue = () => {
                   {webApp.desc}
                 </span>
                 {/* button  */}
-                <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                <button className={styles.buttonBlackFull}>
                   <Link to="/contact">Explore more</Link>
                 </button>
               </div>

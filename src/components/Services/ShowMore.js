@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
+import styles from "../../utils/GlobalStyles";
 
 const ShowMore = () => {
   const { ref, inView } = useInView({
@@ -34,7 +35,7 @@ const ShowMore = () => {
     >
       <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl">
         Learn about Next Horizon’s expertise. Our projects' details.{" "}
-        <Link to="/portfolio" className="text-red-500">
+        <Link to="/portfolio" className={`text-${styles.redPrimary}`}>
           Show more
         </Link>{" "}
         <span>➙</span>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { faqsCTO } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const Answer = (faq) => {
   console.log(faq.faq);
@@ -67,7 +68,7 @@ const FAQsCTO = () => {
                 <motion.details
                   animate={fadeInAnimation}
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">

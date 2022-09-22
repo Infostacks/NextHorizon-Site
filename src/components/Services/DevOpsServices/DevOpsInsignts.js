@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { devOpsInsights } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const DevOpsInsignts = () => {
   const { ref, inView } = useInView({
@@ -59,21 +60,21 @@ const DevOpsInsignts = () => {
             <motion.div
               animate={upAnimation}
               key={index}
-              className={`flex flex-col justify-between gap-3 xl:w-[24rem] lg:w-[22rem] w-[20rem] bg-slate-200 rounded-3xl shadow-xl`}
+              className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 rounded-3xl shadow-xl`}
             >
               <div className="flex flex-col p-5 justify-around gap-5">
                 {/* breadcrumbs */}
                 <div className="flex flex-row gap-2 text-sm">
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     Blog
                   </span>
                   <span>➙</span>
-                  <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     <Link to="">{insight.category}</Link>
                   </span>
                 </div>
 
-                <span className="text-xl font-semibold font-serif antialiased hover:text-[#D90429] hover:cursor-pointer">
+                <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                   <Link to={`/blogs/${insight.id}`}>{insight.title}</Link>
                 </span>
                 <div className="flex flex-row justify-between text-sm">

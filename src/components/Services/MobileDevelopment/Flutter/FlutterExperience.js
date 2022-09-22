@@ -1,5 +1,6 @@
 import React from "react";
 import { flutterExperience } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 import "./listStyle.css";
 
 const Answer = (faq) => {
@@ -77,7 +78,7 @@ const FlutterExperience = () => {
                       return (
                         <div
                           key={index}
-                          className="bg-white text-[#D90429] border-[1px] border-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-black hover:border-[1px] hover:border-black hover:cursor-pointer w-fit h-fit"
+                          className={`bg-white text-${styles.redPrimary} border-[1px] border-${styles.redPrimary} py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-${styles.blackPrimary} hover:border-[1px] hover:border-${styles.blackPrimary} hover:cursor-pointer w-fit h-fit`}
                         >
                           <div className="flex justify-center items-center gap-3">
                             <span className="text-3xl">{item.icon}</span>

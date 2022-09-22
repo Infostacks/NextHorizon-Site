@@ -1,9 +1,10 @@
 import React from "react";
 import { techForAdvanceAndroidApps } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 
 const TechForAdvanceAndroidApps = () => {
   return (
-    <section className="bg-[#08080cff] text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <section className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}>
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center gap-10 flex-col">
         {/* Text intro  */}

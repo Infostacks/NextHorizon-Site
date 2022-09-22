@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { modernizationServicesWeProvide } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const ModernizationService = () => {
   const { ref, inView } = useInView({
@@ -69,7 +70,7 @@ const ModernizationService = () => {
               >
                 <div className="flex flex-row gap-3" key={index}>
                   <div className="flex flex-row gap-3 text-xl" key={index}>
-                    <span className="text-[#D90429]">✔</span>
+                    <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
                     <span className="text-2xl font-semibold">

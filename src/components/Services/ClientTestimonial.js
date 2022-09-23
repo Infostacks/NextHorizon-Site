@@ -35,6 +35,8 @@ const ClientTestimonial = () => {
     speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    useCSS: true,
   };
 
   return (

@@ -28,7 +28,7 @@ const AboutProject = () => {
   return (
     <div
       ref={ref}
-      className="flex xl:flex-row lg:flex-row flex-col justify-around gap-5 py-5 xl:px-16 lg:px-16 md:px-10 px-5 rounded-[3rem] bg-gradient-to-bl from-rose-50 via-rose-100 to-rose-300 xl:w-4/6 lg:w-4/6 w-5/6"
+      className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col justify-around gap-5 py-5 xl:px-16 lg:px-16 md:px-10 px-5 rounded-[3rem] bg-gradient-to-bl from-rose-50 via-rose-100 to-rose-300 w-5/6"
     >
       {/* left side  */}
       <div className="flex flex-col justify-evenly gap-10 xl:w-1/2 lg:w-1/2 w-full">

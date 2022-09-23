@@ -66,7 +66,7 @@ const index = () => {
       {/* start project panel  */}
       <div
         ref={ref}
-        className="flex flex-col justify-around xl:gap-10 lg:gap-10 gap-5 py-5 xl:px-20 lg:px-20 md:px-10 px-5 rounded-[3rem] bg-gradient-to-tl from-lime-500 via-green-400 to-lime-500 xl:w-4/6 lg:w-4/6 w-5/6"
+        className="max-w-screen-lg flex flex-col justify-around xl:gap-10 lg:gap-10 gap-5 py-5 xl:px-20 lg:px-20 md:px-10 px-5 rounded-[3rem] bg-gradient-to-tl from-lime-500 via-green-400 to-lime-500 w-5/6"
       >
         {/* breadcrumbs */}
         <div className="flex flex-row gap-2 text-sm">

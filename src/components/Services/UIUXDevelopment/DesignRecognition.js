@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 import { designRecognition } from "../../../utils/data.js";
 
@@ -22,7 +23,17 @@ const DesignRecognition = () => {
       <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col justify-center w-full gap-10">
         {designRecognition.map((webApp, index) => {
           return (
-            <div
+            <motion.div
+              initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-col items-center justify-center gap-2"
               key={index}
             >
@@ -36,7 +47,7 @@ const DesignRecognition = () => {
               <span className="text-lg font-serif w-52 text-center">
                 {webApp.desc}
               </span>
-            </div>
+            </motion.div>
           );
         })}
       </div>

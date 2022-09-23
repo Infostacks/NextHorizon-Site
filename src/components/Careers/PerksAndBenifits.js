@@ -52,12 +52,15 @@ const PerksAndBenifits = () => {
                 transition: {
                   duration: 2,
                   bounce: 0.5,
+                  type: "spring",
                 },
               }}
               className="flex flex-col justify-center p-5 drop-shadow-md rounded-3xl bg-white gap-5"
               key={index}
             >
-              <div className={`text-5xl text-${styles.redPrimary}`}>{benifit.icon}</div>
+              <div className={`text-5xl text-${styles.redPrimary}`}>
+                {benifit.icon}
+              </div>
               <div className="text-xl font-semibold">{benifit.title}</div>
               <div>{benifit.desc}</div>
             </motion.div>

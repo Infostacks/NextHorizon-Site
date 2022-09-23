@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { faqsUIUX } from "../../../utils/data.js";
 import styles from "../../../utils/GlobalStyles.js";
 
@@ -23,7 +24,9 @@ const FAQsUIUX = () => {
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Questions you might have
               </h2>
-              <p className="xl:text-3xl lg:text-3xl text-xl">Learn more about our UI-UX design workflow.</p>
+              <p className="xl:text-3xl lg:text-3xl text-xl">
+                Learn more about our UI-UX design workflow.
+              </p>
             </div>
           </div>
 
@@ -31,7 +34,20 @@ const FAQsUIUX = () => {
             {/* faqsUIUX    */}
             {faqsUIUX.map((faq, index) => {
               return (
-                <details
+                <motion.details
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
                   className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
@@ -58,7 +74,7 @@ const FAQsUIUX = () => {
                   </summary>
 
                   <Answer faq={faq.answer} />
-                </details>
+                </motion.details>
               );
             })}
           </div>

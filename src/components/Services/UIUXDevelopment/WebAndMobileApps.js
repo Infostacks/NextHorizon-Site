@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { mobileAndWebProducts } from "../../../utils/data.js";
 import styles from "../../../utils/GlobalStyles.js";
@@ -23,7 +24,17 @@ const WebAndMobileApps = () => {
       <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col w-full gap-10">
         {mobileAndWebProducts.map((webApp, index) => {
           return (
-            <div
+            <motion.div
+              initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className={`flex flex-col justify-center bg-${styles.redPrimary} bg-opacity-80 rounded-3xl shadow-lg`}
               key={index}
             >
@@ -45,7 +56,7 @@ const WebAndMobileApps = () => {
                   <Link to="/contact">Explore more</Link>
                 </button>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

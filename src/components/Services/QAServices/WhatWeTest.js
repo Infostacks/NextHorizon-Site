@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { whatWeTest } from "../../../utils/data.js";
 
 const WebAndMobileApps = () => {
@@ -21,7 +22,20 @@ const WebAndMobileApps = () => {
       <div className="max-w-screen-sm flex flex-col w-full gap-10">
         {whatWeTest.map((webApp, index) => {
           return (
-            <div
+            <motion.div
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-col justify-center gap-5"
               key={index}
             >
@@ -29,7 +43,7 @@ const WebAndMobileApps = () => {
               <span className="xl:text-xl lg:text-xl text-base text-justify font-serif">
                 {webApp.desc}
               </span>
-            </div>
+            </motion.div>
           );
         })}
       </div>

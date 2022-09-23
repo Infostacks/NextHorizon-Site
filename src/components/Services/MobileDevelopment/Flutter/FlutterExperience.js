@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { flutterExperience } from "../../../../utils/data.js";
 import styles from "../../../../utils/GlobalStyles.js";
 import "./listStyle.css";
@@ -33,7 +34,20 @@ const FlutterExperience = () => {
         <div className="flex flex-col items-center w-full gap-10 mt-16">
           {flutterExperience.map((process, index) => {
             return (
-              <div
+              <motion.div
+                initial={{
+                  x: index % 2 === 0 ? "-10vw" : "10vw",
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
@@ -89,7 +103,7 @@ const FlutterExperience = () => {
                     })}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

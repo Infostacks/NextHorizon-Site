@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { benifitsOfMVP } from "../../../utils/data.js";
 
 const BenefitsOfMVP = () => {
@@ -16,12 +17,28 @@ const BenefitsOfMVP = () => {
       <div className="max-w-screen-sm flex flex-col w-full gap-10">
         {benifitsOfMVP.map((benefit, index) => {
           return (
-            <div className="flex flex-col justify-center gap-2" key={index}>
+            <motion.div
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
+              className="flex flex-col justify-center gap-2"
+              key={index}
+            >
               <span className="text-xl font-semibold">{benefit.title}</span>
-              <span className="text-lg text-justify font-serif">
+              <span className="xl:text-xl lg:text-xl text-base text-justify font-serif">
                 {benefit.desc}
               </span>
-            </div>
+            </motion.div>
           );
         })}
       </div>

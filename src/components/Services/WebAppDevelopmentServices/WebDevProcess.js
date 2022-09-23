@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { webAppDevServices } from "../../../utils/data.js";
 const WebDevProcess = () => {
   return (
@@ -20,7 +21,17 @@ const WebDevProcess = () => {
       <div className="max-w-screen-lg flex flex-row flex-wrap items-center w-full gap-10">
         {webAppDevServices.map((reward, index) => {
           return (
-            <div
+            <motion.div
+              initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               key={index}
               className="flex flex-col justify-center gap-4 w-[30rem]"
             >
@@ -30,7 +41,7 @@ const WebDevProcess = () => {
               <span className="xl:text-xl lg:text-xl text-base text-gray-800 w-full text-justify">
                 {reward.desc}
               </span>
-            </div>
+            </motion.div>
           );
         })}
       </div>

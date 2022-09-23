@@ -133,13 +133,14 @@ const OurRewards = () => {
           {ourRewards.map((reward, index) => {
             return (
               <motion.div
-                initial={{ y: index % 2 === 0 ? "-10vh" : "10vh", opacity: 0 }}
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
                 whileInView={{
-                  y: 0,
+                  x: 0,
                   opacity: 1,
                   transition: {
                     duration: 2,
-                    bounce: 0.5,
+                    type: "spring",
+                    bounce: 0.6,
                   },
                 }}
                 key={index}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { typesOfTesting } from "../../../utils/data.js";
 
 import "./listStyle.css";
@@ -34,7 +35,22 @@ const TypesOfTesting = () => {
         <div className="flex flex-col w-fit">
           {typesOfTesting.map((process, index) => {
             return (
-              <button key={index}>
+              <motion.button
+                initial={{
+                  x: index % 2 === 0 ? "-10vw" : "10vw",
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
+                key={index}
+              >
                 <div
                   className={`flex flex-row gap-2 text-md font-semibold items-center py-3 px-2 rounded-3xl drop-shadow-md underline w-full ${`job-btn ${
                     count === index && "active-btn underline"
@@ -43,7 +59,7 @@ const TypesOfTesting = () => {
                 >
                   {process.type}
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>

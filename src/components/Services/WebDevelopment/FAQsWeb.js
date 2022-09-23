@@ -1,7 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { faqsWebApps } from "../../../utils/data.js";
 import styles from "../../../utils/GlobalStyles.js";
-
 
 const Answer = (faq) => {
   console.log(faq.faq);
@@ -11,7 +11,6 @@ const Answer = (faq) => {
 function createMarkup(faq) {
   return { __html: faq };
 }
-
 
 const FAQsMobile = () => {
   return (
@@ -25,7 +24,9 @@ const FAQsMobile = () => {
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Questions you might have
               </h2>
-              <p className="xl:text-3xl lg:text-3xl text-xl">Learn more about our web app development workflow.</p>
+              <p className="xl:text-3xl lg:text-3xl text-xl">
+                Learn more about our web app development workflow.
+              </p>
             </div>
           </div>
 
@@ -33,7 +34,20 @@ const FAQsMobile = () => {
             {/* faqsWebApps    */}
             {faqsWebApps.map((faq, index) => {
               return (
-                <details
+                <motion.details
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
                   className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
@@ -59,9 +73,8 @@ const FAQsMobile = () => {
                     </span>
                   </summary>
 
-                  
                   <Answer faq={faq.answer} />
-                </details>
+                </motion.details>
               );
             })}
           </div>

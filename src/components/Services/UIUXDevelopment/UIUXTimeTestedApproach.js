@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   uxuiTimeTestedApproach,
   uxuiTimeTestedApproach1,
@@ -28,9 +29,22 @@ const UIUXTimeTestedApproach = () => {
         <div className="flex flex-col justify-center gap-5">
           {uxuiTimeTestedApproach.map((item, index) => {
             return (
-              <span key={index} className="text-base font-serif">
+              <motion.span
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
+                key={index}
+                className="text-base font-serif"
+              >
                 {item}
-              </span>
+              </motion.span>
             );
           })}
         </div>
@@ -44,9 +58,22 @@ const UIUXTimeTestedApproach = () => {
         <div className="flex flex-col justify-center gap-5">
           {uxuiTimeTestedApproach1.map((item, index) => {
             return (
-              <span key={index} className="text-base font-serif">
+              <motion.span
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
+                key={index}
+                className="text-base font-serif"
+              >
                 {item}
-              </span>
+              </motion.span>
             );
           })}
         </div>

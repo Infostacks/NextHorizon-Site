@@ -16,7 +16,7 @@ const CareerOpportunities = () => {
       fadeInAnimation.start({
         opacity: 1,
         transition: {
-          duration: 2,
+          duration: 1,
           bounce: 1,
         },
       });
@@ -53,6 +53,7 @@ const CareerOpportunities = () => {
                 transition: {
                   duration: 2,
                   bounce: 0.5,
+                  type: 'spring'
                 },
               }}
               className="flex xl:flex-row lg:flex-row flex-col justify-between p-5 border-b-2 border-slate-300 gap-5 w-full"

@@ -37,6 +37,9 @@ const ClientTestimonial = () => {
     slidesToScroll: 1,
     arrows: false,
     useCSS: true,
+    accessibility: true,    // to use keyboard arrow keys
+    fade: true,             // fade effect
+    pauseOnDotsHover: true  // Prevents autoplay while hovering on dots
   };
 
   return (

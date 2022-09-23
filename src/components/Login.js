@@ -227,10 +227,10 @@ const Login = () => {
   return (
     <div className="flex flex-col items-center w-full overflow-x-hidden">
       <section
-        className={`flex justify-center flex-col items-center w-full h-full bg-no-repeat bg-cover ${styles.homeGBURL}`}
+        className={`flex justify-center flex-col items-center w-full bg-no-repeat bg-cover ${styles.homeGBURL}`}
       >
-        <div className="flex justify-center items-center w-full h-full bg-opacity-90 bg-slate-700 shadow-lg pb-10 pt-20">
-          <div className="h-full xl:w-3/4 lg:w-3/4 w-5/6 flex xl:flex-row lg:flex-row md:flex-col flex-col items-center justify-center max-w-5xl">
+        <div className="flex justify-center items-center w-full min-h-screen bg-opacity-90 bg-slate-700 shadow-lg pb-10 pt-20">
+          <div className="xl:w-3/4 lg:w-3/4 w-5/6 flex xl:flex-row lg:flex-row md:flex-col flex-col items-center justify-center max-w-5xl">
             {/* Left Side Logo  */}
             <div className="xl:w-1/3 lg:w-1/3 h-full w-full flex flex-col gap-5 items-center justify-center text-white">
               <motion.span
@@ -269,119 +269,91 @@ const Login = () => {
 
             {/* LogIn Card  */}
             <div className="xl:w-2/3 lg:w-2/3 w-full h-full flex justify-center items-center py-5">
-              <AnimatePresence initial={false}>
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 1,
-                    },
-                    visible: {
-                      x: isAnimating ? [0, 25, -25, 25, -25, 0] : 0,
-                      transition: {
-                        y: {
-                          duration: 1.5,
-                          ease: "easeOut",
-                        },
-                      },
-                    },
-                    removed: {
-                      opacity: 1,
-                    },
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  exit="removed"
-                  className="w-3/5"
+              <motion.div
+                animate={{
+                  opacity: 1,
+                }}
+                initial={{
+                  opacity: 0,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 50,
+                  duration: 3,
+                }}
+                exit={{
+                  opacity: 0,
+                }}
+              >
+                {/* temp code  */}
+                <div
+                  id="SignUp"
+                  className="flex justify-center items-center flex-col xl:bg-white lg:bg-white xl:shadow-lg lg:shadow-lg xl:rounded-[3rem]"
                 >
-                  <AnimatePresence>
-                    <motion.div
-                      animate={{
-                        rotate: 360,
-                      }}
-                      initial={{
-                        opacity: 1,
-                      }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 50,
-                        duration: 1.5,
-                      }}
-                      exit={{
-                        opacity: 0,
-                      }}
-                    >
-                      {/* temp code  */}
-                      <div
-                        id="SignUp"
-                        className="flex justify-center items-center flex-col xl:bg-white lg:bg-white xl:shadow-lg lg:shadow-lg xl:rounded-[3rem]"
+                  <div className="flex items-start p-5 flex-col">
+                    <div className="mt-10 mb-5 flex gap-3 flex-col">
+                      <h2 className="text-xs text-slate-400">
+                        Welcom to Next Horizon
+                      </h2>
+                      <h1
+                        className="text-2xl text-slate-600 font-semibold"
+                        id="logoFont"
                       >
-                        <div className="flex items-start p-5 flex-col">
-                          <div className="mt-10 mb-5 flex gap-3 flex-col">
-                            <h2 className="text-xs text-slate-400">
-                              Welcom to Next Horizon
-                            </h2>
-                            <h1
-                              className="text-2xl text-slate-600 font-semibold"
-                              id="logoFont"
-                            >
-                              {showCardTitleText()}
-                            </h1>
-                          </div>
+                        {showCardTitleText()}
+                      </h1>
+                    </div>
 
-                          <div className="flex flex-col items-start gap-5 mb-5">
-                            {/* place code here */}
-                            <div className="flex flex-col gap-3 w-full justify-center">
-                              {showAuthComponents()}
-                              <span
-                                style={{
-                                  display: confirmPassError ? "block" : "none",
-                                  color: "red",
-                                  fontSize: "12px",
-                                  alignSelf: "flex-end",
-                                  marginRight: "5px",
-                                }}
-                              >
-                                *Confirm Password is not same!
-                              </span>
-                            </div>
-
-                            <div className="flex flex-row gap-2 items-center">
-                              <button
-                                type="submit"
-                                onClick={handleSubmit}
-                                className={styles.buttonRedOutline}
-                              >
-                                {showSubmitBtnText()}
-                              </button>
-                              {/* show more button */}
-                              <div>or</div>
-
-                              <button
-                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
-                                onClick={() => {
-                                  changeAuthCard();
-                                  resetForm();
-                                }}
-                              >
-                                {showChangeCardBtnText()}
-                              </button>
-                            </div>
-
-                            {authType !== 3 && (
-                              <button
-                                className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
-                                onClick={() => setAuthType(3)}
-                              >
-                                Forgot password?
-                              </button>
-                            )}
-                          </div>
-                        </div>
+                    <div className="flex flex-col items-start gap-5 mb-5">
+                      {/* place code here */}
+                      <div className="flex flex-col gap-3 w-full justify-center">
+                        {showAuthComponents()}
+                        <span
+                          style={{
+                            display: confirmPassError ? "block" : "none",
+                            color: "red",
+                            fontSize: "12px",
+                            alignSelf: "flex-end",
+                            marginRight: "5px",
+                          }}
+                        >
+                          *Confirm Password is not same!
+                        </span>
                       </div>
-                    </motion.div>
-                  </AnimatePresence>
-                </motion.div>
-              </AnimatePresence>
+
+                      <div className="flex flex-row gap-2 items-center">
+                        <button
+                          type="submit"
+                          onClick={handleSubmit}
+                          className={styles.buttonRedOutline}
+                        >
+                          {showSubmitBtnText()}
+                        </button>
+                        {/* show more button */}
+                        <div>or</div>
+
+                        <button
+                          className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
+                          onClick={() => {
+                            changeAuthCard();
+                            resetForm();
+                          }}
+                        >
+                          {showChangeCardBtnText()}
+                        </button>
+                      </div>
+
+                      {authType !== 3 && (
+                        <button
+                          className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
+                          onClick={() => setAuthType(3)}
+                        >
+                          Forgot password?
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>

@@ -16,13 +16,11 @@ const styles = {
   flexCenterCol: "flex flex-col justify-center items-center",
   flexCol: "flex flex-col",
 
-  buttonHeroBlackOutline: "",
-
   buttonBlackOutline:
     "text-[#08080cff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-[#08080cff] hover:text-[#edf2f4ff] hover:border-[#08080cff] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
 
   buttonBlackFull:
-    "bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[#D90429] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
+    `bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[#D90429] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800`,
 
   buttonRedOutline:
     "hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
@@ -38,8 +36,6 @@ const styles = {
 
   redPrimary: "[#D90429]",
   blackPrimary: "[#08080cff]",
-
-  navLinkHover: "",
 
   inputField_M_Login:
     "text-gray-600 font-light p-2 rounded-md border-[1px] border-gray-400 focus:outline-none bg-gray-100 font-xs w-full",

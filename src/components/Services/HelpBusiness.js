@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { helpBusinesses } from "../../utils/data.js";
 import styles from "../../utils/GlobalStyles.js";
 
@@ -23,8 +24,23 @@ const HelpBusiness = () => {
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-10 w-full flex-wrap">
           {helpBusinesses.map((category, index) => {
             return (
-              <div className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md">
-                <div className="flex xl:flex-row lg:flex-row flex-col gap-3" key={index}>
+              <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
+                className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md"
+              >
+                <div
+                  className="flex xl:flex-row lg:flex-row flex-col gap-3"
+                  key={index}
+                >
                   <div className="flex flex-row gap-3 text-xl" key={index}>
                     <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>
@@ -37,7 +53,7 @@ const HelpBusiness = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

@@ -25,7 +25,7 @@ const ClientsSection = () => {
       fadeInAnimation.start({ opacity: 0 });
     }
   }, [inView, fadeInAnimation]);
-  
+
   return (
     <div
       ref={ref}
@@ -41,13 +41,26 @@ const ClientsSection = () => {
         {companiesList &&
           companiesList.map((company, index) => {
             return (
-              <div className="backdrop:fill-slate-600" key={index}>
+              <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
+                className="backdrop:fill-slate-600"
+                key={index}
+              >
                 <img
                   className="imgColorChange xl:h-40 lg:h-40 h-60 back drop-shadow-md"
                   src={company}
                   alt="projectimage"
                 />
-              </div>
+              </motion.div>
             );
           })}
       </div>

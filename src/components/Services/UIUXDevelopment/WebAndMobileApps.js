@@ -1,6 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { mobileAndWebProducts } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const WebAndMobileApps = () => {
   return (
@@ -22,8 +24,18 @@ const WebAndMobileApps = () => {
       <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col w-full gap-10">
         {mobileAndWebProducts.map((webApp, index) => {
           return (
-            <div
-              className="flex flex-col justify-center bg-[#D90429] bg-opacity-80 rounded-3xl shadow-lg"
+            <motion.div
+              initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
+              className={`flex flex-col justify-center bg-${styles.redPrimary} bg-opacity-80 rounded-3xl shadow-lg`}
               key={index}
             >
               <div className="">
@@ -40,11 +52,11 @@ const WebAndMobileApps = () => {
                   {webApp.desc}
                 </span>
                 {/* button  */}
-                <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                <button className={styles.buttonBlackFull}>
                   <Link to="/contact">Explore more</Link>
                 </button>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

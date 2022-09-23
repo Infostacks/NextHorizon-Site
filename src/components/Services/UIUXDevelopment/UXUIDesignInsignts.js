@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { designInsights } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const UXUIDesignInsignts = () => {
   return (
@@ -25,16 +26,16 @@ const UXUIDesignInsignts = () => {
                 <div className="flex flex-col p-5 justify-around gap-5">
                   {/* breadcrumbs */}
                   <div className="flex flex-row gap-2 text-sm">
-                    <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
+                    <span className= {`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                       <Link to="/blogs">Blog</Link>
                     </span>
                     <span>➙</span>
-                    <span className="hover:cursor-pointer text-slate-600 hover:text-[#D90429]">
-                      <Link to="">{insight.category}</Link>
+                    <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                      <Link to={`/blogs/${insight.id}`}>{insight.category}</Link>
                     </span>
                   </div>
 
-                  <span className="text-xl font-semibold font-serif antialiased hover:text-[#D90429] hover:cursor-pointer">
+                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     <Link to={`/blogs/${insight.id}`}>{insight.title}</Link>
                   </span>
                   <div className="flex flex-row justify-between text-sm">

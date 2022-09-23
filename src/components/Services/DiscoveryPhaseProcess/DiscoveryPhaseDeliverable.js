@@ -97,11 +97,25 @@ const DiscoveryPhaseDeliverable = () => {
             {discoveryPhaseDeliverable[count].data.map((item, index) => {
               return (
                 <motion.div
-                  animate={fadeInAnimation}
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   className="flex xl:flex-row lg:flex-row flex-col gap-3"
                   key={index}
                 >
-                  <span className={`text-2xl font-semibold bg-${styles.redPrimary} rounded-full py-[.15rem] px-3 h-fit w-fit text-slate-100`}>
+                  <span
+                    className={`text-2xl font-semibold bg-${styles.redPrimary} rounded-full py-[.15rem] px-3 h-fit w-fit text-slate-100`}
+                  >
                     {item.id}
                   </span>
                   <div className="flex flex-col gap-3">

@@ -19,16 +19,16 @@ const styles = {
   buttonHeroBlackOutline: "",
 
   buttonBlackOutline:
-    "text-[#08080cff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-[#08080cff] hover:text-[#edf2f4ff] hover:border-[#08080cff] w-fit opacity-80 hover:opacity-100 transition-opacity duration-800",
+    "text-[#08080cff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-[#08080cff] hover:text-[#edf2f4ff] hover:border-[#08080cff] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
 
   buttonBlackFull:
-    "bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[#D90429] w-fit opacity-80 hover:opacity-100 transition-opacity duration-800",
+    "bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[#D90429] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
 
   buttonRedOutline:
-    "hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit opacity-80 hover:opacity-100 transition-opacity duration-800",
+    "hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
 
   buttonRedFull:
-    "bg-[#D90429] text-[#edf2f4ff] border-[1px] border-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#08080cff] hover:border-[#08080cff] w-fit opacity-80 hover:opacity-100 transition-opacity duration-800",
+    "bg-[#D90429] text-[#edf2f4ff] border-[1px] border-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#08080cff] hover:border-[#08080cff] w-fit opacity-90 hover:opacity-100 transition-opacity duration-800",
 
   blogsCategoryHover: "hover:bg-[#D90429] hover:text-white hover:rounded-lg",
   blogsCategorySelected: "bg-[#D90429] text-white rounded-lg drop-shadow-md",

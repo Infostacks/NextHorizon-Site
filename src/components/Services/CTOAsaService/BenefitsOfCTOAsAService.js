@@ -76,7 +76,19 @@ const BenefitsOfCTOAsAService = () => {
         {benefitsCtoAsAService.map((benefit, index) => {
           return (
             <motion.div
-              animate={fadeInAnimation}
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-col justify-center bg-slate-50 xl:p-10 lg:p-10 p-5 rounded-3xl drop-shadow-md"
               key={index}
             >

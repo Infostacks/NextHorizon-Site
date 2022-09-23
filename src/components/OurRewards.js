@@ -133,7 +133,16 @@ const OurRewards = () => {
           {ourRewards.map((reward, index) => {
             return (
               <motion.div
-                animate={fadeInAnimation}
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className="flex flex-col justify-center items-center gap-4"
               >

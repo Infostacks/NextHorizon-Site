@@ -13,6 +13,7 @@ import CaseStudies from "../../../components/CaseStudies";
 import UXUIDesignProcess from "./UXUIDesignProcess";
 import UXUIDesignInsignts from "./UXUIDesignInsignts";
 import HaveAnyQuestion from "../WebAppDevelopmentServices/HaveAnyQuestion";
+import styles from "../../../utils/GlobalStyles";
 
 const index = () => {
   const { ref, inView } = useInView({
@@ -95,7 +96,7 @@ const index = () => {
           {/* button  */}
           <motion.button
             animate={fadeInAnimation}
-            className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
+            className={styles.buttonBlackFull}
           >
             <Link to="/contact">Start a project</Link>
           </motion.button>
@@ -120,7 +121,7 @@ const index = () => {
 
       <UXUIDesignProcess />
 
-      {/* Faqs Mobile */}
+      {/* FAQsUIUX */}
       <FAQsUIUX />
 
       <UXUIDesignInsignts />

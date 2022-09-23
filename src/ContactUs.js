@@ -52,7 +52,7 @@ const ContactUs = () => {
           {/* left side  */}
           <motion.div
             animate={rightAnimation}
-            className="mb-10 flex max-w-sm flex-col gap-3 justify-center items-center w-full bg-[#D90429] rounded-3xl drop-shadow-md shadow-lg z-30"
+            className={`mb-10 flex max-w-sm flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}
           >
             <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
               Contact Us
@@ -102,7 +102,7 @@ const ContactUs = () => {
           {/* right side  */}
           <motion.div
             animate={leftAnimation}
-            className="mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 rounded-3xl drop-shadow-md shadow-lg z-30"
+            className={`mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 rounded-3xl drop-shadow-md shadow-lg z-30`}
           >
             <blockquote className="flex flex-col gap-5 items-center pb-5 mt-6 w-full text-center">
               <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">

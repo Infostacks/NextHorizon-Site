@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { fAQsMVP } from "../../../utils/data.js";
 import styles from "../../../utils/GlobalStyles.js";
 
@@ -34,7 +35,20 @@ const FAQsMVP = () => {
             {/* fAQsMVP    */}
             {fAQsMVP.map((faq, index) => {
               return (
-                <details
+                <motion.details
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
                   className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
@@ -61,7 +75,7 @@ const FAQsMVP = () => {
                   </summary>
 
                   <Answer faq={faq.answer} />
-                </details>
+                </motion.details>
               );
             })}
           </div>

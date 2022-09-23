@@ -50,7 +50,17 @@ const CaseStudies = () => {
         <div className="max-w-screen-lg flex flex-col items-center gap-20 mt-16 xl:px-0 lg:px-0 px-10">
           {caseStudies.map((caseStudy, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
@@ -116,7 +126,7 @@ const CaseStudies = () => {
                     Explore more
                   </button>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

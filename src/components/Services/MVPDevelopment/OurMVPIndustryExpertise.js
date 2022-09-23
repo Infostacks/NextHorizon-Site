@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { mvpIndustryExpertise } from "../../../utils/data.js";
 import styles from "../../../utils/GlobalStyles.js";
@@ -9,7 +10,9 @@ const OurMVPIndustryExpertise = () => {
   return (
     <div className="xl:h-[50rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center">
       {/* top section  */}
-      <div className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10`}>
+      <div
+        className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10`}
+      >
         {/* Text intro  */}
         <div className="flex gap-5 flex-col xl:w-4/6 lg:w-4/6 w-5/6">
           <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold flex flex-wrap tracking-tight">
@@ -21,18 +24,35 @@ const OurMVPIndustryExpertise = () => {
             and security standards, are what give us enough power to build
             software of any complexity
           </div>
-          <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-4 grid-cols-1 xl:gap-10 lg:gap-10 gap-0">
+          <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-4 grid-cols-1 gap-2">
             {mvpIndustryExpertise.map((phase, index) => {
               return (
-                <button key={index}>
+                <motion.button
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
+                  key={index}
+                >
                   <div
-                    className={`flex flex-row items-center text-${styles.redPrimary} gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md w-full ${`job-btn ${
+                    className={`flex flex-row items-center text-${
+                      styles.redPrimary
+                    } gap-4 text-sm font-semibold py-2 px-1 rounded-3xl drop-shadow-md w-full ${`job-btn ${
                       count === index && "active-btn"
                     }`}`}
                     onClick={() => setCount(index)}
                   >
                     <span
-                      className={`px-4 py-2 ${`job-btn ${
+                      className={`px-2 py-1 ${`job-btn ${
                         count === index && `text-${styles.redPrimary}`
                       }`} bg-white rounded-full`}
                     >
@@ -40,14 +60,16 @@ const OurMVPIndustryExpertise = () => {
                     </span>
                     {phase.category}
                   </div>
-                </button>
+                </motion.button>
               );
             })}
           </div>
         </div>
       </div>
 
-      <div className={`flex flex-col gap-10 bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10`}>
+      <div
+        className={`flex flex-col gap-10 bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10`}
+      >
         {/* Show Data  */}
         <div className="flex flex-col text-xl font-serif gap-5 xl:w-1/2 lg:w-1/2 w-full">
           <span className="text-4xl font-bold">
@@ -59,7 +81,9 @@ const OurMVPIndustryExpertise = () => {
           <span className="text-3xl font-semibold underline underline-offset-1">
             Recent Project:
           </span>
-          <span className="xl:text-xl lg:text-xl text-base">{mvpIndustryExpertise[count].recentProject}</span>
+          <span className="xl:text-xl lg:text-xl text-base">
+            {mvpIndustryExpertise[count].recentProject}
+          </span>
         </div>
 
         {/* button  */}

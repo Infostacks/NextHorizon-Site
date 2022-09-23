@@ -1,5 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { uiuxDesignProcess } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const Answer = (faq) => {
   console.log(faq.faq);
@@ -12,7 +14,7 @@ function createMarkup(faq) {
 
 const UXUIDesignProcess = () => {
   return (
-    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
+    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center w-screen xl:px-0 lg:px-0 px-10">
       <div className="max-w-screen-lg w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
@@ -28,7 +30,17 @@ const UXUIDesignProcess = () => {
         <div className="flex flex-col items-center w-full gap-10 mt-16">
           {uiuxDesignProcess.map((process, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
@@ -47,7 +59,9 @@ const UXUIDesignProcess = () => {
 
                 {/* info data  */}
                 <div className="flex flex-col gap-1 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
-                  <span className="text-[#D90429] text-5xl font-bold font-sans">
+                  <span
+                    className={`text-${styles.redPrimary} text-5xl font-bold font-sans`}
+                  >
                     {process.id}
                   </span>
 
@@ -58,7 +72,7 @@ const UXUIDesignProcess = () => {
                     <Answer faq={process.desc} />
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

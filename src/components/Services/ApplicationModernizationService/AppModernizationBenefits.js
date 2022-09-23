@@ -54,7 +54,19 @@ const AppModernizationBenefits = () => {
         {appModernizationServiceBenefits.map((benefit, index) => {
           return (
             <motion.div
-              animate={upAnimation}
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-col justify-center gap-2"
               key={index}
             >

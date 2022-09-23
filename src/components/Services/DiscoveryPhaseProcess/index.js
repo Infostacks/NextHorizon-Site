@@ -133,6 +133,8 @@ const index = () => {
       {/* certifications */}
       <Certifications />
 
+      <div className="h-20"></div>
+
       <ReadyToProject />
 
       {/* testimonials */}

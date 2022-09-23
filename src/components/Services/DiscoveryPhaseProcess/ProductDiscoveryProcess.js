@@ -114,7 +114,26 @@ const ProductDiscoveryProcess = () => {
                     <span className="font-semibold">Business Intelligence</span>
                     <ul className="pl-5 xl:text-xl lg:text-xl text-base">
                       {plan.bisunessIntelligence.map((item, index) => {
-                        return <li key={index}>{item}</li>;
+                        return (
+                          <motion.li
+                            initial={{
+                              x: index % 2 === 0 ? "-10vw" : "10vw",
+                              opacity: 0,
+                            }}
+                            whileInView={{
+                              x: 0,
+                              opacity: 1,
+                              transition: {
+                                duration: 2,
+                                type: "spring",
+                                bounce: 0.6,
+                              },
+                            }}
+                            key={index}
+                          >
+                            {item}
+                          </motion.li>
+                        );
                       })}
                     </ul>
                   </div>
@@ -126,7 +145,26 @@ const ProductDiscoveryProcess = () => {
                     </span>
                     <ul className="pl-5 xl:text-xl lg:text-xl text-base">
                       {plan.bisunessIntelligence.map((item, index) => {
-                        return <li key={index}>{item}</li>;
+                        return (
+                          <motion.li
+                            initial={{
+                              x: index % 2 === 0 ? "-10vw" : "10vw",
+                              opacity: 0,
+                            }}
+                            whileInView={{
+                              x: 0,
+                              opacity: 1,
+                              transition: {
+                                duration: 2,
+                                type: "spring",
+                                bounce: 0.6,
+                              },
+                            }}
+                            key={index}
+                          >
+                            {item}
+                          </motion.li>
+                        );
                       })}
                     </ul>
                   </div>
@@ -136,7 +174,26 @@ const ProductDiscoveryProcess = () => {
                     <span className="font-semibold">UX/UX Design</span>
                     <ul className="pl-5 xl:text-xl lg:text-xl text-base">
                       {plan.bisunessIntelligence.map((item, index) => {
-                        return <li key={index}>{item}</li>;
+                        return (
+                          <motion.li
+                            initial={{
+                              x: index % 2 === 0 ? "-10vw" : "10vw",
+                              opacity: 0,
+                            }}
+                            whileInView={{
+                              x: 0,
+                              opacity: 1,
+                              transition: {
+                                duration: 2,
+                                type: "spring",
+                                bounce: 0.6,
+                              },
+                            }}
+                            key={index}
+                          >
+                            {item}
+                          </motion.li>
+                        );
                       })}
                     </ul>
                   </div>

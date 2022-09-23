@@ -103,10 +103,16 @@ const WhyChooseUs = () => {
                       </span>
                     </div>
                     <div className="flex flex-row gap-5 text-3xl">
-                      <a href={item.email} className={`hover:text-${styles.redPrimary}`}>
+                      <a
+                        href={item.email}
+                        className={`hover:text-${styles.redPrimary}`}
+                      >
                         <MdOutlineEmail />
                       </a>
-                      <a href={item.linkedIn} className={`hover:text-${styles.redPrimary}`}>
+                      <a
+                        href={item.linkedIn}
+                        className={`hover:text-${styles.redPrimary}`}
+                      >
                         <FaLinkedinIn />
                       </a>
                     </div>
@@ -123,7 +129,19 @@ const WhyChooseUs = () => {
                   {item.qualities.map((quality, index) => {
                     return (
                       <motion.div
-                        animate={downAnimation}
+                        initial={{
+                          x: index % 2 === 0 ? "-10vw" : "10vw",
+                          opacity: 0,
+                        }}
+                        whileInView={{
+                          x: 0,
+                          opacity: 1,
+                          transition: {
+                            duration: 2,
+                            type: "spring",
+                            bounce: 0.6,
+                          },
+                        }}
                         className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base"
                         key={index}
                       >

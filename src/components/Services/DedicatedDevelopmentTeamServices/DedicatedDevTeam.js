@@ -47,11 +47,25 @@ const DedicatedDevTeam = () => {
         {dedicatedDevTeam.map((item, index) => {
           return (
             <motion.div
-              animate={fadeInAnimation}
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-row gap-3"
               key={index}
             >
-              <span className={`text-3xl text-${styles.redPrimary}`}>{item.icon}</span>
+              <span className={`text-3xl text-${styles.redPrimary}`}>
+                {item.icon}
+              </span>
               <span className="">{item.text}</span>
             </motion.div>
           );

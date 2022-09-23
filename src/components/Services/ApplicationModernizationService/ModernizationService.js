@@ -65,7 +65,19 @@ const ModernizationService = () => {
           {modernizationServicesWeProvide.map((category, index) => {
             return (
               <motion.div
-                animate={upAnimation}
+                initial={{
+                  x: index % 2 === 0 ? "-10vw" : "10vw",
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 className="flex w-full gap-10 bg-slate-200 p-10 rounded-3xl shadow-md"
               >
                 <div className="flex flex-row gap-3" key={index}>

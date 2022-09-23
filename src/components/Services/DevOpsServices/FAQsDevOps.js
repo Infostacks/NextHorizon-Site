@@ -68,7 +68,19 @@ const FAQsDevOps = () => {
             {faqsDevOps.map((faq, index) => {
               return (
                 <motion.details
-                  animate={fadeInAnimation}
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
                   className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close

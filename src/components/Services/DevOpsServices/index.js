@@ -112,7 +112,7 @@ const index = () => {
       {/* DevOpsValues */}
       <DevOpsValues />
 
-      <DiscusDetails/>S
+      <DiscusDetails/>
 
       <CaseStudies />
 

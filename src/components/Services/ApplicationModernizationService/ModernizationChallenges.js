@@ -64,7 +64,19 @@ const ModernizationChallenges = () => {
         {modernizationChallenges.map((item, index) => {
           return (
             <motion.div
-              animate={upAnimation}
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-col justify-center gap-5 bg-slate-50 p-10 rounded-3xl drop-shadow-md"
               key={index}
             >

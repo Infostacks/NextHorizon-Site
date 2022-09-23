@@ -55,7 +55,19 @@ const ReliableDevOpsSevices = () => {
         {reliableDevOpsSevices.map((service, index) => {
           return (
             <motion.div
-              animate={fadeInAnimation}
+              initial={{
+                x: index % 2 === 0 ? "-10vw" : "10vw",
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               className="flex flex-col justify-center xl:w-1/3 lg:w-1/3 w-full gap-5"
               key={index}
             >

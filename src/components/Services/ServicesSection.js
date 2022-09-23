@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { servicesNew } from "../../utils/data";
 import { Link } from "react-router-dom";
 import styles from "../../utils/GlobalStyles";
@@ -25,7 +26,17 @@ const ServicesSection = () => {
           <div className="flex flex-col items-center w-full gap-10 mt-16 mx-5">
             {servicesNew.map((service, index) => {
               return (
-                <div
+                <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: 'spring',
+                    bounce: .6,
+                  },
+                }}
                   key={index}
                   className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
                 >
@@ -74,7 +85,7 @@ const ServicesSection = () => {
                       Explore more
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

@@ -10,6 +10,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import MainLogowhite3 from "../../images/logo/Nhw4.png";
+import styles from "../../utils/GlobalStyles";
 
 const Footer = () => {
   const { inView } = useInView({
@@ -38,13 +39,13 @@ const Footer = () => {
         <ScrollToTop smooth color="#D90429" />
       </div>
 
-      <div className="footerXMargin flex flex-col justify-center gap-5 w-full bg-[#1B2B36] bg-opacity-95">
+      <div className="footerXMargin flex flex-col justify-center gap-5 w-full bg-[#1B2B36]">
         {/* adress details  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between w-full items-center">
           <img className="h-12" src={MainLogowhite3} alt="Workflow" />
           <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col gap-5">
             <div className="flex flex-row gap-3 items-center">
-              <div className="hover:cursor-pointer text-4xl xl:text-slate-300 lg:text-slate-100 md:text-slate-150 text-[#D90429] hover:text-[#D90429]">
+              <div className={`hover:cursor-pointer text-4xl xl:text-slate-300 lg:text-slate-100 md:text-slate-150 text-${styles.redPrimary} hover:text-${styles.redPrimary}`}>
                 <GoDeviceMobile />
               </div>
               <div className="flex flex-col">
@@ -54,7 +55,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-row gap-3 items-center">
-              <div className="hover:cursor-pointer text-4xl xl:text-slate-300 lg:text-slate-100 md:text-slate-150 text-[#D90429] hover:text-[#D90429]">
+              <div className={`hover:cursor-pointer text-4xl xl:text-slate-300 lg:text-slate-100 md:text-slate-150 text-${styles.redPrimary} hover:text-${styles.redPrimary}`}>
                 <BiMapPin />
               </div>
               <div className="flex flex-col">
@@ -68,7 +69,7 @@ const Footer = () => {
         </div>
 
         {/* horizontal line  */}
-        <div className="w-full h-[1px] bg-[#D90429]"></div>
+        <div className={`w-full h-[1px] bg-${styles.redPrimary}`}></div>
 
         {/* navigation links  */}
         <div className="text-white flex xl:flex-row lg:flex-row flex-col justify-between xl:gap-28 gap-20 w-full">
@@ -181,20 +182,20 @@ const Footer = () => {
 
         {/* icons  */}
         <div className="flex flex-row items-center gap-2">
-          <div className="bg-[#D90429] p-3 rounded-full text-white hover:cursor-pointer hover:text-[#D90429] hover:bg-white">
+          <div className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}>
             <GrFacebookOption />
           </div>
-          <div className="bg-[#D90429] p-3 rounded-full text-white hover:cursor-pointer hover:text-[#D90429] hover:bg-white">
+          <div className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}>
             <FaInstagram />
           </div>
-          <div className="bg-[#D90429] p-3 rounded-full text-white hover:cursor-pointer hover:text-[#D90429] hover:bg-white">
+          <div className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}>
             <GrTwitter />
           </div>
         </div>
       </div>
 
       {/* copyright section  */}
-      <div className="flex justify-center items-center text-slate-50 bg-[#08080cff] bg-opacity-60 xl:py-8 lg:py-8 py-2 border-t-[1px] border-slate-500">
+      <div className={`flex justify-center items-center text-slate-50 bg-${styles.blackPrimary} bg-opacity-60 xl:py-8 lg:py-8 py-2 border-t-[1px] border-slate-500`}>
         © Copyright <strong>NEXT HORIZON</strong>. All Rights Reserved
       </div>
     </div>

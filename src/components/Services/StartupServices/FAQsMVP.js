@@ -1,5 +1,6 @@
 import React from "react";
 import { fAQsMVP } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const Answer = (faq) => {
   console.log(faq.faq);
@@ -37,10 +38,10 @@ const FAQsMVP = () => {
               return (
                 <details
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
                 >
-                  <summary className="flex items-center justify-between cursor-pointer w-full">
+                  <summary className={`flex items-center justify-between scursor-pointer w-full`}>
                     <h5 className="text-lg font-semibold text-gray-900">
                       {faq.question}
                     </h5>

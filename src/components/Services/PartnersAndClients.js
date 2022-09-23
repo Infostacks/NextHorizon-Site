@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { featuredPartners } from "../../utils/data";
 
 const PartnersAndClients = () => {
@@ -27,12 +28,24 @@ const PartnersAndClients = () => {
               <div className="flex flex-row items-center justify-center gap-5 flex-wrap">
                 {featuredPartners.map((partner, index) => {
                   return (
-                    <div
+                    <motion.div
+                      initial={{
+                        y: index % 2 === 0 ? "-10vh" : "10vh",
+                        opacity: 0,
+                      }}
+                      whileInView={{
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                          duration: 2,
+                          bounce: 0.5,
+                        },
+                      }}
                       key={index}
                       className="imgColorChange flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5"
                     >
                       <img src={partner} alt="" className="h-fit" />
-                    </div>
+                    </motion.div>
                   );
                 })}
               </div>

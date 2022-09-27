@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../utils/GlobalStyles";
+import { Link } from "react-router-dom";
 
 const BuildProject = () => {
   return (
@@ -14,7 +15,7 @@ const BuildProject = () => {
         </h1>
         {/* button  */}
         <button className={styles.buttonBlackFull}>
-          Schedule Now
+          <Link to="/contact">Schedule Now</Link>
         </button>
       </div>
     </div>

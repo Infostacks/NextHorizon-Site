@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { softwareDevelopmentFlow } from "../../utils/data.js";
 import styles from "../../utils/GlobalStyles.js";
 
@@ -88,7 +89,7 @@ const SDLC = () => {
                         </span>
                         {/* button  */}
                         <button className={styles.buttonBlackFull}>
-                          Book a consultation!
+                          <Link to="/contact">Book a consultation!</Link>
                         </button>
                       </div>
                     </div>

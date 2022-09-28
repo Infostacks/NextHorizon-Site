@@ -51,10 +51,6 @@ function App() {
         <Header />
       </div>
 
-
-
-      
-
       <Routes>
         <Route exect path="/" element={<Home />} />
         <Route path="*" element={<NotFoundPage />} />

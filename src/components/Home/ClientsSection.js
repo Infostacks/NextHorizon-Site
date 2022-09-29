@@ -10,15 +10,15 @@ const ClientsSection = () => {
       >
         Illustrious software always required a one-step solution
       </h1>
-      <div className="my-16 lg:my-7 w-9/12 max-w-screen-lg m-auto flex items-center justify-between xl:gap-7 overflow-x-scroll scroll-smooth scroll-hidden">
+      <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:gap-20 lg:gap-20 md:gap-10 xl:mt-10 lg:mt-10 max-w-screen-lg">
         {companiesList &&
           companiesList.map((company, index) => {
             return (
               <img
                 key={index}
-                className="w-44 h-auto object-fill xl:w-38 lg:w-32 hover:scale-105 transition-all duration-300 cursor-pointer filter drop-shadow-md"
                 src={company}
                 alt="projectimage"
+                className="w-44 h-auto object-fill xl:w-38 lg:w-32 hover:scale-105 transition-all duration-300 cursor-pointer filter drop-shadow-md"
               />
             );
           })}

@@ -66,7 +66,7 @@ const CaseStudies = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col "
-                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl backdrop-blur-sm border-2`}
+                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md py-5 rounded-3xl backdrop-blur-sm border-2`}
               >
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-full xl:h-full lg:h-full md:h-full h-1/2 px-5">

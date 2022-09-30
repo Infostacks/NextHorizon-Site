@@ -19,3 +19,7 @@
         font-size: 1.8rem;
       }
     }
+
+.zIndex {
+  z-index: 1200;
+}

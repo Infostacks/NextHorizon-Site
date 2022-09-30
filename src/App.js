@@ -92,7 +92,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center w-screen scroll-smoot overflow-x-hidden scroll-x-hidden select-none">
-      <div ref={vantaRef} className="w-full h-screen fixed -z-10"></div>
+      <div ref={vantaRef} className="w-screen h-screen fixed -z-10"></div>
 
       <div className="w-screen fixed top-0 drop-shadow-lg z-50">
         <Header />

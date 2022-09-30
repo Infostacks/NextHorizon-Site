@@ -26,7 +26,7 @@ const FeaturedBlogs = () => {
                   className="rounded-3xl shadow-lg"
                 />
               </span>
-              <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col gap-[1rem] overflow-y-scroll scroll-smooth scroll-hidden">
+              <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col gap-[1rem] px-4 overflow-y-scroll scroll-smooth">
                 <Answer faq={blog?.desc} />
                 {/* {blog?.desc} */}
               </div>

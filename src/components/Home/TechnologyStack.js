@@ -89,8 +89,8 @@ const TechnologyStack = () => {
                 </h5>
                 <div className="">
                   {/* background Circles */}
-                  <div className="absolute bg-[#F96E46] xl:w-[18rem] lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full bg-opacity-80 mt-[13rem] ml-[10rem]"></div>
-                  <div className="absolute bg-[#0CA4A5] xl:w-[25rem] lg:w-[22rem] md:w-[20rem] w-[17rem] xl:h-[25rem] lg:h-[22rem] md:h-[20rem] h-[17rem] rounded-full bg-opacity-80"></div>
+                  <div className="absolute bg-[#F96E46] blur-2xl xl:w-[18rem] bg-opacity-60 lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full mt-[13rem] ml-[10rem]"></div>
+                  <div className="absolute bg-[#0CA4A5] blur-3xl bg-opacity-50 xl:w-[25rem] lg:w-[22rem] md:w-[20rem] w-[17rem] xl:h-[25rem] lg:h-[22rem] md:h-[20rem] h-[17rem] rounded-full"></div>
                   <motion.div
                     initial={{ rotate: 0 }}
                     animate={{ rotate: [3, -3, 3] }}

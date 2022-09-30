@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import style from "../../utils/GlobalStyles.js";
 import styles from "../../utils/GlobalStyles.js";
 
 const MemberLogin = () => {

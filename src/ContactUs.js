@@ -48,11 +48,11 @@ const ContactUs = () => {
       className="flex items-center justify-center w-full pt-20"
     >
       <div className="flex flex-col gap-10 w-full max-w-screen-lg">
-        <div className="w-full flex xl:gap-20 lg:gap-14 gap-10 xl:flex-row lg:flex-row flex-col justify-evenly">
+        <div className="w-full flex xl:gap-20 lg:gap-14 gap-10 xl:flex-row lg:flex-row flex-col justify-center">
           {/* left side  */}
           <motion.div
             animate={rightAnimation}
-            className={`mb-10 flex max-w-sm flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}
+            className={`mb-10 flex max-w-sm mx-auto flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}
           >
             <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
               Contact Us

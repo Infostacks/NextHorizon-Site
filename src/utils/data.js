@@ -1386,7 +1386,57 @@ const faqsMobile = [
 
 const blogs = [
   {
+    id: "24334",
+    feature: true,
+    category: "Next Horizon",
+    title:
+      "NHI among the Top Web Development Companies In New York by DesignRush",
+    img: "https://www.nhitechsolutions.com/assets/img/about1.jpg",
+    author: "Oleksandr Sh.",
+    postDate: "Aug 18, 2022",
+    desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
+    <span style="font-size: 1.5rem; font-weight: bold">
+      Our Story | Next Horizon Inc.
+    </span>
+    <span style="text-align: justify; font-size: 1rem">
+      The information technology (IT) business Next Horizon was founded in
+      Brooklyn, New York, in 2018. It provides a wide range of services,
+      from consultancy to maintenance. We cater to diverse companies and
+      organizations across the city and ensure across the city and make sure
+      that every need is satisfied. With more than 20 organizations now
+      using our software, we now serve the entire global economy. We started
+      creating personal marketing software in 2018 to answer specific
+      business requirements. Including large and small, public and private,
+      for-profit and nonprofit enterprises, our clientele is remarkably
+      diverse. We stand behind them as they grow, persevere, and change to
+      embrace the future. We help startups choose the best technology,
+      resources, and solutions to help them expand their company.
+      Innovating, dependable, integrated, and service-oriented information
+      technology services are what Next Horizon offers and develops,
+      empowering you to grow your business and stay one step ahead of
+      technology. We provide our dependable customers with the newest IT
+      services. A dependable and strong infrastructure will enable
+      ubiquitous, secure, and seamless access to information resources in
+      all forms. We work together with the community in collaborative
+      relationships, serving as reliable partner who foresees needs and
+      offers creative solutions in response.
+    </span>
+
+    <span style="font-size: 1.5rem; font-weight: bold">
+      Next Horizon Inc. has been selected among the Top Web Development
+      Companies In New York by DesignRush
+    </span>
+    <a
+      href="https://www.designrush.com/agency/web-development-companies/new-york?query=next%20horizon"
+      style="color: blue; text-decoration: underline"
+    >
+      Web Development Companies In New York
+    </a>
+  </div>`,
+  },
+  {
     id: "24312",
+    feature: false,
     category: "Technologies",
     title: "Full guide on creating location-based AR app",
     img: "https://www.cleveroad.com/images/article-previews/a598ce63f4b3a7e4f13968e966c506e2982cb124fe3c8614885ad4a7b84bc495.png",
@@ -1396,6 +1446,7 @@ const blogs = [
   },
   {
     id: "13414",
+    feature: false,
     category: "UI/UX Design",
     title: "Instagram-like app development cost",
     img: "https://www.cleveroad.com/images/article-previews/939b97e476b95be9285b0da449f7af8f9c8cd4fb76883414a119372d3573ac29.png",
@@ -1403,10 +1454,10 @@ const blogs = [
     postDate: "Aug 11, 2022",
     desc: `
     <div style="display: flex; flex-direction: column; gap: 1rem">
-        <span style="font-size: 2rem; font-weight: bold">
+        <span style="font-size: 1.5rem; font-weight: bold">
           How to Develop App Like Instagram
         </span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="text-align: justify; font-size: 1rem">
           These days taking selfies and photos and 
           <a href="https://www.hopperhq.com/blog/how-to-post-to-instagram-from-pc-mac/" style="color: blue; text-decoration: underline">
             posting them on social media platforms
@@ -1429,17 +1480,17 @@ const blogs = [
           Instagram has established its place in the app market.
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">
+        <span style="font-size: 1.5rem; font-weight: bold">
           AccountAuthorization: 
         </span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="text-align: justify; font-size: 1rem">
           Here the user is required to create a profile and they can create a
           new account either by freshly entering all the details or by signing
           up using their email id or any social media account. 
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">Edit Profile:</span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="font-size: 1.5rem; font-weight: bold">Edit Profile:</span>
+        <span style="text-align: justify; font-size: 1rem">
           Now focus on designing an option for editing the profile so that if
           the users want to change anything in their profile this feature helps.
           Your users can change their profile photo, their details, and bio. So,
@@ -1448,10 +1499,10 @@ const blogs = [
           interaction between the customer and the server of the app.
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">
+        <span style="font-size: 1.5rem; font-weight: bold">
           Uploading the Photo and Video:
         </span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="text-align: justify; font-size: 1rem">
           This feature is the most important and the foundation of this
           application. Here your user will upload an image or video from their
           gallery, drive, or their SD card. Moreover, they can also 
@@ -1463,10 +1514,10 @@ const blogs = [
           platforms.
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">
+        <span style="font-size: 1.5rem; font-weight: bold">
           Creating the Messaging Feature:
         </span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="text-align: justify; font-size: 1rem">
           Considering the current scenarios, it is always mandatory to include
           this real-time messenger feature for your users to add more worth to
           your application. This, in turn, helps you to succeed in your
@@ -1476,26 +1527,26 @@ const blogs = [
           always prevent the extra loading time of the servers.
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">
+        <span style="font-size: 1.5rem; font-weight: bold">
           Integrating the Geo-location Feature:
         </span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="text-align: justify; font-size: 1rem">
           It is one of the necessary features for not only this type of
           application but for almost all apps. It facilitates the user to simply
           find their current location when they are posting an image or video in
           their profile.
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">Search Option:</span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="font-size: 1.5rem; font-weight: bold">Search Option:</span>
+        <span style="text-align: justify; font-size: 1rem">
           This feature enables the user to find other users, their friends,
           groups, etc by typing their user names.
         </span>
 
-        <span style="font-size: 2rem; font-weight: bold">
+        <span style="font-size: 1.5rem; font-weight: bold">
           Connecting multiple social media platforms:
         </span>
-        <span style="text-align: justify; font-size: 1.2rem">
+        <span style="text-align: justify; font-size: 1rem">
           As users these days are connecting through various 
           <a href="https://www.tvisha.com/blog/social-media-app-development-is-sust-a-few-steps-away" style="color: blue; text-decoration: underline">
             social media platforms
@@ -1507,13 +1558,14 @@ const blogs = [
   },
   {
     id: "12341",
+    feature: false,
     category: "Case Studies",
     title: "How to Build a Health Insurance Mobile App and Benefit From It",
     img: "https://www.cleveroad.com/images/article-previews/8909170efe223adeabbe06bb247bac159fa3157d0328ee6064c71c85b1f351c9.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
     desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       The aging population in the United States is predicted to increase the
       income of the healthcare sector. The majority of 
       <a
@@ -1526,10 +1578,10 @@ const blogs = [
       COVID-19 testing and treatment now that the pandemic has started. It
       will affect the health insurance firms’ profit margins.
     </span>
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Benefits of investing in health insurance mobile apps
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       <ul>
         <li>Access to Health Insurance Officials Right Away.</li>
         <li>Helping Patients Pick the Best Plan.</li>
@@ -1542,6 +1594,7 @@ const blogs = [
   },
   {
     id: "23565",
+    feature: false,
     category: "Technologies",
     title: "A-CSPO Accreditation of Cleveroad",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
@@ -1551,6 +1604,7 @@ const blogs = [
   },
   {
     id: "23566",
+    feature: false,
     category: "Client Guides",
     title: "How to Find a Technical Co-Founder For a Startup",
     img: "https://www.cleveroad.com/images/article-previews/8a74923ba907d8878f670ffd62a9e210654b8c78e5f1e9a1a55eeba71998049d.jpg",
@@ -1572,13 +1626,14 @@ const blogs = [
   },
   {
     id: "23567",
+    feature: false,
     category: "Client Guides",
     title: "How to hire a CTO for a startup",
     img: "https://www.cleveroad.com/images/article-previews/c50f0bc6f5ad1351b39b1733ba537e8f0855df7531a5c7f87e47d5d9b9879bc0.jpg",
     author: "Diana Chabanovska",
     postDate: "May 11, 2022",
     desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       We must first 
       <a
         href="https://www.stridenyc.com/blog/the-art-of-the-same-day-job-offer/"
@@ -1595,6 +1650,7 @@ const blogs = [
   },
   {
     id: "23568",
+    feature: false,
     category: "Client Guides",
     title: "Why Companies Need a Solution Architect for Their Projects",
     img: "https://www.cleveroad.com/images/article-previews/e1bbfef278ba84f501a9449e8e273319b777b65d591627184e061ea7b6b3500d.jpg",
@@ -1604,6 +1660,7 @@ const blogs = [
   },
   {
     id: "97768",
+    feature: false,
     category: "UI/UX Design",
     title: "How to Create an App for Your Business in 2022",
     img: "https://www.cleveroad.com/images/article-previews/fd6aa821252d39f64770c4f2ae31212d5d3832a5b0ab2c05e5f1bc8d5158852d.jpg",
@@ -1626,48 +1683,49 @@ const blogs = [
   },
   {
     id: "45675",
+    feature: false,
     category: "Client Guides",
     title: "Benefits of Warehouse Inventory Management System",
     img: "https://www.cleveroad.com/images/article-previews/5249b89d23582287a1b288400f110c88c4d2e63dff5c3cdca01027ce4d09728b.jpg",
     author: "Diana Chabanovska",
     postDate: "Aug 22, 2022",
     desc: `<div style='display: flex; flex-direction: column; gap: 1rem'>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       A warehouse management system has the potential to save your company
       money and help improve warehouse efficiency. 
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
        Makes social distancing possible:
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       Warehouse management software can account for worker distance
       requirements when assigning various tasks. The software can also
       design inventory placements and routes so warehouse employees have
       little to no physical interaction.
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Offers real-time inventory data:
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       It has the information the business needs about how much product is in
       each location.
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Reduces operating costs
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       A Warehouse Management System can also cut down on waste by
       implementing a first-in, first-out rule so the oldest perishables go
       out first.
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Improves demand forecasts
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       A warehouse management system can give a company more insight into
       future demand and provides better inventory visibility, a company's
       demand forecasts can become more accurate. When a warehouse has an
@@ -1678,20 +1736,20 @@ const blogs = [
       .
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Creates efficiencies for specific goals
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       A Warehouse Management System uses labor forecasting to assign the
       right workers to the right equipment at the right times so they can
       efficiently perform necessary tasks. It has the information the
       business needs about how much product is in each location.
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Improves traceability
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       Businesses can use warehouse management systems to 
       <a href="https://www.techtarget.com/searcherp/feature/How-food-traceability-software-boosts-supply-chain-visibility" style="color: blue; text-decoration: underline">
         trace their inventories
@@ -1700,10 +1758,10 @@ const blogs = [
       management system to get us down to the exact order.
     </span>
 
-    <span style="font-size: 2rem; font-weight: bold">
+    <span style="font-size: 1.5rem; font-weight: bold">
       Enables digital transformation
     </span>
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       Companies can use a warehouse management system to modernize
       operations in a way that wouldn't be possible otherwise. A company can
       choose to implement its WMS in phases so the company can get the
@@ -1713,6 +1771,7 @@ const blogs = [
   },
   {
     id: "23454",
+    feature: false,
     category: "Next Horizon",
     title: "Tips to Build Mobile E-commerce App",
     img: "https://www.cleveroad.com/images/article-previews/2eb3cf03d767b198cbe1901885b377587d641bb6d8b542a8b38545571b10e2d1.jpg",
@@ -1774,7 +1833,7 @@ const blogs = [
     <span style="font-size: 1.5rem; font-weight: bold">
     1. Linking technologies with business needs and perspectives:
   </span>
-  <span style="text-align: justify; font-size: 1.2rem">
+  <span style="text-align: justify; font-size: 1rem">
     One of the most significant challenges of software product development
     is meeting the stakeholders’ requirements. An SA covers the risks of
     product misalignment with business needs and ensures that the solution
@@ -1784,7 +1843,7 @@ const blogs = [
     2. Filling the communication gap between technical and non-technical
     specialists:
   </span>
-  <span style="text-align: justify; font-size: 1.2rem">
+  <span style="text-align: justify; font-size: 1rem">
     A solution Architect regularly notifies stakeholders about product
     development processes, goals, issues, costs, estimates, etc. An SA
     translates technical project details into a clear language that
@@ -1793,7 +1852,7 @@ const blogs = [
   <span style="font-size: 1.5rem; font-weight: bold">
     3. Helping in estimation and costing:
   </span>
-  <span style="text-align: justify; font-size: 1.2rem">
+  <span style="text-align: justify; font-size: 1rem">
     For a better budget, it is advised to invest sufficiently in
     estimation. A Solution Architect ensures that the number of costs and
     resources are controlled while meeting the stakeholders’ requirements.
@@ -1804,7 +1863,7 @@ const blogs = [
   <span style="font-size: 1.5rem; font-weight: bold">
     4. Helping in risk management:
   </span>
-  <span style="text-align: justify; font-size: 1.2rem">
+  <span style="text-align: justify; font-size: 1rem">
     there is a need to understand that software development always has a
     significant risk. A Solution Architect identifies and mitigates risks
     via tests in performance, security, and user experience, and
@@ -1814,7 +1873,7 @@ const blogs = [
   <span style="font-size: 1.5rem; font-weight: bold">
     5. Selecting the project technology stack:
   </span>
-  <span style="text-align: justify; font-size: 1.2rem">
+  <span style="text-align: justify; font-size: 1rem">
     Selection of a technology stack for product development is one of the
     most challenging of a Solution Architect’s tasks. There are a lot of
     different platforms, programming languages, and tools. An SA’s role
@@ -1825,7 +1884,7 @@ const blogs = [
   <span style="font-size: 1.5rem; font-weight: bold">
     6. Enabling quicker changes in IT Systems:
   </span>
-  <span style="text-align: justify; font-size: 1.2rem">
+  <span style="text-align: justify; font-size: 1rem">
     In today’s reality, there is increased demand for systems to change
     quickly and proactively respond to rapidly evolving business needs and
     legal requirements.
@@ -1834,13 +1893,14 @@ const blogs = [
   },
   {
     id: "23534",
+    feature: false,
     category: "Client Guides",
     title: "Big Data eCommerce system for retail business",
     img: "https://www.cleveroad.com/images/article-previews/AAAAAAA-1.jpg",
     author: "Daria R.",
     postDate: "Aug 03, 2022",
     desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
-    <span style="text-align: justify; font-size: 1.2rem">
+    <span style="text-align: justify; font-size: 1rem">
       To be successful, retailers must target and retain customers, predict
       changes, make prompt business decisions, and establish loyalty among
       employees. Meanwhile, big data analytics in retail can optimize these
@@ -1850,6 +1910,7 @@ const blogs = [
   },
   {
     id: "23525",
+    feature: false,
     category: "Next Horizon",
     title: "How to build a eCommerce mobile app",
     img: "https://www.cleveroad.com/images/article-previews/from-ecommerce-to-mobile-commerce-shopping-at-a-high-tech-level-4.png",

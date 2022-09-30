@@ -1,6 +1,6 @@
 import { blogs } from "../../utils/data";
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Answer = (faq) => {
   console.log(faq.faq);
@@ -48,7 +48,6 @@ const BlogPost = () => {
       />
 
       <Answer faq={data[0]?.desc} />
-      
     </div>
   );
 };

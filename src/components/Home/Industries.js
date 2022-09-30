@@ -69,7 +69,7 @@ const Industries = () => {
           </div>
 
           {/* industries  */}
-          <div className="max-w-screen-lg flex flex-col w-full gap-2 bg-slate-200 rounded-3xl">
+          <div className="max-w-screen-lg flex flex-col w-full gap-2 rounded-3xl">
             {industries.map((industry, index) => {
               return (
                 <motion.div

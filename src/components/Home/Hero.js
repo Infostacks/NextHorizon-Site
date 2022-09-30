@@ -52,7 +52,7 @@ const Hero = () => {
         >
           {/* right  */}
           <article className="flex flex-col justify-center xl:w-2/3 lg:w-1/2 md:w-1/2 w-full gap-5">
-            <motion.h1 animate={leftAnimation} className="heroTextHeading z-10">
+            <motion.h1 animate={leftAnimation} className="heroTextHeading drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-lime-400 to-green-600 z-10">
               Doing More for Your Technical Success
             </motion.h1>
             <motion.p

@@ -10,12 +10,14 @@ import MemberLogin from "./MemberLogin";
 import CaseStudies from "../../components/CaseStudies";
 import TechnologyStack from "./TechnologyStack";
 import Industries from "./Industries";
+import FeaturedBlogs from "./FeaturedBlogs";
 
 const index = () => {
   return (
     <div className="flex flex-col items-center w-full overflow-x-hidden">
       <Hero />
       <OurRewards />
+      <FeaturedBlogs/>
       <Industries/>
       <CaseStudies />
       <TechnologyStack />

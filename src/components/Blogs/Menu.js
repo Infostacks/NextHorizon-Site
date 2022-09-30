@@ -21,7 +21,7 @@ const Menu = ({ items }) => {
               },
             }}
             key={index}
-            className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 rounded-3xl shadow-xl`}
+            className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 bg-opacity-70 border-2 border-slate-900/3 rounded-3xl shadow-xl`}
           >
             <div className="flex flex-col p-5 justify-between gap-5">
               {/* breadcrumbs */}
@@ -36,7 +36,7 @@ const Menu = ({ items }) => {
                 </span>
               </div>
 
-              <span className={`text-xl font-semibold font-serif antialiased hover:text-${styles.redPrimary} hover:cursor-pointer`}>
+              <span className={`text-lg font-semibold font-serif antialiased hover:text-${styles.redPrimary} hover:cursor-pointer`}>
                 <NavLink to={`/blogs/${blogData.id}`}>{blogData.title}</NavLink>
               </span>
               <div className="flex flex-row justify-between text-sm">
@@ -47,7 +47,7 @@ const Menu = ({ items }) => {
             <img
               src={blogData.img}
               alt={blogData.title}
-              className="imgColorChange object-cover h-[14rem] w-full bg-slate-100 bg-opacity-60 rounded-3xl"
+              className="object-cover h-[14rem] w-full bg-slate-100 bg-opacity-60 rounded-3xl"
             />
           </motion.div>
         );

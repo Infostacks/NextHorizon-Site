@@ -52,13 +52,13 @@ const ContactUs = () => {
           {/* left side  */}
           <motion.div
             animate={rightAnimation}
-            className={`mb-10 flex max-w-sm mx-auto flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}
+            className={`mb-10 flex max-w-sm mx-auto flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} backdrop-blur-sm bg-opacity-60 border-2 border-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}
           >
             <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
               Contact Us
             </h2>
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
-              <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-100 transition-opacity duration-700">
+              <div className="flex flex-col justify-center items-center">
                 <div className="text-3xl text-slate-100">
                   <HiOutlineLocationMarker />
                 </div>
@@ -72,7 +72,7 @@ const ContactUs = () => {
             </blockquote>
 
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
-              <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-100 transition-opacity duration-700">
+              <div className="flex flex-col justify-center items-center">
                 <div className="text-3xl text-slate-100">
                   <BiEnvelope />
                 </div>
@@ -86,7 +86,7 @@ const ContactUs = () => {
             </blockquote>
 
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
-              <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-100 transition-opacity duration-700">
+              <div className="flex flex-col justify-center items-center">
                 <div className="text-3xl text-slate-100">
                   <BiPhoneCall />
                 </div>
@@ -102,7 +102,7 @@ const ContactUs = () => {
           {/* right side  */}
           <motion.div
             animate={leftAnimation}
-            className={`mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 rounded-3xl drop-shadow-md shadow-lg z-30`}
+            className={`mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 border-2 border-slate-500 backdrop-blur-sm bg-opacity-60 rounded-3xl drop-shadow-md shadow-lg z-30`}
           >
             <blockquote className="flex flex-col gap-5 items-center pb-5 mt-6 w-full text-center">
               <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">

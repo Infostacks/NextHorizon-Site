@@ -38,7 +38,7 @@ const Industries = () => {
     }
   }, [inView, leftAnimation, rightAnimation]);
   return (
-    <div className="overflow-x-hidden bg-slate-100 w-full">
+    <div className="overflow-x-hidden bg-slate-100 bg-opacity-80 w-full">
       <section
         ref={ref}
         className="flex flex-col items-center justify-center pt-20 pb-2"
@@ -86,7 +86,7 @@ const Industries = () => {
                       bounce: 0.6,
                     },
                   }}
-                  className="flex flex-col justify-center bg-slate-50 xl:p-10 lg:p-10 p-5 rounded-3xl drop-shadow-md"
+                  className="flex flex-col justify-center xl:p-10 lg:p-10 p-5 rounded-3xl drop-shadow-md backdrop-blur-sm border-2"
                   key={index}
                 >
                   <div className="flex flex-row flex-wrap justify-between">

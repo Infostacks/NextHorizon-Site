@@ -4,7 +4,7 @@ import styles from "../../utils/GlobalStyles";
 
 const ClientsSection = () => {
   return (
-    <div className="overflow-x-hidden flex flex-col bg-slate-200 items-center justify-evenly p-20 gap-5 w-full">
+    <div className="overflow-x-hidden flex flex-col bg-slate-300 bg-opacity-80 backdrop-blur-sm items-center justify-evenly p-20 gap-5 w-full">
       <h1
         className={`font-bold xl:text-7xl lg:text-7xl md:text-4xl text-3xl max-w-screen-lg text-center text-${styles.blackPrimary}`}
       >

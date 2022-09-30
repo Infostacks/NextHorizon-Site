@@ -39,12 +39,12 @@ const Hero = () => {
   }, [inView, leftAnimation, rightAnimation]);
 
   return (
-    <div className="w-screen overflow-hidden bg-slate-100">
-      <img
+    <div className="w-screen overflow-hidden bg-slate-100 bg-opacity-50">
+      {/* <img
         src={homeBG}
         alt="homeBG"
         className="h-screen w-full overflow-x-hidden absolute"
-      />
+      /> */}
       <section className="hero xl:px[10rem] lg:px-[4rem] md:px-[3rem] px-[3rem]">
         <div
           ref={ref}

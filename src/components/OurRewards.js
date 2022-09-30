@@ -48,7 +48,7 @@ const OurRewards = () => {
   }, [inView, leftAnimation, rightAnimation, fadeInAnimation]);
 
   return (
-    <section ref={ref} className="w-screen overflow-x-hidden bg-slate-100">
+    <section ref={ref} className="w-screen overflow-x-hidden bg-slate-100 bg-opacity-80">
       <div className="max-w-screen-lg px-4 pt-20 mx-auto">
         {/* top section  */}
         <div className="flex items-center justify-between xl:flex-row lg:flex-row md:flex-row flex-col gap-5 mx-10">

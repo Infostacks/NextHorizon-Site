@@ -98,7 +98,7 @@ function App() {
         <Header />
       </div>
 
-      <div className="bg-slate-200 bg-opacity-10 z-10">
+      <div className="bg-slate-200 bg-opacity-60 z-10">
         <Routes>
           <Route exect path="/" element={<Home />} />
           <Route path="*" element={<NotFoundPage />} />

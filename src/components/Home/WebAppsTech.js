@@ -33,7 +33,7 @@ const WebAppsTech = () => {
         </div>
 
         {/* Show Tool Data  */}
-        <div className="flex flex-col justify-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-lg w-full bg-slate-200 xl:p-20 lg:p-14 p-5 rounded-[3rem] drop-shadow-md">
+        <div className="flex flex-col justify-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-lg w-full bg-slate-200 bg-opacity-50 border-2 border-slate-300 xl:p-20 lg:p-14 p-5 rounded-[3rem] drop-shadow-md">
           <div className="flex xl:flex-row lg:flex-row flex-col w-full flex-wrap">
             {techStackWebApps[count].techData.map((data, index) => {
               return (

@@ -53,7 +53,7 @@ const TechnologyStack = () => {
   }, [inView, leftAnimation, rightAnimation, fadeInAnimation]);
 
   return (
-    <div className="w-full overflow-x-hidden bg-slate-100 flex flex-col justify-center items-center">
+    <div className="w-full overflow-x-hidden bg-white bg-opacity-50 backdrop-blur-sm flex flex-col justify-center items-center">
       <section
         ref={ref}
         className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10"
@@ -89,8 +89,8 @@ const TechnologyStack = () => {
                 </h5>
                 <div className="">
                   {/* background Circles */}
-                  <div className="absolute bg-[#F96E46] blur-2xl xl:w-[18rem] bg-opacity-60 lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full mt-[13rem] ml-[10rem]"></div>
-                  <div className="absolute bg-[#0CA4A5] blur-3xl bg-opacity-50 xl:w-[25rem] lg:w-[22rem] md:w-[20rem] w-[17rem] xl:h-[25rem] lg:h-[22rem] md:h-[20rem] h-[17rem] rounded-full"></div>
+                  <div className="absolute bg-[#F96E46] blur-2xl xl:w-[18rem] bg-opacity-80 lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full mt-[13rem] ml-[10rem]"></div>
+                  <div className="absolute bg-[#0CA4A5] blur-3xl bg-opacity-70 xl:w-[25rem] lg:w-[22rem] md:w-[20rem] w-[17rem] xl:h-[25rem] lg:h-[22rem] md:h-[20rem] h-[17rem] rounded-full"></div>
                   <motion.div
                     initial={{ rotate: 0 }}
                     animate={{ rotate: [3, -3, 3] }}
@@ -117,8 +117,8 @@ const TechnologyStack = () => {
                 </h5>
                 <div className="w-right">
                   {/* background Circles */}
-                  <div className="absolute bg-[#00E8FC] xl:w-[18rem] lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full bg-opacity-80"></div>
-                  <div className="absolute bg-[#FCBA04] xl:w-[20rem] lg:w-[18rem] md:w-[15rem] w-[13rem] xl:h-[20rem] lg:h-[18rem] md:h-[15rem] h-[13rem] rounded-full bg-opacity-80 mt-[10rem] ml-[8rem]"></div>
+                  <div className="absolute bg-[#00E8FC] blur-2xl xl:w-[18rem] lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full bg-opacity-80"></div>
+                  <div className="absolute bg-[#FCBA04] blur-3xl xl:w-[20rem] lg:w-[18rem] md:w-[15rem] w-[13rem] xl:h-[20rem] lg:h-[18rem] md:h-[15rem] h-[13rem] rounded-full bg-opacity-80 mt-[10rem] ml-[8rem]"></div>
                   <motion.div
                     initial={{ rotate: 0 }}
                     animate={{ rotate: [-3, 3, -3] }}

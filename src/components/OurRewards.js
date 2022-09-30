@@ -48,7 +48,7 @@ const OurRewards = () => {
   }, [inView, leftAnimation, rightAnimation, fadeInAnimation]);
 
   return (
-    <section ref={ref} className="w-screen overflow-x-hidden bg-slate-100">
+    <section ref={ref} className="w-screen overflow-x-hidden bg-slate-100 bg-opacity-80">
       <div className="max-w-screen-lg px-4 pt-20 mx-auto">
         {/* top section  */}
         <div className="flex items-center justify-between xl:flex-row lg:flex-row md:flex-row flex-col gap-5 mx-10">
@@ -74,7 +74,7 @@ const OurRewards = () => {
           {/* rating card  */}
           <motion.div
             animate={fadeInAnimation}
-            className="flex flex-col justify-center items-center p-10 bg-[#edf2f4ff] rounded-[40px]"
+            className="flex flex-col justify-center items-center p-10 bg-slate-100 border-2 border-slate-200/60 backdrop-blur-sm bg-opacity-10 rounded-[40px]"
           >
             <h3 className="text-2xl font-semibold">51 Reviews on Clutch</h3>
             <div className="flex flex-row justify-center items-center gap-5">
@@ -149,13 +149,13 @@ const OurRewards = () => {
                 <img
                   src={reward.img}
                   alt={reward.title}
-                  className="imgColorChange object-cover w-56 h-56 bg-zinc-100 p-8 rounded-[3rem] shadow-xl"
+                  className="object-cover w-56 h-56 bg-slate-100 border-2 border-slate-200/60 backdrop-blur-sm bg-opacity-5 p-8 rounded-[3rem] shadow-xl"
                 />
 
-                <span className="text-lg font-bold text-gray-700">
+                <span className="text-lg font-bold text-gray-900">
                   {reward.title}
                 </span>
-                <span className="text-lg text-gray-500 text-center w-56 ">
+                <span className="text-lg text-gray-800 text-center w-56 ">
                   {reward.desc}
                 </span>
               </motion.div>

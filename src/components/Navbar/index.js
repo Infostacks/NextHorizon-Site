@@ -16,26 +16,7 @@ import BlogMenu from "./BlogMenu";
 
 const index = () => {
   // old nav
-  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
-  // const [navbar, setNavbar] = useState(false);/
-
-  // const displaySubmenu = (e) => {
-  //   const page = e.target.textContent;
-  //   const tempBtn = e.target.getBoundingClientRect();
-  //   const center = (tempBtn.left + tempBtn.right) / 2;
-  //   const bottom = tempBtn.bottom - 3; // 3 is the height of the navbar
-
-  //   if (page === undefined) {
-  //     return;
-  //   } // to check undefined
-  //   openSubmenu(page, { center, bottom });
-  // };
-
-  // const handleSubmenu = (e) => {
-  //   if (!e.target.classList.contains("link-btn")) {
-  //     closeSubmenu();
-  //   }
-  // };
+  const { openSidebar } = useGlobalContext();
 
   const [isHoveringServices, setIsHoveringServices] = useState(false);
   const handleMouseEnterServices = (e) => {
@@ -56,10 +37,7 @@ const index = () => {
   };
 
   return (
-    <nav
-      className="nav xl:px[20rem] lg:px-[5] md:pr-[5rem] md:pl-[5rem] px-[5rem] w-screen h-screen bg-[#1B2B36] bg-opacity-80"
-      // onMouseOver={handleSubmenu}
-    >
+    <nav className="nav xl:px[20rem] lg:px-[5] md:pr-[5rem] md:pl-[5rem] px-[5rem] w-screen h-screen bg-[#1B2B36] bg-opacity-80">
       <div className="flex flex-row justify-around items-center w-full h-full">
         <div className="nav-header w-full h-full">
           <Link to="/">
@@ -74,13 +52,13 @@ const index = () => {
             <FaBars />
           </button>
         </div>
-        
+
         <div className="flex justify-center items-center flex-row gap-[30px] w-full h-full text-white">
-          <span className="nav-item is-active" active-color="cyan">
+          <span className="nav-item">
             <Link to="/">HOME</Link>
           </span>
 
-          <span className="nav-item" active-color="crimson">
+          <span className="nav-item">
             <Link
               to="/services"
               onMouseEnter={handleMouseEnterServices}
@@ -97,18 +75,11 @@ const index = () => {
             </div>
           </span>
 
-          <span className="nav-item" active-color="green">
+          <span className="nav-item">
             <Link to="/portfolio">PORTFOLIO</Link>
-            <div
-              className="sub-menu"
-              // onMouseEnter={handleMouseEnter}
-              // onMouseLeave={handleMouseExit}
-            >
-              {/* {isHovering ? <PortfolioMenu /> : ""} */}
-            </div>
           </span>
 
-          <span className="nav-item" active-color="blue">
+          <span className="nav-item">
             <Link
               to="/blogs/latest"
               onMouseEnter={handleMouseEnterBlogs}
@@ -121,11 +92,11 @@ const index = () => {
               onMouseEnter={handleMouseEnterBlogs}
               onMouseLeave={handleMouseExitBlogs}
             >
-              {isHoveringBlogs ? <BlogMenu/>  : ""}
+              {isHoveringBlogs ? <BlogMenu /> : ""}
             </div>
           </span>
 
-          <span className="nav-item" active-color="red">
+          <span className="nav-item">
             <Link to="/gallery">GALLERY</Link>
             <div
               className="sub-menu"
@@ -136,11 +107,11 @@ const index = () => {
             </div>
           </span>
 
-          <span className="nav-item" active-color="rebeccapurple">
+          <span className="nav-item">
             <Link to="/contact">CONTACT</Link>
           </span>
 
-          <span className="nav-item" active-color="orange">
+          <span className="nav-item">
             <Link to="#login">CLIENT LOGIN</Link>
           </span>
         </div>

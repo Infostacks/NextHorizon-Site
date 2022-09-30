@@ -35,7 +35,7 @@ const Footer = () => {
 
   return (
     <div className="footerPattern w-full overflow-x-hidden">
-      <div className="z-50">
+      <div className="z-50 zIndex">
         <ScrollToTop smooth color="#D90429" />
       </div>
 

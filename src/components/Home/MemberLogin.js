@@ -29,7 +29,7 @@ const MemberLogin = () => {
     <section
       ref={ref}
       id="login"
-      className="bg-white py-32 mt- w-full overflow-x-hidden"
+      className="bg-white bg-opacity-80 backdrop-blur-sm py-32 mt-20 w-full overflow-x-hidden z-0"
     >
       <motion.div
         animate={fadeInAnimation}

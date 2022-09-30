@@ -46,7 +46,7 @@ const Header = () => {
   return (
     <nav
       className={`${
-        navbar ? `bg-${styles.redPrimary} bg-opacity-90 drop-shadow-md` : `bg-${styles.blackPrimary}`
+        navbar ? `bg-${styles.redPrimary} bg-opacity-80 drop-shadow-md` : `bg-slate-900 bg-opacity-70`
       } z-[1200px] text-slate-50`}
     >
       <div className="max-w-7xl flex justify-center w-full mx-auto">

@@ -45,7 +45,7 @@ const ClientTestimonial = () => {
   return (
     <div
       ref={ref}
-      className="py-10 w-screen flex justify-center items-center bg-slate-100 px-5"
+      className="py-10 w-screen flex justify-center items-center bg-slate-100 bg-opacity-60 backdrop-blur-md px-5"
     >
       <section className="rounded-[5rem] py-10 px-16">
         <div className="flex items-center justify-center w-full h-full">

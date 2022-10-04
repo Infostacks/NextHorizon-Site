@@ -149,7 +149,7 @@ const OurRewards = () => {
                 <img
                   src={reward.img}
                   alt={reward.title}
-                  className="object-cover w-56 h-56 bg-slate-100 border-2 border-slate-200/60 backdrop-blur-sm bg-opacity-5 p-8 rounded-[3rem] shadow-xl"
+                  className="object-contain w-56 h-56 bg-slate-100 border-2 border-slate-200/60 backdrop-blur-sm bg-opacity-5 p-8 rounded-[3rem] shadow-xl"
                 />
 
                 <span className="text-lg font-bold text-gray-900">

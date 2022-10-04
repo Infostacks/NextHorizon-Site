@@ -85,14 +85,14 @@ import Square from "../images/FlutterProjects/square.png";
 
 const ourRewards = [
   {
-    img: "https://www.cleveroad.com/static/21c59d2202c772534ff7ba208c9679ae/af320/award1-top-1000-companies-global.webp",
+    img: "https://cdn-agekd.nitrocdn.com/AORzPGZUXpHbzmGEVKTcNoXbmxeWdHNp/assets/static/optimized/rev-d34a65b/files/Clutch-Top-100-Companies-211x250.png",
     title: "Clutch",
-    desc: "Top 1000 Service Providers, Global",
+    desc: "Top 100 Service Providers, Global",
   },
   {
-    img: "https://www.cleveroad.com/static/168bea2d35b112d24dbbf9810adfe2f4/af320/award4-top-b2b-companies-ukraine.webp",
-    title: "Clutch",
-    desc: "Top Development & IT Companies, Ukraine",
+    img: "https://www.designrush.com/topbest/images/svg/top-agency-badges/top-web-development-companies.svg",
+    title: "DesignRush",
+    desc: "Top Web Development Companies In New York",
   },
   {
     img: "https://www.cleveroad.com/static/45a53d59e95684c0028ac02e630bec91/af320/award3-top-software-developers-global.webp",

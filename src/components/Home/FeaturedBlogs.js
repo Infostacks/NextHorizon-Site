@@ -21,7 +21,7 @@ const FeaturedBlogs = () => {
             <div className="xl:p-10 lg:p-10 p-5 bg-white bg-opacity-30 backdrop-blur-sm border-2 rounded-3xl max-w-screen-lg h-[25rem] flex gap-5 xl:flex-row lg:flex-row flex-col">
               <span className="xl:w-1/2 lg:w-1/2 w-full">
                 <img
-                  src="https://www.nhitechsolutions.com/assets/img/about1.jpg"
+                  src={blog?.img}
                   alt=""
                   className="rounded-3xl shadow-lg"
                 />

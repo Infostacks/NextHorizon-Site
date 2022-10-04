@@ -85,14 +85,14 @@ import Square from "../images/FlutterProjects/square.png";
 
 const ourRewards = [
   {
-    img: "https://www.cleveroad.com/static/21c59d2202c772534ff7ba208c9679ae/af320/award1-top-1000-companies-global.webp",
+    img: "https://cdn-agekd.nitrocdn.com/AORzPGZUXpHbzmGEVKTcNoXbmxeWdHNp/assets/static/optimized/rev-d34a65b/files/Clutch-Top-100-Companies-211x250.png",
     title: "Clutch",
-    desc: "Top 1000 Service Providers, Global",
+    desc: "Top 100 Service Providers, Global",
   },
   {
-    img: "https://www.cleveroad.com/static/168bea2d35b112d24dbbf9810adfe2f4/af320/award4-top-b2b-companies-ukraine.webp",
-    title: "Clutch",
-    desc: "Top Development & IT Companies, Ukraine",
+    img: "https://www.designrush.com/topbest/images/svg/top-agency-badges/top-web-development-companies.svg",
+    title: "DesignRush",
+    desc: "Top Web Development Companies In New York",
   },
   {
     img: "https://www.cleveroad.com/static/45a53d59e95684c0028ac02e630bec91/af320/award3-top-software-developers-global.webp",
@@ -1095,45 +1095,27 @@ const Insights = [
 
 const offices = [
   {
-    flag: "https://cdn-icons-png.flaticon.com/512/555/555614.png",
-    contact: "+38 066 489 6889",
-    city: "Ukraine, Dnipro",
-    adress: "Vokzalnaya square, 2d",
-  },
-  {
-    flag: "https://cdn-icons-png.flaticon.com/512/555/555614.png",
-    contact: "+38 066 332 5291",
-    city: "Ukraine, Kharkiv",
-    adress: "Vokzalnaya square, 2d",
-  },
-  {
     flag: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-    contact: "+1 415 231 3721",
-    city: "USA, Claymont, DE",
-    adress: "2093 Philadelphia Pike #1655",
-  },
-  {
-    flag: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
-    contact: "+47 80 02 50 37",
-    city: "Norway, Oslo",
-    adress: "Tordenskiolds gate 3",
+    contact: "+1 929 552 2285",
+    city: "NY,11230, USA",
+    adress: "264 Avenue 0 Suite A8",
   },
 ];
 
 const connectOurTeams = [
   {
     heading: "Have a great idea?",
-    email: "sales@cleveroad.com",
+    email: "sales@nhitechsolutions.com",
     desc: "Tell us more about your business idea to get consulted",
   },
   {
     heading: "Got questions to ask?",
-    email: "info@cleveroad.com",
+    email: "support@nhitechsolutons.com",
     desc: "Discuss your project with us. We’re open to questions",
   },
   {
     heading: "We are hiring!",
-    email: "hr@cleveroad.com",
+    email: "support@nhitechsolutons.com",
     desc: "We do more for your career. Come and join us.",
   },
 ];

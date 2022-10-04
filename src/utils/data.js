@@ -1095,45 +1095,27 @@ const Insights = [
 
 const offices = [
   {
-    flag: "https://cdn-icons-png.flaticon.com/512/555/555614.png",
-    contact: "+38 066 489 6889",
-    city: "Ukraine, Dnipro",
-    adress: "Vokzalnaya square, 2d",
-  },
-  {
-    flag: "https://cdn-icons-png.flaticon.com/512/555/555614.png",
-    contact: "+38 066 332 5291",
-    city: "Ukraine, Kharkiv",
-    adress: "Vokzalnaya square, 2d",
-  },
-  {
     flag: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-    contact: "+1 415 231 3721",
-    city: "USA, Claymont, DE",
-    adress: "2093 Philadelphia Pike #1655",
-  },
-  {
-    flag: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
-    contact: "+47 80 02 50 37",
-    city: "Norway, Oslo",
-    adress: "Tordenskiolds gate 3",
+    contact: "+1 929 552 2285",
+    city: "NY,11230, USA",
+    adress: "264 Avenue 0 Suite A8",
   },
 ];
 
 const connectOurTeams = [
   {
     heading: "Have a great idea?",
-    email: "sales@cleveroad.com",
+    email: "sales@nhitechsolutions.com",
     desc: "Tell us more about your business idea to get consulted",
   },
   {
     heading: "Got questions to ask?",
-    email: "info@cleveroad.com",
+    email: "support@nhitechsolutons.com",
     desc: "Discuss your project with us. We’re open to questions",
   },
   {
     heading: "We are hiring!",
-    email: "hr@cleveroad.com",
+    email: "support@nhitechsolutons.com",
     desc: "We do more for your career. Come and join us.",
   },
 ];

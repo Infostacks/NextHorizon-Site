@@ -36,12 +36,7 @@
       no-repeat,
     linear-gradient(-90deg, transparent 50%, currentColor 0) bottom /
       calc(2 * var(51%, 0%)) 3px no-repeat;
-<<<<<<< HEAD
-  transition: 0.5s;
-  padding-top: 10px;
-=======
   transition: 0.1s;
->>>>>>> f47667b8b36ef942a02653f34d6aced3589386c2
 }
 
 

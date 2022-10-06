@@ -91,13 +91,9 @@ function App() {
   }, [vantaEffect]);
 
   return (
-<<<<<<< HEAD
-    <div className="flex flex-col items-center">
-=======
     <div className="flex flex-col items-center w-screen scroll-smoot overflow-x-hidden scroll-x-hidden select-none">
       <div ref={vantaRef} className="w-screen h-screen fixed -z-10"></div>
 
->>>>>>> f47667b8b36ef942a02653f34d6aced3589386c2
       <div className="w-screen fixed top-0 drop-shadow-lg z-50">
         <Header />
       </div>

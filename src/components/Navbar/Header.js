@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <nav
       className={`${
-        navbar ? "bg-[#D90429] bg-opacity-90 drop-shadow-md" : "bg-slate-900"
+        navbar && "bg-[#D90429] bg-opacity-90 drop-shadow-md"
       } z-[1200px] text-slate-50`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

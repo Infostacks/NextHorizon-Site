@@ -19,6 +19,7 @@
       0 100% /var(--d, 0) 1.5px 
     no-repeat;
   transition:0.5s;
+  /* margin-top: 10px; */
   padding-bottom: 5px;
 }
 
@@ -30,7 +31,7 @@
 .active {
   border-bottom: rgb(255, 255, 255) solid 1.5px;
   transition: ease-in 6s;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   background: linear-gradient(currentColor 0 0) 100% 100% / var(51%, 0%) 3px
       no-repeat,
     linear-gradient(-90deg, transparent 50%, currentColor 0) bottom /

@@ -93,7 +93,9 @@ const ContactUs = () => {
                 <div className="text-2xl font-semibold text-slate-100">
                   Call Us
                 </div>
-                <div className="text-base text-slate-50">+1 929 552 2285</div>
+                <div className="text-base text-slate-50">
+                  +1 (929) 552 2285 (103)
+                </div>
               </div>
             </blockquote>
           </motion.div>

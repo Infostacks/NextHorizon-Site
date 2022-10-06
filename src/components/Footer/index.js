@@ -76,8 +76,8 @@ const Footer = () => {
         <div className={`w-full h-[1px] bg-${styles.redPrimary}`}></div>
 
         {/* navigation links  */}
-        <div className="text-white flex xl:flex-row lg:flex-row flex-col justify-between xl:gap-28 gap-20 w-full">
-          <div className="xl:flex lg:flex justify-between xl:flex-row lg:flex-row flex-col gap-5 xl:w-4/6 lg:w-4/6 w-full xl:visible lg:visible hidden">
+        <div className="text-white flex xl:flex-row lg:flex-row flex-col justify-between xl:gap-12 gap-20 w-full">
+          <div className="xl:flex lg:flex justify-between xl:flex-row lg:flex-row flex-col xl:w-4/6 lg:w-4/6 w-full xl:visible lg:visible hidden">
             <div className="flex flex-col gap-5">
               <div className="font-bold">Services</div>
               <div className="flex flex-col text-base font-light gap-2">
@@ -154,7 +154,7 @@ const Footer = () => {
           <div className="flex flex-col xl:w-2/6 lg:w-2/6 w-full gap-5">
             <div className="font-bold">Offices</div>
             {/* address  */}
-            <div className="grid grid-cols-2 gap-x-11 gap-y-6 text-base font-light">
+            <div className="grid grid-cols-1 gap-x-11 gap-y-6 text-base font-light">
               {offices.map((office, index) => {
                 return (
                   <div key={index} className="flex flex-col">
@@ -170,13 +170,13 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-x-11 gap-y-6 text-base">
               <div className="flex flex-col">
                 <div className="font-normal">Build your team:</div>
-                <div className="hover:cursor-pointer font-light">
+                <div className="hover:cursor-pointer font-light text-sm">
                   sales@nhitechsolutions.com
                 </div>
               </div>
               <div className="flex flex-col">
                 <div className="font-normal">Contact for support:</div>
-                <div className="hover:cursor-pointer font-light">
+                <div className="hover:cursor-pointer font-light text-sm">
                   support@nhitechsolutons.com
                 </div>
               </div>

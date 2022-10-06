@@ -5,7 +5,7 @@ import styles from "../utils/GlobalStyles.js";
 
 const Portfolio = () => {
   return (
-    <section className="bg-slate-100 flex flex-col items-center justify-center py-10 overflow-x-hidden w-full">
+    <section className="bg-slate-100 bg-opacity-80 w-screen flex flex-col items-center justify-center py-10 overflow-x-hidden">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
@@ -18,9 +18,7 @@ const Portfolio = () => {
         </div>
 
         {/* case Studies  */}
-        <div
-          className="max-w-screen-lg flex flex-col items-center gap-32 mt-16"
-        >
+        <div className="max-w-screen-lg flex flex-col items-center gap-20 mt-16 xl:px-0 lg:px-0 px-10">
           {portfolio.map((caseStudy, index) => {
             return (
               <motion.div
@@ -30,8 +28,8 @@ const Portfolio = () => {
                   opacity: 1,
                   transition: {
                     duration: 2,
-                    type: 'spring',
-                    bounce: .6,
+                    type: "spring",
+                    bounce: 0.6,
                   },
                 }}
                 key={index}
@@ -39,14 +37,14 @@ const Portfolio = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col"
-                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl`}
+                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md py-5 rounded-3xl backdrop-blur-sm border-2`}
               >
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
                   <img
                     src={caseStudy.img}
                     alt={caseStudy.title}
-                    className="imgColorChange object-cover w-full bg-slate-100 bg-opacity-60 rounded-[1rem] shadow-xl"
+                    className="object-cover w-full"
                   />
                 </div>
 
@@ -57,7 +55,7 @@ const Portfolio = () => {
                       <img
                         src={caseStudy.review}
                         alt=""
-                        className="imgColorChange object-cover h-7 max-w-min"
+                        className="object-cover h-8 w-full"
                       />
                     </div>
                     <span className="text-slate-400">{caseStudy.status}</span>
@@ -105,9 +103,7 @@ const Portfolio = () => {
       </div>
 
       {/* show more button */}
-      <button className={styles.buttonRedOutline}>
-        Show more
-      </button>
+      <button className={styles.buttonRedOutline}>Show more</button>
     </section>
   );
 };

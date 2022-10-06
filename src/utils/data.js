@@ -1096,7 +1096,7 @@ const Insights = [
 const offices = [
   {
     flag: "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
-    contact: "+1 929 552 2285",
+    contact: "+1 (929) 552 2285 (103)",
     city: "NY,11230, USA",
     adress: "264 Avenue 0 Suite A8",
   },

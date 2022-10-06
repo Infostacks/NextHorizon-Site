@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { webAppDevServices } from "../../../utils/data.js";
 const WebDevProcess = () => {
   return (
     <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center justify-center pb-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-5">
+      <div className="max-w-screen-lg flex items-center xl:flex-row lg:flex-row flex-col gap-5">
         {/* Text intro  */}
         <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Web application development services
@@ -20,7 +21,17 @@ const WebDevProcess = () => {
       <div className="max-w-screen-lg flex flex-row flex-wrap items-center w-full gap-10">
         {webAppDevServices.map((reward, index) => {
           return (
-            <div
+            <motion.div
+              initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  type: "spring",
+                  bounce: 0.6,
+                },
+              }}
               key={index}
               className="flex flex-col justify-center gap-4 w-[30rem]"
             >
@@ -30,7 +41,7 @@ const WebDevProcess = () => {
               <span className="xl:text-xl lg:text-xl text-base text-gray-800 w-full text-justify">
                 {reward.desc}
               </span>
-            </div>
+            </motion.div>
           );
         })}
       </div>

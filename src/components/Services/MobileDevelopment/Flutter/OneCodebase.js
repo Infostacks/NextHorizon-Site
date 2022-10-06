@@ -5,11 +5,11 @@ import Dart from "../../../../images/Dart.png";
 const OneCodebase = () => {
   return (
     <div className="flex flex-col items-center justify-center w-screen bg-slate-200 py-20 xl:px-0 lg:px-0 px-10">
-      <div className="max-w-screen-lg flex flex-col xl:gap-20 lg:gap-14 gap-10 text-slate-900 z-[50rem]">
+      <div className="max-w-screen-lg flex flex-col gap-10 text-slate-900 z-[50rem]">
         {/* top section  */}
-        <div className="max-w-screen-xl flex items-center xl:flex-row lg:flex-row flex-col">
+        <div className="max-w-screen-lg flex items-center xl:flex-row lg:flex-row flex-col">
           {/* Text intro  */}
-          <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+          <span className="xl:text-6xl lg:text-6xl md:text-4xl text-3xl font-bold tracking-tight">
             One codebase, two mobile applications
           </span>
 

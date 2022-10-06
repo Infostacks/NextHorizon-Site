@@ -1,39 +1,80 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import { caseStudies } from "../utils/data.js";
+import styles from "../utils/GlobalStyles";
 
 const CaseStudies = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 3,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
-    <section className="bg-slate-100 overflow-x-hidden w-full flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10">
-      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
+    <section
+      ref={ref}
+      className="bg-slate-100 bg-opacity-80 overflow-x-hidden w-screen flex flex-col items-center justify-center pb-10 xl:px-0 lg:px-10 px-10"
+    >
+      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
           {/* Text intro  */}
           <div className="flex flex-col justify-center items-center w-full">
-            <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+            <motion.h2
+              animate={fadeInAnimation}
+              className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
+            >
               Case Studies
-            </h2>
+            </motion.h2>
           </div>
         </div>
 
         {/* case Studies  */}
-        <div className="flex flex-col items-center gap-20 mt-16">
+        <div className="max-w-screen-lg flex flex-col items-center gap-20 mt-16 xl:px-0 lg:px-0 px-10">
           {caseStudies.map((caseStudy, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
-                    : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col "
-                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md pb-5 rounded-3xl`}
+                    : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col"
+                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md py-5 rounded-3xl backdrop-blur-sm border-2`}
               >
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
-                  <img
+                  <motion.img
+                    animate={fadeInAnimation}
                     src={caseStudy.img}
                     alt={caseStudy.title}
-                    className="imgColorChange object-cover w-full bg-slate-100 bg-opacity-60 rounded-[1rem] shadow-xl"
+                    className="object-cover w-full"
                   />
                 </div>
 
@@ -44,7 +85,7 @@ const CaseStudies = () => {
                       <img
                         src={caseStudy.review}
                         alt=""
-                        className="imgColorChange object-cover w-full"
+                        className="object-cover w-full"
                       />
                     </div>
                     <span className="text-slate-400">{caseStudy.status}</span>
@@ -81,18 +122,18 @@ const CaseStudies = () => {
                   </div>
 
                   {/* button  */}
-                  <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                  <button className={styles.buttonBlackFull}>
                     Explore more
                   </button>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
 
       {/* show more button */}
-      <button className="hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit">
+      <button className={styles.buttonRedOutline}>
         <Link to="/portfolio">Show more</Link>{" "}
       </button>
     </section>

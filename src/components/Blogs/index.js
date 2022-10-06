@@ -1,11 +1,12 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import { blogs } from "../../utils/data";
 
-import Menu from "./Menu";
 import Categories from "./Categories";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import styles from "../../utils/GlobalStyles";
 
 const allCategories = ["latest", ...new Set(blogs.map((item) => item.category))];
 
@@ -15,6 +16,7 @@ const index = ({selectedCategory}) => {
   const [currentCat, setCurrentCat] = useState("latest");
 
   const filterItems = (selectedCategory) => {
+    console.log('selectedCategory', selectedCategory)
     setCurrentCat(selectedCategory);
     if (selectedCategory === "latest") {
       setMenuItems(blogs);
@@ -35,7 +37,7 @@ const index = ({selectedCategory}) => {
       </div>
 
       {/*   */}
-      <div className="rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 bg-rose-100 shadow-md text-[#D90429]">
+      <div className={`rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 shadow-md ${styles.blogsCategory_BG}`}>
         <Categories
           categories={categories}
           filterItems={filterItems}

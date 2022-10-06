@@ -1,33 +1,47 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { softwareDevelopmentFlow } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles.js";
 
 const SDLC = () => {
   return (
     <div className="flex flex-col justify-center w-screen items-center">
       <section className="flex flex-col items-center justify-center w-full">
-        <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col xl:p-16 lg:p-16 p-8">
+        <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col xl:p-20 lg:p-20 p-8">
           {/* top section  */}
           <div className="flex flex-col items-center">
             {/* Text intro  */}
-            <div className="flex flex-col justify-center items-center w-full">
-              <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
-                Our software development flow
-              </h2>
-              <p className="xl:text-xl lg:text-xl text-base">
-                We follow an established software development life cycle (SDLC)
-                to build a cost-effective product that meets your requirements
-                and market demands
-              </p>
-            </div>
+            <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
+              Our software development flow
+            </h2>
+            <p className="xl:text-xl lg:text-xl text-base">
+              We follow an established software development life cycle (SDLC) to
+              build a cost-effective product that meets your requirements and
+              market demands
+            </p>
           </div>
 
           <div className="max-w-screen-lg space-y-4 w-full flex flex-col items-center">
             {/* SDLC    */}
             {softwareDevelopmentFlow.map((process, index) => {
               return (
-                <details
+                <motion.details
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 drop-shadow-md group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 drop-shadow-md group w-full`}
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">
@@ -58,7 +72,7 @@ const SDLC = () => {
                         <span className="text-2xl font-bold text-gray-900">
                           {process.title}
                         </span>
-                        <span className="xl:text-lg lg:text-lg text-base text-gray-700 text-justify">
+                        <span className="xl:text-base lg:text-lg text-base text-gray-700 text-justify">
                           {process.desc}
                         </span>
                       </div>
@@ -74,13 +88,13 @@ const SDLC = () => {
                           })}
                         </span>
                         {/* button  */}
-                        <button className="bg-[#08080cff] text-[#edf2f4ff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit">
-                          Book a consultation!
+                        <button className={styles.buttonBlackFull}>
+                          <Link to="/contact">Book a consultation!</Link>
                         </button>
                       </div>
                     </div>
                   </p>
-                </details>
+                </motion.details>
               );
             })}
           </div>

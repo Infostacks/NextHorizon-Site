@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { webDevProcessAtNext } from "../../../utils/data.js";
 
 const DevelopmentProcess = () => {
@@ -7,7 +8,7 @@ const DevelopmentProcess = () => {
   return (
     <div className="bg-slate-100 h-full w-screen flex flex-col justify-center items-center gap-10 py-10 xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-5">
+      <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-5">
         {/* Text intro  */}
         <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Development process at Next Horizon
@@ -20,11 +21,23 @@ const DevelopmentProcess = () => {
         </p>
       </div>
 
-      <div className="flex xl:flex-row lg:flex-row flex-col gap-5 max-w-screen-xl bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-[3rem] drop-shadow-md">
+      <div className="flex xl:flex-row lg:flex-row flex-col gap-5 max-w-screen-lg bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-[3rem] drop-shadow-md">
         <div className="flex flex-col xl:w-3/12 lg:w-3/12 w-full xl:gap-5 lg:gap-5 gap-1">
           {webDevProcessAtNext.map((process, index) => {
             return (
-              <button key={index}>
+              <motion.button
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
+                key={index}
+              >
                 <div
                   className={`flex flex-row gap-2 text-md font-semibold items-center py-3 px-2 rounded-3xl drop-shadow-md w-full underline ${`job-btn ${
                     count === index && "active-btn"
@@ -33,7 +46,7 @@ const DevelopmentProcess = () => {
                 >
                   {process.title}
                 </div>
-              </button>
+              </motion.button>
             );
           })}
         </div>

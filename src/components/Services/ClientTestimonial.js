@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
 import Slider from "react-slick";
 import { clientsTestimonials } from "../../utils/data.js";
+import styles from "../../utils/GlobalStyles";
 
 const ClientTestimonial = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 3,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   let settings = {
     dots: true,
     autoplay: true,
@@ -11,15 +35,26 @@ const ClientTestimonial = () => {
     speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    useCSS: true,
+    accessibility: true,    // to use keyboard arrow keys
+    fade: true,             // fade effect
+    pauseOnDotsHover: true  // Prevents autoplay while hovering on dots
   };
 
   return (
-    <div className="pb-10 w-screen flex justify-center items-center px-5">
+    <div
+      ref={ref}
+      className="py-10 w-screen flex justify-center items-center bg-slate-100 bg-opacity-60 backdrop-blur-md px-5"
+    >
       <section className="rounded-[5rem] py-10 px-16">
         <div className="flex items-center justify-center w-full h-full">
-          <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight mb-10">
+          <motion.h2
+            animate={fadeInAnimation}
+            className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight mb-10"
+          >
             Client testimonials
-          </h2>
+          </motion.h2>
         </div>
 
         <Slider
@@ -28,7 +63,10 @@ const ClientTestimonial = () => {
         >
           {clientsTestimonials.map((member, index) => {
             return (
-              <div key={index} className={`w-full h-full flex flex-col justify-center items-center`}>
+              <div
+                key={index}
+                className={`w-full h-full flex flex-col justify-center items-center hover:cursor-grab`}
+              >
                 {/* info data  */}
                 <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-between gap-5 mb-3">
                   <div className="flex flex-row flex-wrap xl:px-2 lg:px-2 md:px-5 px-20 justify-center">
@@ -66,10 +104,10 @@ const ClientTestimonial = () => {
 
                   {/* buttons  */}
                   <div className="flex xl:flex-row lg:flex-row flex-col gap-5 mt-5">
-                    <button className="bg-[#08080cff] border-[1px] border-[#08080cff]  text-[#edf2f4ff] py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit">
+                    <button className={styles.buttonBlackFull}>
                       Review on Clutch.co{" "}
                     </button>
-                    <button className="bg-[#08080cff] border-[1px] border-[#08080cff]  text-[#edf2f4ff] py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit h-fit">
+                    <button className={styles.buttonBlackFull}>
                       View case study
                     </button>
                   </div>

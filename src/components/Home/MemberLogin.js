@@ -1,12 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import styles from "../../utils/GlobalStyles.js";
 
 const MemberLogin = () => {
+  const { ref, inView } = useInView({
+    threshold: [0, 0.5, 1.0],
+  });
+  const fadeInAnimation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      fadeInAnimation.start({
+        opacity: 1,
+        transition: {
+          duration: 3,
+          bounce: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      fadeInAnimation.start({ opacity: 0 });
+    }
+  }, [inView, fadeInAnimation]);
+
   return (
     <section
+      ref={ref}
       id="login"
-      className="bg-gray-300 py-32 mt- w-full overflow-x-hidden"
+      className="bg-white bg-opacity-80 backdrop-blur-sm py-32 mt-20 w-full overflow-x-hidden z-0"
     >
-      <div className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <motion.div
+        animate={fadeInAnimation}
+        className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8"
+      >
         <div className="max-w-lg mx-auto text-center flex xl:flex-row lg:flex-row flex-col gap-10 mb-10">
           <p className="mt-4 text-gray-600 xl:text-3xl lg:text-3xl text-xl">
             Are you already a member?
@@ -19,29 +47,29 @@ const MemberLogin = () => {
         <div className="flex xl:flex-row lg:flex-row md:flex-col gap-10">
           <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center rounded-lg shadow-xl">
             <div className="flex flex-col p-0 gap-3 items-center">
-              <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col w-full gap-3">
+              <div className="flex xl:flex-row lg:flex-row flex-col w-full gap-3">
                 <input
                   type="text"
                   name="name"
                   placeholder="Username"
-                  className="text-gray-600 font-light p-2 rounded-md border-[1px] border-gray-400 focus:outline-none bg-gray-100 font-xs w-full"
+                  className={styles.inputField_M_Login}
                 />
                 <input
                   type="password"
                   name="password"
                   placeholder="Password"
-                  className="ext-gray-600 font-light p-2 rounded-md border-[1px] border-gray-400 focus:outline-none bg-gray-100 font-xs w-full"
+                  className={styles.inputField_M_Login}
                 />
               </div>
 
               {/* Login button */}
-              <button className="hover:bg-[#08080cff] text-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit opacity-50 hover:opacity-100 transition-opacity duration-700">
+              <button className={styles.buttonRedOutline}>
                 Login
               </button>
             </div>
           </blockquote>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

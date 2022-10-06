@@ -1,4 +1,6 @@
 import React from "react";
+import styles from "../../utils/GlobalStyles";
+import { Link } from "react-router-dom";
 
 const BuildProject = () => {
   return (
@@ -12,8 +14,8 @@ const BuildProject = () => {
           Ready to build a project?
         </h1>
         {/* button  */}
-        <button className="bg-[#08080cff] border-[1px] border-[#08080cff]  text-[#edf2f4ff] py-2 px-5 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#d90429ff] hover:border-[1px] hover:border-[#d90429ff] w-fit h-fit">
-          Schedule Now
+        <button className={styles.buttonBlackFull}>
+          <Link to="/contact">Schedule Now</Link>
         </button>
       </div>
     </div>

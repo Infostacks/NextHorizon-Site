@@ -1,5 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { flutterExperience } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 import "./listStyle.css";
 
 const Answer = (faq) => {
@@ -13,8 +15,8 @@ function createMarkup(faq) {
 
 const FlutterExperience = () => {
   return (
-    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
-      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:px-6 lg:px-2 sm:py-24">
+    <section className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center w-screen xl:px-0 lg:px-0 px-10">
+      <div className="max-w-screen-xl w-full flex items-center justify-center flex-col pt-10 pb-3 z-0">
         {/* top section  */}
         <div className="max-w-screen-lg flex items-center xl:flex-row lg:flex-row flex-col">
           {/* Text intro  */}
@@ -32,7 +34,20 @@ const FlutterExperience = () => {
         <div className="flex flex-col items-center w-full gap-10 mt-16">
           {flutterExperience.map((process, index) => {
             return (
-              <div
+              <motion.div
+                initial={{
+                  x: index % 2 === 0 ? "-10vw" : "10vw",
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
@@ -77,7 +92,7 @@ const FlutterExperience = () => {
                       return (
                         <div
                           key={index}
-                          className="bg-white text-[#D90429] border-[1px] border-[#D90429] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-black hover:border-[1px] hover:border-black hover:cursor-pointer w-fit h-fit"
+                          className={`bg-white text-${styles.redPrimary} border-[1px] border-${styles.redPrimary} py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-${styles.blackPrimary} hover:border-[1px] hover:border-${styles.blackPrimary} hover:cursor-pointer w-fit h-fit`}
                         >
                           <div className="flex justify-center items-center gap-3">
                             <span className="text-3xl">{item.icon}</span>
@@ -88,7 +103,7 @@ const FlutterExperience = () => {
                     })}
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

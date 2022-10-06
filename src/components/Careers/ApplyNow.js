@@ -27,7 +27,7 @@ const ApplyNow = () => {
         (result) => {
           console.log("result text: ", result.text);
           setDone(true);
-          navigate('/careers');
+          navigate("/careers");
           // form.reset();
         },
         (error) => {
@@ -38,13 +38,16 @@ const ApplyNow = () => {
 
   return (
     <div
-      className="absolute flex justify-center flex-col items-center m-0 w-screen h-screen bg-no-repeat bg-cover 
+      className="flex justify-center flex-col items-center w-full h-full bg-no-repeat bg-cover 
     bg-[url('https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]"
     >
-      <div className="flex justify-center items-center w-screen h-screen bg-opacity-95 bg-slate-700">
+      <div className="flex justify-center items-center w-full h-full bg-opacity-95 bg-slate-700">
         <div className="max-w-screen-lg py-32 w-screen flex flex-col items-center gap-16 justify-center">
-          <h1 className="xl:text-5xl lg:text-5xl md:text-4xl text-3xl text-gray-200">
-            Apply for the job of <span className="font-semibold underline underline-offset-8 font-mono">{data ? data.jobTitle : ""}</span>
+          <h1 className="xl:text-3xl lg:text-3xl md:text-2xl text-xl text-center flex flex-col gap-2 text-gray-200">
+            Apply for the job of{" "}
+            <span className="xl:text-4xl lg:text-4xl text-3xl font-semibold underline underline-offset-8 font-mono">
+              {data ? data.jobTitle : ""}
+            </span>
           </h1>
           <form
             ref={form}
@@ -56,13 +59,13 @@ const ApplyNow = () => {
               <input
                 type="text"
                 name="user_name"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Name"
               />
               <input
                 type="email"
                 name="user_email"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Email"
               />
             </div>
@@ -72,13 +75,13 @@ const ApplyNow = () => {
               <input
                 type="text"
                 name="address"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Address"
               />
               <input
                 type="text"
                 name="city"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="City"
               />
             </div>
@@ -88,13 +91,13 @@ const ApplyNow = () => {
               <input
                 type="text"
                 name="country"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Country"
               />
               <input
                 type="text"
                 name="jobTitle"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 defaultValue={data.jobTitle}
                 readOnly
               />
@@ -105,13 +108,13 @@ const ApplyNow = () => {
               <input
                 type="text"
                 name="contact"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Contact Number"
               />
               <input
                 type="text"
                 name="currentDesignation"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Current Designation"
               />
             </div>
@@ -249,7 +252,7 @@ const ApplyNow = () => {
               <input
                 type="text"
                 name="resume"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Submit your resume by providing your resume URL:"
               />
             </div> */}
@@ -259,7 +262,7 @@ const ApplyNow = () => {
               <textarea
                 type="text"
                 name="skill_section"
-                className="px-3 py-2 rounded-lg text-lg w-full focus:outline-none"
+                className="text-slate-50 font-light py-2 px-4 rounded-lg border-[1px] border-gray-400 focus:outline-none bg-transparent focus:bg-slate-400 focus:border-gray-50 font-xs w-full"
                 placeholder="Describe your skills"
               />
             </div>

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { iOSTechstack } from "../../../../utils/data.js";
+import styles from "../../../../utils/GlobalStyles.js";
 
 const TechStackiOS = () => {
   const [count, setCount] = useState(0);
   const [toolData, setToolData] = useState(0);
 
   return (
-    <div className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
+    <div className="bg-slate-100 w-screen flex flex-col gap-10 items-center pt-20 pb-3 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
@@ -17,7 +18,7 @@ const TechStackiOS = () => {
       </div>
 
       {/* categories data */}
-      <div className="flex flex-col justify-center items-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-xl w-full drop-shadow-md">
+      <div className="flex flex-col justify-center items-center gap-10 max-w-screen-lg w-full drop-shadow-md">
         <div className="flex flex-row w-full flex-wrap">
           {iOSTechstack.map((category, index) => {
             return (
@@ -71,7 +72,7 @@ const TechStackiOS = () => {
                 {iOSTechstack[count].techData[toolData].desc}
               </p>
               {/* button  */}
-              <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+              <button className={styles.buttonBlackFull}>
                 <Link to="/contact">Hire a developer</Link>
               </button>
             </div>

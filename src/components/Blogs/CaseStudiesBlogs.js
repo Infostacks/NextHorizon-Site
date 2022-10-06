@@ -20,7 +20,6 @@ const index = ({selectedCategory}) => {
     <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
     
       <div className="">
-        <div>CaseStudiesBlogs</div>
         <Menu items={menuItems} />
       </div>
     </section>

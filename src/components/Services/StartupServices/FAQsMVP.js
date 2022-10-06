@@ -1,5 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { fAQsMVP } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const Answer = (faq) => {
   console.log(faq.faq);
@@ -22,11 +24,9 @@ const FAQsMVP = () => {
               <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Questions you may have
               </h2>
-              <p>
-                If you’re a brave startup with an idea and you want to test
-                waters, we’ll help you bring it to life. As a software
-                engineering company, we have in-depth experience in creating MVP
-                projects to reduce time to market.
+              <p className="xl:text-3xl lg:text-3xl text-xl">
+                MVP stands for a minimum valuable product. It’s a product with
+                just enough features to be usable by first customers.
               </p>
             </div>
           </div>
@@ -35,13 +35,26 @@ const FAQsMVP = () => {
             {/* fAQsMVP    */}
             {fAQsMVP.map((faq, index) => {
               return (
-                <details
+                <motion.details
+                  initial={{
+                    x: index % 2 === 0 ? "-10vw" : "10vw",
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
-                  className="p-6 border-l-4 border-[#D90429] bg-gray-50 group w-full"
+                  className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
                   close
                 >
                   <summary className="flex items-center justify-between cursor-pointer w-full">
-                    <h5 className="text-lg font-medium text-gray-900">
+                    <h5 className="text-lg font-semibold text-gray-900">
                       {faq.question}
                     </h5>
 
@@ -62,7 +75,7 @@ const FAQsMVP = () => {
                   </summary>
 
                   <Answer faq={faq.answer} />
-                </details>
+                </motion.details>
               );
             })}
           </div>

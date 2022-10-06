@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { techStackWebApps } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const TechStackWebApps = () => {
   const [count, setCount] = useState(0);
@@ -9,20 +10,20 @@ const TechStackWebApps = () => {
   return (
     <div className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
-      <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-10">
+      <div className="max-w-screen-lg flex items-center xl:flex-row lg:flex-row flex-col gap-5">
         {/* Text intro  */}
         <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Technologies for advanced web apps
         </h2>
 
-        <span className="max-w-lg xl:text-3xl lg:text-3xl text-xl text-slate-800">
+        <span className="xl:text-3xl lg:text-3xl text-xl text-slate-800">
           We create responsive web applications and sites leveraging the most
           robust technologies in the industry to help you boost your business.
         </span>
       </div>
 
       {/* categories data */}
-      <div className="flex flex-col justify-center items-center xl:gap-20 lg:gap-14 gap-10 max-w-screen-xl w-full drop-shadow-md">
+      <div className="flex flex-col justify-center items-center gap-10 max-w-screen-lg w-full drop-shadow-md">
         <div className="flex flex-row w-full flex-wrap">
           {techStackWebApps.map((category, index) => {
             return (
@@ -76,7 +77,7 @@ const TechStackWebApps = () => {
                 {techStackWebApps[count].techData[toolData].desc}
               </div>
               {/* button  */}
-              <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+              <button className={styles.buttonBlackFull}>
                 <Link to="/contact">Hire a developer</Link>
               </button>
             </div>

@@ -1,26 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { webAppsDelivered } from "../../../utils/data.js";
+import styles from "../../../utils/GlobalStyles.js";
 
 const WebAppsDelivered = () => {
   return (
     <section className="bg-slate-100 flex flex-col items-center justify-center pb-10 overflow-x-hidden w-screen">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col px-4 py-16 sm:px-6 lg:px-2 sm:py-24">
         {/* top section  */}
-        <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 w-full mx-10">
-          {/* Text intro  */}
-          <div className="flex flex-col justify-center items-center w-full">
-            <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
-              Our Portfolio
-            </h2>
-          </div>
+        <div className="max-w-screen-lg text-center">
+          <h2 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
+            Web applications we've delivered for our clients
+          </h2>
         </div>
 
         {/* case Studies  */}
-        <div className="flex flex-col items-center w-full gap-20 mt-16">
+        <div className="flex flex-col items-center max-w-screen-lg w-full gap-20 mt-16">
           {webAppsDelivered.map((webapp, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 2,
+                    type: "spring",
+                    bounce: 0.6,
+                  },
+                }}
                 key={index}
                 className={`flex ${
                   index % 2 === 0
@@ -86,18 +95,18 @@ const WebAppsDelivered = () => {
                   </div>
 
                   {/* button  */}
-                  <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
+                  <button className={styles.buttonBlackFull}>
                     Explore more study
                   </button>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
 
       {/* show more button */}
-      <button className="hover:bg-[#08080cff] text-[#252627] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-white border-[1px] hover:border-[#252627] border-[#D90429] w-fit">
+      <button className={styles.buttonRedOutline}>
         <Link to="/portfolio">Show more</Link>
       </button>
     </section>

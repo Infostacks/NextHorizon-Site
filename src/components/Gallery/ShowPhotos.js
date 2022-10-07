@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
 
 import Photo from "./Photo";
 const clientID = `?client_id=lzvetJ_GC6M8QdDkn-D-HtLenu0Cc3pcuiaVZgythBA`;

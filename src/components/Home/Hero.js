@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import "./home.css";
 import styles from "../../utils/GlobalStyles";
+import video from '../../assets/video.mp4'
 
 const Hero = () => {
   const { ref, inView } = useInView({
@@ -39,21 +40,36 @@ const Hero = () => {
   }, [inView, leftAnimation, rightAnimation]);
 
   return (
-    <div className="w-screen overflow-hidden bg-slate-100 bg-opacity-50">
+    <span>
+      <video loop autoPlay muted id="myVideo">
+        <source src={video} type="video/mp4"/>
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <div className="wrapper">
+        <div className="static-txt">
+          We are the next
+        </div>
+        <ul className="dynamic-txts">
+          <li><span>Financial Technologist</span></li>
+          <li><span>AI Builder</span></li>
+          <li><span>Data Scientist</span></li>
+          <li><span>Web Developer</span></li>
+          <li><span>Startup Builders</span></li>
+        </ul>
+      </div>
       {/* <img
         src={homeBG}
         alt="homeBG"
         className="h-screen w-full overflow-x-hidden absolute"
       /> */}
-      <section className="hero xl:px[10rem] lg:px-[4rem] md:px-[3rem] px-[3rem]">
+      {/* <section className="hero xl:px[10rem] lg:px-[4rem] md:px-[3rem] px-[3rem]">
         <div
           ref={ref}
           className="flex xl:flex-row lg:flex-row md:flex-row flex-col-reverse xl:gap-0 lg:gap-0 gap-10 justify-center items-center h-screen w-11/12"
         >
-          {/* right  */}
           <article className="flex flex-col justify-center xl:w-2/3 lg:w-1/2 md:w-1/2 w-full gap-5">
             <motion.h1 animate={leftAnimation} className="heroTextHeading drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-tr from-rose-600 via-orange-600 to-rose-600 z-10">
-              Doing More for Your Technical Success
+            <h6> Doing More for Your Technical Success</h6>
             </motion.h1>
             <motion.p
               animate={rightAnimation}
@@ -63,11 +79,8 @@ const Hero = () => {
               who are courageous to promote software solutions and lead towards
               the utmost growth of business demands to satisfy customer demands.
             </motion.p>
-            <button className={styles.buttonBlackFull}>
-              Connect with us
-            </button>
+            <button className={styles.buttonBlackFull}>Connect with us</button>
           </article>
-          {/* left  */}
           <article className="flex xl:w-1/2 lg:w-1/2 md:w-1/2 w-full">
             <img
               // src={heroFinal}
@@ -77,8 +90,8 @@ const Hero = () => {
             />
           </article>
         </div>
-      </section>
-    </div>
+      </section> */}
+    </span>
   );
 };
 

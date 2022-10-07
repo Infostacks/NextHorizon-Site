@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+// import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../../utils/data.js";
 import styles from "../../utils/GlobalStyles.js";
 
@@ -41,7 +41,7 @@ const index = () => {
       </h1>
       <Gallery photos={photos} onClick={openLightbox} />
       <div className="flex flex-col justify-center items-center">
-        <ModalGateway>
+        {/* <ModalGateway>
           {viewerIsOpen ? (
             <Modal onClose={closeLightbox} className="flex justify-center max-w-screen-lg items-center">
               <Carousel
@@ -59,7 +59,7 @@ const index = () => {
               />
             </Modal>
           ) : null}
-        </ModalGateway>
+        </ModalGateway> */}
       </div>
     </div>
   );

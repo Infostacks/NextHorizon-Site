@@ -51,48 +51,48 @@ function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
 
-  useEffect(() => {
-    const threeScript = document.createElement("script");
-    threeScript.setAttribute("id", "threeScript");
-    threeScript.setAttribute(
-      "src",
-      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
-    );
-    document.getElementsByTagName("head")[0].appendChild(threeScript);
-    return () => {
-      if (threeScript) {
-        threeScript.remove();
-      }
-    };
-  }, []);
+  // useEffect(() => {
+  //   const threeScript = document.createElement("script");
+  //   threeScript.setAttribute("id", "threeScript");
+  //   threeScript.setAttribute(
+  //     "src",
+  //     "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+  //   );
+  //   document.getElementsByTagName("head")[0].appendChild(threeScript);
+  //   return () => {
+  //     if (threeScript) {
+  //       threeScript.remove();
+  //     }
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        NET({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0xf2172e,
-          backgroundColor: 0x262628,
-          maxDistance: 18.0,
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destory();
-    };
-  }, [vantaEffect]);
+  // useEffect(() => {
+  //   if (!vantaEffect) {
+  //     setVantaEffect(
+  //       NET({
+  //         el: vantaRef.current,
+  //         // THREE,
+  //         mouseControls: true,
+  //         touchControls: true,
+  //         gyroControls: false,
+  //         minHeight: 200.0,
+  //         minWidth: 200.0,
+  //         scale: 1.0,
+  //         scaleMobile: 1.0,
+  //         color: 0xf2172e,
+  //         backgroundColor: 0x262628,
+  //         maxDistance: 18.0,
+  //       })
+  //     );
+  //   }
+  //   return () => {
+  //     if (vantaEffect) vantaEffect.destory();
+  //   };
+  // }, [vantaEffect]);
 
   return (
     <div className="flex flex-col items-center w-screen scroll-smoot overflow-x-hidden scroll-x-hidden select-none">
-      <div ref={vantaRef} className="w-screen h-screen fixed -z-10"></div>
+      <div  className="w-screen h-screen fixed -z-10"></div>
 
       <div className="w-screen fixed top-0 drop-shadow-lg z-50">
         <Header />

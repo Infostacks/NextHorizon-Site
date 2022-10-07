@@ -14,19 +14,17 @@ import FeaturedBlogs from "./FeaturedBlogs";
 
 const index = () => {
   return (
-    <div className="flex flex-col items-center w-full overflow-x-hidden">
+    <div className=" w-full">
       <Hero />
-      <OurRewards />
+      {/* <OurRewards />
       <FeaturedBlogs/>
       <Industries/>
       <CaseStudies />
       <TechnologyStack />
       <ClientsSection />
-      {/* <TechnicalProcess /> */}
       <ClientTestimonial />
-      {/* <Team /> */}
       <ContactUs />
-      <MemberLogin />
+      <MemberLogin /> */}
     </div>
   );
 };

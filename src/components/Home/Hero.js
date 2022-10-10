@@ -4,7 +4,8 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import "./home.css";
 import styles from "../../utils/GlobalStyles";
-import video from '../../assets/video.mp4'
+import video from "../../assets/video.mp4";
+import ReactTypingEffect from "react-typing-effect";
 
 const Hero = () => {
   const { ref, inView } = useInView({
@@ -42,10 +43,10 @@ const Hero = () => {
   return (
     <span>
       <video loop autoPlay muted id="myVideo">
-        <source src={video} type="video/mp4"/>
+        <source src={video} type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
       </video>
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <div className="static-txt">
           We are the next
         </div>
@@ -56,6 +57,22 @@ const Hero = () => {
           <li><span>Web Developer</span></li>
           <li><span>Startup Builders</span></li>
         </ul>
+      </div> */}
+
+      <div className="text-wrapper">
+        <div className="fixed-text">We are the next </div>
+        <ReactTypingEffect
+          text={[
+            "Financial Technologist",
+            "AI Builder",
+            "Data Scientist",
+            "Web Developer",
+            "Startup Builders",
+          ]}
+          eraseSpeed="0ms"
+          eraseDelay="1000ms"
+          typingDelay="5000ms"
+        />
       </div>
       {/* <img
         src={homeBG}

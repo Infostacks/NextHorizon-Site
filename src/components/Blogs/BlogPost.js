@@ -19,7 +19,6 @@ const BlogPost = () => {
     const fetchPostDetail = async () => {
       try {
         const res = blogs.filter((item) => item.id === id.postId);
-        // console.log("res: ", res);
         setData(res);
       } catch (err) {
         console.error(err);

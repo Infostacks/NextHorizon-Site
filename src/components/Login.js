@@ -1,5 +1,5 @@
 import { BsFillCloudLightningRainFill } from "react-icons/bs";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Joi from "joi-browser";
 import _ from "lodash";
@@ -9,7 +9,7 @@ import ResetPassCard from "./AuthProvider/ResetPassCard";
 import styles from "../utils/GlobalStyles";
 
 const Login = () => {
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [setIsAnimating] = useState(false);
   const [authType, setAuthType] = useState(2);
   const [confirmPassError, setConfirmPassError] = useState(false);
   const [errors, setErrors] = useState(null);
@@ -20,11 +20,9 @@ const Login = () => {
     confirmPassword: "",
   });
 
-  const [logInFormData, setLogInFormData] = useState(
-    _.omit(formData, ["confirmPassword"])
-  );
+  const [logInFormData, setLogInFormData] = useState(_.omit(formData, ["confirmPassword"]));
   const [resetPassFormData, setResetPassFormData] = useState(
-    _.omit(formData, ["password", "confirmPassword"])
+    _.omit(formData, ["password", "confirmPassword"]),
   );
 
   const showCardTitleText = () => {
@@ -87,12 +85,7 @@ const Login = () => {
         />
       );
     } else {
-      return (
-        <ResetPassCard
-          onChange={handleChange}
-          valueEmail={resetPassFormData.email}
-        />
-      );
+      return <ResetPassCard onChange={handleChange} valueEmail={resetPassFormData.email} />;
     }
   };
 
@@ -226,9 +219,7 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center w-screen bg-opacity-90 bg-slate-700 overflow-x-hidden">
-      <section
-        className={`flex justify-center flex-col items-center w-full bg-no-repeat bg-cover`}
-      >
+      <section className={`flex justify-center flex-col items-center w-full bg-no-repeat bg-cover`}>
         <div className="xl:w-3/4 lg:w-3/4 w-5/6 flex xl:flex-row lg:flex-row md:flex-col flex-col items-center justify-center min-h-screen pb-10 pt-20">
           {/* Left Side Logo  */}
           <div className="xl:w-1/3 lg:w-1/3 h-full w-full flex flex-col gap-5 items-center justify-center text-white">
@@ -254,14 +245,10 @@ const Login = () => {
                 },
               }}
               initial="hidden"
-              animate="visible"
-            >
+              animate="visible">
               <BsFillCloudLightningRainFill className="w-32 h-32" />
             </motion.span>
-            <h1
-              id="logoFont"
-              className="text-3xl font-bold drop-shadow-2xl tracking-wider"
-            >
+            <h1 id="logoFont" className="text-3xl font-bold drop-shadow-2xl tracking-wider">
               Next Horizon
             </h1>
           </div>
@@ -282,22 +269,15 @@ const Login = () => {
               }}
               exit={{
                 opacity: 0,
-              }}
-            >
+              }}>
               {/* temp code  */}
               <div
                 id="SignUp"
-                className="flex justify-center items-center flex-col xl:bg-white lg:bg-white xl:shadow-lg lg:shadow-lg xl:rounded-[3rem]"
-              >
+                className="flex justify-center items-center flex-col xl:bg-white lg:bg-white xl:shadow-lg lg:shadow-lg xl:rounded-[3rem]">
                 <div className="flex items-start p-5 flex-col">
                   <div className="mt-10 mb-5 flex gap-3 flex-col">
-                    <h2 className="text-xs text-slate-400">
-                      Welcom to Next Horizon
-                    </h2>
-                    <h1
-                      className="text-2xl text-slate-600 font-semibold"
-                      id="logoFont"
-                    >
+                    <h2 className="text-xs text-slate-400">Welcom to Next Horizon</h2>
+                    <h1 className="text-2xl text-slate-600 font-semibold" id="logoFont">
                       {showCardTitleText()}
                     </h1>
                   </div>
@@ -313,8 +293,7 @@ const Login = () => {
                           fontSize: "12px",
                           alignSelf: "flex-end",
                           marginRight: "5px",
-                        }}
-                      >
+                        }}>
                         *Confirm Password is not same!
                       </span>
                     </div>
@@ -323,8 +302,7 @@ const Login = () => {
                       <button
                         type="submit"
                         onClick={handleSubmit}
-                        className={styles.buttonRedOutline}
-                      >
+                        className={styles.buttonRedOutline}>
                         {showSubmitBtnText()}
                       </button>
                       {/* show more button */}
@@ -335,8 +313,7 @@ const Login = () => {
                         onClick={() => {
                           changeAuthCard();
                           resetForm();
-                        }}
-                      >
+                        }}>
                         {showChangeCardBtnText()}
                       </button>
                     </div>
@@ -344,8 +321,7 @@ const Login = () => {
                     {authType !== 3 && (
                       <button
                         className={`rounded-sm pl-2 pr-2 pt-1 pb-1 text-sm hover:underline text-${styles.redPrimary}`}
-                        onClick={() => setAuthType(3)}
-                      >
+                        onClick={() => setAuthType(3)}>
                         Forgot password?
                       </button>
                     )}

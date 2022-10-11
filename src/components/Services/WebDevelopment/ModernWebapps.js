@@ -11,10 +11,9 @@ const ModernWebapps = () => {
         </h2>
 
         <div className="max-w-lg mt-4 xl:text-xl lg:text-xl text-base tracking-wide">
-          We offer web app development services of any complexity for startups,
-          mid-sized companies, and enterprises. Looking out for trends and the
-          latest technologies, we monitor performance and work towards
-          continuous improvement and optimization of web products.
+          We offer web app development services of any complexity for startups, mid-sized companies,
+          and enterprises. Looking out for trends and the latest technologies, we monitor
+          performance and work towards continuous improvement and optimization of web products.
         </div>
       </div>
 

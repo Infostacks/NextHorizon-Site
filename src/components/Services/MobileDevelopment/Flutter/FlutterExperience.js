@@ -25,8 +25,8 @@ const FlutterExperience = () => {
           </span>
 
           <span className="max-w-2xl mt-4 xl:text-3xl lg:text-3xl text-xl xl:w-1/2 lg:w-1/2 w-full tracking-wide">
-            We offer Flutter app development services to clients and create
-            open-source projects to support the community.
+            We offer Flutter app development services to clients and create open-source projects to
+            support the community.
           </span>
         </div>
 
@@ -53,8 +53,7 @@ const FlutterExperience = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col "
-                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
-              >
+                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}>
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
                   <img
@@ -73,10 +72,7 @@ const FlutterExperience = () => {
                   <span className="font-bold font-sans flex flex-row gap-5">
                     {process.icons.map((item, index) => {
                       return (
-                        <div
-                          key={index}
-                          className="flex flex-row gap-2 items-center"
-                        >
+                        <div key={index} className="flex flex-row gap-2 items-center">
                           <span className="text-3xl">{item.icon}</span>
                           <span className="text-xl">{item.title}</span>
                         </div>
@@ -92,8 +88,7 @@ const FlutterExperience = () => {
                       return (
                         <div
                           key={index}
-                          className={`bg-white text-${styles.redPrimary} border-[1px] border-${styles.redPrimary} py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-${styles.blackPrimary} hover:border-[1px] hover:border-${styles.blackPrimary} hover:cursor-pointer w-fit h-fit`}
-                        >
+                          className={`bg-white text-${styles.redPrimary} border-[1px] border-${styles.redPrimary} py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:text-${styles.blackPrimary} hover:border-[1px] hover:border-${styles.blackPrimary} hover:cursor-pointer w-fit h-fit`}>
                           <div className="flex justify-center items-center gap-3">
                             <span className="text-3xl">{item.icon}</span>
                             <span className="text-axl">{item.title}</span>

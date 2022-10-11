@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
-const SignUpCard = ({valueEmail, valuePass, valueConfPass, onChange}) => {
+const SignUpCard = ({ valueEmail, valuePass, valueConfPass, onChange }) => {
   return (
     <div className="flex flex-col gap-2">
       <label htmlFor="email" className="text-xs text-slate-500">

@@ -43,31 +43,21 @@ const ContactUs = () => {
   }, [inView, leftAnimation, rightAnimation]);
 
   return (
-    <section
-      ref={ref}
-      className="flex items-center justify-center w-full pt-20"
-    >
+    <section ref={ref} className="flex items-center justify-center w-full pt-20">
       <div className="flex flex-col gap-10 w-full max-w-screen-lg">
         <div className="w-full flex xl:gap-20 lg:gap-14 gap-10 xl:flex-row lg:flex-row flex-col justify-center">
           {/* left side  */}
           <motion.div
             animate={rightAnimation}
-            className={`mb-10 flex max-w-sm mx-auto flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} backdrop-blur-sm bg-opacity-60 border-2 border-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}
-          >
-            <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
-              Contact Us
-            </h2>
+            className={`mb-10 flex max-w-sm mx-auto flex-col gap-3 justify-center items-center w-full bg-${styles.redPrimary} backdrop-blur-sm bg-opacity-60 border-2 border-${styles.redPrimary} rounded-3xl drop-shadow-md shadow-lg z-30`}>
+            <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">Contact Us</h2>
             <blockquote className="flex flex-col justify-between p-6 -mt-6 w-full text-center hover:rounded-3xl">
               <div className="flex flex-col justify-center items-center">
                 <div className="text-3xl text-slate-100">
                   <HiOutlineLocationMarker />
                 </div>
-                <div className="text-2xl font-semibold text-slate-100">
-                  Our Address
-                </div>
-                <div className="text-base text-slate-50">
-                  264 Avenue 0 Suite A8,NY,11230, USA
-                </div>
+                <div className="text-2xl font-semibold text-slate-100">Our Address</div>
+                <div className="text-base text-slate-50">264 Avenue 0 Suite A8,NY,11230, USA</div>
               </div>
             </blockquote>
 
@@ -76,12 +66,8 @@ const ContactUs = () => {
                 <div className="text-3xl text-slate-100">
                   <BiEnvelope />
                 </div>
-                <div className="text-2xl font-semibold text-slate-100">
-                  Email Us
-                </div>
-                <div className="text-base text-slate-50">
-                  support@nhitechsolutions.com
-                </div>
+                <div className="text-2xl font-semibold text-slate-100">Email Us</div>
+                <div className="text-base text-slate-50">support@nhitechsolutions.com</div>
               </div>
             </blockquote>
 
@@ -90,12 +76,8 @@ const ContactUs = () => {
                 <div className="text-3xl text-slate-100">
                   <BiPhoneCall />
                 </div>
-                <div className="text-2xl font-semibold text-slate-100">
-                  Call Us
-                </div>
-                <div className="text-base text-slate-50">
-                  +1 (929) 552 2285 (103)
-                </div>
+                <div className="text-2xl font-semibold text-slate-100">Call Us</div>
+                <div className="text-base text-slate-50">+1 (929) 552 2285 (103)</div>
               </div>
             </blockquote>
           </motion.div>
@@ -103,8 +85,7 @@ const ContactUs = () => {
           {/* right side  */}
           <motion.div
             animate={leftAnimation}
-            className={`mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 border-2 border-slate-500 backdrop-blur-sm bg-opacity-60 rounded-3xl drop-shadow-md shadow-lg z-30`}
-          >
+            className={`mt-10 max-w-sm flex justify-center flex-col items-center w-full h-full bg-slate-500 border-2 border-slate-500 backdrop-blur-sm bg-opacity-60 rounded-3xl drop-shadow-md shadow-lg z-30`}>
             <blockquote className="flex flex-col gap-5 items-center pb-5 mt-6 w-full text-center">
               <h2 className="text-slate-100 xl:text-3xl lg:text-3xl text-xl font-bold">
                 Get In Touch
@@ -146,11 +127,7 @@ const ContactUs = () => {
                   placeholder="Message"
                 />
               </div>
-              <button
-                type="submit"
-                value="Send"
-                className={styles.buttonBlackFull}
-              >
+              <button type="submit" value="Send" className={styles.buttonBlackFull}>
                 Send Message
               </button>
             </blockquote>

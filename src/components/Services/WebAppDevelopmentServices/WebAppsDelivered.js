@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -35,8 +36,7 @@ const WebAppsDelivered = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col"
-                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
-              >
+                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}>
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
                   <img
@@ -48,19 +48,13 @@ const WebAppsDelivered = () => {
 
                 {/* info data  */}
                 <div className="flex flex-col gap-5 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
-                  <span className="text-2xl font-bold text-gray-800">
-                    {webapp.title}
-                  </span>
-                  <span className="text-xl font-bold text-gray-800">
-                    Challenge:
-                  </span>
+                  <span className="text-2xl font-bold text-gray-800">{webapp.title}</span>
+                  <span className="text-xl font-bold text-gray-800">Challenge:</span>
                   <span className="xl:text-xl lg:text-xl text-base text-gray-700 text-justify">
                     {webapp.challange}
                   </span>
 
-                  <span className="text-xl font-bold text-gray-800">
-                    How we solved it:
-                  </span>
+                  <span className="text-xl font-bold text-gray-800">How we solved it:</span>
                   <span className="xl:text-xl lg:text-xl text-base text-gray-700">
                     {webapp.solution}
                   </span>
@@ -69,35 +63,25 @@ const WebAppsDelivered = () => {
                   <div className="flex flex-row justify-around">
                     {/* core tech data  */}
                     <div className="flex flex-col justify-start">
-                      <span className="text-lg font-semibold">
-                        Core tech stack:
-                      </span>
-                      <div className="flex flex-row gap-2 flex-wrap">
-                        {webapp.techStack}
-                      </div>
+                      <span className="text-lg font-semibold">Core tech stack:</span>
+                      <div className="flex flex-row gap-2 flex-wrap">{webapp.techStack}</div>
                     </div>
 
                     {/* team data  */}
                     <div className="flex flex-col justify-start">
                       <span className="text-lg font-semibold">Team:</span>
-                      <div className="flex flex-row gap-2 flex-wrap">
-                        {webapp.teamSize}
-                      </div>
+                      <div className="flex flex-row gap-2 flex-wrap">{webapp.teamSize}</div>
                     </div>
 
                     {/* duration data  */}
                     <div className="flex flex-col justify-start">
                       <span className="text-lg font-semibold">Duration:</span>
-                      <div className="flex flex-row gap-2 flex-wrap">
-                        {webapp.duration}
-                      </div>
+                      <div className="flex flex-row gap-2 flex-wrap">{webapp.duration}</div>
                     </div>
                   </div>
 
                   {/* button  */}
-                  <button className={styles.buttonBlackFull}>
-                    Explore more study
-                  </button>
+                  <button className={styles.buttonBlackFull}>Explore more study</button>
                 </div>
               </motion.div>
             );

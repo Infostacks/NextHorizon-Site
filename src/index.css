@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* font-size: 0.875rem; */
 }
 
@@ -23,16 +23,16 @@ body {
 
 .imgColorChange {
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .4s ease-in-out;  
-  }
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all 0.4s ease-in-out;
+}
 
-  .imgColorChange:hover {
+.imgColorChange:hover {
   filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01);
-  }
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
 
 .bubblePattern {
   background-color: #dfdbe5;

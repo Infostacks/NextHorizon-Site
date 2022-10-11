@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -28,16 +29,15 @@ const SoftwareModernization = () => {
   return (
     <div
       ref={ref}
-      className="xl:h-[50rem] lg:h-[50rem] w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center bg-slate-100 pt-20"
-    >
+      className="xl:h-[50rem] lg:h-[50rem] w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center bg-slate-100 pt-20">
       {/* top section  */}
-      <div className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 px-20 w-full flex xl:items-end lg:items-end items-center justify-center flex-col h-full`}>
+      <div
+        className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 px-20 w-full flex xl:items-end lg:items-end items-center justify-center flex-col h-full`}>
         {/* Text intro  */}
         <div className="max-w-xl flex gap-10 flex-col 6 xl:py-0 lg:py-0 py-10">
           <motion.h2
             animate={upAnimation}
-            className="xl:text-6xl lg:text-6xl md:text-4xl text-3xl font-semibold flex flex-wrap tracking-tight"
-          >
+            className="xl:text-6xl lg:text-6xl md:text-4xl text-3xl font-semibold flex flex-wrap tracking-tight">
             Software modernization we've carried on
           </motion.h2>
 
@@ -50,7 +50,8 @@ const SoftwareModernization = () => {
         </div>
       </div>
 
-      <div className={`flex flex-col bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full px-20 h-full justify-center xl:py-0 lg:py-0 py-10`}>
+      <div
+        className={`flex flex-col bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full px-20 h-full justify-center xl:py-0 lg:py-0 py-10`}>
         {/* Show Data  */}
         <div className="flex flex-col gap-5 max-w-xl">
           <motion.span animate={upAnimation} className="text-3xl font-semibold">
@@ -60,19 +61,18 @@ const SoftwareModernization = () => {
           <motion.div animate={upAnimation} className="flex flex-col gap-1">
             <span className="text-xl font-semibold">Challenge:</span>
             <span className="text-base tracking-wide">
-              Rewrite the outdated CRM system for a Canadian microfinance
-              company. The main requirements were enhanced performance and high
-              scalability since the client base was growing steadily.
+              Rewrite the outdated CRM system for a Canadian microfinance company. The main
+              requirements were enhanced performance and high scalability since the client base was
+              growing steadily.
             </span>
           </motion.div>
 
           <motion.div animate={upAnimation} className="flex flex-col gap-1">
             <span className="text-xl font-semibold">How we solved it:</span>
             <span className="text-base tracking-wide">
-              We’ve rebuilt CRM from scratch using React.js. Besides that, the
-              whole system was based on a powerful Node.js backend. High
-              scalability was ensured with Amazon S3 and Amazon EC2 cloud
-              services.
+              We’ve rebuilt CRM from scratch using React.js. Besides that, the whole system was
+              based on a powerful Node.js backend. High scalability was ensured with Amazon S3 and
+              Amazon EC2 cloud services.
             </span>
           </motion.div>
 

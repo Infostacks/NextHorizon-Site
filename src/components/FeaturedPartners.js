@@ -10,12 +10,10 @@ const FeaturedPartners = () => {
           <div className="flex xl:flex-row lg:flex-row flex-col items-center gap-5 mx-10">
             {/* Text intro  */}
             <div className="flex flex-col justify-center items-center w-full">
-              <h2 className="text-3xl font-bold tracking-tight">
-                Featured Partners & Clients
-              </h2>
+              <h2 className="text-3xl font-bold tracking-tight">Featured Partners & Clients</h2>
               <p>
-                Clients and partners we’ve worked with frequently recommend us
-                to others thanks to our individual approach to tech problems
+                Clients and partners we’ve worked with frequently recommend us to others thanks to
+                our individual approach to tech problems
               </p>
             </div>
           </div>
@@ -29,8 +27,7 @@ const FeaturedPartners = () => {
                   return (
                     <div
                       key={index}
-                      className="imgColorChange flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5"
-                    >
+                      className="imgColorChange flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5">
                       <img src={partner} alt="" className="h-fit" />
                     </div>
                   );

@@ -41,15 +41,13 @@ const WhatWeOffer = () => {
   return (
     <section
       ref={ref}
-      className="bg-slate-100 w-screen flex flex-col gap-10 items-center pb-20 overflow-x-hidden xl:px-0 lg:px-0 px-10"
-    >
+      className="bg-slate-100 w-screen flex flex-col gap-10 items-center pb-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-xl flex flex-col">
         {/* Text intro  */}
         <motion.span
           animate={fadeInAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold">
           What we offer
         </motion.span>
       </div>
@@ -73,8 +71,7 @@ const WhatWeOffer = () => {
                 },
               }}
               className="flex flex-col justify-center xl:gap-5 lg:gap-5 gap-2 bg-slate-50 xl:p-10 lg:p-10 p-5 rounded-3xl drop-shadow-md"
-              key={index}
-            >
+              key={index}>
               <span className="xl:text-2xl lg:text-2xl text-base font-semibold">
                 {offer.category}
               </span>
@@ -87,10 +84,7 @@ const WhatWeOffer = () => {
                   {offer.expertise.map((item, index) => {
                     return (
                       <span key={index} className={`text-${styles.redPrimary}`}>
-                        ✔{" "}
-                        <span className={`text-${styles.blackPrimary}`}>
-                          {item}
-                        </span>
+                        ✔ <span className={`text-${styles.blackPrimary}`}>{item}</span>
                       </span>
                     );
                   })}

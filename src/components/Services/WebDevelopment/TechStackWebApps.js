@@ -17,8 +17,8 @@ const TechStackWebApps = () => {
         </h2>
 
         <span className="xl:text-3xl lg:text-3xl text-xl text-slate-800">
-          We create responsive web applications and sites leveraging the most
-          robust technologies in the industry to help you boost your business.
+          We create responsive web applications and sites leveraging the most robust technologies in
+          the industry to help you boost your business.
         </span>
       </div>
 
@@ -35,8 +35,7 @@ const TechStackWebApps = () => {
                   onClick={() => {
                     setCount(index);
                     setToolData(0);
-                  }}
-                >
+                  }}>
                   {category.techCategory}
                 </div>
               </button>
@@ -56,8 +55,7 @@ const TechStackWebApps = () => {
                       className={`flex justify-center text-lg items-center xl:p-7 lg:p-7 md:p-4 p-2 underline font-semibold rounded-xl drop-shadow-md ${`job-btn ${
                         toolData === index && "active-btn"
                       }`}`}
-                      onClick={() => setToolData(index)}
-                    >
+                      onClick={() => setToolData(index)}>
                       {/* {data.icon} */}
                       {data.tool}
                     </div>

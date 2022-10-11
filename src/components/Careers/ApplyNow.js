@@ -16,31 +16,23 @@ const ApplyNow = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_11mw5hi",
-        "template_zpjacye",
-        form.current,
-        "byjv8FrMKkAT9DYSa"
-      )
-      .then(
-        (result) => {
-          console.log("result text: ", result.text);
-          setDone(true);
-          navigate("/careers");
-          // form.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_11mw5hi", "template_zpjacye", form.current, "byjv8FrMKkAT9DYSa").then(
+      (result) => {
+        console.log("result text: ", result.text);
+        setDone(true);
+        navigate("/careers");
+        // form.reset();
+      },
+      (error) => {
+        console.log(error.text);
+      },
+    );
   };
 
   return (
     <div
       className="flex justify-center flex-col items-center w-full h-full bg-no-repeat bg-cover 
-    bg-[url('https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]"
-    >
+    bg-[url('https://images.pexels.com/photos/249798/pexels-photo-249798.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]">
       <div className="flex justify-center items-center w-full h-full bg-opacity-95 bg-slate-700">
         <div className="max-w-screen-lg py-32 w-screen flex flex-col items-center gap-16 justify-center">
           <h1 className="xl:text-3xl lg:text-3xl md:text-2xl text-xl text-center flex flex-col gap-2 text-gray-200">
@@ -52,8 +44,7 @@ const ApplyNow = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col gap-5 justify-between w-5/6"
-          >
+            className="flex flex-col gap-5 justify-between w-5/6">
             {/* name & email  */}
             <div className="flex xl:flex-row lg:flex-row flex-col gap-5 w-full">
               <input
@@ -136,8 +127,7 @@ const ApplyNow = () => {
 
                   <label
                     className="block p-4 text-sm font-medium border text-gray-200 hover:text-black border-gray-200 rounded-lg cursor-pointer transition-colors shadow-sm peer-checked:border-blue-500 hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-blue-500"
-                    htmlFor="employed_alt"
-                  >
+                    htmlFor="employed_alt">
                     <span className="text-lg"> Employed </span>
                   </label>
 
@@ -145,8 +135,7 @@ const ApplyNow = () => {
                     className="absolute w-5 h-5 text-blue-600 opacity-0 top-4 right-4 peer-checked:opacity-100"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
+                    fill="currentColor">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -166,8 +155,7 @@ const ApplyNow = () => {
 
                   <label
                     className="block p-4 text-sm font-medium border text-gray-200 hover:text-black border-gray-200 rounded-lg cursor-pointer transition-colors shadow-sm peer-checked:border-blue-500 hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-blue-500"
-                    htmlFor="self_employed_alt"
-                  >
+                    htmlFor="self_employed_alt">
                     <span className="text-lg"> Self-Employed </span>
                   </label>
 
@@ -175,8 +163,7 @@ const ApplyNow = () => {
                     className="absolute w-5 h-5 text-blue-600 opacity-0 top-4 right-4 peer-checked:opacity-100"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
+                    fill="currentColor">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -196,8 +183,7 @@ const ApplyNow = () => {
 
                   <label
                     className="block p-4 text-sm font-medium border text-gray-200 hover:text-black border-gray-200 rounded-lg cursor-pointer transition-colors shadow-sm peer-checked:border-blue-500 hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-blue-500"
-                    htmlFor="unemployed_alt"
-                  >
+                    htmlFor="unemployed_alt">
                     <span className="text-lg"> Unemployed </span>
                   </label>
 
@@ -205,8 +191,7 @@ const ApplyNow = () => {
                     className="absolute w-5 h-5 text-blue-600 opacity-0 top-4 right-4 peer-checked:opacity-100"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
+                    fill="currentColor">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -226,8 +211,7 @@ const ApplyNow = () => {
 
                   <label
                     className="block p-4 text-sm font-medium border text-gray-200 hover:text-black border-gray-200 rounded-lg cursor-pointer transition-colors shadow-sm peer-checked:border-blue-500 hover:bg-gray-50 peer-checked:ring-1 peer-checked:ring-blue-500"
-                    htmlFor="student_alt"
-                  >
+                    htmlFor="student_alt">
                     <span className="text-lg"> Student </span>
                   </label>
 
@@ -235,8 +219,7 @@ const ApplyNow = () => {
                     className="absolute w-5 h-5 text-blue-600 opacity-0 top-4 right-4 peer-checked:opacity-100"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
+                    fill="currentColor">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -271,8 +254,7 @@ const ApplyNow = () => {
               <button
                 type="submit"
                 value="Send"
-                className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit"
-              >
+                className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">
                 Apply Now
               </button>
               <motion.span
@@ -280,8 +262,7 @@ const ApplyNow = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 3 }}
                 exit={{ opacity: 0 }}
-                className="text-xl text-gray-200 font-semibold"
-              >
+                className="text-xl text-gray-200 font-semibold">
                 {done && "Applied successfully"}
               </motion.span>
             </div>

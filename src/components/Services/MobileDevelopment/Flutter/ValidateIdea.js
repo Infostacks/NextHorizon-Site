@@ -6,8 +6,7 @@ import styles from "../../../../utils/GlobalStyles.js";
 const ValidateIdea = () => {
   return (
     <section
-      className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}
-    >
+      className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}>
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center flex-col">
         {/* Text intro  */}
@@ -16,9 +15,8 @@ const ValidateIdea = () => {
         </span>
 
         <span className="max-w-5xl mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-          Using Flutter, we’ll help you reduce time to market releasing apps and
-          their updates faster and bringing a native-like performance to
-          end-users
+          Using Flutter, we’ll help you reduce time to market releasing apps and their updates
+          faster and bringing a native-like performance to end-users
         </span>
       </div>
 
@@ -43,8 +41,7 @@ const ValidateIdea = () => {
                       type: "spring",
                       bounce: 0.6,
                     },
-                  }}
-                >
+                  }}>
                   {benifit}
                 </motion.li>
               );
@@ -71,8 +68,7 @@ const ValidateIdea = () => {
                       type: "spring",
                       bounce: 0.6,
                     },
-                  }}
-                >
+                  }}>
                   {benifit}
                 </motion.li>
               );

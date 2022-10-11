@@ -6,8 +6,7 @@ import styles from "../../../utils/GlobalStyles.js";
 const AdvanceWebApps = () => {
   return (
     <section
-      className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}
-    >
+      className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}>
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center flex-col">
         {/* Text intro  */}
@@ -16,8 +15,8 @@ const AdvanceWebApps = () => {
         </span>
 
         <span className="max-w-4xl mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-          Without limiting your functional requirements, we use tools and
-          services that ensure the best user experience in your final product.
+          Without limiting your functional requirements, we use tools and services that ensure the
+          best user experience in your final product.
         </span>
       </div>
 
@@ -37,8 +36,7 @@ const AdvanceWebApps = () => {
                 },
               }}
               className="flex flex-col justify-center xl:w-1/3 lg:w-1/3 w-full gap-5"
-              key={index}
-            >
+              key={index}>
               <h2 className="text-slate-50 text-3xl font-semibold drop-shadow-md">
                 {service.title}
               </h2>
@@ -62,8 +60,7 @@ const AdvanceWebApps = () => {
                           },
                         }}
                         className="xl:text-xl lg:text-xl text-base font-serif tracking-wider"
-                        key={index}
-                      >
+                        key={index}>
                         {tool}
                       </motion.li>
                     );

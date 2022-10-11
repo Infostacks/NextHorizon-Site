@@ -51,24 +51,20 @@ const DiscoveryPhaseDeliverable = () => {
   return (
     <div
       ref={ref}
-      className="w-screen flex flex-col gap-5 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10"
-    >
+      className="w-screen flex flex-col gap-5 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-5">
         {/* Text intro  */}
         <motion.h1
           animate={fadeInAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Discovery phase deliverables
         </motion.h1>
 
         <motion.span
           animate={fadeInAnimation}
-          className="max-w-lg xl:text-3xl lg:text-3xl text-xls text-slate-800"
-        >
-          Documents that describe the project requirements and tech aspects of
-          the development
+          className="max-w-lg xl:text-3xl lg:text-3xl text-xls text-slate-800">
+          Documents that describe the project requirements and tech aspects of the development
         </motion.span>
       </div>
 
@@ -82,8 +78,7 @@ const DiscoveryPhaseDeliverable = () => {
                   className={`flex flex-row text-2xl items-center py-3 px-4 font-semibold rounded-full drop-shadow-md underline ${`job-btn ${
                     count === index && "active-btn"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {category.phase}
                 </div>
               </motion.button>
@@ -111,11 +106,9 @@ const DiscoveryPhaseDeliverable = () => {
                     },
                   }}
                   className="flex xl:flex-row lg:flex-row flex-col gap-3"
-                  key={index}
-                >
+                  key={index}>
                   <span
-                    className={`text-2xl font-semibold bg-${styles.redPrimary} rounded-full py-[.15rem] px-3 h-fit w-fit text-slate-100`}
-                  >
+                    className={`text-2xl font-semibold bg-${styles.redPrimary} rounded-full py-[.15rem] px-3 h-fit w-fit text-slate-100`}>
                     {item.id}
                   </span>
                   <div className="flex flex-col gap-3">

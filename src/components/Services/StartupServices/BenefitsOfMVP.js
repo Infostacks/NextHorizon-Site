@@ -32,8 +32,7 @@ const BenefitsOfMVP = () => {
                 },
               }}
               className="flex flex-col justify-center gap-2"
-              key={index}
-            >
+              key={index}>
               <span className="text-xl font-semibold">{benefit.title}</span>
               <span className="xl:text-xl lg:text-xl text-base text-justify font-serif">
                 {benefit.desc}

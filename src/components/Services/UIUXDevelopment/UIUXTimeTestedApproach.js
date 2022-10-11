@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  uxuiTimeTestedApproach,
-  uxuiTimeTestedApproach1,
-} from "../../../utils/data.js";
+import { uxuiTimeTestedApproach, uxuiTimeTestedApproach1 } from "../../../utils/data.js";
 
 import redBG from "../../../images/redBG.png";
 
@@ -18,8 +15,8 @@ const UIUXTimeTestedApproach = () => {
         </h2>
 
         <p className="max-w-lg text-2xl tracking-wide">
-          User experience and user interface are inseparable and form an overall
-          impression of your product
+          User experience and user interface are inseparable and form an overall impression of your
+          product
         </p>
       </div>
 
@@ -41,8 +38,7 @@ const UIUXTimeTestedApproach = () => {
                   },
                 }}
                 key={index}
-                className="text-base font-serif"
-              >
+                className="text-base font-serif">
                 {item}
               </motion.span>
             );
@@ -70,8 +66,7 @@ const UIUXTimeTestedApproach = () => {
                   },
                 }}
                 key={index}
-                className="text-base font-serif"
-              >
+                className="text-base font-serif">
                 {item}
               </motion.span>
             );

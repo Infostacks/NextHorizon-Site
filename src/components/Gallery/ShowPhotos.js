@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useRef } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -7,7 +9,7 @@ const clientID = `?client_id=lzvetJ_GC6M8QdDkn-D-HtLenu0Cc3pcuiaVZgythBA`;
 const mainUrl = `https://api.unsplash.com/photos/`;
 const searchUrl = `https://api.unsplash.com/search/photos/`;
 
-const ShowPhotos = ({openLightbox}) => {
+const ShowPhotos = ({ openLightbox }) => {
   const [loading, setLoading] = useState(false);
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
@@ -93,7 +95,7 @@ const ShowPhotos = ({openLightbox}) => {
             return <Photo key={index} {...photo} />;
           })} */}
 
-      <Gallery photos={photos} onClick={openLightbox} />
+          <Gallery photos={photos} onClick={openLightbox} />
         </div>
         {loading && <h2 className="loading">Loading...</h2>}
       </section>

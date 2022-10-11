@@ -1,11 +1,11 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import Menu from "./Menu";
 import { blogs } from "../../utils/data";
 
-
-const index = ({selectedCategory}) => {
+const index = ({ selectedCategory }) => {
   const [menuItems, setMenuItems] = useState(blogs);
   const [currentCat, setCurrentCat] = useState(selectedCategory);
 

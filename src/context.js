@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useState, useContext } from "react";
 
 const AppContext = React.createContext();
@@ -35,8 +37,7 @@ const AppProvider = ({ children }) => {
         closeSubmenu,
         page,
         location,
-      }}
-    >
+      }}>
       {children}
     </AppContext.Provider>
   );

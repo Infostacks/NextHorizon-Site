@@ -17,8 +17,8 @@ const index = () => {
     <div className="flex flex-col items-center w-full overflow-x-hidden">
       <Hero />
       <OurRewards />
-      <FeaturedBlogs/>
-      <Industries/>
+      <FeaturedBlogs />
+      <Industries />
       <CaseStudies />
       <TechnologyStack />
       <ClientsSection />

@@ -20,21 +20,23 @@ const WebDevInsignts = () => {
           return (
             <div
               key={index}
-              className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 rounded-3xl`}
-            >
+              className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 rounded-3xl`}>
               <div className="flex flex-col p-5 justify-between gap-5">
                 {/* breadcrumbs */}
                 <div className="flex flex-row gap-2 text-sm">
-                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                  <span
+                    className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     <Link to="/blogs">Blog</Link>
                   </span>
                   <span>➙</span>
-                  <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                  <span
+                    className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                     <Link to="">{blogData.category}</Link>
                   </span>
                 </div>
 
-                <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                <span
+                  className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                   <Link to={`/blogs/${blogData.id}`}>{blogData.title}</Link>
                 </span>
                 <div className="flex flex-row justify-between text-sm">

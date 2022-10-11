@@ -16,9 +16,8 @@ const SDLC = () => {
               Our software development flow
             </h2>
             <p className="xl:text-xl lg:text-xl text-base">
-              We follow an established software development life cycle (SDLC) to
-              build a cost-effective product that meets your requirements and
-              market demands
+              We follow an established software development life cycle (SDLC) to build a
+              cost-effective product that meets your requirements and market demands
             </p>
           </div>
 
@@ -42,20 +41,16 @@ const SDLC = () => {
                   }}
                   key={index}
                   className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 drop-shadow-md group w-full`}
-                  close
-                >
+                  close>
                   <summary className="flex items-center justify-between cursor-pointer w-full">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                      {process.question}
-                    </h5>
+                    <h5 className="text-lg font-semibold text-gray-900">{process.question}</h5>
 
                     <span className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
+                        fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
@@ -69,9 +64,7 @@ const SDLC = () => {
                     {process.answer}
                     <div className="flex xl:flex-row lg:flex-row flex-col xl:gap-10 lg:gap-10 gap-5 justify-center">
                       <div className="flex flex-col xl:w-1/2 lg:w-1/2 md:w-1/2 w-full xl:p-5 lg:p-5">
-                        <span className="text-2xl font-bold text-gray-900">
-                          {process.title}
-                        </span>
+                        <span className="text-2xl font-bold text-gray-900">{process.title}</span>
                         <span className="xl:text-base lg:text-lg text-base text-gray-700 text-justify">
                           {process.desc}
                         </span>
@@ -79,9 +72,7 @@ const SDLC = () => {
 
                       {/* other links data  */}
                       <div className="flex flex-col justify-start gap-6 xl:w-1/2 lg:w-1/2 md:w-1/2 w-full">
-                        <span className="text-2xl font-bold text-gray-700">
-                          Staff
-                        </span>
+                        <span className="text-2xl font-bold text-gray-700">Staff</span>
                         <span className="flex flex-row flex-wrap items-center gap-4 text-sm text-slate-700">
                           {process.staff.map((member, index) => {
                             return <span key={index}>➙ {member}</span>;

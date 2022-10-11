@@ -19,8 +19,8 @@ const ServicesNew = () => {
           <h1>Custom Software Development Services</h1>
 
           <span>
-            We create solutions that solve business problems, meet requirements,
-            respond to market needs, and transform internal operations.
+            We create solutions that solve business problems, meet requirements, respond to market
+            needs, and transform internal operations.
           </span>
 
           {/* button  */}
@@ -59,12 +59,10 @@ const ServicesNew = () => {
             <div className="flex xl:flex-row lg:flex-row flex-col items-center gap-5 mx-10">
               {/* Text intro  */}
               <div className="flex flex-col justify-center items-center w-full">
-                <h2 className="text-3xl font-bold tracking-tight">
-                  Our Partners & Clients
-                </h2>
+                <h2 className="text-3xl font-bold tracking-tight">Our Partners & Clients</h2>
                 <p>
-                  Clients and partners we’ve worked with frequently recommend us
-                  to others thanks to our individual approach to tech problems
+                  Clients and partners we’ve worked with frequently recommend us to others thanks to
+                  our individual approach to tech problems
                 </p>
               </div>
             </div>
@@ -78,13 +76,8 @@ const ServicesNew = () => {
                     return (
                       <div
                         key={index}
-                        className="flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5"
-                      >
-                        <img
-                          src={partner}
-                          alt=""
-                          className="imgColorChange h-fit"
-                        />
+                        className="flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5">
+                        <img src={partner} alt="" className="imgColorChange h-fit" />
                       </div>
                     );
                   })}
@@ -107,9 +100,8 @@ const ServicesNew = () => {
                   Custom Software solutions we offer
                 </h2>
                 <span className="xl:w-1/2 lg:w-1/2 md:w-1/2 w-full ">
-                  Our team supports you at every stage of the software
-                  development life-cycle: from product discovery to deployment
-                  and post-release support
+                  Our team supports you at every stage of the software development life-cycle: from
+                  product discovery to deployment and post-release support
                 </span>
               </div>
             </div>
@@ -120,12 +112,10 @@ const ServicesNew = () => {
                 return (
                   <div
                     key={index}
-                    className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
-                  >
+                    className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}>
                     {/* image data  */}
                     <div
-                      className={`xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2`}
-                    >
+                      className={`xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2`}>
                       <img
                         src={service.icon}
                         alt={service.title}
@@ -135,9 +125,7 @@ const ServicesNew = () => {
 
                     {/* info data  */}
                     <div className="flex flex-col gap-5 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center">
-                      <span className="text-2xl font-bold text-gray-700">
-                        {service.title}
-                      </span>
+                      <span className="text-2xl font-bold text-gray-700">{service.title}</span>
                       <span className="text-lg text-gray-500">{service.desc}</span>
 
                       {/* other links data  */}
@@ -183,12 +171,11 @@ const ServicesNew = () => {
         <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-slate-50 z-[50rem]">
           <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
             <span className="text-2xl text-slate-50 text-justify xl:w-1/2 lg:w-1/2 w-full">
-            Schedule a meeting to get consulted about the software
-                        development services you need.
+              Schedule a meeting to get consulted about the software development services you need.
             </span>
             <div className="flex flex-col gap-4 xl:w-1/2 lg:w-1/2 w-full">
               <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-slate-50 font-semibold">
-              Got any tech challenges?
+                Got any tech challenges?
               </h1>
               {/* button  */}
               <button className="bg-[#08080cff] text-[#edf2f4ff] border-[1px] border-[#08080cff] py-2 px-10 rounded-full drop-shadow-md hover:shadow-inner hover:bg-white hover:text-[#D90429] hover:border-[1px] hover:border-[#D90429] w-fit">

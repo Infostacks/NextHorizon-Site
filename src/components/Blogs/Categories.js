@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../../utils/GlobalStyles";
@@ -11,7 +12,9 @@ const Categories = ({ categories, filterItems, currentCategory }) => {
         return (
           <button
             type="button"
-            className={`font-semibold tracking-wide drop-shadow-md text-md capitalize py-2 px-5 ${styles.blogsCategory_Text}
+            className={`font-semibold tracking-wide drop-shadow-md text-md capitalize py-2 px-5 ${
+              styles.blogsCategory_Text
+            }
               ${
                 currentCategory === category
                   ? `${styles.blogsCategorySelected}`

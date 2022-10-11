@@ -10,13 +10,13 @@ import styles from "../../utils/GlobalStyles";
 
 const allCategories = ["latest", ...new Set(blogs.map((item) => item.category))];
 
-const index = ({selectedCategory}) => {
+const index = ({ selectedCategory }) => {
   const [menuItems, setMenuItems] = useState(blogs);
   const [categories, setCategories] = useState(allCategories);
   const [currentCat, setCurrentCat] = useState("latest");
 
   const filterItems = (selectedCategory) => {
-    console.log('selectedCategory', selectedCategory)
+    console.log("selectedCategory", selectedCategory);
     setCurrentCat(selectedCategory);
     if (selectedCategory === "latest") {
       setMenuItems(blogs);
@@ -31,20 +31,19 @@ const index = ({selectedCategory}) => {
       {/* top section  */}
       <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
-        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          Our Latest Blogs
-        </h2>
+        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">Our Latest Blogs</h2>
       </div>
 
       {/*   */}
-      <div className={`rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 shadow-md ${styles.blogsCategory_BG}`}>
+      <div
+        className={`rounded-xl px-8 py-3 xl:mx-40 lg:mx-40 md:mx-40 mx-10 shadow-md ${styles.blogsCategory_BG}`}>
         <Categories
           categories={categories}
           filterItems={filterItems}
           currentCategory={currentCat}
         />
       </div>
-      <Outlet/>
+      <Outlet />
     </section>
   );
 };

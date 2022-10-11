@@ -62,15 +62,13 @@ const index = () => {
             <Link
               to="/services"
               onMouseEnter={handleMouseEnterServices}
-              onMouseLeave={handleMouseExitServices}
-            >
+              onMouseLeave={handleMouseExitServices}>
               SERVICES
             </Link>
             <div
               className="sub-menu"
               onMouseEnter={handleMouseEnterServices}
-              onMouseLeave={handleMouseExitServices}
-            >
+              onMouseLeave={handleMouseExitServices}>
               {isHoveringServices ? <ServicesMenu /> : ""}
             </div>
           </span>
@@ -83,15 +81,13 @@ const index = () => {
             <Link
               to="/blogs/latest"
               onMouseEnter={handleMouseEnterBlogs}
-              onMouseLeave={handleMouseExitBlogs}
-            >
+              onMouseLeave={handleMouseExitBlogs}>
               BLOGS
             </Link>
             <div
               className="sub-menu"
               onMouseEnter={handleMouseEnterBlogs}
-              onMouseLeave={handleMouseExitBlogs}
-            >
+              onMouseLeave={handleMouseExitBlogs}>
               {isHoveringBlogs ? <BlogMenu /> : ""}
             </div>
           </span>

@@ -12,8 +12,8 @@ const WebDevProcess = () => {
         </h2>
 
         <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-          We consult businesses, helping them modernize or create apps from
-          scratch with custom UI/UX design.
+          We consult businesses, helping them modernize or create apps from scratch with custom
+          UI/UX design.
         </p>
       </div>
 
@@ -33,11 +33,8 @@ const WebDevProcess = () => {
                 },
               }}
               key={index}
-              className="flex flex-col justify-center gap-4 w-[30rem]"
-            >
-              <span className="text-lg font-bold text-gray-900 w-full">
-                {reward.title}
-              </span>
+              className="flex flex-col justify-center gap-4 w-[30rem]">
+              <span className="text-lg font-bold text-gray-900 w-full">{reward.title}</span>
               <span className="xl:text-xl lg:text-xl text-base text-gray-800 w-full text-justify">
                 {reward.desc}
               </span>

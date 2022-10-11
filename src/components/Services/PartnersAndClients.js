@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { featuredPartners } from "../../utils/data";
 
 const PartnersAndClients = () => {
@@ -15,8 +14,8 @@ const PartnersAndClients = () => {
                 Our Partners & Clients
               </h2>
               <p className="xl:text-xl lg:text-xl text-base">
-                Clients and partners we’ve worked with frequently recommend us
-                to others thanks to our individual approach to tech problems
+                Clients and partners we’ve worked with frequently recommend us to others thanks to
+                our individual approach to tech problems
               </p>
             </div>
           </div>
@@ -30,8 +29,7 @@ const PartnersAndClients = () => {
                   return (
                     <div
                       key={index}
-                      className="imgColorChange flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5"
-                    >
+                      className="imgColorChange flex overflow-hidden items-center justify-center bg-white w-[14rem] h-[6rem] rounded-2xl py-3 px-5">
                       <img src={partner} alt="" className="h-fit" />
                     </div>
                   );

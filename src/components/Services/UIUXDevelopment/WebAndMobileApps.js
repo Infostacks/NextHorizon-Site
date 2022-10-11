@@ -15,8 +15,7 @@ const WebAndMobileApps = () => {
         </h2>
 
         <p className="max-w-lg text-2xl">
-          Creating the same distinct style and brand identity for all platforms
-          using best-proven
+          Creating the same distinct style and brand identity for all platforms using best-proven
         </p>
       </div>
 
@@ -36,14 +35,9 @@ const WebAndMobileApps = () => {
                 },
               }}
               className={`flex flex-col justify-center bg-${styles.redPrimary} bg-opacity-80 rounded-3xl shadow-lg`}
-              key={index}
-            >
+              key={index}>
               <div className="">
-                <img
-                  src={webApp.img}
-                  alt={webApp.title}
-                  className="w-full h-full"
-                />
+                <img src={webApp.img} alt={webApp.title} className="w-full h-full" />
               </div>
 
               <div className="flex flex-col gap-5 text-slate-100 px-3 py-5">

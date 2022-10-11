@@ -35,8 +35,7 @@ const CareerOpportunities = () => {
         <motion.h2
           ref={ref}
           animate={fadeInAnimation}
-          className={`xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight text-${styles.blackPrimary}`}
-        >
+          className={`xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight text-${styles.blackPrimary}`}>
           Career Opportunities
         </motion.h2>
       </div>
@@ -53,21 +52,18 @@ const CareerOpportunities = () => {
                 transition: {
                   duration: 2,
                   bounce: 0.5,
-                  type: 'spring'
+                  type: "spring",
                 },
               }}
               className="flex xl:flex-row lg:flex-row flex-col justify-between p-5 border-b-2 border-slate-300 gap-5 w-full"
-              key={index}
-            >
+              key={index}>
               <div className="flex flex-col">
                 <div className="text-xl font-semibold">{job.jobTitle}</div>
                 <div>{job.jobLocation}</div>
               </div>
               {/* button  */}
               <Link to={`/careers/${job.jobId}`} state={{ data: job }}>
-                <button className={styles.buttonBlackFull}>
-                  Apply Now
-                </button>
+                <button className={styles.buttonBlackFull}>Apply Now</button>
               </Link>
             </motion.div>
           );

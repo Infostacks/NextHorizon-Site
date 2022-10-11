@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { webDevProcessAtNext } from "../../../utils/data.js";
@@ -15,9 +16,8 @@ const DevelopmentProcess = () => {
         </h2>
 
         <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xls tracking-wide">
-          We follow the Scrum framework, working in 2-week sprints and
-          completing a set amount of work by the end of each. Then show a demo
-          or release the product.
+          We follow the Scrum framework, working in 2-week sprints and completing a set amount of
+          work by the end of each. Then show a demo or release the product.
         </p>
       </div>
 
@@ -36,14 +36,12 @@ const DevelopmentProcess = () => {
                     bounce: 0.6,
                   },
                 }}
-                key={index}
-              >
+                key={index}>
                 <div
                   className={`flex flex-row gap-2 text-md font-semibold items-center py-3 px-2 rounded-3xl drop-shadow-md w-full underline ${`job-btn ${
                     count === index && "active-btn"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {process.title}
                 </div>
               </motion.button>
@@ -53,9 +51,7 @@ const DevelopmentProcess = () => {
 
         {/* Show Data  */}
         <div className="flex flex-col xl:w-9/12 lg:w-9/12 w-full gap-3">
-          <span className="text-xl font-semibold">
-            {webDevProcessAtNext[count].title}
-          </span>
+          <span className="text-xl font-semibold">{webDevProcessAtNext[count].title}</span>
           <span className="flex flex-wrap xl:text-xl lg:text-xl text-base text-justify">
             {webDevProcessAtNext[count].desc}
           </span>

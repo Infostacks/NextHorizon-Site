@@ -49,26 +49,22 @@ const DevOpsValues = () => {
   return (
     <section
       ref={ref}
-      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10"
-    >
+      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex xl:items-center lg:items-center xl:flex-row lg:flex-row flex-col gap-5">
         {/* Text intro  */}
         <motion.span
           animate={leftAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           DevOps values
         </motion.span>
 
         <motion.span
           animate={rightAnimation}
-          className="max-w-2xl mt-4 xl:text-xl lg:text-xl text-base tracking-wide"
-        >
-          Our DevOps partner will help you with cloud infrastructure, continuous
-          integration, and automation. We develop and maintain effective
-          solutions bearing in mind industry best practices, cost savings, and
-          your business workflows.
+          className="max-w-2xl mt-4 xl:text-xl lg:text-xl text-base tracking-wide">
+          Our DevOps partner will help you with cloud infrastructure, continuous integration, and
+          automation. We develop and maintain effective solutions bearing in mind industry best
+          practices, cost savings, and your business workflows.
         </motion.span>
       </div>
 
@@ -91,15 +87,12 @@ const DevOpsValues = () => {
                 },
               }}
               className="flex flex-col justify-center"
-              key={index}
-            >
+              key={index}>
               <h2 className="text-slate-900 text-3xl font-semibold drop-shadow-md">
                 {value.title}
               </h2>
 
-              <div className="w-full xl:text-xl lg:text-xl text-base">
-                {value.desc}
-              </div>
+              <div className="w-full xl:text-xl lg:text-xl text-base">{value.desc}</div>
             </motion.div>
           );
         })}

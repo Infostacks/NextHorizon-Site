@@ -6,8 +6,7 @@ import styles from "../../../../utils/GlobalStyles.js";
 const TechForAdvanceIOSApps = () => {
   return (
     <section
-      className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}
-    >
+      className={`bg-${styles.blackPrimary} text-slate-50 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10`}>
       {/* top section  */}
       <div className="max-w-screen-lg flex gap-5 items-center flex-col">
         {/* Text intro  */}
@@ -16,8 +15,8 @@ const TechForAdvanceIOSApps = () => {
         </span>
 
         <span className="max-w-4xl mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-          Without limiting your functional requirements, we use tools and
-          services that ensure the best user experience in your final product.
+          Without limiting your functional requirements, we use tools and services that ensure the
+          best user experience in your final product.
         </span>
       </div>
 
@@ -27,8 +26,7 @@ const TechForAdvanceIOSApps = () => {
           return (
             <div
               className="flex flex-col justify-center xl:w-1/3 lg:w-1/3 w-full gap-5"
-              key={index}
-            >
+              key={index}>
               <motion.h2
                 initial={{
                   x: index % 2 === 0 ? "-10vw" : "10vw",
@@ -43,8 +41,7 @@ const TechForAdvanceIOSApps = () => {
                     bounce: 0.6,
                   },
                 }}
-                className="text-slate-50 text-3xl font-semibold drop-shadow-md"
-              >
+                className="text-slate-50 text-3xl font-semibold drop-shadow-md">
                 {service.title}
               </motion.h2>
 
@@ -66,8 +63,7 @@ const TechForAdvanceIOSApps = () => {
                         },
                       }}
                       className="xl:text-xl lg:text-xl text-base font-serif tracking-wider"
-                      key={index}
-                    >
+                      key={index}>
                       {tool}
                     </motion.li>
                   );

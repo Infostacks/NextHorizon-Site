@@ -51,25 +51,21 @@ const DiscoveryPhaseValue = () => {
   return (
     <section
       ref={ref}
-      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10"
-    >
+      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
         <motion.h2
           animate={rightAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Discovery phase value
         </motion.h2>
 
         <motion.p
           animate={leftAnimation}
-          className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide"
-        >
-          Discovery services offered by Nexxt.ai help you turn project
-          requirements into a clear plan to speed up the development and improve
-          the product quality
+          className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
+          Discovery services offered by Nexxt.ai help you turn project requirements into a clear
+          plan to speed up the development and improve the product quality
         </motion.p>
       </div>
 
@@ -92,8 +88,7 @@ const DiscoveryPhaseValue = () => {
                 },
               }}
               className={`flex flex-col justify-center bg-${styles.redPrimary} h-[30rem] w-[25rem] gap-5 rounded-3xl shadow-lg`}
-              key={index}
-            >
+              key={index}>
               <div className="flex flex-col justify-around gap-5 text-slate-100 xl:px-10 lg:px-10 px-5 py-5">
                 <span className="text-xl font-semibold">{webApp.title}</span>
                 <span className="xl:text-xl lg:text-xl text-base text-justify font-serif">

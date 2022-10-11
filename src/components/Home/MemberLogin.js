@@ -29,12 +29,10 @@ const MemberLogin = () => {
     <section
       ref={ref}
       id="login"
-      className="bg-white bg-opacity-80 backdrop-blur-sm py-32 mt-20 w-full overflow-x-hidden z-0"
-    >
+      className="bg-white bg-opacity-80 backdrop-blur-sm py-32 mt-20 w-full overflow-x-hidden z-0">
       <motion.div
         animate={fadeInAnimation}
-        className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8"
-      >
+        className="max-w-screen-md px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="max-w-lg mx-auto text-center flex xl:flex-row lg:flex-row flex-col gap-10 mb-10">
           <p className="mt-4 text-gray-600 xl:text-3xl lg:text-3xl text-xl">
             Are you already a member?
@@ -63,9 +61,7 @@ const MemberLogin = () => {
               </div>
 
               {/* Login button */}
-              <button className={styles.buttonRedOutline}>
-                Login
-              </button>
+              <button className={styles.buttonRedOutline}>Login</button>
             </div>
           </blockquote>
         </div>

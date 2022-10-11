@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -33,19 +34,16 @@ const TeamSection = () => {
         <motion.h2
           ref={ref}
           animate={fadeInAnimation}
-          className={`xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight text-${styles.blackPrimary}`}
-        >
+          className={`xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight text-${styles.blackPrimary}`}>
           Not just work - your life's best work
         </motion.h2>
 
         <motion.p
           animate={fadeInAnimation}
-          className={`text-${styles.blackPrimary} max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide`}
-        >
-          We collaboratively administrate empowered markets through existing
-          channels and new opportunities on the horizon. We can quickly maximize
-          the timely deliverables for real-time presentations to deliver
-          outstanding ROI.
+          className={`text-${styles.blackPrimary} max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide`}>
+          We collaboratively administrate empowered markets through existing channels and new
+          opportunities on the horizon. We can quickly maximize the timely deliverables for
+          real-time presentations to deliver outstanding ROI.
         </motion.p>
       </div>
 

@@ -56,7 +56,7 @@ function App() {
     threeScript.setAttribute("id", "threeScript");
     threeScript.setAttribute(
       "src",
-      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js",
     );
     document.getElementsByTagName("head")[0].appendChild(threeScript);
     return () => {
@@ -82,7 +82,7 @@ function App() {
           color: 0xf2172e,
           backgroundColor: 0x262628,
           maxDistance: 18.0,
-        })
+        }),
       );
     }
     return () => {
@@ -106,19 +106,10 @@ function App() {
 
           {/* Services Routes  */}
           <Route path="services" element={<Services />} />
-          <Route
-            path="services/mobile-development"
-            element={<MobileDevelopment />}
-          />
+          <Route path="services/mobile-development" element={<MobileDevelopment />} />
           <Route path="services/mobile-development/ios" element={<IOS />} />
-          <Route
-            path="services/mobile-development/android"
-            element={<Android />}
-          />
-          <Route
-            path="services/mobile-development/flutter"
-            element={<Flutter />}
-          />
+          <Route path="services/mobile-development/android" element={<Android />} />
+          <Route path="services/mobile-development/flutter" element={<Flutter />} />
           <Route
             path="services/web-application-development-services"
             element={<WebAppDevelopmentServices />}
@@ -128,14 +119,8 @@ function App() {
           <Route path="services/ui-ux-design" element={<UIUXDevelopment />} />
           <Route path="services/qa-services" element={<QAServices />} />
           <Route path="services/devops-services" element={<DevOpsServices />} />
-          <Route
-            path="services/staff-augmentation"
-            element={<StaffAugmentation />}
-          />
-          <Route
-            path="services/startup-services"
-            element={<StartupServices />}
-          />
+          <Route path="services/staff-augmentation" element={<StaffAugmentation />} />
+          <Route path="services/startup-services" element={<StartupServices />} />
           <Route
             path="services/application-modernization-service"
             element={<ApplicationModernizationService />}
@@ -144,33 +129,17 @@ function App() {
             path="services/dedicated-development-team-services"
             element={<DedicatedDevelopmentTeamServices />}
           />
-          <Route
-            path="services/discovery-phase-process"
-            element={<DiscoveryPhaseProcess />}
-          />
-          <Route
-            path="services/mvp-development-services"
-            element={<MVPDevelopment />}
-          />
-          <Route
-            path="services/cto-as-a-services"
-            element={<CTOAsAService />}
-          />
+          <Route path="services/discovery-phase-process" element={<DiscoveryPhaseProcess />} />
+          <Route path="services/mvp-development-services" element={<MVPDevelopment />} />
+          <Route path="services/cto-as-a-services" element={<CTOAsAService />} />
 
           <Route path="contact" element={<Contact />} />
           <Route path="portfolio" element={<Portfolio />} />
 
           {/* Blogs Routes */}
           <Route exact path="blogs/" element={<Blogs />}>
-            <Route
-              index
-              path="latest"
-              element={<LatestBlogs selectedCategory="latest" />}
-            />
-            <Route
-              path="Technologies"
-              element={<TechBlogs selectedCategory="Technologies" />}
-            />
+            <Route index path="latest" element={<LatestBlogs selectedCategory="latest" />} />
+            <Route path="Technologies" element={<TechBlogs selectedCategory="Technologies" />} />
             <Route
               path="Case%20Studies"
               element={<CaseStudiesBlogs selectedCategory="Case Studies" />}

@@ -36,26 +36,21 @@ const ModernizationService = () => {
   }, [inView, upAnimation, fadeInAnimation]);
 
   return (
-    <div
-      ref={ref}
-      className="w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden"
-    >
+    <div ref={ref} className="w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
       {/* top section  */}
       <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col gap-5 xl:mx-0 lg:mx-0 mx-10">
         {/* Text intro  */}
         <motion.span
           animate={fadeInAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           App modernization services we provide
         </motion.span>
 
         <motion.span
           animate={fadeInAnimation}
-          className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide"
-        >
-          As a software development company, we can deliver a wide range of
-          modernization options for your software.
+          className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
+          As a software development company, we can deliver a wide range of modernization options
+          for your software.
         </motion.span>
       </div>
 
@@ -65,6 +60,7 @@ const ModernizationService = () => {
           {modernizationServicesWeProvide.map((category, index) => {
             return (
               <motion.div
+                key={index}
                 initial={{
                   x: index % 2 === 0 ? "-10vw" : "10vw",
                   opacity: 0,
@@ -78,19 +74,14 @@ const ModernizationService = () => {
                     bounce: 0.6,
                   },
                 }}
-                className="flex w-full gap-10 bg-slate-200 p-10 rounded-3xl shadow-md"
-              >
+                className="flex w-full gap-10 bg-slate-200 p-10 rounded-3xl shadow-md">
                 <div className="flex flex-row gap-3" key={index}>
                   <div className="flex flex-row gap-3 text-xl" key={index}>
                     <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
-                    <span className="text-2xl font-semibold">
-                      {category.title}
-                    </span>
-                    <span className="text-lg text-justify">
-                      {category.desc}
-                    </span>
+                    <span className="text-2xl font-semibold">{category.title}</span>
+                    <span className="text-lg text-justify">{category.desc}</span>
                   </div>
                 </div>
               </motion.div>

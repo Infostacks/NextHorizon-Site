@@ -7,7 +7,8 @@ import { BrowserRouter as Router, useLocation } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const Wrapper = ({ children }) => {         // to scrooll on top after
+const Wrapper = ({ children }) => {
+  // to scrooll on top after
   const location = useLocation();
   useLayoutEffect(() => {
     document.documentElement.scrollTo(0, 0);
@@ -24,5 +25,5 @@ root.render(
         </AppProvider>
       </Wrapper>
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

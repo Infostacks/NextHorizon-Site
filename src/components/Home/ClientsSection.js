@@ -6,8 +6,7 @@ const ClientsSection = () => {
   return (
     <div className="overflow-x-hidden flex flex-col bg-slate-300 bg-opacity-80 backdrop-blur-sm items-center justify-evenly p-20 gap-5 w-full">
       <h1
-        className={`font-bold xl:text-7xl lg:text-7xl md:text-4xl text-3xl max-w-screen-lg text-center text-${styles.blackPrimary}`}
-      >
+        className={`font-bold xl:text-7xl lg:text-7xl md:text-4xl text-3xl max-w-screen-lg text-center text-${styles.blackPrimary}`}>
         Illustrious software always required a one-step solution
       </h1>
       <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:gap-20 lg:gap-20 md:gap-10 xl:mt-10 lg:mt-10 max-w-screen-lg">

@@ -70,7 +70,7 @@ const ReadyDiscoveryTeam = () => {
           </button>
 
           <span className="text-white xl:text-xl lg:text-xl text-base xl:w-2/3 lg:w-2/3 w-full">
-            Other Cleveroad experts are engaged in the process if additional
+            Other Nexxt.ai experts are engaged in the process if additional
             expertise is needed.
           </span>
         </div>

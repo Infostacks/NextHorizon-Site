@@ -37,7 +37,7 @@ const LetTalkAboutProject = () => {
         <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
           <span className={`text-2xl text-${styles.blackPrimary} text-justify xl:w-1/2 lg:w-1/2 w-full`}>
             Got any questions or concerns? We’ll answer them and tell you more
-            about the product development workflow at Cleveroad. Also, we can
+            about the product development workflow at Nexxt.ai. Also, we can
             help you draw up a list of MVP features.
           </span>
           <div className="flex flex-col gap-4 xl:w-1/2 lg:w-1/2 w-full">

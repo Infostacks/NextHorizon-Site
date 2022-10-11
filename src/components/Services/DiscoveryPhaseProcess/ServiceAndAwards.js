@@ -56,7 +56,7 @@ const ServiceAndAwards = () => {
       <div className="flex flex-col xl:text-xl lg:text-xl text-base text-justify gap-5 xl:w-1/2 lg:w-1/2 w-full">
         <motion.span animate={rightAnimation}>
           The Discovery phase is a process that takes place before kicking off
-          project development. Discovery services offered by Cleveroad help you
+          project development. Discovery services offered by Nexxt.ai help you
           turn project requirements into a clear plan to speed up the
           development and improve the product quality. A properly conducted
           Discovery phase saves up to $200 000 on product development: it's

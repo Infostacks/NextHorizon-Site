@@ -388,7 +388,7 @@ const clientsTestimonials = [
     designation: "Owner of MoveUp",
     country: "USA",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/us.svg",
-    desc: "“Cleveroad helped us build an app that's one of its kind–and they did it well.”",
+    desc: "Nexxt.ai helped us build an app that's one of its kind–and they did it well.”",
     videURL: "",
   },
   {
@@ -397,7 +397,7 @@ const clientsTestimonials = [
     designation: "Project Manager of Virgin Atlantiс",
     country: "USA",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/us.svg",
-    desc: "The product, built by Cleveroad, complied with our corporate style and functional specifications. The team followed the agreed timeline and budget flawlessly despite.",
+    desc: "The product, built by Nexxt.ai, complied with our corporate style and functional specifications. The team followed the agreed timeline and budget flawlessly despite.",
     videURL: "",
   },
   {
@@ -406,7 +406,7 @@ const clientsTestimonials = [
     designation: "Founder of Nedley Health Solutions",
     country: "USA",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/us.svg",
-    desc: "It was a great experience for me to cooperate with Cleveroad. Its specialists have high level of professionalism, they have built a product considering all my requirements.",
+    desc: "It was a great experience for me to cooperate with Nexxt.ai. Its specialists have high level of professionalism, they have built a product considering all my requirements.",
     videURL: "",
   },
   {
@@ -415,7 +415,7 @@ const clientsTestimonials = [
     designation: "CEO & Co-Founder of Just Play",
     country: "Australia",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/au.svg",
-    desc: "They were responsive, flexible, and proactive when it came to solving problems. We were impressed with Cleveroad’s technical competence and skills in being able to solve problems and execute what we wanted to do at a high level.",
+    desc: "They were responsive, flexible, and proactive when it came to solving problems. We were impressed with Nexxt.ai technical competence and skills in being able to solve problems and execute what we wanted to do at a high level.",
     videURL: "",
   },
   {
@@ -1578,7 +1578,7 @@ const blogs = [
     id: "23565",
     feature: false,
     category: "Technologies",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -2193,7 +2193,7 @@ const portfolio = [
     status: "",
     review:
       "https://www.cleveroad.com/images/portfolio/ccbaffb3a8e8ca9e1777bb11e373217d74c7511b2ae2d22dfda639763b129598.png",
-    desc: "An AR-based open-source project for face detection developed by Cleveroad",
+    desc: "An AR-based open-source project for face detection developed by Nexxt.ai",
     country: "Ukraine",
     flag: "https://www.cleveroad.com/assets/icons/flags/ua.svg",
     coreTech: "Kotlin",
@@ -2459,7 +2459,7 @@ const designInsights = [
   {
     id: "23565",
     category: "Client Guides",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -2677,7 +2677,7 @@ const faqsDevOps = [
   {
     question: "What are DevOps services?",
     answer:
-      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>DevOps is an approach that combines different practices and tools to increase the overall organization’s efficiency in delivering apps and services faster. <br><br>Here are some types of DevOps services we provide at Cleveroad:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li></ul></div>",
+      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>DevOps is an approach that combines different practices and tools to increase the overall organization’s efficiency in delivering apps and services faster. <br><br>Here are some types of DevOps services we provide at Nexxt.ai:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li></ul></div>",
   },
   {
     question: "What is the definition of DevOps services?",
@@ -2687,7 +2687,7 @@ const faqsDevOps = [
   {
     question: "What are the types of DevOps services?",
     answer:
-      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Here are some types of DevOps services we provide at Cleveroad:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>AWS managed services</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li><ul></ul></ul></div>",
+      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Here are some types of DevOps services we provide at Nexxt.ai:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>AWS managed services</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li><ul></ul></ul></div>",
   },
   {
     question: "What are DevOps managed services?",
@@ -3412,7 +3412,7 @@ const flutterExperience = [
       },
     ],
     img: "https://www.cleveroad.com/static/bb4f58718db4c1a493e367ef5626a339/b410d/flutter-two-phones.webp",
-    desc: "<div className={`mt-4 leading-relaxed w-full}`><p>This Flutter app is called Travel Time. We’ve built it at Cleveroad to show you the Flutter’s performance and User Interface.</p><p>The app comes with a flexible search with filters and commenting options. It also allows iOS and Android users to log in using Facebook or other social networks.</p></div>",
+    desc: "<div className={`mt-4 leading-relaxed w-full}`><p>This Flutter app is called Travel Time. We’ve built it at Nexxt.ai to show you the Flutter’s performance and User Interface.</p><p>The app comes with a flexible search with filters and commenting options. It also allows iOS and Android users to log in using Facebook or other social networks.</p></div>",
   },
 ];
 
@@ -3453,7 +3453,7 @@ const flutterDevInsignts = [
   {
     id: "23565",
     category: "Technologies",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -3870,7 +3870,7 @@ const webDevInsignts = [
   {
     id: "23565",
     category: "Technologies",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -3974,7 +3974,7 @@ const whyChooseUs = [
     img: "https://www.cleveroad.com/static/dbf57aa8feedfe5c891a35b33de3e535/1df7b/member-avatar09.webp",
     name: "Sergey Molchanov",
     designation: "Head of Business Development",
-    email: "s.molchanov@cleveroad.com",
+    email: "s.molchanov@Nexxt.ai",
     linkedIn: "",
     qualities: [
       "Agile-oriented development team full of high-tier experts",

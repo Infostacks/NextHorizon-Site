@@ -16,7 +16,7 @@ const AndroidAppsBuilt = () => {
 
         <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl">
           Mobile apps are able to solve complex business challenges through
-          technologies. At Cleveroad, we build custom Android applications
+          technologies. At Nexxt.ai, we build custom Android applications
           tailored to your business needs.
         </p>
       </div>

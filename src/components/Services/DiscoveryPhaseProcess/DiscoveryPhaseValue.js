@@ -67,7 +67,7 @@ const DiscoveryPhaseValue = () => {
           animate={leftAnimation}
           className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide"
         >
-          Discovery services offered by Cleveroad help you turn project
+          Discovery services offered by Nexxt.ai help you turn project
           requirements into a clear plan to speed up the development and improve
           the product quality
         </motion.p>

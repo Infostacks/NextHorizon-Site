@@ -46,8 +46,7 @@ const UXUIDesignProcess = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col "
-                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
-              >
+                } justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}>
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
                   <img
@@ -59,15 +58,11 @@ const UXUIDesignProcess = () => {
 
                 {/* info data  */}
                 <div className="flex flex-col gap-1 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
-                  <span
-                    className={`text-${styles.redPrimary} text-5xl font-bold font-sans`}
-                  >
+                  <span className={`text-${styles.redPrimary} text-5xl font-bold font-sans`}>
                     {process.id}
                   </span>
 
-                  <span className="text-2xl font-bold text-gray-900">
-                    {process.title}
-                  </span>
+                  <span className="text-2xl font-bold text-gray-900">{process.title}</span>
                   <span className="xl:text-xl lg:text-xl text-base text-gray-800">
                     <Answer faq={process.desc} />
                   </span>

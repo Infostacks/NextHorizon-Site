@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.nav`
   background: linear-gradient(150deg, #53f 15%, #05d5ff);
@@ -30,7 +30,7 @@ export const DropdownStyles = styled.div`
   .dropdown-arrow {
     position: relative;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 16px;
       height: 16px;
@@ -44,8 +44,7 @@ export const DropdownStyles = styled.div`
   .dropdown-container {
     position: absolute;
     overflow: hidden;
-    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
-      0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3),
       0 -18px 60px -10px rgba(0, 0, 0, 0.025);
     background: #fff;
     border-radius: 4px;

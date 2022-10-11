@@ -16,8 +16,8 @@ const OurMVPDevProcess = () => {
           </h2>
 
           <div className="max-w-lg mt-4 text-gring-offset-warm-gray-500 tracking-wide">
-            We follow a time-tested methodology to build a working MVP following
-            your product vision and market demands.
+            We follow a time-tested methodology to build a working MVP following your product vision
+            and market demands.
           </div>
           <div className="flex gap-5">
             <div className="grid grid-cols-2 gap-10">
@@ -28,13 +28,11 @@ const OurMVPDevProcess = () => {
                       className={`flex flex-row items-center text-[#D90429] gap-4 text-md font-semibold py-3 px-2 rounded-3xl drop-shadow-md z-50 w-full ${`job-btn ${
                         count === index && "active-btn"
                       }`}`}
-                      onClick={() => setCount(index)}
-                    >
+                      onClick={() => setCount(index)}>
                       <span
                         className={`px-4 py-2 ${`job-btn ${
                           count === index && "text-[#D90429]"
-                        }`} bg-white rounded-full`}
-                      >
+                        }`} bg-white rounded-full`}>
                         {process.id}
                       </span>
                       {process.title}
@@ -56,15 +54,11 @@ const OurMVPDevProcess = () => {
             </span>
             <span>{mvpDevlopmentProcess[count].title}</span>
           </span>
-          <span className="text-justify">
-            {mvpDevlopmentProcess[count].desc}
-          </span>
-          <span className="text-3xl font-semibold underline underline-offset-1">
-            Staff:
-          </span>
+          <span className="text-justify">{mvpDevlopmentProcess[count].desc}</span>
+          <span className="text-3xl font-semibold underline underline-offset-1">Staff:</span>
           <span className="grid grid-cols-2 gap-5">
             {mvpDevlopmentProcess[count].staff.map((item, index) => {
-              return <span>{item}</span>;
+              return <span key={index}>{item}</span>;
             })}
           </span>
         </div>

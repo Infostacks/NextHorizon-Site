@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-// import { Link } from "react-router-dom";
 import { productDiscoveryProcess } from "../../../utils/data.js";
 
 const ProductDiscoveryProcess = () => {
@@ -10,7 +9,7 @@ const ProductDiscoveryProcess = () => {
     threshold: [0, 0.5, 1.0],
   });
   const [count, setCount] = useState(0);
-  const [toolData, setToolData] = useState(0);
+  const [setToolData] = useState(0);
   const fadeInAnimation = useAnimation();
 
   useEffect(() => {
@@ -32,15 +31,13 @@ const ProductDiscoveryProcess = () => {
   return (
     <div
       ref={ref}
-      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10"
-    >
+      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-10">
         {/* Text intro  */}
         <motion.h2
           animate={fadeInAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
           Product discovery process
         </motion.h2>
       </div>
@@ -50,10 +47,7 @@ const ProductDiscoveryProcess = () => {
         <div className="flex flex-row w-full xl:gap-10 lg:gap-10 gap-2 flex-wrap">
           {productDiscoveryProcess.map((process, index) => {
             return (
-              <motion.div
-                animate={fadeInAnimation}
-                className="flex flex-col gap-1"
-              >
+              <motion.div key={index} animate={fadeInAnimation} className="flex flex-col gap-1">
                 <span className="xl:text-2xl lg:text-2xl font-semibold">
                   {process.discoveryProcess}
                 </span>
@@ -65,8 +59,7 @@ const ProductDiscoveryProcess = () => {
                     onClick={() => {
                       setCount(index);
                       setToolData(0);
-                    }}
-                  >
+                    }}>
                     {process.dayDots.map((dot, index) => {
                       return <span key={index}>{dot}</span>;
                     })}
@@ -83,8 +76,7 @@ const ProductDiscoveryProcess = () => {
 
         <motion.div
           animate={fadeInAnimation}
-          className="flex xl:flex-row lg:flex-row flex-col justify-between w-full xl:gap-10 lg:gap-10 gap-2"
-        >
+          className="flex xl:flex-row lg:flex-row flex-col justify-between w-full xl:gap-10 lg:gap-10 gap-2">
           <div className="flex flex-col gap-1">
             <span className="text-2xl font-semibold">
               {productDiscoveryProcess[count].discoveryProcess}
@@ -93,114 +85,104 @@ const ProductDiscoveryProcess = () => {
               {productDiscoveryProcess[count].heading}
             </span>
           </div>
-          <span className="text-lg font-semibold">
-            {productDiscoveryProcess[count].duration}
-          </span>
+          <span className="text-lg font-semibold">{productDiscoveryProcess[count].duration}</span>
         </motion.div>
 
         {/* Show Tool Data  */}
         <div className="flex flex-col gap-10 max-w-screen-xl w-full bg-slate-200 xl:p-20 lg:p-20 p-8 rounded-[3rem] drop-shadow-md">
-          {productDiscoveryProcess[count].plansRequirements.map(
-            (plan, index) => {
-              return (
-                <motion.div
-                  animate={fadeInAnimation}
-                  key={index}
-                  className={`flex xl:flex-row lg:flex-row flex-col justify-between text-lg items-center`}
-                  onClick={() => setToolData(index)}
-                >
-                  {/* item 1 */}
-                  <div className="flex flex-col gap-3">
-                    <span className="font-semibold">Business Intelligence</span>
-                    <ul className="pl-5 xl:text-xl lg:text-xl text-base">
-                      {plan.bisunessIntelligence.map((item, index) => {
-                        return (
-                          <motion.li
-                            initial={{
-                              x: index % 2 === 0 ? "-10vw" : "10vw",
-                              opacity: 0,
-                            }}
-                            whileInView={{
-                              x: 0,
-                              opacity: 1,
-                              transition: {
-                                duration: 2,
-                                type: "spring",
-                                bounce: 0.6,
-                              },
-                            }}
-                            key={index}
-                          >
-                            {item}
-                          </motion.li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+          {productDiscoveryProcess[count].plansRequirements.map((plan, index) => {
+            return (
+              <motion.div
+                animate={fadeInAnimation}
+                key={index}
+                className={`flex xl:flex-row lg:flex-row flex-col justify-between text-lg items-center`}
+                onClick={() => setToolData(index)}>
+                {/* item 1 */}
+                <div className="flex flex-col gap-3">
+                  <span className="font-semibold">Business Intelligence</span>
+                  <ul className="pl-5 xl:text-xl lg:text-xl text-base">
+                    {plan.bisunessIntelligence.map((item, index) => {
+                      return (
+                        <motion.li
+                          initial={{
+                            x: index % 2 === 0 ? "-10vw" : "10vw",
+                            opacity: 0,
+                          }}
+                          whileInView={{
+                            x: 0,
+                            opacity: 1,
+                            transition: {
+                              duration: 2,
+                              type: "spring",
+                              bounce: 0.6,
+                            },
+                          }}
+                          key={index}>
+                          {item}
+                        </motion.li>
+                      );
+                    })}
+                  </ul>
+                </div>
 
-                  {/* item 2 */}
-                  <div className="flex flex-col gap-3">
-                    <span className="font-semibold">
-                      Solutions Architecture
-                    </span>
-                    <ul className="pl-5 xl:text-xl lg:text-xl text-base">
-                      {plan.bisunessIntelligence.map((item, index) => {
-                        return (
-                          <motion.li
-                            initial={{
-                              x: index % 2 === 0 ? "-10vw" : "10vw",
-                              opacity: 0,
-                            }}
-                            whileInView={{
-                              x: 0,
-                              opacity: 1,
-                              transition: {
-                                duration: 2,
-                                type: "spring",
-                                bounce: 0.6,
-                              },
-                            }}
-                            key={index}
-                          >
-                            {item}
-                          </motion.li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                {/* item 2 */}
+                <div className="flex flex-col gap-3">
+                  <span className="font-semibold">Solutions Architecture</span>
+                  <ul className="pl-5 xl:text-xl lg:text-xl text-base">
+                    {plan.bisunessIntelligence.map((item, index) => {
+                      return (
+                        <motion.li
+                          initial={{
+                            x: index % 2 === 0 ? "-10vw" : "10vw",
+                            opacity: 0,
+                          }}
+                          whileInView={{
+                            x: 0,
+                            opacity: 1,
+                            transition: {
+                              duration: 2,
+                              type: "spring",
+                              bounce: 0.6,
+                            },
+                          }}
+                          key={index}>
+                          {item}
+                        </motion.li>
+                      );
+                    })}
+                  </ul>
+                </div>
 
-                  {/* item 3 */}
-                  <div className="flex flex-col gap-3">
-                    <span className="font-semibold">UX/UX Design</span>
-                    <ul className="pl-5 xl:text-xl lg:text-xl text-base">
-                      {plan.bisunessIntelligence.map((item, index) => {
-                        return (
-                          <motion.li
-                            initial={{
-                              x: index % 2 === 0 ? "-10vw" : "10vw",
-                              opacity: 0,
-                            }}
-                            whileInView={{
-                              x: 0,
-                              opacity: 1,
-                              transition: {
-                                duration: 2,
-                                type: "spring",
-                                bounce: 0.6,
-                              },
-                            }}
-                            key={index}
-                          >
-                            {item}
-                          </motion.li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </motion.div>
-              );
-            }
-          )}
+                {/* item 3 */}
+                <div className="flex flex-col gap-3">
+                  <span className="font-semibold">UX/UX Design</span>
+                  <ul className="pl-5 xl:text-xl lg:text-xl text-base">
+                    {plan.bisunessIntelligence.map((item, index) => {
+                      return (
+                        <motion.li
+                          initial={{
+                            x: index % 2 === 0 ? "-10vw" : "10vw",
+                            opacity: 0,
+                          }}
+                          whileInView={{
+                            x: 0,
+                            opacity: 1,
+                            transition: {
+                              duration: 2,
+                              type: "spring",
+                              bounce: 0.6,
+                            },
+                          }}
+                          key={index}>
+                          {item}
+                        </motion.li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>

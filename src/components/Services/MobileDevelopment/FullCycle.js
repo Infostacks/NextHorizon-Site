@@ -13,10 +13,9 @@ const FullCycle = () => {
         </h2>
 
         <p className="max-w-lg mt-4 text-gring-offset-warm-gray-500">
-          Efficient solutions to fit your business domain and budget
-          requirements. We provide custom development for businesses, MVPs to
-          verify your startup ideas and launch your product earlier, and
-          development teams to support or enhance existing products.
+          Efficient solutions to fit your business domain and budget requirements. We provide custom
+          development for businesses, MVPs to verify your startup ideas and launch your product
+          earlier, and development teams to support or enhance existing products.
         </p>
       </div>
 
@@ -40,7 +39,7 @@ const FullCycle = () => {
           </div>
 
           <h3 className="text-3xl font-semibold">
-          Sophisticated applications for Android-powered devices
+            Sophisticated applications for Android-powered devices
           </h3>
         </div>
       </div>

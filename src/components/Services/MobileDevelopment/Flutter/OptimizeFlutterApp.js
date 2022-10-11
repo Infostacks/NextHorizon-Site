@@ -31,8 +31,7 @@ const OptimizeFlutterApp = () => {
     <motion.div
       ref={ref}
       animate={fadeInAnimation}
-      className={`flex items-center justify-center w-screen bg-${styles.redPrimary} bg-opacity-90`}
-    >
+      className={`flex items-center justify-center w-screen bg-${styles.redPrimary} bg-opacity-90`}>
       <div className="max-w-screen-lg xl:my-[6rem] lg:my-[3rem] my-[2rem] px-5 text-slate-50 z-[50rem]">
         <div className="flex xl:flex-row lg:flex-row flex-col gap-10 items-center justify-center">
           <span className="xl:text-3xl lg:text-3xl text-xl text-slate-50 text-justify xl:w-1/2 lg:w-1/2 w-full">

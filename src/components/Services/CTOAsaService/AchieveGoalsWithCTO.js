@@ -28,15 +28,13 @@ const AchieveGoalsWithCTO = () => {
   return (
     <div
       ref={ref}
-      className="w-screen flex flex-col gap-10 items-center pt-20 pb-2 overflow-x-hidden xl:px-0 lg:px-0 px-10"
-    >
+      className="w-screen flex flex-col gap-10 items-center pt-20 pb-2 overflow-x-hidden xl:px-0 lg:px-0 px-10">
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20">
         {/* Text intro  */}
         <motion.h1
           animate={upAnimation}
-          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold text-center tracking-tight"
-        >
+          className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold text-center tracking-tight">
           Achieve your business goals with CTO services
         </motion.h1>
       </div>
@@ -47,6 +45,7 @@ const AchieveGoalsWithCTO = () => {
           {achieveBusinessGoals.map((category, index) => {
             return (
               <motion.div
+                key={index}
                 initial={{
                   x: index % 2 === 0 ? "-10vw" : "10vw",
                   opacity: 0,
@@ -60,12 +59,8 @@ const AchieveGoalsWithCTO = () => {
                     bounce: 0.6,
                   },
                 }}
-                className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md"
-              >
-                <div
-                  className="flex xl:flex-row lg:flex-row flex-col gap-3"
-                  key={index}
-                >
+                className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md">
+                <div className="flex xl:flex-row lg:flex-row flex-col gap-3" key={index}>
                   <div className="flex flex-row text-xl" key={index}>
                     <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>

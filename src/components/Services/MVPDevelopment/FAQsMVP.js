@@ -25,8 +25,8 @@ const FAQsMVP = () => {
                 Questions you may have
               </h2>
               <p className="xl:text-3xl lg:text-3xl text-xl">
-                MVP stands for a minimum valuable product. It’s a product with
-                just enough features to be usable by first customers.
+                MVP stands for a minimum valuable product. It’s a product with just enough features
+                to be usable by first customers.
               </p>
             </div>
           </div>
@@ -51,20 +51,16 @@ const FAQsMVP = () => {
                   }}
                   key={index}
                   className={`p-6 border-l-4 border-${styles.redPrimary} bg-gray-50 group w-full`}
-                  close
-                >
+                  close>
                   <summary className="flex items-center justify-between cursor-pointer w-full">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                      {faq.question}
-                    </h5>
+                    <h5 className="text-lg font-semibold text-gray-900">{faq.question}</h5>
 
                     <span className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
                         viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
+                        fill="currentColor">
                         <path
                           fillRule="evenodd"
                           d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"

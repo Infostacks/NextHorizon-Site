@@ -52,41 +52,39 @@ const HowItWorks = () => {
     <motion.div
       ref={ref}
       animate={fadeInAnimation}
-      className="xl:h-[50rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center"
-    >
+      className="xl:h-[50rem] lg:h-[50rem] h-full w-screen flex xl:flex-row lg:flex-row flex-col justify-center items-center">
       {/* top section  */}
-      <div className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10`}>
+      <div
+        className={`bg-${styles.blackPrimary} text-white xl:w-1/2 lg:w-1/2 w-full flex items-center justify-center flex-col h-full xl:py-0 lg:py-0 py-10`}>
         {/* Text intro  */}
         <div className="flex gap-5 flex-col xl:w-1/2 lg:w-1/2 w-full">
           <motion.h2
             animate={rightAnimation}
-            className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold flex flex-wrap tracking-tight"
-          >
+            className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold flex flex-wrap tracking-tight">
             How it works
           </motion.h2>
 
           <motion.div
             animate={leftAnimation}
-            className="max-w-lg mt-4 text-gring-offset-warm-gray-500 tracking-wide"
-          >
-            We follow a proven multi-step assembling process to provide the best
-            dedicated development team that meets your requirements.
+            className="max-w-lg mt-4 text-gring-offset-warm-gray-500 tracking-wide">
+            We follow a proven multi-step assembling process to provide the best dedicated
+            development team that meets your requirements.
           </motion.div>
           <div className="flex flex-col">
             {howItWorks.map((process, index) => {
               return (
                 <button key={index}>
                   <div
-                    className={`flex flex-row items-center text-${styles.redPrimary} gap-4 text-md font-semibold py-2 px-1 rounded-3xl drop-shadow-md w-full ${`job-btn ${
+                    className={`flex flex-row items-center text-${
+                      styles.redPrimary
+                    } gap-4 text-md font-semibold py-2 px-1 rounded-3xl drop-shadow-md w-full ${`job-btn ${
                       count === index && "active-btn"
                     }`}`}
-                    onClick={() => setCount(index)}
-                  >
+                    onClick={() => setCount(index)}>
                     <span
                       className={`px-[.6rem] py-[.15rem] ${`job-btn ${
                         count === index && `text-${styles.redPrimary}`
-                      }`} bg-white rounded-full`}
-                    >
+                      }`} bg-white rounded-full`}>
                       {process.id}
                     </span>
                     {process.title}
@@ -98,12 +96,12 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      <div className={`flex flex-col gap-10 bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10`}>
+      <div
+        className={`flex flex-col gap-10 bg-${styles.redPrimary} text-white xl:w-1/2 lg:w-1/2 w-full xl:px-20 lg:px-14 px-10 h-full justify-center xl:py-0 lg:py-0 py-10`}>
         {/* Show Data  */}
         <motion.div
           animate={rightAnimation}
-          className="flex flex-col text-xl font-serif gap-5 xl:w-1/2 lg:w-1/2 w-full"
-        >
+          className="flex flex-col text-xl font-serif gap-5 xl:w-1/2 lg:w-1/2 w-full">
           <span className="xl:text-4xl lg:text-4xl text-xl font-bold">
             {howItWorks[count].title}
           </span>

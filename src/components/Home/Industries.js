@@ -39,10 +39,7 @@ const Industries = () => {
   }, [inView, leftAnimation, rightAnimation]);
   return (
     <div className="overflow-x-hidden bg-slate-100 bg-opacity-80 w-full">
-      <section
-        ref={ref}
-        className="flex flex-col items-center justify-center pt-20 pb-2"
-      >
+      <section ref={ref} className="flex flex-col items-center justify-center pt-20 pb-2">
         <div className="max-w-screen-lg w-full flex items-center justify-center gap-10 flex-col">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col items-center gap-5 mx-10">
@@ -50,20 +47,15 @@ const Industries = () => {
             <div className="flex flex-col justify-center items-center gap-5 w-full">
               <motion.h2
                 animate={leftAnimation}
-                className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight"
-              >
+                className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl text-center font-bold tracking-tight">
                 A robust payments platform, built with intelligence
               </motion.h2>
-              <motion.p
-                animate={rightAnimation}
-                className="text-xl text-justify"
-              >
-                We’re successful in receiving top worth position to meet
-                benchmark through maintaining a lead in rating, score the first
-                rank in software & IT oriented solutions due to our strong tech
-                assistance to retain benchmark by promoting brand awareness,
-                improving business positioning, and ensure trust and credibility
-                to build long-term relationships with customers.
+              <motion.p animate={rightAnimation} className="text-xl text-justify">
+                We’re successful in receiving top worth position to meet benchmark through
+                maintaining a lead in rating, score the first rank in software & IT oriented
+                solutions due to our strong tech assistance to retain benchmark by promoting brand
+                awareness, improving business positioning, and ensure trust and credibility to build
+                long-term relationships with customers.
               </motion.p>
             </div>
           </div>
@@ -87,19 +79,14 @@ const Industries = () => {
                     },
                   }}
                   className="flex flex-col justify-center xl:p-10 lg:p-10 p-5 rounded-3xl drop-shadow-md backdrop-blur-sm border-2"
-                  key={index}
-                >
+                  key={index}>
                   <div className="flex flex-row flex-wrap justify-between">
                     <div className="text-3xl font-semibold xl:w-1/3 lg:w-1/3 md:w-1/3 w-full">
-                      <span
-                        className={`text-5xl text-${styles.redPrimary} drop-shadow-md z-40`}
-                      >
+                      <span className={`text-5xl text-${styles.redPrimary} drop-shadow-md z-40`}>
                         {industry.icon}
                       </span>
 
-                      <span className="text-2xl font-semibold text-gray-700">
-                        {industry.title}
-                      </span>
+                      <span className="text-2xl font-semibold text-gray-700">{industry.title}</span>
                     </div>
                     <span className="xl:text-xl lg:text-xl text-base text-justify font-serif xl:w-2/3 lg:w-2/3 md:w-2/3 w-full">
                       {industry.desc}

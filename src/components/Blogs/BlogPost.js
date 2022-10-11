@@ -29,9 +29,7 @@ const BlogPost = () => {
   }, []);
 
   return (
-    <div
-      className={`flex flex-col justify-between gap-10 max-w-screen-lg py-16`}
-    >
+    <div className={`flex flex-col justify-between gap-10 max-w-screen-lg py-16`}>
       <div className="flex flex-col p-5 justify-between gap-5">
         <span className="text-3xl font-semibold font-serif antialiased text-[#D90429]">
           {data[0]?.title}

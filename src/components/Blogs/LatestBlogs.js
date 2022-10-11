@@ -1,13 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import Menu from "./Menu";
 import { blogs } from "../../utils/data";
 
-const allCategories = [
-  "latest",
-  ...new Set(blogs.map((item) => item.category)),
-];
+const allCategories = ["latest", ...new Set(blogs.map((item) => item.category))];
 
 const LatestBlogs = ({ selectedCategory }) => {
   const [menuItems, setMenuItems] = useState(blogs);

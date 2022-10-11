@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React from "react";
 import { motion } from "framer-motion";
 import { helpBusinesses } from "../../utils/data.js";
@@ -14,8 +15,8 @@ const HelpBusiness = () => {
         </span>
 
         <span className="max-w-lg mt-4 text-lg tracking-wide font-semibold">
-          As a software development company, we can deliver a wide range of
-          modernization options for your software
+          As a software development company, we can deliver a wide range of modernization options
+          for your software
         </span>
       </div>
 
@@ -35,19 +36,13 @@ const HelpBusiness = () => {
                     bounce: 0.6,
                   },
                 }}
-                className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md"
-              >
-                <div
-                  className="flex xl:flex-row lg:flex-row flex-col gap-3"
-                  key={index}
-                >
+                className="flex w-full gap-10 bg-slate-200 xl:p-10 lg:p-10 p-5 rounded-3xl shadow-md">
+                <div className="flex xl:flex-row lg:flex-row flex-col gap-3" key={index}>
                   <div className="flex flex-row gap-3 text-xl" key={index}>
                     <span className={`text-${styles.redPrimary}`}>✔</span>
                   </div>
                   <div className="flex flex-col gap-3">
-                    <span className="text-2xl font-semibold">
-                      {category.title}
-                    </span>
+                    <span className="text-2xl font-semibold">{category.title}</span>
                     <span className="xl:text-lg lg:text-lg text-base text-justify">
                       {category.desc}
                     </span>

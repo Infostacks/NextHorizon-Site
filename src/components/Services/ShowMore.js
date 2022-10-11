@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
@@ -28,11 +29,7 @@ const ShowMore = () => {
   }, [inView, fadeInAnimation]);
 
   return (
-    <motion.div
-      ref={ref}
-      animate={fadeInAnimation}
-      className="max-w-screen-lg font-bold p-10"
-    >
+    <motion.div ref={ref} animate={fadeInAnimation} className="max-w-screen-lg font-bold p-10">
       <h1 className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl">
         Learn about Next Horizon’s expertise. Our projects' details.{" "}
         <Link to="/portfolio" className={`text-${styles.redPrimary}`}>

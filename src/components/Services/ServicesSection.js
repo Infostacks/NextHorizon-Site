@@ -16,9 +16,8 @@ const ServicesSection = () => {
               Custom Software solutions we offer
             </h2>
             <span className="xl:w-2/3 lg:w-2/3 md:w-2/3 w-full xl:text-3xl lg:text-3xl text-xl">
-              Our team supports you at every stage of the software development
-              life-cycle: from product discovery to deployment and post-release
-              support
+              Our team supports you at every stage of the software development life-cycle: from
+              product discovery to deployment and post-release support
             </span>
           </div>
 
@@ -27,19 +26,18 @@ const ServicesSection = () => {
             {servicesNew.map((service, index) => {
               return (
                 <motion.div
-                initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 2,
-                    type: 'spring',
-                    bounce: .6,
-                  },
-                }}
+                  initial={{ x: index % 2 === 0 ? "-10vw" : "10vw", opacity: 0 }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 2,
+                      type: "spring",
+                      bounce: 0.6,
+                    },
+                  }}
                   key={index}
-                  className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
-                >
+                  className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center items-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}>
                   {/* image data  */}
                   <div className={`xl:w-1/2 lg:w-1/2 md:w-1/2 w-11/12 mx-5`}>
                     <img
@@ -61,27 +59,27 @@ const ServicesSection = () => {
                     {/* other links data  */}
                     <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-start xl:gap-5 lg:gap-5 gap-2 w-full">
                       <Link to={service.link1}>
-                        <span className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
+                        <span
+                          className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
                           {service.name1}
                         </span>
                       </Link>
                       <Link to={service.link2}>
-                        <span className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
+                        <span
+                          className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
                           {service.name2}
                         </span>
                       </Link>
                       <Link to={service.link3}>
-                        <span className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
+                        <span
+                          className={`text-base font-semibold underline underline-offset-1 hover:text-${styles.redPrimary}`}>
                           {service.name3}
                         </span>
                       </Link>
                     </div>
 
                     {/* button  */}
-                    <Link
-                      to={service.exploreMoreLink}
-                      className={styles.buttonBlackFull}
-                    >
+                    <Link to={service.exploreMoreLink} className={styles.buttonBlackFull}>
                       Explore more
                     </Link>
                   </div>

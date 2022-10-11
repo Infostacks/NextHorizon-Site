@@ -52,13 +52,11 @@ const ReadyDiscoveryTeam = () => {
     <motion.div
       ref={ref}
       animate={fadeInAnimation}
-      className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col justify-center items-center gap-5 p-5 mt-20 xl:px-20 rounded-[3rem] bg-gradient-to-bl from-indigo-500 via-cyan-500 to-indigo-500 w-5/6"
-    >
+      className="max-w-screen-xl flex xl:flex-row lg:flex-row flex-col justify-center items-center gap-5 p-5 mt-20 xl:px-20 rounded-[3rem] bg-gradient-to-bl from-indigo-500 via-cyan-500 to-indigo-500 w-5/6">
       {/* left  */}
       <motion.div
         animate={rightAnimation}
-        className="flex flex-col justify-around gap-5 h-full text-white"
-      >
+        className="flex flex-col justify-around gap-5 h-full text-white">
         <span className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold">
           Ready to Start With Our Discovery Team Experts?
         </span>
@@ -70,8 +68,7 @@ const ReadyDiscoveryTeam = () => {
           </button>
 
           <span className="text-white xl:text-xl lg:text-xl text-base xl:w-2/3 lg:w-2/3 w-full">
-            Other Cleveroad experts are engaged in the process if additional
-            expertise is needed.
+            Other Nexxt.ai experts are engaged in the process if additional expertise is needed.
           </span>
         </div>
       </motion.div>
@@ -79,11 +76,9 @@ const ReadyDiscoveryTeam = () => {
       {/* right  */}
       <motion.div
         animate={leftAnimation}
-        className="flex flex-col justify-around gap-5 w-full h-full text-white"
-      >
+        className="flex flex-col justify-around gap-5 w-full h-full text-white">
         <span className="text-white xl:text-xl lg:text-xl text-base">
-          The Discovery phase is conducted by a qualified team of: The Discovery
-          phase is conducte
+          The Discovery phase is conducted by a qualified team of: The Discovery phase is conducte
         </span>
         <div className="flex xl:flex-row lg:flex-row flex-col justify-between">
           <div className="flex flex-col gap-2">

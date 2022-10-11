@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import homeBG from "../../images/template3.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import "./home.css";
@@ -48,24 +47,20 @@ const Hero = () => {
       <section className="hero xl:px[10rem] lg:px-[4rem] md:px-[3rem] px-[3rem]">
         <div
           ref={ref}
-          className="flex xl:flex-row lg:flex-row md:flex-row flex-col-reverse xl:gap-0 lg:gap-0 gap-10 justify-center items-center h-screen w-11/12"
-        >
+          className="flex xl:flex-row lg:flex-row md:flex-row flex-col-reverse xl:gap-0 lg:gap-0 gap-10 justify-center items-center h-screen w-11/12">
           {/* right  */}
           <article className="flex flex-col justify-center xl:w-2/3 lg:w-1/2 md:w-1/2 w-full gap-5">
-            <motion.h1 animate={leftAnimation} className="heroTextHeading drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-tr from-rose-600 via-orange-600 to-rose-600 z-10">
+            <motion.h1
+              animate={leftAnimation}
+              className="heroTextHeading drop-shadow-xl text-transparent bg-clip-text bg-gradient-to-tr from-rose-600 via-orange-600 to-rose-600 z-10">
               Doing More for Your Technical Success
             </motion.h1>
-            <motion.p
-              animate={rightAnimation}
-              className="z-10 heroTextSubHeading"
-            >
-              We‘re providing services to web and mobile application developers
-              who are courageous to promote software solutions and lead towards
-              the utmost growth of business demands to satisfy customer demands.
+            <motion.p animate={rightAnimation} className="z-10 heroTextSubHeading">
+              We‘re providing services to web and mobile application developers who are courageous
+              to promote software solutions and lead towards the utmost growth of business demands
+              to satisfy customer demands.
             </motion.p>
-            <button className={styles.buttonBlackFull}>
-              Connect with us
-            </button>
+            <button className={styles.buttonBlackFull}>Connect with us</button>
           </article>
           {/* left  */}
           <article className="flex xl:w-1/2 lg:w-1/2 md:w-1/2 w-full">

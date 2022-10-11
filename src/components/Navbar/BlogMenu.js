@@ -20,9 +20,7 @@ const BlogMenu = () => {
             </div>
             <Link to="/blogs/latest">
               <div className="flex flex-col">
-                <span className="text-xl font-semibold text-[#1B2B36]">
-                  Latest
-                </span>
+                <span className="text-xl font-semibold text-[#1B2B36]">Latest</span>
                 <span className="text-slate-500">
                   Recently published blog posts on various topics
                 </span>
@@ -36,12 +34,8 @@ const BlogMenu = () => {
             </div>
             <Link to="/blogs/Client%20Guides">
               <div className="flex flex-col">
-                <span className="text-xl font-semibold text-[#1B2B36]">
-                  Client Guides
-                </span>
-                <span className="text-slate-500">
-                  Reads showing solutions to business problems
-                </span>
+                <span className="text-xl font-semibold text-[#1B2B36]">Client Guides</span>
+                <span className="text-slate-500">Reads showing solutions to business problems</span>
               </div>
             </Link>
           </div>
@@ -52,9 +46,7 @@ const BlogMenu = () => {
             </div>
             <Link to="/blogs/Technologies">
               <div className="flex flex-col">
-                <span className="text-xl font-semibold text-[#1B2B36]">
-                  Tech
-                </span>
+                <span className="text-xl font-semibold text-[#1B2B36]">Tech</span>
                 <span className="text-slate-500">
                   Posts telling about tech stuff in plain English
                 </span>
@@ -71,9 +63,7 @@ const BlogMenu = () => {
             </div>
             <Link to="/blogs/UI/UX%20Design">
               <div className="flex flex-col">
-                <span className="text-xl font-semibold text-[#1B2B36]">
-                  Design
-                </span>
+                <span className="text-xl font-semibold text-[#1B2B36]">Design</span>
                 <span className="text-slate-500">
                   Guides to building beautiful UI and convenient UX
                 </span>
@@ -87,9 +77,7 @@ const BlogMenu = () => {
             </div>
             <Link to="/blogs/Case%20Studies">
               <div className="flex flex-col">
-                <span className="text-xl font-semibold text-[#1B2B36]">
-                  Case Studies
-                </span>
+                <span className="text-xl font-semibold text-[#1B2B36]">Case Studies</span>
                 <span className="text-slate-500">
                   Cases from real projects explained in great detail
                 </span>
@@ -103,12 +91,8 @@ const BlogMenu = () => {
             </div>
             <Link to="/blogs/Next%20Horizon">
               <div className="flex flex-col">
-                <span className="text-xl font-semibold text-[#1B2B36]">
-                  Next Horizon
-                </span>
-                <span className="text-slate-500">
-                  Company news, awards, and achievements
-                </span>
+                <span className="text-xl font-semibold text-[#1B2B36]">Next Horizon</span>
+                <span className="text-slate-500">Company news, awards, and achievements</span>
               </div>
             </Link>
           </div>

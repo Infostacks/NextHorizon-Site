@@ -1,6 +1,4 @@
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { GoDeviceMobile } from "react-icons/go";
-import { BiMapPin } from "react-icons/bi";
+import { FaLinkedinIn } from "react-icons/fa";
 import { GrFacebookOption, GrTwitter } from "react-icons/gr";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -93,8 +91,7 @@ const Footer = () => {
                         x: 0,
                         transition: { duration: 0.25 },
                       }}
-                      className="hover:cursor-pointer hover:translate-x-3"
-                    >
+                      className="hover:cursor-pointer hover:translate-x-3">
                       <Link to={item.link}>{item.title}</Link>
                     </motion.div>
                   );
@@ -117,8 +114,7 @@ const Footer = () => {
                         x: 0,
                         transition: { duration: 0.25 },
                       }}
-                      className="hover:cursor-pointer hover:translate-x-3"
-                    >
+                      className="hover:cursor-pointer hover:translate-x-3">
                       <Link to={item.link}>{item.title}</Link>
                     </motion.div>
                   );
@@ -141,8 +137,7 @@ const Footer = () => {
                         x: 0,
                         transition: { duration: 0.25 },
                       }}
-                      className="hover:cursor-pointer hover:translate-x-3"
-                    >
+                      className="hover:cursor-pointer hover:translate-x-3">
                       <Link to={item.link}>{item.title}</Link>
                     </motion.div>
                   );
@@ -187,22 +182,19 @@ const Footer = () => {
         {/* icons  */}
         <div className="flex flex-row items-center gap-2">
           <div
-            className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}
-          >
+            className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}>
             <a alt="" href="https://www.facebook.com/Nhitechsolutionsfb">
               <GrFacebookOption />
             </a>
           </div>
           <div
-            className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}
-          >
+            className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}>
             <a alt="" href="https://twitter.com/Nhitechsolutionst">
               <GrTwitter />
             </a>
           </div>
           <div
-            className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}
-          >
+            className={`bg-${styles.redPrimary} p-3 rounded-full text-white hover:cursor-pointer hover:text-${styles.redPrimary} hover:bg-white`}>
             <a alt="" href="https://www.linkedin.com/company/next-horizon-inc/">
               <FaLinkedinIn />
             </a>
@@ -212,8 +204,7 @@ const Footer = () => {
 
       {/* copyright section  */}
       <div
-        className={`flex justify-center items-center text-slate-50 bg-${styles.blackPrimary} bg-opacity-60 xl:py-8 lg:py-8 py-2 border-t-[1px] border-slate-500`}
-      >
+        className={`flex justify-center items-center text-slate-50 bg-${styles.blackPrimary} bg-opacity-60 xl:py-8 lg:py-8 py-2 border-t-[1px] border-slate-500`}>
         © Copyright <strong>NEXT HORIZON</strong>. All Rights Reserved
       </div>
     </div>

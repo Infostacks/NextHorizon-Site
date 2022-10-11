@@ -37,36 +37,23 @@ const Portfolio = () => {
                   index % 2 === 0
                     ? " xl:flex-row lg:flex-row md:flex-row flex-col "
                     : " xl:flex-row-reverse lg:flex-row-reverse md:flex-row-reverse flex-col"
-                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md py-5 rounded-3xl backdrop-blur-sm border-2`}
-              >
+                } justify-center items-center xl:gap-8 lg:gap-8 md:gap-6 gap-3 shadow-md py-5 rounded-3xl backdrop-blur-sm border-2`}>
                 {/* image data  */}
                 <div className=" xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 px-5">
-                  <img
-                    src={caseStudy.img}
-                    alt={caseStudy.title}
-                    className="object-cover w-full"
-                  />
+                  <img src={caseStudy.img} alt={caseStudy.title} className="object-cover w-full" />
                 </div>
 
                 {/* info data  */}
                 <div className="flex flex-col gap-5 xl:w-[45%] lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2 justify-center px-6">
                   <div className="flex flex-row justify-between w-full">
                     <div>
-                      <img
-                        src={caseStudy.review}
-                        alt=""
-                        className="object-cover h-8 w-full"
-                      />
+                      <img src={caseStudy.review} alt="" className="object-cover h-8 w-full" />
                     </div>
                     <span className="text-slate-400">{caseStudy.status}</span>
                   </div>
 
-                  <span className="text-2xl font-bold text-gray-700">
-                    {caseStudy.title}
-                  </span>
-                  <span className="text-lg text-gray-500">
-                    {caseStudy.desc}
-                  </span>
+                  <span className="text-2xl font-bold text-gray-700">{caseStudy.title}</span>
+                  <span className="text-lg text-gray-500">{caseStudy.desc}</span>
 
                   <div className="flex flex-col">
                     {/* contry data  */}
@@ -85,16 +72,12 @@ const Portfolio = () => {
                     {/* core tech data  */}
                     <div className="flex flex-row justify-start items-center gap-16">
                       <span className="text-lg font-semibold">Core Tech</span>
-                      <div className="flex flex-row gap-2">
-                        {caseStudy.coreTech}
-                      </div>
+                      <div className="flex flex-row gap-2">{caseStudy.coreTech}</div>
                     </div>
                   </div>
 
                   {/* button  */}
-                  <button className={styles.buttonBlackFull}>
-                    Explore more
-                  </button>
+                  <button className={styles.buttonBlackFull}>Explore more</button>
                 </div>
               </motion.div>
             );

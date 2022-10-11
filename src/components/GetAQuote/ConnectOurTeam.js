@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -29,24 +30,20 @@ const ConnectOurTeam = () => {
   return (
     <section
       ref={ref}
-      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden"
-    >
+      className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
       {/* top section  */}
       <div className="max-w-screen-lg flex items-center xl:px-10 px-5 xl:flex-row lg:flex-row flex-col xl:gap-20 lg:gap-14 gap-10">
         {/* Text intro  */}
         <motion.h2
           animate={fadeInAnimation}
-          className="text-4xl font-bold tracking-tight sm:text-5xl"
-        >
+          className="text-4xl font-bold tracking-tight sm:text-5xl">
           Connect with our Team
         </motion.h2>
 
         <motion.p
           animate={fadeInAnimation}
-          className="max-w-lg mt-4 text-gring-offset-warm-gray-500"
-        >
-          Let's communicate! Don't hesitate to contact us with your projects,
-          ideas, and questions.
+          className="max-w-lg mt-4 text-gring-offset-warm-gray-500">
+          Let's communicate! Don't hesitate to contact us with your projects, ideas, and questions.
         </motion.p>
       </div>
 
@@ -66,11 +63,8 @@ const ConnectOurTeam = () => {
                 },
               }}
               key={index}
-              className="flex flex-col gap-2"
-            >
-              <span className="text-lg font-bold text-gray-700">
-                {reward.heading}
-              </span>
+              className="flex flex-col gap-2">
+              <span className="text-lg font-bold text-gray-700">{reward.heading}</span>
               <h3 className={`text-lg font-bold text-${styles.redPrimary} hover:cursor-pointer`}>
                 {reward.email}
               </h3>

@@ -28,9 +28,7 @@ const ServicesMenu = () => {
             <Link to="/services/mobile-development/ios">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">iOS app development</span>
-                <span className="text-slate-500">
-                  Native Swift apps for all Apple devices
-                </span>
+                <span className="text-slate-500">Native Swift apps for all Apple devices</span>
               </div>
             </Link>
           </div>
@@ -42,9 +40,7 @@ const ServicesMenu = () => {
             <Link to="/services/mobile-development/android">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">Android app development</span>
-                <span className="text-slate-500">
-                  Build native apps for Android with Kotlin
-                </span>
+                <span className="text-slate-500">Build native apps for Android with Kotlin</span>
               </div>
             </Link>
           </div>
@@ -56,9 +52,7 @@ const ServicesMenu = () => {
             <Link to="/services/mobile-development/flutter">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">Flutter app development</span>
-                <span className="text-slate-500">
-                  Dart-based cross-platform development
-                </span>
+                <span className="text-slate-500">Dart-based cross-platform development</span>
               </div>
             </Link>
           </div>
@@ -76,9 +70,7 @@ const ServicesMenu = () => {
             <Link to="/services/web-application-development-services">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">Web app development</span>
-                <span className="text-slate-500">
-                  Secure and performant web apps and PWAs
-                </span>
+                <span className="text-slate-500">Secure and performant web apps and PWAs</span>
               </div>
             </Link>
           </div>
@@ -90,9 +82,7 @@ const ServicesMenu = () => {
             <Link to="/services/devops-services">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">DevOps services</span>
-                <span className="text-slate-500">
-                  Solution architecture & cloud dev services
-                </span>
+                <span className="text-slate-500">Solution architecture & cloud dev services</span>
               </div>
             </Link>
           </div>
@@ -103,12 +93,8 @@ const ServicesMenu = () => {
             </div>
             <Link to="/services/application-modernization-service">
               <div className="flex flex-col">
-                <span className="text-[#1B2B36]">
-                  Legacy soft modernization
-                </span>
-                <span className="text-slate-500">
-                  Reengineering, redesign, and migration
-                </span>
+                <span className="text-[#1B2B36]">Legacy soft modernization</span>
+                <span className="text-slate-500">Reengineering, redesign, and migration</span>
               </div>
             </Link>
           </div>
@@ -116,9 +102,7 @@ const ServicesMenu = () => {
 
         {/* startups  */}
         <div className="flex flex-col gap-3">
-          <span className="text-xl font-semibold text-[#1B2B36]">
-            For Startups
-          </span>
+          <span className="text-xl font-semibold text-[#1B2B36]">For Startups</span>
           <div className="flex flex-row gap-2 hover:cursor-pointer">
             <div className="text-xl text-cyan-500">
               <TbMapSearch />
@@ -126,9 +110,7 @@ const ServicesMenu = () => {
             <Link to="/services/discovery-phase-process">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">Discovery phase</span>
-                <span className="text-slate-500">
-                  SRS, UX prototype, SWOT analysis
-                </span>
+                <span className="text-slate-500">SRS, UX prototype, SWOT analysis</span>
               </div>
             </Link>
           </div>
@@ -140,9 +122,7 @@ const ServicesMenu = () => {
             <Link to="/services/mvp-development-services">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">MVP development</span>
-                <span className="text-slate-500">
-                  Reducing time-to-market with MVP
-                </span>
+                <span className="text-slate-500">Reducing time-to-market with MVP</span>
               </div>
             </Link>
           </div>
@@ -154,9 +134,7 @@ const ServicesMenu = () => {
             <Link to="/services/cto-as-a-services">
               <div className="flex flex-col">
                 <span className="text-[#1B2B36]">CTO as a Service</span>
-                <span className="text-slate-500">
-                  CaaS consulting services for startups
-                </span>
+                <span className="text-slate-500">CaaS consulting services for startups</span>
               </div>
             </Link>
           </div>
@@ -167,34 +145,22 @@ const ServicesMenu = () => {
       <div className="flex flex-row bg-slate-200 p-10 w-full rounded-b-3xl justify-around">
         <Link to="/services/qa-services">
           <div className="flex flex-col hover:cursor-pointer">
-            <span className="text-xl font-semibold text-[#1B2B36]">
-              Software testing
-            </span>
-            <span className="text-slate-500">
-              Manual testing & Automation testing
-            </span>
+            <span className="text-xl font-semibold text-[#1B2B36]">Software testing</span>
+            <span className="text-slate-500">Manual testing & Automation testing</span>
           </div>
         </Link>
 
         <Link to="/services/dedicated-development-team-services">
           <div className="flex flex-col hover:cursor-pointer">
-            <span className="text-xl font-semibold text-[#1B2B36]">
-              Dedicated team
-            </span>
-            <span className="text-slate-500">
-              Experienced tech staff to extend a team
-            </span>
+            <span className="text-xl font-semibold text-[#1B2B36]">Dedicated team</span>
+            <span className="text-slate-500">Experienced tech staff to extend a team</span>
           </div>
         </Link>
 
         <Link to="/services/ui-ux-design">
           <div className="flex flex-col hover:cursor-pointer">
-            <span className="text-xl font-semibold text-[#1B2B36]">
-              UI-UX design
-            </span>
-            <span className="text-slate-500">
-              Material and HIG design for all platforms
-            </span>
+            <span className="text-xl font-semibold text-[#1B2B36]">UI-UX design</span>
+            <span className="text-slate-500">Material and HIG design for all platforms</span>
           </div>
         </Link>
       </div>

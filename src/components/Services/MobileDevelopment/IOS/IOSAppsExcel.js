@@ -15,8 +15,8 @@ const IOSAppsExcel = () => {
         </h2>
 
         <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl">
-          Set the requirements and let us build your custom iOS application to
-          power your business with an efficient solution.
+          Set the requirements and let us build your custom iOS application to power your business
+          with an efficient solution.
         </p>
       </div>
 
@@ -30,8 +30,7 @@ const IOSAppsExcel = () => {
                   className={`flex flex-row xl:text-2xl lg:text-2xl text-xl underline items-center py-3 px-4 font-semibold rounded-full drop-shadow-md ${`job-btn ${
                     count === index && "active-btn"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {category.category}
                 </div>
               </button>
@@ -51,9 +50,7 @@ const IOSAppsExcel = () => {
             </div>
 
             <div className="flex flex-col">
-              <h2 className="font-semibold">
-                {iOSAppsExcel[count].duration}
-              </h2>
+              <h2 className="font-semibold">{iOSAppsExcel[count].duration}</h2>
               <p>Average project length</p>
             </div>
           </div>

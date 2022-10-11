@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
 import Menu from "./Menu";
 import { blogs } from "../../utils/data";
 
-const index = ({selectedCategory}) => {
+const index = ({ selectedCategory }) => {
   const [menuItems, setMenuItems] = useState(blogs);
   const [currentCat, setCurrentCat] = useState(selectedCategory);
 
@@ -18,7 +19,6 @@ const index = ({selectedCategory}) => {
 
   return (
     <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
-    
       <div className="">
         <Menu items={menuItems} />
       </div>

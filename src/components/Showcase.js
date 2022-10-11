@@ -57,13 +57,11 @@ const Showcase = () => {
             />
           </div>
           <div className="w-1/2  flex flex-col">
-            <h1 className="text-2xl font-bold">
-              Let us be your Preferred IT Partner.
-            </h1>
+            <h1 className="text-2xl font-bold">Let us be your Preferred IT Partner.</h1>
             <p className="text-slate-600 font-light">
               <i>
-                As we are one of the world’s largest IT Service providers. Our
-                deep pool of over 100+ certified engineers and IT support staff.
+                As we are one of the world’s largest IT Service providers. Our deep pool of over
+                100+ certified engineers and IT support staff.
               </i>
             </p>
             <ul className="text-slate-900">
@@ -83,8 +81,7 @@ const Showcase = () => {
                 <span className="text-orange-600 text-2xl">
                   <BiCheckDouble />
                 </span>
-                Business Oriented Customized Systems Tailored to be
-                detail-oriented.
+                Business Oriented Customized Systems Tailored to be detail-oriented.
               </li>
               <li className="flex flex-row gap-3 font-light">
                 <span className="text-orange-600 text-2xl">
@@ -94,11 +91,10 @@ const Showcase = () => {
               </li>
             </ul>
             <p className="text-slate-600 font-light mt-3">
-              We are commited to provide you quality IT-Services, by experts to
-              help one to deal with challenges and critical activities. Hence we
-              really know the true needs of our clients. We work on different
-              layers of Application development and got a striving latest
-              Technology stack for each.
+              We are commited to provide you quality IT-Services, by experts to help one to deal
+              with challenges and critical activities. Hence we really know the true needs of our
+              clients. We work on different layers of Application development and got a striving
+              latest Technology stack for each.
             </p>
           </div>
         </div>

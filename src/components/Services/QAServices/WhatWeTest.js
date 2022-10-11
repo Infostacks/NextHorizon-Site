@@ -13,8 +13,8 @@ const WebAndMobileApps = () => {
         </span>
 
         <span className="max-w-xl mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-          We run tests to check every single component of your software and
-          guarantee the highest possible quality.
+          We run tests to check every single component of your software and guarantee the highest
+          possible quality.
         </span>
       </div>
 
@@ -37,8 +37,7 @@ const WebAndMobileApps = () => {
                 },
               }}
               className="flex flex-col justify-center gap-5"
-              key={index}
-            >
+              key={index}>
               <span className="text-xl font-semibold">{webApp.title}</span>
               <span className="xl:text-xl lg:text-xl text-base text-justify font-serif">
                 {webApp.desc}

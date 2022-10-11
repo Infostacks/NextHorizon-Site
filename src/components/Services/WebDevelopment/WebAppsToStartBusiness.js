@@ -15,8 +15,8 @@ const WebAppsToStartBusiness = () => {
         </h2>
 
         <span className="text-xl xl:w-2/5 text-slate-500">
-          Build a web application adjusted to your business domain and focused
-          on your target audience’s pains.
+          Build a web application adjusted to your business domain and focused on your target
+          audience’s pains.
         </span>
       </div>
 
@@ -30,8 +30,7 @@ const WebAppsToStartBusiness = () => {
                   className={`flex flex-row xl:text-2xl lg:text-2xl text-xl underline items-center py-3 px-4 font-semibold rounded-full drop-shadow-md ${`job-btn ${
                     count === index && "active-btn"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {category.category}
                 </div>
               </button>

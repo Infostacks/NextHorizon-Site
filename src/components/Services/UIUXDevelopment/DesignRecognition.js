@@ -14,8 +14,7 @@ const DesignRecognition = () => {
         </h2>
 
         <p className="text-2xl tracking-wide">
-          Creating the same distinct style and brand identity for all platforms
-          using best-proven
+          Creating the same distinct style and brand identity for all platforms using best-proven
         </p>
       </div>
 
@@ -35,18 +34,11 @@ const DesignRecognition = () => {
                 },
               }}
               className="flex flex-col items-center justify-center gap-2"
-              key={index}
-            >
-              <img
-                src={webApp.img}
-                alt={webApp.title}
-                className="w-52 shadow-lg rounded-3xl"
-              />
+              key={index}>
+              <img src={webApp.img} alt={webApp.title} className="w-52 shadow-lg rounded-3xl" />
 
               <span className="text-xl font-semibold">{webApp.title}</span>
-              <span className="text-lg font-serif w-52 text-center">
-                {webApp.desc}
-              </span>
+              <span className="text-lg font-serif w-52 text-center">{webApp.desc}</span>
             </motion.div>
           );
         })}

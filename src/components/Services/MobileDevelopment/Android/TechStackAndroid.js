@@ -17,8 +17,7 @@ const TechStackAndroid = () => {
             Android app technology stack we use
           </h2>
           <p className="xl:text-2xl lg:text-2xl text-xl">
-            We use only scalable and time-tested technology stack for Android
-            apps.
+            We use only scalable and time-tested technology stack for Android apps.
           </p>
         </div>
       </div>
@@ -36,8 +35,7 @@ const TechStackAndroid = () => {
                   onClick={() => {
                     setCount(index);
                     setToolData(0);
-                  }}
-                >
+                  }}>
                   {category.techCategory}
                 </div>
               </button>
@@ -57,8 +55,7 @@ const TechStackAndroid = () => {
                       className={`flex justify-center text-lg items-center xl:p-7 lg:p-7 md:p-4 p-2 underline font-semibold rounded-xl drop-shadow-md ${`job-btn ${
                         toolData === index && "active-btn"
                       }`}`}
-                      onClick={() => setToolData(index)}
-                    >
+                      onClick={() => setToolData(index)}>
                       {/* {data.icon} */}
                       {data.tool}
                     </div>

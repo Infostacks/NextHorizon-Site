@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { motion } from "framer-motion";
@@ -21,22 +22,24 @@ const Menu = ({ items }) => {
               },
             }}
             key={index}
-            className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 bg-opacity-70 border-2 border-slate-900/3 rounded-3xl shadow-xl`}
-          >
+            className={`flex flex-col justify-between gap-3 xl:w-[22rem] lg:w-[22rem] w-[20rem] bg-slate-200 bg-opacity-70 border-2 border-slate-900/3 rounded-3xl shadow-xl`}>
             <div className="flex flex-col p-5 justify-between gap-5">
               {/* breadcrumbs */}
               <div className="flex flex-row gap-2 text-sm">
-                <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                <span
+                  className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                   Blog
                 </span>
                 <span>➙</span>
-                <span className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
+                <span
+                  className={`hover:cursor-pointer text-slate-600 hover:text-${styles.redPrimary}`}>
                   {/* underline due to navlink  */}
                   <NavLink to="">{blogData.category}</NavLink>
                 </span>
               </div>
 
-              <span className={`text-lg font-semibold font-serif antialiased hover:text-${styles.redPrimary} hover:cursor-pointer`}>
+              <span
+                className={`text-lg font-semibold font-serif antialiased hover:text-${styles.redPrimary} hover:cursor-pointer`}>
                 <NavLink to={`/blogs/${blogData.id}`}>{blogData.title}</NavLink>
               </span>
               <div className="flex flex-row justify-between text-sm">

@@ -14,9 +14,7 @@ const StartProjectPanel = () => {
           <Link to="/services">Services</Link>
         </span>
         <span>➙</span>
-        <span className="hover:cursor-pointer text-slate-200">
-          App Modernization
-        </span>
+        <span className="hover:cursor-pointer text-slate-200">App Modernization</span>
       </div>
 
       {/* heading  */}
@@ -26,8 +24,8 @@ const StartProjectPanel = () => {
         </h1>
 
         <p className="text-white text-xl">
-          Update your legacy software with cutting-edge technologies that grant
-          new features, strengthen security and enhance performance.
+          Update your legacy software with cutting-edge technologies that grant new features,
+          strengthen security and enhance performance.
         </p>
 
         {/* button  */}

@@ -4,17 +4,16 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const NotFoundPage = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    useEffect (()=>{
-        setTimeout(() => {
-            navigate("/");
-        }, 6000);
-    },[navigate])
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 6000);
+  }, [navigate]);
 
   return (
     <div className="flex flex-col gap-20 justify-center items-center w-screen h-[40rem] text-[#D90429]">
-
       <div className="text-5xl font-bold">Something went wrong</div>
 
       <motion.div
@@ -29,13 +28,10 @@ const NotFoundPage = () => {
           stiffness: 100,
           duration: 7,
           repeat: Infinity,
-        }}
-      >
+        }}>
         <TbFaceIdError />
       </motion.div>
-      <div className="text-2xl text-slate-800 font-serif">
-        Redirecting to Homepage...
-      </div>
+      <div className="text-2xl text-slate-800 font-serif">Redirecting to Homepage...</div>
     </div>
   );
 };

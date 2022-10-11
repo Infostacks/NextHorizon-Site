@@ -26,8 +26,8 @@ const TypesOfTesting = () => {
         </h2>
 
         <p className="max-w-lg mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-          Our engineers draw up a software testing strategy tailored to your
-          project in order to eliminate possible bugs and issues.
+          Our engineers draw up a software testing strategy tailored to your project in order to
+          eliminate possible bugs and issues.
         </p>
       </div>
 
@@ -49,14 +49,12 @@ const TypesOfTesting = () => {
                     bounce: 0.6,
                   },
                 }}
-                key={index}
-              >
+                key={index}>
                 <div
                   className={`flex flex-row gap-2 text-md font-semibold items-center py-3 px-2 rounded-3xl drop-shadow-md underline w-full ${`job-btn ${
                     count === index && "active-btn underline"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {process.type}
                 </div>
               </motion.button>

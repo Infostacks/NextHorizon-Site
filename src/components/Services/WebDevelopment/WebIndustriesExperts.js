@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import { webIndustriesExperts } from "../../../utils/data.js";
 
@@ -14,8 +15,8 @@ const WebIndustriesExperts = () => {
         </h2>
 
         <p className="max-w-lg mt-4 text-gring-offset-warm-gray-500">
-          We create software for different industries and businesses, providing
-          high-level tech specialists to handle software development.
+          We create software for different industries and businesses, providing high-level tech
+          specialists to handle software development.
         </p>
       </div>
 
@@ -29,8 +30,7 @@ const WebIndustriesExperts = () => {
                   className={`flex flex-row text-2xl items-center py-3 px-4 font-semibold rounded-full drop-shadow-md z-50 ${`job-btn ${
                     count === index && "active-btn"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {industry.industries}
                 </div>
               </button>
@@ -47,9 +47,7 @@ const WebIndustriesExperts = () => {
             </span>
           </div>
 
-          <div className="flex flex-col gap-10 w-4/6">
-            {webIndustriesExperts[count].desc}
-          </div>
+          <div className="flex flex-col gap-10 w-4/6">{webIndustriesExperts[count].desc}</div>
         </div>
       </div>
     </div>

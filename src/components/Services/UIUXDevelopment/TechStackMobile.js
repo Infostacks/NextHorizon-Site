@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { mobileTechstack } from "../../../utils/data.js";
@@ -29,8 +30,7 @@ const TechStackMobile = () => {
                   onClick={() => {
                     setCount(index);
                     setToolData(0);
-                  }}
-                >
+                  }}>
                   {category.techCategory}
                 </div>
               </button>
@@ -50,8 +50,7 @@ const TechStackMobile = () => {
                       className={`flex justify-center text-lg items-center p-7 font-semibold rounded-xl drop-shadow-md z-50 ${`job-btn ${
                         toolData === index && "active-btn"
                       }`}`}
-                      onClick={() => setToolData(index)}
-                    >
+                      onClick={() => setToolData(index)}>
                       {/* {data.icon} */}
                       {data.tool}
                     </div>

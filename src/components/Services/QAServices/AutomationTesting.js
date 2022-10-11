@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Link } from "react-router-dom";
 import { SiNodemon } from "react-icons/si";
@@ -16,8 +17,8 @@ const AutomationTesting = () => {
           </span>
 
           <span className="max-w-xl mt-4 xl:text-3xl lg:text-3xl text-xl tracking-wide">
-            We use automated tests to boost the speed of product testing and
-            enhance the overall quality.
+            We use automated tests to boost the speed of product testing and enhance the overall
+            quality.
           </span>
         </div>
 
@@ -28,16 +29,18 @@ const AutomationTesting = () => {
               <SiNodemon />
             </div>
 
-            <div className={`flex flex-col gap-20 z-20 xl:p-20 lg:p-20 p-10 rounded-[3rem] bg-${styles.redPrimary} bg-opacity-60`}>
+            <div
+              className={`flex flex-col gap-20 z-20 xl:p-20 lg:p-20 p-10 rounded-[3rem] bg-${styles.redPrimary} bg-opacity-60`}>
               <div className="flex flex-col xl:gap-10 lg:gap-10 gap-2">
                 <h2 className="font-semibold">Backend</h2>
                 <h3 className="xl:text-xl lg:text-xl text-base font-serif text-justify tracking-normal">
-                  It automates the API testing as well as helps us to check a
-                  large amount of backend logic with which all the product's
-                  platforms interact with
+                  It automates the API testing as well as helps us to check a large amount of //
+                  eslint-disable-next-line react/no-unescaped-entities backend logic with which all
+                  the product's platforms interact with
                 </h3>
               </div>
-              <div className={`xl:text-3xl lg:text-3xl text-xl font-mono font-semibold hover:bg-${styles.redPrimary} hover:drop-shadow-md px-5 py-2 w-fit rounded-full hover:text-white`}>
+              <div
+                className={`xl:text-3xl lg:text-3xl text-xl font-mono font-semibold hover:bg-${styles.redPrimary} hover:drop-shadow-md px-5 py-2 w-fit rounded-full hover:text-white`}>
                 <Link to="/contact">Order Now ➙</Link>
               </div>
             </div>
@@ -52,9 +55,8 @@ const AutomationTesting = () => {
               <div className="flex flex-col xl:gap-10 lg:gap-10 gap-2">
                 <h2 className="font-semibold">User Interface</h2>
                 <h3 className="xl:text-xl lg:text-xl text-base font-serif text-justify tracking-normal">
-                  These tests are written with the intent to imitate the
-                  behavior of product users in order to test and validate
-                  various UI layouts
+                  These tests are written with the intent to imitate the behavior of product users
+                  in order to test and validate various UI layouts
                 </h3>
               </div>
               <div className="xl:text-3xl lg:text-3xl text-xl font-mono font-semibold hover:bg-blue-500 hover:drop-shadow-md px-5 py-2 w-fit rounded-full hover:text-white">

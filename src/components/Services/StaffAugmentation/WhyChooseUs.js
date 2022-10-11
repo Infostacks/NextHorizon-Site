@@ -53,25 +53,22 @@ const WhyChooseUs = () => {
   return (
     <section
       ref={ref}
-      className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10"
-    >
+      className="bg-slate-100 overflow-x-hidden flex flex-col items-center justify-center pb-10 w-screen xl:px-0 lg:px-0 px-10">
       <div className="max-w-screen-xl w-full flex items-center justify-center flex-col py-16 sm:py-24">
         {/* top section  */}
         <div className="max-w-screen-lg flex xl:flex-row lg:flex-row flex-col xl:gap-10 lg:gap-10 gap-2 items-center">
           {/* Text intro  */}
           <motion.span
             animate={fadeInAnimation}
-            className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-          >
+            className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
             Why choose us
           </motion.span>
 
           <motion.span
             animate={fadeInAnimation}
-            className="max-w-lg mt-4 xl:text-xl lg:text-xl text-base xl:tracking-wide lg:tracking-wide xl:font-semibold lg:font-semibold"
-          >
-            We follow a proven multi-step assembling process to provide the best
-            dedicated development team that meets your requirements.
+            className="max-w-lg mt-4 xl:text-xl lg:text-xl text-base xl:tracking-wide lg:tracking-wide xl:font-semibold lg:font-semibold">
+            We follow a proven multi-step assembling process to provide the best dedicated
+            development team that meets your requirements.
           </motion.span>
         </div>
 
@@ -81,8 +78,7 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={index}
-                className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}
-              >
+                className={`flex xl:flex-row lg:flex-row md:flex-row flex-col justify-center xl:gap-10 lg:gap-10 md:gap-6 gap-3 w-full`}>
                 {/* image data  */}
                 <div className="flex flex-col gap-5">
                   <motion.span animate={upAnimation}>
@@ -95,33 +91,21 @@ const WhyChooseUs = () => {
 
                   <div className="flex flex-row justify-between">
                     <div className="flex flex-col ">
-                      <span className="text-2xl font-semibold">
-                        {item.name}
-                      </span>
-                      <span className="text-slate-500 text-xl">
-                        {item.designation}
-                      </span>
+                      <span className="text-2xl font-semibold">{item.name}</span>
+                      <span className="text-slate-500 text-xl">{item.designation}</span>
                     </div>
                     <div className="flex flex-row gap-5 text-3xl">
-                      <a
-                        href={item.email}
-                        className={`hover:text-${styles.redPrimary}`}
-                      >
+                      <a href={item.email} className={`hover:text-${styles.redPrimary}`}>
                         <MdOutlineEmail />
                       </a>
-                      <a
-                        href={item.linkedIn}
-                        className={`hover:text-${styles.redPrimary}`}
-                      >
+                      <a href={item.linkedIn} className={`hover:text-${styles.redPrimary}`}>
                         <FaLinkedinIn />
                       </a>
                     </div>
                   </div>
 
                   {/* button  */}
-                  <button className={styles.buttonBlackFull}>
-                    Get free consultation
-                  </button>
+                  <button className={styles.buttonBlackFull}>Get free consultation</button>
                 </div>
 
                 {/* info data  */}
@@ -143,8 +127,7 @@ const WhyChooseUs = () => {
                           },
                         }}
                         className="flex flex-row gap-3 xl:text-xl lg:text-xl text-base"
-                        key={index}
-                      >
+                        key={index}>
                         <span className={`text-${styles.redPrimary}`}>✔</span>
                         <span>{quality}</span>
                       </motion.div>

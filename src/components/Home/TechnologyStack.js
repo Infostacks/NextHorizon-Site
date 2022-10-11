@@ -56,8 +56,7 @@ const TechnologyStack = () => {
     <div className="w-full overflow-x-hidden bg-white bg-opacity-50 backdrop-blur-sm flex flex-col justify-center items-center">
       <section
         ref={ref}
-        className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10"
-      >
+        className="flex flex-col items-center justify-center xl:py-16 lg:py-14 py-10">
         <div className="max-w-screen-lg w-full flex items-center justify-center flex-col px-4 gap-10">
           {/* top section  */}
           <div className="flex xl:flex-row lg:flex-row flex-col items-center">
@@ -65,17 +64,12 @@ const TechnologyStack = () => {
             <div className="flex flex-col justify-center items-center w-full gap-10 xl:px-0 lg:px-0 px-10">
               <motion.h2
                 animate={rightAnimation}
-                className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight"
-              >
+                className="xl:text-7xl lg:text-7xl md:text-4xl text-3xl font-bold tracking-tight">
                 Technology Stack
               </motion.h2>
-              <motion.p
-                animate={leftAnimation}
-                className="text-xl max-w-3xl text-center"
-              >
-                The development team working on a project uses only modern and
-                scalable technologies to implement mobile and web applications
-                the way you mean it
+              <motion.p animate={leftAnimation} className="text-xl max-w-3xl text-center">
+                The development team working on a project uses only modern and scalable technologies
+                to implement mobile and web applications the way you mean it
               </motion.p>
             </div>
           </div>
@@ -84,9 +78,7 @@ const TechnologyStack = () => {
             <div className="flex xl:flex-row lg:flex-row md:flex-row flex-col justify-around items-center w-screen max-w-screen-lg gap-10 px-5">
               {/* web technologies  */}
               <div className="flex flex-col items-center gap-7 xl:w-1/2 lg:w-1/2 md:w-1/2 w-screen xl:h-full lg:h-full md:h-full h-1/2">
-                <h5 className="xl:text-3xl lg:text-3xl text-xl font-semibold">
-                  Web Technologies
-                </h5>
+                <h5 className="xl:text-3xl lg:text-3xl text-xl font-semibold">Web Technologies</h5>
                 <div className="">
                   {/* background Circles */}
                   <div className="absolute bg-[#F96E46] blur-2xl xl:w-[18rem] bg-opacity-80 lg:w-[16rem] md:w-[14rem] w-[10rem] xl:h-[18rem] lg:h-[16rem] md:h-[14rem] h-[10rem] rounded-full mt-[13rem] ml-[10rem]"></div>
@@ -99,13 +91,8 @@ const TechnologyStack = () => {
                       duration: 6,
                       type: "spring",
                       repeat: Infinity,
-                    }}
-                  >
-                    <img
-                      src={webTechImg}
-                      alt=""
-                      className="xl:w-full lg:w-full w-[20rem]"
-                    />
+                    }}>
+                    <img src={webTechImg} alt="" className="xl:w-full lg:w-full w-[20rem]" />
                   </motion.div>
                 </div>
               </div>
@@ -126,13 +113,8 @@ const TechnologyStack = () => {
                       duration: 9,
                       type: "spring",
                       repeat: Infinity,
-                    }}
-                  >
-                    <img
-                      src={mobTechImg}
-                      alt=""
-                      className="xl:w-full lg:w-full w-[20rem]"
-                    />
+                    }}>
+                    <img src={mobTechImg} alt="" className="xl:w-full lg:w-full w-[20rem]" />
                   </motion.div>
                 </div>
               </div>
@@ -147,10 +129,7 @@ const TechnologyStack = () => {
               ) : (
                 ""
               )}
-              <button
-                onClick={() => setViewDetail(!viewDetail)}
-                className={styles.buttonBlackFull}
-              >
+              <button onClick={() => setViewDetail(!viewDetail)} className={styles.buttonBlackFull}>
                 {viewDetail ? "Hide" : "View"} Details
               </button>
             </div>

@@ -14,7 +14,7 @@ const index = () => {
       <PerksAndBenifits />
       <ClientSection />
       <CareerOpportunities />
-      <GetFreeConsultation/>
+      <GetFreeConsultation />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // /* eslint-disable no-undef */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
@@ -8,7 +9,7 @@ import { blogs } from "../../utils/data";
 
 const allCategories = ["latest", ...new Set(blogs.map((item) => item.category))];
 
-const index = ({selectedCategory}) => {
+const index = ({ selectedCategory }) => {
   const [menuItems, setMenuItems] = useState(blogs);
   const [categories, setCategories] = useState(allCategories);
   const [currentCat, setCurrentCat] = useState(selectedCategory);
@@ -24,8 +25,8 @@ const index = ({selectedCategory}) => {
     <section className="bg-slate-100 w-screen flex flex-col gap-10 items-center py-20 overflow-x-hidden">
       {/* top section  */}
       {/* <div className="max-w-screen-xl flex items-center xl:px-10 xl:flex-row lg:flex-row flex-col gap-20"> */}
-        {/* Text intro  */}
-        {/* <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+      {/* Text intro  */}
+      {/* <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
           Our Latest Blogs TechBlogs
         </h2>
       </div> */}

@@ -30,11 +30,11 @@
 }
 
 @media screen and (max-width: 480px) {
-    .heroTextHeading {
-      font-size: 1.8rem;
-    }
-    .heroTextSubHeading {
-      font-size: 1rem;
-      line-height: 1.2;
-    }
+  .heroTextHeading {
+    font-size: 1.8rem;
   }
+  .heroTextSubHeading {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}

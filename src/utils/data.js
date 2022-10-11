@@ -1,4 +1,6 @@
-import { FaCreditCard, FaBook, FaBriefcase, FaDatabase } from "react-icons/fa";
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/jsx-no-undef */
+import { FaDatabase } from "react-icons/fa";
 import { BsFileEarmarkBreak, BsCodeSquare } from "react-icons/bs";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { SiAffinitydesigner } from "react-icons/si";
@@ -335,13 +337,7 @@ const softwareDevelopmentFlow = [
     question: "Support and maintenance",
     title: "Support and maintenance",
     desc: "Our cooperation doesn’t end when the software is live. We can continue working on the software to add various tweaks based on feedback from users and maintain your solution with improvements and new features. Project maintenance stands for bug fixing, stability and performance improvements, and code optimization.",
-    staff: [
-      "Project Manager",
-      "Developers",
-      "QA engineers",
-      "DevOps",
-      "engineers",
-    ],
+    staff: ["Project Manager", "Developers", "QA engineers", "DevOps", "engineers"],
   },
 ];
 
@@ -388,7 +384,7 @@ const clientsTestimonials = [
     designation: "Owner of MoveUp",
     country: "USA",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/us.svg",
-    desc: "“Cleveroad helped us build an app that's one of its kind–and they did it well.”",
+    desc: "Nexxt.ai helped us build an app that's one of its kind–and they did it well.”",
     videURL: "",
   },
   {
@@ -397,7 +393,7 @@ const clientsTestimonials = [
     designation: "Project Manager of Virgin Atlantiс",
     country: "USA",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/us.svg",
-    desc: "The product, built by Cleveroad, complied with our corporate style and functional specifications. The team followed the agreed timeline and budget flawlessly despite.",
+    desc: "The product, built by Nexxt.ai, complied with our corporate style and functional specifications. The team followed the agreed timeline and budget flawlessly despite.",
     videURL: "",
   },
   {
@@ -406,7 +402,7 @@ const clientsTestimonials = [
     designation: "Founder of Nedley Health Solutions",
     country: "USA",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/us.svg",
-    desc: "It was a great experience for me to cooperate with Cleveroad. Its specialists have high level of professionalism, they have built a product considering all my requirements.",
+    desc: "It was a great experience for me to cooperate with Nexxt.ai. Its specialists have high level of professionalism, they have built a product considering all my requirements.",
     videURL: "",
   },
   {
@@ -415,7 +411,7 @@ const clientsTestimonials = [
     designation: "CEO & Co-Founder of Just Play",
     country: "Australia",
     flagIcon: "https://www.cleveroad.com/assets/icons/flags/au.svg",
-    desc: "They were responsive, flexible, and proactive when it came to solving problems. We were impressed with Cleveroad’s technical competence and skills in being able to solve problems and execute what we wanted to do at a high level.",
+    desc: "They were responsive, flexible, and proactive when it came to solving problems. We were impressed with Nexxt.ai technical competence and skills in being able to solve problems and execute what we wanted to do at a high level.",
     videURL: "",
   },
   {
@@ -434,8 +430,7 @@ const industryExperts = [
     category: "Healthcare",
     catIcon: <MdOutlineHealthAndSafety />,
     img: "https://www.cleveroad.com/static/05af0105926af7b99ca9a6cee675bc95/30cf3/experts-healthcare%403x.webp",
-    heading:
-      "Custom EHR, EMR, ERX, and other software solutions for Healthcare and Medicine",
+    heading: "Custom EHR, EMR, ERX, and other software solutions for Healthcare and Medicine",
     desc: "We help established businesses such as hospitals, laboratories, and pharmacies, create turnkey products, and simplify digital transformation.",
   },
   {
@@ -471,16 +466,14 @@ const industryExperts = [
     category: "Retail",
     catIcon: <IoLogoGooglePlaystore />,
     img: "https://www.cleveroad.com/static/892fc78681c7eb0a2729ec2910178273/30cf3/experts-retail%403x.webp",
-    heading:
-      "Complex CRM, POS, RMS, and other software for stores and large retail chains",
+    heading: "Complex CRM, POS, RMS, and other software for stores and large retail chains",
     desc: "We help our clients introduce effective workflows, improve back-office operations, and optimize performance on all levels.",
   },
   {
     category: "FinTech",
     catIcon: <IoBusinessOutline />,
     img: "https://www.cleveroad.com/static/3d6367a9ebb26db97ffaafbd2dfd5991/30cf3/experts-fintech%403x.webp",
-    heading:
-      "Turnkey digital solutions and mobile apps for established businesses and startups",
+    heading: "Turnkey digital solutions and mobile apps for established businesses and startups",
     desc: "We develop software that facilitates online payments, financial analytics, banking and ensures security, legal compliance, and data protection.",
   },
   {
@@ -696,11 +689,7 @@ const technicalProcess = [
     img: "https://www.nhitechsolutions.com/assets/img/features-1.png",
     title: `Development Process`,
     desc1: "Utility and development engineering.",
-    list: [
-      "Review Requirements",
-      "Impact Analysis",
-      "Code Review and Sequence Diagram",
-    ],
+    list: ["Review Requirements", "Impact Analysis", "Code Review and Sequence Diagram"],
     desc2:
       "The product development process encompasses all steps needed to take a product from concept to market availability. This includes identifying a market need, researching the competitive landscape, conceptualizing a solution, developing a product roadmap, building a minimum viable product, etc.",
   },
@@ -1332,8 +1321,7 @@ const mobileTechstack = [
 
 const faqsMobile = [
   {
-    question:
-      "How to manage product development & mobile application services?",
+    question: "How to manage product development & mobile application services?",
     answer:
       "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>If you choose Time and Material or Fixed price contact model, we provide an experienced Project Manager to watch over the process, report to you, and collect your feedback. <br><br> If you pick a Dedicated Team contract model, the team's management goes entirely on your side.</span>",
   },
@@ -1343,14 +1331,12 @@ const faqsMobile = [
       "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>Custom app development stands for creating mobile apps with specific functionality as well as UI/UX design or enhancing the functionality of an existing app.</span>",
   },
   {
-    question:
-      "What services are covered under mobile app development services?",
+    question: "What services are covered under mobile app development services?",
     answer:
       "<span className={`mt-4 leading-relaxed text-gray-700 w-full`}>We provide full-cycle mobile app development services.<br><br>It means we conduct a business analysis, prepare UI/UX design, and develop your mobile app from idea to release on App Store or Google Play. Also, we provide further maintenance and scale-up on demand.</span>",
   },
   {
-    question:
-      "What are the technologies used for mobile application development services?",
+    question: "What are the technologies used for mobile application development services?",
     answer:
       "<span className={`mt-4 leading-relaxed text-gray-700 flex flex-col justify-center w-full`}>Programming languages we use for mobile app development:<ul className='list-disc'><li>Java</li><li>Kotlin</li><li>Swift</li><li>Objective-C</li></ul>Databases:<ul><li>Firebase</li><li>SQLite</li><li>Realm</li><li>CoreData</li></ul>Frameworks:<ul><li>Roboelectric</li><li>RXJava</li><li>ReactiveCocoa</li><li>Socket.io</li><li>Alamofire</li><li>Moya, etc.</li></ul></span>",
   },
@@ -1371,8 +1357,7 @@ const blogs = [
     id: "24334",
     feature: true,
     category: "Next Horizon",
-    title:
-      "NHI among the Top Web Development Companies In New York by DesignRush",
+    title: "NHI among the Top Web Development Companies In New York by DesignRush",
     img: "https://www.nhitechsolutions.com/assets/img/about1.jpg",
     author: "Oleksandr Sh.",
     postDate: "Aug 18, 2022",
@@ -1440,11 +1425,11 @@ const blogs = [
           How to Develop App Like Instagram
         </span>
         <span style="text-align: justify; font-size: 1rem">
-          These days taking selfies and photos and 
+          These days taking selfies and photos and
           <a href="https://www.hopperhq.com/blog/how-to-post-to-instagram-from-pc-mac/" style="color: blue; text-decoration: underline">
             posting them on social media platforms
           </a>
-           has become a natural phenomenon. In this modern scenario, photography
+          has become a natural phenomenon. In this modern scenario, photography
           has been a breakthrough and people are viewing it as a compulsion
           rather than as a hobby. Having remarkable features and acting as a
           great platform for exclusively sharing photos has made this Instagram
@@ -1452,7 +1437,7 @@ const blogs = [
           no wonder that Instagram has seized the photo-sharing market and the
           adoration of online users. With the eventual increase in the users
           marking their online presence, it has paved a way for many businesses
-          to 
+          to
           <a href="https://www.tvisha.com/solutions/social-media-app-development-company" style="color: blue; text-decoration: underline">
             Develop Apps like Instagram
           </a>
@@ -1463,12 +1448,12 @@ const blogs = [
         </span>
 
         <span style="font-size: 1.5rem; font-weight: bold">
-          AccountAuthorization: 
+          AccountAuthorization:
         </span>
         <span style="text-align: justify; font-size: 1rem">
           Here the user is required to create a profile and they can create a
           new account either by freshly entering all the details or by signing
-          up using their email id or any social media account. 
+          up using their email id or any social media account. 
         </span>
 
         <span style="font-size: 1.5rem; font-weight: bold">Edit Profile:</span>
@@ -1477,7 +1462,7 @@ const blogs = [
           the users want to change anything in their profile this feature helps.
           Your users can change their profile photo, their details, and bio. So,
           that they can start posting pictures and videos after all
-          those modifications. For this, you need to set a channel for the
+          those modifications. For this, you need to set a channel for the
           interaction between the customer and the server of the app.
         </span>
 
@@ -1487,11 +1472,11 @@ const blogs = [
         <span style="text-align: justify; font-size: 1rem">
           This feature is the most important and the foundation of this
           application. Here your user will upload an image or video from their
-          gallery, drive, or their SD card. Moreover, they can also 
+          gallery, drive, or their SD card. Moreover, they can also
           <a href="https://invideo.io/make/instagram-video-editor/" style="color: blue; text-decoration: underline">
             share these images or videos
           </a>
-           on other social media platforms. When coming to backend development
+          on other social media platforms. When coming to backend development
           you should use different approaches for both Android and iOS
           platforms.
         </span>
@@ -1529,12 +1514,12 @@ const blogs = [
           Connecting multiple social media platforms:
         </span>
         <span style="text-align: justify; font-size: 1rem">
-          As users these days are connecting through various 
+          As users these days are connecting through various
           <a href="https://www.tvisha.com/blog/social-media-app-development-is-sust-a-few-steps-away" style="color: blue; text-decoration: underline">
             social media platforms
           </a>
           , you must allow them to share information, photos, and videos on
-          several social media sites at a time. 
+          several social media sites at a time.
         </span>
       </div>`,
   },
@@ -1549,14 +1534,14 @@ const blogs = [
     desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
     <span style="text-align: justify; font-size: 1rem">
       The aging population in the United States is predicted to increase the
-      income of the healthcare sector. The majority of 
+      income of the healthcare sector. The majority of
       <a
         href="https://www.appventurez.com/blog/healthcare-mobile-app-development-guide"
         style="color: blue; text-decoration: underline"
       >
         healthcare mobile app guide
       </a>
-       organizations are prepared to pay for the costs associated with
+      organizations are prepared to pay for the costs associated with
       COVID-19 testing and treatment now that the pandemic has started. It
       will affect the health insurance firms’ profit margins.
     </span>
@@ -1578,7 +1563,7 @@ const blogs = [
     id: "23565",
     feature: false,
     category: "Technologies",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -1595,7 +1580,7 @@ const blogs = [
     desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
     <span style='text-align: justify; font-size: 1.2rem'>
       One of the best ways to find a technical co-founder for your startup
-      is through 
+      is through
       <b>
         networking events and networking sites
       </b>
@@ -1616,14 +1601,14 @@ const blogs = [
     postDate: "May 11, 2022",
     desc: `<div style="display: flex; flex-direction: column; gap: 1rem">
     <span style="text-align: justify; font-size: 1rem">
-      We must first 
+      We must first
       <a
         href="https://www.stridenyc.com/blog/the-art-of-the-same-day-job-offer/"
         style="color: blue; text-decoration: underline"
       >
         decide what we are able and willing to offer
       </a>
-      . We may not be able to offer the kind of package they can get from a
+      . We may not be able to offer the kind of package they can get from a
       more established company, but we can offer them equity. Giving someone
       equity in our company could help to them feel personally invested and
       deliver better results.
@@ -1674,11 +1659,11 @@ const blogs = [
     desc: `<div style='display: flex; flex-direction: column; gap: 1rem'>
     <span style="text-align: justify; font-size: 1rem">
       A warehouse management system has the potential to save your company
-      money and help improve warehouse efficiency. 
+      money and help improve warehouse efficiency.
     </span>
 
     <span style="font-size: 1.5rem; font-weight: bold">
-       Makes social distancing possible:
+      Makes social distancing possible:
     </span>
     <span style="text-align: justify; font-size: 1rem">
       Warehouse management software can account for worker distance
@@ -1711,7 +1696,7 @@ const blogs = [
       A warehouse management system can give a company more insight into
       future demand and provides better inventory visibility, a company's
       demand forecasts can become more accurate. When a warehouse has an
-      accurate demand forecast, warehouse operators can maintain 
+      accurate demand forecast, warehouse operators can maintain
       <a href="https://www.techtarget.com/searcherp/feature/Top-5-inventory-management-techniques" style="color: blue; text-decoration: underline">
         optimal levels of inventory
       </a>
@@ -1732,11 +1717,11 @@ const blogs = [
       Improves traceability
     </span>
     <span style="text-align: justify; font-size: 1rem">
-      Businesses can use warehouse management systems to 
+      Businesses can use warehouse management systems to
       <a href="https://www.techtarget.com/searcherp/feature/How-food-traceability-software-boosts-supply-chain-visibility" style="color: blue; text-decoration: underline">
         trace their inventories
       </a>
-       using lot numbers and serial numbers. We need the warehouse
+      using lot numbers and serial numbers. We need the warehouse
       management system to get us down to the exact order.
     </span>
 
@@ -1801,7 +1786,7 @@ const blogs = [
     </span>
 
     <span style='text-align: justify; font-size: 1.2rem'>
-      If you have read our previous article about a 
+      If you have read our previous article about a
       <a
         href='https://deepinspire.com/blog/the-role-of-a-solution-architect/'
         style='color: blue; text-decoration: underline'
@@ -1813,7 +1798,7 @@ const blogs = [
     </span>
     
     <span style="font-size: 1.5rem; font-weight: bold">
-    1. Linking technologies with business needs and perspectives:
+    1. Linking technologies with business needs and perspectives:
   </span>
   <span style="text-align: justify; font-size: 1rem">
     One of the most significant challenges of software product development
@@ -1822,7 +1807,7 @@ const blogs = [
     fits the defined purpose.
   </span>
   <span style="font-size: 1.5rem; font-weight: bold">
-    2. Filling the communication gap between technical and non-technical
+    2. Filling the communication gap between technical and non-technical
     specialists:
   </span>
   <span style="text-align: justify; font-size: 1rem">
@@ -1832,7 +1817,7 @@ const blogs = [
     management and non-technical stakeholders can understand.
   </span>
   <span style="font-size: 1.5rem; font-weight: bold">
-    3. Helping in estimation and costing:
+    3. Helping in estimation and costing:
   </span>
   <span style="text-align: justify; font-size: 1rem">
     For a better budget, it is advised to invest sufficiently in
@@ -1843,7 +1828,7 @@ const blogs = [
     changes could lead to cost savings.
   </span>
   <span style="font-size: 1.5rem; font-weight: bold">
-    4. Helping in risk management:
+    4. Helping in risk management:
   </span>
   <span style="text-align: justify; font-size: 1rem">
     there is a need to understand that software development always has a
@@ -1853,7 +1838,7 @@ const blogs = [
     delivery.
   </span>
   <span style="font-size: 1.5rem; font-weight: bold">
-    5. Selecting the project technology stack:
+    5. Selecting the project technology stack:
   </span>
   <span style="text-align: justify; font-size: 1rem">
     Selection of a technology stack for product development is one of the
@@ -1864,7 +1849,7 @@ const blogs = [
   </span>
 
   <span style="font-size: 1.5rem; font-weight: bold">
-    6. Enabling quicker changes in IT Systems:
+    6. Enabling quicker changes in IT Systems:
   </span>
   <span style="text-align: justify; font-size: 1rem">
     In today’s reality, there is increased demand for systems to change
@@ -2193,7 +2178,7 @@ const portfolio = [
     status: "",
     review:
       "https://www.cleveroad.com/images/portfolio/ccbaffb3a8e8ca9e1777bb11e373217d74c7511b2ae2d22dfda639763b129598.png",
-    desc: "An AR-based open-source project for face detection developed by Cleveroad",
+    desc: "An AR-based open-source project for face detection developed by Nexxt.ai",
     country: "Ukraine",
     flag: "https://www.cleveroad.com/assets/icons/flags/ua.svg",
     coreTech: "Kotlin",
@@ -2300,13 +2285,7 @@ const webDevProcessAtNext = [
   {
     title: "05 Maintenance (per request)",
     desc: "After the application goes online, the development team continues monitoring and improving the software — fixing bugs, adding new features, further scaling, and so on. We provide maintenance services per clients’ request.",
-    team: [
-      "Project Manager",
-      "Developers",
-      "UI/UX designer",
-      "QA engineer",
-      "DevOps",
-    ],
+    team: ["Project Manager", "Developers", "UI/UX designer", "QA engineer", "DevOps"],
   },
 ];
 
@@ -2459,7 +2438,7 @@ const designInsights = [
   {
     id: "23565",
     category: "Client Guides",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -2575,8 +2554,7 @@ const faqsQA = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full}`>Software developers, even the most skilled ones, are people. They could miss a bug or forget about making some checks. That's why you need QA services: to make sure the product has no bugs, meets all requirements, copes with high loads, and so on. When software is tested, you feel confident to use it.</div>",
   },
   {
-    question:
-      "What type of software testing services are usually preferred - manual or automated?",
+    question: "What type of software testing services are usually preferred - manual or automated?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full}`>They are both great and widely used. Manual testing works for any-size software, but if you're dealing with large-scale products with a high demand for quality, it's better to automate the testing process.</div>",
   },
@@ -2586,8 +2564,7 @@ const faqsQA = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full}`><div>Crucial. Software testing helps to point out the defects made during the development, uncover bugs, make sure the product works as it is supposed to, and many more.</div><br><div>Basically, no software should make it to the production server or app marketplaces without QA checking it.</div></div>",
   },
   {
-    question:
-      "What are the different tests involved in software testing services?",
+    question: "What are the different tests involved in software testing services?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}><div>QA tests are divided into manual and automated. <strong>Manual</strong> software testing works for the following tests:</div><ul><li>        Adhoc testing</li><li>Exploratory testing</li><li>Usability testing</li><ul><div>Tests that could be <strong>automated</strong> include:</div><ul><li>Regression testing</li><li>Stress/load testing</li><li>End-to-end testing</li></ul></ul></ul></div>",
   },
@@ -2677,7 +2654,7 @@ const faqsDevOps = [
   {
     question: "What are DevOps services?",
     answer:
-      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>DevOps is an approach that combines different practices and tools to increase the overall organization’s efficiency in delivering apps and services faster. <br><br>Here are some types of DevOps services we provide at Cleveroad:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li></ul></div>",
+      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>DevOps is an approach that combines different practices and tools to increase the overall organization’s efficiency in delivering apps and services faster. <br><br>Here are some types of DevOps services we provide at Nexxt.ai:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li></ul></div>",
   },
   {
     question: "What is the definition of DevOps services?",
@@ -2687,7 +2664,7 @@ const faqsDevOps = [
   {
     question: "What are the types of DevOps services?",
     answer:
-      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Here are some types of DevOps services we provide at Cleveroad:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>AWS managed services</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li><ul></ul></ul></div>",
+      "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Here are some types of DevOps services we provide at Nexxt.ai:<ul><li>DevOps consulting</li><li>AWS/GCP</li><li>AWS managed services</li><li>CI/CD</li><li>Container management</li><li>Infrastructure as a Service</li><ul></ul></ul></div>",
   },
   {
     question: "What are DevOps managed services?",
@@ -3036,8 +3013,7 @@ const faqsiOS = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Again, it depends on your app’s complexity. A basic ecommerce app may take ~300h, while a complex Uber-like iOS app takes ~762h (numbers are <strong>approximate</strong>).<br><br>If you want to know how long it takes to build your app, please <a href={`/contact`}>contact</a> our Business Analysts.</div>",
   },
   {
-    question:
-      "Do you provide maintenance and support as a part of iOS development services?",
+    question: "Do you provide maintenance and support as a part of iOS development services?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>We guarantee that you are covered for all possible bugs and other malfunctions missed by our team.<br><br>We also offer extended maintenance periods that ensure you being covered after the project release.</div>",
   },
@@ -3052,8 +3028,7 @@ const faqsiOS = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>When choosing an iOS app development service provider, pay attention to: <ul><li><strong>Expertise:</strong> portfolio, industries they work in, how long they’ve been working for.</li><li><strong>Reviews:</strong> on Clutch, GoodFirms, or similar services.</li><li><strong>Tech stack:</strong> it should include programming languages Objective-C and Swift, app-building tools (Fabric, Fastlane), databases (CoreData, Realm, Firebase), and so on. </li></ul></div>",
   },
   {
-    question:
-      "What services do the iOS application development services include?",
+    question: "What services do the iOS application development services include?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Our iOS app development services include:<ul><li>Business analysis</li><li>UI/UX design</li><li>Development</li><li>Release</li><li>Maintenance (if requested)</li></ul></div>",
   },
@@ -3304,20 +3279,17 @@ const androidTechstack = [
 
 const fAQsAndroid = [
   {
-    question:
-      "What are the steps involved in Android app development services?",
+    question: "What are the steps involved in Android app development services?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>We follow these steps:<ul><li><strong> Business analysis.</strong> We gather and analyze all the project requirements and document them.</li><li><strong> UI/UX design.</strong> Create wireframes, design the app screen by screen, and make a prototype.</li><li><strong>Development.</strong> Build custom Android app using programming languages like Java and Kotlin.</li><li><strong>Release.</strong> Publish apps on Google Play.</li><li><strong>Maintenance.</strong> Support or enhance existing products (if requested).</li></ul></div>",
   },
   {
-    question:
-      "What are the top things to note while choosing Android app development services?",
+    question: "What are the top things to note while choosing Android app development services?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Top things to check when choosing a mobile app development company:<ol style={`list-style: decimal`}><li>Portfolio</li><li>Client reviews on platforms like Clutch, GoodFirms, or Upwork</li><li>Development methodology – Agile is today’s gold standard</li><li>Development tools and programming languages</li><li>GitHub</li><li>Project management tools</li></ol></div>",
   },
   {
-    question:
-      "What is the time duration required for Android app development services?",
+    question: "What is the time duration required for Android app development services?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>It depends on your app’s complexity and whether you have any specific requirements.<br><br>If you want to know how much time your Android app is going to take, please <a href={`/contact`}>contact</a> our Business Analytics, describing your idea.</div>",
   },
@@ -3412,7 +3384,7 @@ const flutterExperience = [
       },
     ],
     img: "https://www.cleveroad.com/static/bb4f58718db4c1a493e367ef5626a339/b410d/flutter-two-phones.webp",
-    desc: "<div className={`mt-4 leading-relaxed w-full}`><p>This Flutter app is called Travel Time. We’ve built it at Cleveroad to show you the Flutter’s performance and User Interface.</p><p>The app comes with a flexible search with filters and commenting options. It also allows iOS and Android users to log in using Facebook or other social networks.</p></div>",
+    desc: "<div className={`mt-4 leading-relaxed w-full}`><p>This Flutter app is called Travel Time. We’ve built it at Nexxt.ai to show you the Flutter’s performance and User Interface.</p><p>The app comes with a flexible search with filters and commenting options. It also allows iOS and Android users to log in using Facebook or other social networks.</p></div>",
   },
 ];
 
@@ -3453,7 +3425,7 @@ const flutterDevInsignts = [
   {
     id: "23565",
     category: "Technologies",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -3808,8 +3780,7 @@ const faqsWebAppsServices = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Apart from creating custom web applications, we provide services like web designing, QA testing, support, and maintenance.</div>",
   },
   {
-    question:
-      "How to hire the best web application development service provider?",
+    question: "How to hire the best web application development service provider?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Always check your web developers' expertise and make sure they provide the services you need.<br><br>Check your tech vendors' portfolio to find similar projects, or go on the company's Clutch / GoodFirms page and look through their previous clients' reviews.<br><br>If you have a tech expert or CTO on your side, request a tech interview with selected software developers.</div>",
   },
@@ -3819,8 +3790,7 @@ const faqsWebAppsServices = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Start with listing your requirements. For example, if you want a custom UI design, but have no in-house designers, look for companies that provide such services.<br><br>If you're making the web app from scratch, make sure your tech vendor has every specialist required. Usually, the team includes Business Analysts, Project Managers, front and back end developers, QA engineers, DevOps.</div>",
   },
   {
-    question:
-      "What should be included in the web application development service?",
+    question: "What should be included in the web application development service?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>We follow these steps:<ol><li><strong>Business analysis. </strong> We gather and analyze your project requirements and document them in a specification.</li><li><strong>UI/UX design. </strong> Create wireframes and screen-by-screen design for your web app.</li><li><strong>Development. </strong>Take care of both user and server-side development and testing.</li><li><strong>Release. </strong>Make your website go live.</li><li><strong>Maintenance. </strong>Support or enhance existing products (if requested).</li></ol></div>",
   },
@@ -3843,8 +3813,7 @@ const faqsWebApps = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Apart from creating custom web applications, we provide services like web designing, QA testing, support, and maintenance.</div>",
   },
   {
-    question:
-      "How to hire the best web application development service provider?",
+    question: "How to hire the best web application development service provider?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Always check your web developers' expertise and make sure they provide the services you need.<br><br>Check your tech vendors' portfolio to find similar projects, or go on the company's Clutch / GoodFirms page and look through their previous clients' reviews.<br><br>If you have a tech expert or CTO on your side, request a tech interview with selected software developers.</div>",
   },
@@ -3854,8 +3823,7 @@ const faqsWebApps = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>Start with listing your requirements. For example, if you want a custom UI design, but have no in-house designers, look for companies that provide such services.<br><br>If you're making the web app from scratch, make sure your tech vendor has every specialist required. Usually, the team includes Business Analysts, Project Managers, front and back end developers, QA engineers, DevOps.</div>",
   },
   {
-    question:
-      "What should be included in the web application development service?",
+    question: "What should be included in the web application development service?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>We follow these steps:<ol><li><strong>Business analysis. </strong> We gather and analyze your project requirements and document them in a specification.</li><li><strong>UI/UX design. </strong> Create wireframes and screen-by-screen design for your web app.</li><li><strong>Development. </strong>Take care of both user and server-side development and testing.</li><li><strong>Release. </strong>Make your website go live.</li><li><strong>Maintenance. </strong>Support or enhance existing products (if requested).</li></ol></div>",
   },
@@ -3870,7 +3838,7 @@ const webDevInsignts = [
   {
     id: "23565",
     category: "Technologies",
-    title: "A-CSPO Accreditation of Cleveroad",
+    title: "A-CSPO Accreditation of Nexxt.ai",
     img: "https://www.cleveroad.com/images/article-previews/374305588654f3ba9aeadacdb3bdf0e806061e4812ef2f91cea3c206cc6c1248.png",
     author: "Diana Chabanovska",
     postDate: "Aug 03, 2022",
@@ -3974,7 +3942,7 @@ const whyChooseUs = [
     img: "https://www.cleveroad.com/static/dbf57aa8feedfe5c891a35b33de3e535/1df7b/member-avatar09.webp",
     name: "Sergey Molchanov",
     designation: "Head of Business Development",
-    email: "s.molchanov@cleveroad.com",
+    email: "s.molchanov@Nexxt.ai",
     linkedIn: "",
     qualities: [
       "Agile-oriented development team full of high-tier experts",
@@ -3993,11 +3961,7 @@ const whatWeOffer = [
   {
     category: "Development",
     desc: "Developers translate your ideas into lines of code and make the project work the way you mean it. You’re free to choose talents based on your goals and requirements — we’ll assemble the perfect dedicated development team that’ll deliver your requirements.",
-    expertise: [
-      "Mobile development",
-      "Front-end development",
-      "Back-end development",
-    ],
+    expertise: ["Mobile development", "Front-end development", "Back-end development"],
   },
   {
     category: "Design",
@@ -4038,8 +4002,7 @@ const fAQsDedicatedDevTeams = [
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>The cost of acquiring a dedicated development team depends on the vendor’s location, what developers you choose, and the number of employees you hire. You can find these dependencies in our recent <a href={`https://www.cleveroad.com/blog/hire-dedicated-development-team#where-to-hire-a-dedicated-development-team`}>article</a></div>",
   },
   {
-    question:
-      "How to choose a reliable dedicated development team services provider?",
+    question: "How to choose a reliable dedicated development team services provider?",
     answer:
       "<div className={`mt-4 leading-relaxed text-gray-700 w-full`}>When looking for a vendor, pay attention to reviews and ratings on various platforms, such as Clutch, GoodFirms, and many others. After that, it’s worth conducting in-depth research and learning about vendors’ previous projects, industries they work in, and their technical expertise.</div>",
   },
@@ -4323,12 +4286,7 @@ const discoveryPhaseIncludes = [
     id: "06",
     category: "Wireframes",
     desc: "Once the specification is ready, designers start creating wireframes — a layout of a user interface. Designers arrange main elements like buttons and images on each screen. Business Analyst and QA engineer review and validate the wireframes. The QA engineer also checks the project requirements for testability.",
-    staff: [
-      "UI/UX Designers",
-      "Business Analyst",
-      "Solution Architect",
-      "QA engineer",
-    ],
+    staff: ["UI/UX Designers", "Business Analyst", "Solution Architect", "QA engineer"],
   },
   {
     id: "07",
@@ -4427,8 +4385,7 @@ const mvpIndustryExpertise = [
   {
     id: "04",
     category: "Travel",
-    recentProject:
-      "Gym directory helping travelers reserve workouts worldwide.",
+    recentProject: "Gym directory helping travelers reserve workouts worldwide.",
     desc: "The impact of technologies is clearly seen in the travel and hospitality industry. With our MVP development services, startups can build booking platforms, HMS, and SaaS products.",
   },
   {
@@ -4480,13 +4437,7 @@ const mvpDevlopmentProcess = [
     id: "5",
     title: "Continuous development",
     desc: "MVP is not the final destination. We’ll help you roll out product updates and new features according to your tests, assumptions, and KPIs. Our main goal is to help you grab the biggest market share possible.",
-    staff: [
-      "Project Manager",
-      "UI/UX designer",
-      "Software Engineer",
-      "QA engineer",
-      "DevOps",
-    ],
+    staff: ["Project Manager", "UI/UX designer", "Software Engineer", "QA engineer", "DevOps"],
   },
 ];
 

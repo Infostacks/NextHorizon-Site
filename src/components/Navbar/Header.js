@@ -44,8 +44,7 @@ const Header = () => {
     <nav
       className={`${
         navbar && "bg-[#D90429] bg-opacity-90 drop-shadow-md"
-      } z-[1200px] text-slate-50`}
-    >
+      } z-[1200px] text-slate-50`}>
       <div className="max-w-7xl flex justify-center mx-auto">
         <div className="flex items-center justify-between h-16 w-full px-10 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center w-full max-w-6xl">
@@ -63,10 +62,7 @@ const Header = () => {
               <div className="hidden lg:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <span className={`text-sm font-medium`}>
-                    <NavLink
-                      to="/"
-                      className="tracking-widest navlinkUnderline"
-                    >
+                    <NavLink to="/" className="tracking-widest navlinkUnderline">
                       Home
                     </NavLink>
                   </span>
@@ -76,24 +72,19 @@ const Header = () => {
                       to="/services"
                       onMouseEnter={handleMouseEnterServices}
                       onMouseLeave={handleMouseExitServices}
-                      className="tracking-widest navlinkUnderline"
-                    >
+                      className="tracking-widest navlinkUnderline">
                       Services
                     </NavLink>
                     <div
                       // className="sub-menu"
                       onMouseEnter={handleMouseEnterServices}
-                      onMouseLeave={handleMouseExitServices}
-                    >
+                      onMouseLeave={handleMouseExitServices}>
                       {isHoveringServices ? <ServicesMenu /> : ""}
                     </div>
                   </span>
 
                   <span className={`text-sm font-medium`}>
-                    <NavLink
-                      to="/portfolio"
-                      className="tracking-widest navlinkUnderline"
-                    >
+                    <NavLink to="/portfolio" className="tracking-widest navlinkUnderline">
                       Portfolio
                     </NavLink>
                   </span>
@@ -103,42 +94,31 @@ const Header = () => {
                       to="/blogs/latest"
                       onMouseEnter={handleMouseEnterBlogs}
                       onMouseLeave={handleMouseExitBlogs}
-                      className="tracking-widest navlinkUnderline"
-                    >
+                      className="tracking-widest navlinkUnderline">
                       Blogs
                     </NavLink>
                     <div
                       // className="sub-menu"
                       onMouseEnter={handleMouseEnterBlogs}
-                      onMouseLeave={handleMouseExitBlogs}
-                    >
+                      onMouseLeave={handleMouseExitBlogs}>
                       {isHoveringBlogs ? <BlogMenu /> : ""}
                     </div>
                   </span>
 
                   <span className={`text-sm font-medium`}>
-                    <NavLink
-                      to="/gallery"
-                      className="tracking-widest navlinkUnderline"
-                    >
+                    <NavLink to="/gallery" className="tracking-widest navlinkUnderline">
                       Gallery
                     </NavLink>
                   </span>
 
                   <span className={`text-sm font-medium`}>
-                    <NavLink
-                      to="/careers"
-                      className="tracking-widest navlinkUnderline"
-                    >
+                    <NavLink to="/careers" className="tracking-widest navlinkUnderline">
                       Careers
                     </NavLink>
                   </span>
 
                   <span className={`text-sm font-medium`}>
-                    <NavLink
-                      to="/contact"
-                      className="tracking-widest navlinkUnderline"
-                    >
+                    <NavLink to="/contact" className="tracking-widest navlinkUnderline">
                       Get A Quote
                     </NavLink>
                   </span>
@@ -147,10 +127,7 @@ const Header = () => {
                     className={`text-sm font-medium`}
                     //   onClick={handleLogout}
                   >
-                    <NavLink
-                      to="/login"
-                      className="tracking-widest navlinkUnderline"
-                    >
+                    <NavLink to="/login" className="tracking-widest navlinkUnderline">
                       Login
                     </NavLink>
                   </span>
@@ -164,8 +141,7 @@ const Header = () => {
               type="button"
               className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
+              aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
                 <svg
@@ -174,8 +150,7 @@ const Header = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
-                >
+                  aria-hidden="true">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -190,8 +165,7 @@ const Header = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
-                >
+                  aria-hidden="true">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -212,21 +186,14 @@ const Header = () => {
         enterTo="opacity-100 scale-100"
         leave="transition ease-in duration-75 transform"
         leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-      >
+        leaveTo="opacity-0 scale-95">
         {(ref) => (
           <div className="lg:hidden" id="mobile-menu">
             <div
               ref={ref}
-              className="text-white mx-2 pt-2 pb-3 border-t-[1px] space-y flex flex-col sm:px-3"
-            >
-              <span
-                className={`block px-3 py-2 rounded-md text-base font-medium`}
-              >
-                <NavLink
-                  to="/"
-                  className={`focus:font-bold focus:text-base focus:bg-gray-500`}
-                >
+              className="text-white mx-2 pt-2 pb-3 border-t-[1px] space-y flex flex-col sm:px-3">
+              <span className={`block px-3 py-2 rounded-md text-base font-medium`}>
+                <NavLink to="/" className={`focus:font-bold focus:text-base focus:bg-gray-500`}>
                   Home
                 </NavLink>
               </span>

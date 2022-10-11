@@ -30,8 +30,7 @@ const TechStackMobile = () => {
                   onClick={() => {
                     setCount(index);
                     setToolData(0);
-                  }}
-                >
+                  }}>
                   {category.techCategory}
                 </div>
               </button>
@@ -51,8 +50,7 @@ const TechStackMobile = () => {
                       className={`flex justify-center text-lg items-center xl:p-7 lg:p-7 md:p-4 p-2 underline font-semibold rounded-xl drop-shadow-md ${`job-btn ${
                         toolData === index && "active-btn"
                       }`}`}
-                      onClick={() => setToolData(index)}
-                    >
+                      onClick={() => setToolData(index)}>
                       {/* {data.icon} */}
                       {data.tool}
                     </div>

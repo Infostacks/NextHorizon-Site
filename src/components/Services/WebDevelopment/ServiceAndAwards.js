@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/jsx-no-undef */
 import React from "react";
 
 const ServiceAndAwards = () => {

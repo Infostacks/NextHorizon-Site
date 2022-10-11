@@ -14,9 +14,8 @@ const CustomMobileApps = () => {
         </h2>
 
         <p className="max-w-lg mt-4 text-gring-offset-warm-gray-500">
-          Helping startups and businesses build mobile solutions that support
-          their brand identity, meet market needs and encourage business growth
-          and expansion.
+          Helping startups and businesses build mobile solutions that support their brand identity,
+          meet market needs and encourage business growth and expansion.
         </p>
       </div>
 
@@ -30,8 +29,7 @@ const CustomMobileApps = () => {
                   className={`flex flex-row text-2xl items-center py-3 px-4 font-semibold underline rounded-full drop-shadow-md ${`job-btn ${
                     count === index && "active-btn"
                   }`}`}
-                  onClick={() => setCount(index)}
-                >
+                  onClick={() => setCount(index)}>
                   {category.category}
                 </div>
               </button>
@@ -51,9 +49,7 @@ const CustomMobileApps = () => {
             </div>
 
             <div className="flex flex-col">
-              <h2 className="text-xl font-semibold">
-                {customMobileApps[count].duration}
-              </h2>
+              <h2 className="text-xl font-semibold">{customMobileApps[count].duration}</h2>
               <p>Average project length</p>
             </div>
           </div>
